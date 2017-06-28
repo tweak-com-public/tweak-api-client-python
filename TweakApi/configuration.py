@@ -56,7 +56,7 @@ class Configuration(object):
         Constructor
         """
         # Default Base url
-        self.host = "https://apistagecdn.tweak.com/api"
+        self.host = "https://apidevcdn.tweak.com/api"
         # Default api client
         self.api_client = None
         # Temp file folder for downloading files
@@ -226,5 +226,5 @@ class Configuration(object):
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 0.0.1\n"\
-               "SDK Package Version: 1.0.0".\
+               "SDK Package Version: 0.0.2".\
                format(env=sys.platform, pyversion=sys.version)

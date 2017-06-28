@@ -1,6 +1,6 @@
 # TweakApi.ImageFolderMemberApi
 
-All URIs are relative to *https://apistagecdn.tweak.com/api*
+All URIs are relative to *https://apidevcdn.tweak.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
