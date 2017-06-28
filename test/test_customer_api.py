@@ -418,6 +418,38 @@ class TestCustomerApi(unittest.TestCase):
         """
         pass
 
+    def test_customers_id_teams_nk_billing_delete(self):
+        """
+        Test case for customers_id_teams_nk_billing_delete
+
+        Deletes billing of this model.
+        """
+        pass
+
+    def test_customers_id_teams_nk_billing_get(self):
+        """
+        Test case for customers_id_teams_nk_billing_get
+
+        Fetches hasOne relation billing.
+        """
+        pass
+
+    def test_customers_id_teams_nk_billing_post(self):
+        """
+        Test case for customers_id_teams_nk_billing_post
+
+        Creates a new instance in billing of this model.
+        """
+        pass
+
+    def test_customers_id_teams_nk_billing_put(self):
+        """
+        Test case for customers_id_teams_nk_billing_put
+
+        Update billing of this model.
+        """
+        pass
+
     def test_customers_id_teams_nk_brand_delete(self):
         """
         Test case for customers_id_teams_nk_brand_delete
@@ -639,6 +671,38 @@ class TestCustomerApi(unittest.TestCase):
         Test case for customers_id_teams_nk_members_rel_fk_put
 
         Add a related item by id for members.
+        """
+        pass
+
+    def test_customers_id_teams_nk_permission_delete(self):
+        """
+        Test case for customers_id_teams_nk_permission_delete
+
+        Deletes permission of this model.
+        """
+        pass
+
+    def test_customers_id_teams_nk_permission_get(self):
+        """
+        Test case for customers_id_teams_nk_permission_get
+
+        Fetches hasOne relation permission.
+        """
+        pass
+
+    def test_customers_id_teams_nk_permission_post(self):
+        """
+        Test case for customers_id_teams_nk_permission_post
+
+        Creates a new instance in permission of this model.
+        """
+        pass
+
+    def test_customers_id_teams_nk_permission_put(self):
+        """
+        Test case for customers_id_teams_nk_permission_put
+
+        Update permission of this model.
         """
         pass
 

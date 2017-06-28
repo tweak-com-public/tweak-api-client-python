@@ -51,6 +51,10 @@ Method | HTTP request | Description
 [**customers_id_teams_fk_get**](CustomerApi.md#customers_id_teams_fk_get) | **GET** /Customers/{id}/teams/{fk} | Find a related item by id for teams.
 [**customers_id_teams_fk_put**](CustomerApi.md#customers_id_teams_fk_put) | **PUT** /Customers/{id}/teams/{fk} | Update a related item by id for teams.
 [**customers_id_teams_get**](CustomerApi.md#customers_id_teams_get) | **GET** /Customers/{id}/teams | Queries teams of Customer.
+[**customers_id_teams_nk_billing_delete**](CustomerApi.md#customers_id_teams_nk_billing_delete) | **DELETE** /Customers/{id}/teams/{nk}/billing | Deletes billing of this model.
+[**customers_id_teams_nk_billing_get**](CustomerApi.md#customers_id_teams_nk_billing_get) | **GET** /Customers/{id}/teams/{nk}/billing | Fetches hasOne relation billing.
+[**customers_id_teams_nk_billing_post**](CustomerApi.md#customers_id_teams_nk_billing_post) | **POST** /Customers/{id}/teams/{nk}/billing | Creates a new instance in billing of this model.
+[**customers_id_teams_nk_billing_put**](CustomerApi.md#customers_id_teams_nk_billing_put) | **PUT** /Customers/{id}/teams/{nk}/billing | Update billing of this model.
 [**customers_id_teams_nk_brand_delete**](CustomerApi.md#customers_id_teams_nk_brand_delete) | **DELETE** /Customers/{id}/teams/{nk}/brand | Deletes brand of this model.
 [**customers_id_teams_nk_brand_get**](CustomerApi.md#customers_id_teams_nk_brand_get) | **GET** /Customers/{id}/teams/{nk}/brand | Fetches hasOne relation brand.
 [**customers_id_teams_nk_brand_post**](CustomerApi.md#customers_id_teams_nk_brand_post) | **POST** /Customers/{id}/teams/{nk}/brand | Creates a new instance in brand of this model.
@@ -79,6 +83,10 @@ Method | HTTP request | Description
 [**customers_id_teams_nk_members_rel_fk_delete**](CustomerApi.md#customers_id_teams_nk_members_rel_fk_delete) | **DELETE** /Customers/{id}/teams/{nk}/members/rel/{fk} | Remove the members relation to an item by id.
 [**customers_id_teams_nk_members_rel_fk_head**](CustomerApi.md#customers_id_teams_nk_members_rel_fk_head) | **HEAD** /Customers/{id}/teams/{nk}/members/rel/{fk} | Check the existence of members relation to an item by id.
 [**customers_id_teams_nk_members_rel_fk_put**](CustomerApi.md#customers_id_teams_nk_members_rel_fk_put) | **PUT** /Customers/{id}/teams/{nk}/members/rel/{fk} | Add a related item by id for members.
+[**customers_id_teams_nk_permission_delete**](CustomerApi.md#customers_id_teams_nk_permission_delete) | **DELETE** /Customers/{id}/teams/{nk}/permission | Deletes permission of this model.
+[**customers_id_teams_nk_permission_get**](CustomerApi.md#customers_id_teams_nk_permission_get) | **GET** /Customers/{id}/teams/{nk}/permission | Fetches hasOne relation permission.
+[**customers_id_teams_nk_permission_post**](CustomerApi.md#customers_id_teams_nk_permission_post) | **POST** /Customers/{id}/teams/{nk}/permission | Creates a new instance in permission of this model.
+[**customers_id_teams_nk_permission_put**](CustomerApi.md#customers_id_teams_nk_permission_put) | **PUT** /Customers/{id}/teams/{nk}/permission | Update permission of this model.
 [**customers_id_teams_nk_portals_count_get**](CustomerApi.md#customers_id_teams_nk_portals_count_get) | **GET** /Customers/{id}/teams/{nk}/portals/count | Counts portals of Team.
 [**customers_id_teams_nk_portals_delete**](CustomerApi.md#customers_id_teams_nk_portals_delete) | **DELETE** /Customers/{id}/teams/{nk}/portals | Deletes all portals of this model.
 [**customers_id_teams_nk_portals_fk_delete**](CustomerApi.md#customers_id_teams_nk_portals_fk_delete) | **DELETE** /Customers/{id}/teams/{nk}/portals/{fk} | Delete a related item by id for portals.
@@ -2601,6 +2609,223 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **customers_id_teams_nk_billing_delete**
+> customers_id_teams_nk_billing_delete(id, nk)
+
+Deletes billing of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+
+try: 
+    # Deletes billing of this model.
+    api_instance.customers_id_teams_nk_billing_delete(id, nk)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_billing_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_billing_get**
+> Billing customers_id_teams_nk_billing_get(id, nk, refresh=refresh)
+
+Fetches hasOne relation billing.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches hasOne relation billing.
+    api_response = api_instance.customers_id_teams_nk_billing_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_billing_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_billing_post**
+> Billing customers_id_teams_nk_billing_post(id, nk, data=data)
+
+Creates a new instance in billing of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+data = TweakApi.Billing() # Billing |  (optional)
+
+try: 
+    # Creates a new instance in billing of this model.
+    api_response = api_instance.customers_id_teams_nk_billing_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_billing_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **data** | [**Billing**](Billing.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_billing_put**
+> Billing customers_id_teams_nk_billing_put(id, nk, data=data)
+
+Update billing of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+data = TweakApi.Billing() # Billing |  (optional)
+
+try: 
+    # Update billing of this model.
+    api_response = api_instance.customers_id_teams_nk_billing_put(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_billing_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **data** | [**Billing**](Billing.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **customers_id_teams_nk_brand_delete**
 > customers_id_teams_nk_brand_delete(id, nk)
 
@@ -4121,6 +4346,223 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamMember**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_permission_delete**
+> customers_id_teams_nk_permission_delete(id, nk)
+
+Deletes permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+
+try: 
+    # Deletes permission of this model.
+    api_instance.customers_id_teams_nk_permission_delete(id, nk)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_permission_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_permission_get**
+> TeamPermissionSet customers_id_teams_nk_permission_get(id, nk, refresh=refresh)
+
+Fetches hasOne relation permission.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches hasOne relation permission.
+    api_response = api_instance.customers_id_teams_nk_permission_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_permission_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**TeamPermissionSet**](TeamPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_permission_post**
+> TeamPermissionSet customers_id_teams_nk_permission_post(id, nk, data=data)
+
+Creates a new instance in permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+data = TweakApi.TeamPermissionSet() # TeamPermissionSet |  (optional)
+
+try: 
+    # Creates a new instance in permission of this model.
+    api_response = api_instance.customers_id_teams_nk_permission_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_permission_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **data** | [**TeamPermissionSet**](TeamPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**TeamPermissionSet**](TeamPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_permission_put**
+> TeamPermissionSet customers_id_teams_nk_permission_put(id, nk, data=data)
+
+Update permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+data = TweakApi.TeamPermissionSet() # TeamPermissionSet |  (optional)
+
+try: 
+    # Update permission of this model.
+    api_response = api_instance.customers_id_teams_nk_permission_put(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_permission_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **data** | [**TeamPermissionSet**](TeamPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**TeamPermissionSet**](TeamPermissionSet.md)
 
 ### Authorization
 

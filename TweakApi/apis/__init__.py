@@ -1,6 +1,7 @@
 from __future__ import absolute_import
 
 # import apis into api package
+from .billing_api import BillingApi
 from .customer_api import CustomerApi
 from .design_api import DesignApi
 from .design_comment_api import DesignCommentApi
@@ -20,6 +21,7 @@ from .q_task_api import QTaskApi
 from .tag_api import TagApi
 from .team_api import TeamApi
 from .team_member_api import TeamMemberApi
+from .team_permission_set_api import TeamPermissionSetApi
 from .team_template_folder_api import TeamTemplateFolderApi
 from .template_api import TemplateApi
 from .template_member_api import TemplateMemberApi

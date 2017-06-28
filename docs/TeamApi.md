@@ -9,6 +9,10 @@ Method | HTTP request | Description
 [**teams_count_get**](TeamApi.md#teams_count_get) | **GET** /Teams/count | Count instances of the model matched by where from the data source.
 [**teams_find_one_get**](TeamApi.md#teams_find_one_get) | **GET** /Teams/findOne | Find first instance of the model matched by filter from the data source.
 [**teams_get**](TeamApi.md#teams_get) | **GET** /Teams | Find all instances of the model matched by filter from the data source.
+[**teams_id_billing_delete**](TeamApi.md#teams_id_billing_delete) | **DELETE** /Teams/{id}/billing | Deletes billing of this model.
+[**teams_id_billing_get**](TeamApi.md#teams_id_billing_get) | **GET** /Teams/{id}/billing | Fetches hasOne relation billing.
+[**teams_id_billing_post**](TeamApi.md#teams_id_billing_post) | **POST** /Teams/{id}/billing | Creates a new instance in billing of this model.
+[**teams_id_billing_put**](TeamApi.md#teams_id_billing_put) | **PUT** /Teams/{id}/billing | Update billing of this model.
 [**teams_id_brand_delete**](TeamApi.md#teams_id_brand_delete) | **DELETE** /Teams/{id}/brand | Deletes brand of this model.
 [**teams_id_brand_get**](TeamApi.md#teams_id_brand_get) | **GET** /Teams/{id}/brand | Fetches hasOne relation brand.
 [**teams_id_brand_post**](TeamApi.md#teams_id_brand_post) | **POST** /Teams/{id}/brand | Creates a new instance in brand of this model.
@@ -91,6 +95,10 @@ Method | HTTP request | Description
 [**teams_id_members_rel_fk_head**](TeamApi.md#teams_id_members_rel_fk_head) | **HEAD** /Teams/{id}/members/rel/{fk} | Check the existence of members relation to an item by id.
 [**teams_id_members_rel_fk_put**](TeamApi.md#teams_id_members_rel_fk_put) | **PUT** /Teams/{id}/members/rel/{fk} | Add a related item by id for members.
 [**teams_id_patch**](TeamApi.md#teams_id_patch) | **PATCH** /Teams/{id} | Patch attributes for a model instance and persist it into the data source.
+[**teams_id_permission_delete**](TeamApi.md#teams_id_permission_delete) | **DELETE** /Teams/{id}/permission | Deletes permission of this model.
+[**teams_id_permission_get**](TeamApi.md#teams_id_permission_get) | **GET** /Teams/{id}/permission | Fetches hasOne relation permission.
+[**teams_id_permission_post**](TeamApi.md#teams_id_permission_post) | **POST** /Teams/{id}/permission | Creates a new instance in permission of this model.
+[**teams_id_permission_put**](TeamApi.md#teams_id_permission_put) | **PUT** /Teams/{id}/permission | Update permission of this model.
 [**teams_id_portals_count_get**](TeamApi.md#teams_id_portals_count_get) | **GET** /Teams/{id}/portals/count | Counts portals of Team.
 [**teams_id_portals_delete**](TeamApi.md#teams_id_portals_delete) | **DELETE** /Teams/{id}/portals | Deletes all portals of this model.
 [**teams_id_portals_fk_delete**](TeamApi.md#teams_id_portals_fk_delete) | **DELETE** /Teams/{id}/portals/{fk} | Delete a related item by id for portals.
@@ -508,6 +516,215 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[Team]**](Team.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_billing_delete**
+> teams_id_billing_delete(id)
+
+Deletes billing of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+
+try: 
+    # Deletes billing of this model.
+    api_instance.teams_id_billing_delete(id)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_billing_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_billing_get**
+> Billing teams_id_billing_get(id, refresh=refresh)
+
+Fetches hasOne relation billing.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches hasOne relation billing.
+    api_response = api_instance.teams_id_billing_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_billing_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_billing_post**
+> Billing teams_id_billing_post(id, data=data)
+
+Creates a new instance in billing of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+data = TweakApi.Billing() # Billing |  (optional)
+
+try: 
+    # Creates a new instance in billing of this model.
+    api_response = api_instance.teams_id_billing_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_billing_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **data** | [**Billing**](Billing.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_billing_put**
+> Billing teams_id_billing_put(id, data=data)
+
+Update billing of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+data = TweakApi.Billing() # Billing |  (optional)
+
+try: 
+    # Update billing of this model.
+    api_response = api_instance.teams_id_billing_put(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_billing_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **data** | [**Billing**](Billing.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
 
 ### Authorization
 
@@ -4932,6 +5149,215 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Team**](Team.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_permission_delete**
+> teams_id_permission_delete(id)
+
+Deletes permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+
+try: 
+    # Deletes permission of this model.
+    api_instance.teams_id_permission_delete(id)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_permission_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_permission_get**
+> TeamPermissionSet teams_id_permission_get(id, refresh=refresh)
+
+Fetches hasOne relation permission.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches hasOne relation permission.
+    api_response = api_instance.teams_id_permission_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_permission_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**TeamPermissionSet**](TeamPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_permission_post**
+> TeamPermissionSet teams_id_permission_post(id, data=data)
+
+Creates a new instance in permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+data = TweakApi.TeamPermissionSet() # TeamPermissionSet |  (optional)
+
+try: 
+    # Creates a new instance in permission of this model.
+    api_response = api_instance.teams_id_permission_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_permission_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **data** | [**TeamPermissionSet**](TeamPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**TeamPermissionSet**](TeamPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_permission_put**
+> TeamPermissionSet teams_id_permission_put(id, data=data)
+
+Update permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+data = TweakApi.TeamPermissionSet() # TeamPermissionSet |  (optional)
+
+try: 
+    # Update permission of this model.
+    api_response = api_instance.teams_id_permission_put(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_permission_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **data** | [**TeamPermissionSet**](TeamPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**TeamPermissionSet**](TeamPermissionSet.md)
 
 ### Authorization
 

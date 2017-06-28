@@ -842,6 +842,86 @@ class TestTeamMemberApi(unittest.TestCase):
         """
         pass
 
+    def test_team_members_id_team_billing_available_plans_get(self):
+        """
+        Test case for team_members_id_team_billing_available_plans_get
+
+        Get Available Plans
+        """
+        pass
+
+    def test_team_members_id_team_billing_cached_get(self):
+        """
+        Test case for team_members_id_team_billing_cached_get
+
+        Get Cached version of Team Billing
+        """
+        pass
+
+    def test_team_members_id_team_billing_card_delete(self):
+        """
+        Test case for team_members_id_team_billing_card_delete
+
+        Delete Team Billing Card
+        """
+        pass
+
+    def test_team_members_id_team_billing_card_post(self):
+        """
+        Test case for team_members_id_team_billing_card_post
+
+        Create Team Billing Card
+        """
+        pass
+
+    def test_team_members_id_team_billing_card_put(self):
+        """
+        Test case for team_members_id_team_billing_card_put
+
+        Update Team Billing Card
+        """
+        pass
+
+    def test_team_members_id_team_billing_delete(self):
+        """
+        Test case for team_members_id_team_billing_delete
+
+        Deletes billing of this model.
+        """
+        pass
+
+    def test_team_members_id_team_billing_get(self):
+        """
+        Test case for team_members_id_team_billing_get
+
+        Fetches hasOne relation billing.
+        """
+        pass
+
+    def test_team_members_id_team_billing_post(self):
+        """
+        Test case for team_members_id_team_billing_post
+
+        Creates a new instance in billing of this model.
+        """
+        pass
+
+    def test_team_members_id_team_billing_put(self):
+        """
+        Test case for team_members_id_team_billing_put
+
+        Update billing of this model.
+        """
+        pass
+
+    def test_team_members_id_team_billing_subscription_put(self):
+        """
+        Test case for team_members_id_team_billing_subscription_put
+
+        Update Team Billing Card
+        """
+        pass
+
     def test_team_members_id_team_brand_delete(self):
         """
         Test case for team_members_id_team_brand_delete
@@ -1079,6 +1159,38 @@ class TestTeamMemberApi(unittest.TestCase):
         Test case for team_members_id_team_members_rel_fk_put
 
         Add a related item by id for members.
+        """
+        pass
+
+    def test_team_members_id_team_permission_delete(self):
+        """
+        Test case for team_members_id_team_permission_delete
+
+        Deletes permission of this model.
+        """
+        pass
+
+    def test_team_members_id_team_permission_get(self):
+        """
+        Test case for team_members_id_team_permission_get
+
+        Fetches hasOne relation permission.
+        """
+        pass
+
+    def test_team_members_id_team_permission_post(self):
+        """
+        Test case for team_members_id_team_permission_post
+
+        Creates a new instance in permission of this model.
+        """
+        pass
+
+    def test_team_members_id_team_permission_put(self):
+        """
+        Test case for team_members_id_team_permission_put
+
+        Update permission of this model.
         """
         pass
 

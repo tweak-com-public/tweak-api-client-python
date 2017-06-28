@@ -26,6 +26,11 @@ from __future__ import absolute_import
 
 # import models into model package
 from .axes import Axes
+from .billing import Billing
+from .billing_card import BillingCard
+from .billing_plan import BillingPlan
+from .billing_subscription import BillingSubscription
+from .billing_subscription_item import BillingSubscriptionItem
 from .customer import Customer
 from .customer_permission_set import CustomerPermissionSet
 from .design import Design
@@ -55,6 +60,7 @@ from .team import Team
 from .team_brand import TeamBrand
 from .team_member import TeamMember
 from .team_member_access_token import TeamMemberAccessToken
+from .team_permission_set import TeamPermissionSet
 from .team_template_folder import TeamTemplateFolder
 from .template import Template
 from .template_member import TemplateMember

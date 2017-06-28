@@ -82,6 +82,38 @@ class TestTeamApi(unittest.TestCase):
         """
         pass
 
+    def test_teams_id_billing_delete(self):
+        """
+        Test case for teams_id_billing_delete
+
+        Deletes billing of this model.
+        """
+        pass
+
+    def test_teams_id_billing_get(self):
+        """
+        Test case for teams_id_billing_get
+
+        Fetches hasOne relation billing.
+        """
+        pass
+
+    def test_teams_id_billing_post(self):
+        """
+        Test case for teams_id_billing_post
+
+        Creates a new instance in billing of this model.
+        """
+        pass
+
+    def test_teams_id_billing_put(self):
+        """
+        Test case for teams_id_billing_put
+
+        Update billing of this model.
+        """
+        pass
+
     def test_teams_id_brand_delete(self):
         """
         Test case for teams_id_brand_delete
@@ -735,6 +767,38 @@ class TestTeamApi(unittest.TestCase):
         Test case for teams_id_patch
 
         Patch attributes for a model instance and persist it into the data source.
+        """
+        pass
+
+    def test_teams_id_permission_delete(self):
+        """
+        Test case for teams_id_permission_delete
+
+        Deletes permission of this model.
+        """
+        pass
+
+    def test_teams_id_permission_get(self):
+        """
+        Test case for teams_id_permission_get
+
+        Fetches hasOne relation permission.
+        """
+        pass
+
+    def test_teams_id_permission_post(self):
+        """
+        Test case for teams_id_permission_post
+
+        Creates a new instance in permission of this model.
+        """
+        pass
+
+    def test_teams_id_permission_put(self):
+        """
+        Test case for teams_id_permission_put
+
+        Update permission of this model.
         """
         pass
 
