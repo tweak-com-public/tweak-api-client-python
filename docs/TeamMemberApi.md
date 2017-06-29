@@ -5468,7 +5468,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **team_members_id_target_model_target_id_invite_post**
-> list[XAny] team_members_id_target_model_target_id_invite_post(id, id2, target_model, target_id, data=data)
+> list[InvitationTicket] team_members_id_target_model_target_id_invite_post(id, id2, target_model, target_id, data=data)
 
 Invite a group of people to join a team, portal or other targets
 
@@ -5491,7 +5491,7 @@ id = 'id_example' # str | TeamMember id
 id2 = 'id_example' # str | 
 target_model = 'target_model_example' # str | 
 target_id = 'target_id_example' # str | 
-data = [TweakApi.XAny()] # list[XAny] |  (optional)
+data = [TweakApi.list[object]()] # list[object] |  (optional)
 
 try: 
     # Invite a group of people to join a team, portal or other targets
@@ -5509,11 +5509,11 @@ Name | Type | Description  | Notes
  **id2** | **str**|  | 
  **target_model** | **str**|  | 
  **target_id** | **str**|  | 
- **data** | [**list[XAny]**](XAny.md)|  | [optional] 
+ **data** | **list[object]**|  | [optional] 
 
 ### Return type
 
-[**list[XAny]**](XAny.md)
+[**list[InvitationTicket]**](InvitationTicket.md)
 
 ### Authorization
 

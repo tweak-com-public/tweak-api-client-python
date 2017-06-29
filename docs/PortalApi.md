@@ -6534,7 +6534,7 @@ api_instance = TweakApi.PortalApi()
 id = 'id_example' # str | Portal id
 id2 = 'id_example' # str | 
 fk = 'fk_example' # str | 
-data = [TweakApi.XAny()] # list[XAny] |  (optional)
+data = [TweakApi.list[object]()] # list[object] |  (optional)
 
 try: 
     # Generate Design from Template
@@ -6551,7 +6551,7 @@ Name | Type | Description  | Notes
  **id** | **str**| Portal id | 
  **id2** | **str**|  | 
  **fk** | **str**|  | 
- **data** | [**list[XAny]**](XAny.md)|  | [optional] 
+ **data** | **list[object]**|  | [optional] 
 
 ### Return type
 
