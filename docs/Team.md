@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **name** | **str** |  | 
 **logo** | **object** |  | [optional] 
 **subdomain** | **str** |  | [optional] 
-**country** | **str** |  | 
+**country** | **str** |  | [optional] [default to 'Ireland']
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
 **id** | **str** |  | 
