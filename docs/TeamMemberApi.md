@@ -174,6 +174,7 @@ Method | HTTP request | Description
 [**team_members_id_team_templates_fk_delete**](TeamMemberApi.md#team_members_id_team_templates_fk_delete) | **DELETE** /TeamMembers/{id}/team/templates/{fk} | Delete a related item by id for templates.
 [**team_members_id_team_templates_fk_get**](TeamMemberApi.md#team_members_id_team_templates_fk_get) | **GET** /TeamMembers/{id}/team/templates/{fk} | Find a related item by id for templates.
 [**team_members_id_team_templates_fk_put**](TeamMemberApi.md#team_members_id_team_templates_fk_put) | **PUT** /TeamMembers/{id}/team/templates/{fk} | Update a related item by id for templates.
+[**team_members_id_team_templates_fk_url_review_get**](TeamMemberApi.md#team_members_id_team_templates_fk_url_review_get) | **GET** /TeamMembers/{id}/team/templates/{fk}/url/review | Get URL to review a Team Template
 [**team_members_id_team_templates_get**](TeamMemberApi.md#team_members_id_team_templates_get) | **GET** /TeamMembers/{id}/team/templates | Queries templates of Team.
 [**team_members_id_team_templates_post**](TeamMemberApi.md#team_members_id_team_templates_post) | **POST** /TeamMembers/{id}/team/templates | Creates a new instance in templates of this model.
 [**team_members_id_team_templates_with_designs_get**](TeamMemberApi.md#team_members_id_team_templates_with_designs_get) | **GET** /TeamMembers/{id}/team/templatesWithDesigns | List Templates with Designs for the Team of TeamMember
@@ -9200,6 +9201,59 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Template**](Template.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_templates_fk_url_review_get**
+> str team_members_id_team_templates_fk_url_review_get(id, fk)
+
+Get URL to review a Team Template
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Template id
+
+try: 
+    # Get URL to review a Team Template
+    api_response = api_instance.team_members_id_team_templates_fk_url_review_get(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_templates_fk_url_review_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Template id | 
+
+### Return type
+
+**str**
 
 ### Authorization
 

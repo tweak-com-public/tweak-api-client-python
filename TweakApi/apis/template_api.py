@@ -8768,6 +8768,114 @@ class TemplateApi(object):
                                             _return_http_data_only=params.get('_return_http_data_only'),
                                             collection_formats=collection_formats)
 
+    def templates_id_url_review_get(self, id, **kwargs):
+        """
+        Get URL to review a template
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.templates_id_url_review_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: Template id (required)
+        :return: str
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.templates_id_url_review_get_with_http_info(id, **kwargs)
+        else:
+            (data) = self.templates_id_url_review_get_with_http_info(id, **kwargs)
+            return data
+
+    def templates_id_url_review_get_with_http_info(self, id, **kwargs):
+        """
+        Get URL to review a template
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.templates_id_url_review_get_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: Template id (required)
+        :return: str
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method templates_id_url_review_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `templates_id_url_review_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/Templates/{id}/url/review'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='str',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
     def templates_id_workflow_get(self, id, **kwargs):
         """
         Fetches belongsTo relation workflow.

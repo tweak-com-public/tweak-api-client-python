@@ -1402,6 +1402,14 @@ class TestTeamMemberApi(unittest.TestCase):
         """
         pass
 
+    def test_team_members_id_team_templates_fk_url_review_get(self):
+        """
+        Test case for team_members_id_team_templates_fk_url_review_get
+
+        Get URL to review a Team Template
+        """
+        pass
+
     def test_team_members_id_team_templates_get(self):
         """
         Test case for team_members_id_team_templates_get

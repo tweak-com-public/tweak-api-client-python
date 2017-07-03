@@ -1254,6 +1254,7 @@ Class | Method | HTTP request | Description
 *TeamMemberApi* | [**team_members_id_team_templates_fk_delete**](docs/TeamMemberApi.md#team_members_id_team_templates_fk_delete) | **DELETE** /TeamMembers/{id}/team/templates/{fk} | Delete a related item by id for templates.
 *TeamMemberApi* | [**team_members_id_team_templates_fk_get**](docs/TeamMemberApi.md#team_members_id_team_templates_fk_get) | **GET** /TeamMembers/{id}/team/templates/{fk} | Find a related item by id for templates.
 *TeamMemberApi* | [**team_members_id_team_templates_fk_put**](docs/TeamMemberApi.md#team_members_id_team_templates_fk_put) | **PUT** /TeamMembers/{id}/team/templates/{fk} | Update a related item by id for templates.
+*TeamMemberApi* | [**team_members_id_team_templates_fk_url_review_get**](docs/TeamMemberApi.md#team_members_id_team_templates_fk_url_review_get) | **GET** /TeamMembers/{id}/team/templates/{fk}/url/review | Get URL to review a Team Template
 *TeamMemberApi* | [**team_members_id_team_templates_get**](docs/TeamMemberApi.md#team_members_id_team_templates_get) | **GET** /TeamMembers/{id}/team/templates | Queries templates of Team.
 *TeamMemberApi* | [**team_members_id_team_templates_post**](docs/TeamMemberApi.md#team_members_id_team_templates_post) | **POST** /TeamMembers/{id}/team/templates | Creates a new instance in templates of this model.
 *TeamMemberApi* | [**team_members_id_team_templates_with_designs_get**](docs/TeamMemberApi.md#team_members_id_team_templates_with_designs_get) | **GET** /TeamMembers/{id}/team/templatesWithDesigns | List Templates with Designs for the Team of TeamMember
@@ -1431,6 +1432,7 @@ Class | Method | HTTP request | Description
 *TemplateApi* | [**templates_id_template_members_get**](docs/TemplateApi.md#templates_id_template_members_get) | **GET** /Templates/{id}/templateMembers | Queries templateMembers of Template.
 *TemplateApi* | [**templates_id_template_members_post**](docs/TemplateApi.md#templates_id_template_members_post) | **POST** /Templates/{id}/templateMembers | Creates a new instance in templateMembers of this model.
 *TemplateApi* | [**templates_id_uploader_get**](docs/TemplateApi.md#templates_id_uploader_get) | **GET** /Templates/{id}/uploader | Fetches belongsTo relation uploader.
+*TemplateApi* | [**templates_id_url_review_get**](docs/TemplateApi.md#templates_id_url_review_get) | **GET** /Templates/{id}/url/review | Get URL to review a template
 *TemplateApi* | [**templates_id_workflow_get**](docs/TemplateApi.md#templates_id_workflow_get) | **GET** /Templates/{id}/workflow | Fetches belongsTo relation workflow.
 *TemplateApi* | [**templates_patch**](docs/TemplateApi.md#templates_patch) | **PATCH** /Templates | Patch an existing model instance or insert a new one into the data source.
 *TemplateApi* | [**templates_post**](docs/TemplateApi.md#templates_post) | **POST** /Templates | Create a new instance of the model and persist it into the data source.
