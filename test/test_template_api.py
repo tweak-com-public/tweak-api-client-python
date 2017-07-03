@@ -658,6 +658,14 @@ class TestTemplateApi(unittest.TestCase):
         """
         pass
 
+    def test_templates_id_url_review_get(self):
+        """
+        Test case for templates_id_url_review_get
+
+        Get URL to review a template
+        """
+        pass
+
     def test_templates_id_workflow_get(self):
         """
         Test case for templates_id_workflow_get

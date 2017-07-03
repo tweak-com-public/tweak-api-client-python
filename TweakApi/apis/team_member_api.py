@@ -19374,6 +19374,121 @@ class TeamMemberApi(object):
                                             _return_http_data_only=params.get('_return_http_data_only'),
                                             collection_formats=collection_formats)
 
+    def team_members_id_team_templates_fk_url_review_get(self, id, fk, **kwargs):
+        """
+        Get URL to review a Team Template
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_members_id_team_templates_fk_url_review_get(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamMember id (required)
+        :param str fk: Template id (required)
+        :return: str
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_members_id_team_templates_fk_url_review_get_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_members_id_team_templates_fk_url_review_get_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_members_id_team_templates_fk_url_review_get_with_http_info(self, id, fk, **kwargs):
+        """
+        Get URL to review a Team Template
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_members_id_team_templates_fk_url_review_get_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamMember id (required)
+        :param str fk: Template id (required)
+        :return: str
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_members_id_team_templates_fk_url_review_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_members_id_team_templates_fk_url_review_get`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_members_id_team_templates_fk_url_review_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamMembers/{id}/team/templates/{fk}/url/review'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='str',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
     def team_members_id_team_templates_get(self, id, **kwargs):
         """
         Queries templates of Team.
