@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **description** | **str** |  | [optional] [default to '']
 **edited** | **datetime** |  | [optional] 
 **team_path** | **str** |  | [optional] [default to '/']
-**status** | **str** |  | [optional] [default to 'pendingApproval']
+**status** | **str** |  | [optional] 
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
 **id** | **str** |  | [optional] 
