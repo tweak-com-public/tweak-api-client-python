@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **statement_descriptor** | **str** |  | [optional] 
 **statement_description** | **str** |  | [optional] 
 **trial_period_days** | **float** |  | [optional] 
+**type** | **str** |  | [optional] 
 **created** | **datetime** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
