@@ -28,6 +28,8 @@ from __future__ import absolute_import
 from .axes import Axes
 from .billing import Billing
 from .billing_card import BillingCard
+from .billing_invoice import BillingInvoice
+from .billing_invoice_line import BillingInvoiceLine
 from .billing_plan import BillingPlan
 from .billing_subscription import BillingSubscription
 from .billing_subscription_item import BillingSubscriptionItem
