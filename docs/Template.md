@@ -8,8 +8,8 @@ Name | Type | Description | Notes
 **object** | **object** |  | 
 **description** | **str** |  | [optional] [default to '']
 **edited** | **datetime** |  | [optional] 
-**team_path** | **str** |  | [optional] [default to '/']
-**status** | **str** |  | [optional] [default to 'pendingApproval']
+**path** | **str** |  | [optional] [default to '/']
+**status** | **str** |  | [optional] 
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
 **id** | **str** |  | [optional] 

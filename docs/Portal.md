@@ -5,8 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** |  | 
 **logo** | **object** |  | [optional] 
-**status** | **str** |  | [optional] [default to 'private']
-**language** | **str** |  | [optional] [default to 'en']
+**status** | **str** |  | [optional] 
+**language** | **str** |  | [optional] 
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
 **id** | **str** |  | [optional] 

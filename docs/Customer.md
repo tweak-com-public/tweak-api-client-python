@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **first_name** | **str** |  | 
 **last_name** | **str** |  | 
 **initials** | **str** |  | 
-**status** | **str** |  | [optional] [default to 'active']
+**status** | **str** |  | [optional] 
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
 **realm** | **str** |  | [optional] 
