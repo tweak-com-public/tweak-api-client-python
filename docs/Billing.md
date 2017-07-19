@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **company_vat** | **str** |  | [optional] 
 **company_card** | [**BillingCard**](BillingCard.md) |  | [optional] 
 **subscription** | [**BillingSubscription**](BillingSubscription.md) |  | [optional] 
+**limit** | [**BillingLimit**](BillingLimit.md) |  | [optional] 
 **stripe_customer_id** | **str** |  | [optional] 
 **stripe_card_id** | **str** |  | [optional] 
 **stripe_subscription_id** | **str** |  | [optional] 

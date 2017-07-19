@@ -59,6 +59,13 @@ Method | HTTP request | Description
 [**customers_id_teams_nk_brand_get**](CustomerApi.md#customers_id_teams_nk_brand_get) | **GET** /Customers/{id}/teams/{nk}/brand | Fetches hasOne relation brand.
 [**customers_id_teams_nk_brand_post**](CustomerApi.md#customers_id_teams_nk_brand_post) | **POST** /Customers/{id}/teams/{nk}/brand | Creates a new instance in brand of this model.
 [**customers_id_teams_nk_brand_put**](CustomerApi.md#customers_id_teams_nk_brand_put) | **PUT** /Customers/{id}/teams/{nk}/brand | Update brand of this model.
+[**customers_id_teams_nk_data_sources_count_get**](CustomerApi.md#customers_id_teams_nk_data_sources_count_get) | **GET** /Customers/{id}/teams/{nk}/dataSources/count | Counts dataSources of Team.
+[**customers_id_teams_nk_data_sources_delete**](CustomerApi.md#customers_id_teams_nk_data_sources_delete) | **DELETE** /Customers/{id}/teams/{nk}/dataSources | Deletes all dataSources of this model.
+[**customers_id_teams_nk_data_sources_fk_delete**](CustomerApi.md#customers_id_teams_nk_data_sources_fk_delete) | **DELETE** /Customers/{id}/teams/{nk}/dataSources/{fk} | Delete a related item by id for dataSources.
+[**customers_id_teams_nk_data_sources_fk_get**](CustomerApi.md#customers_id_teams_nk_data_sources_fk_get) | **GET** /Customers/{id}/teams/{nk}/dataSources/{fk} | Find a related item by id for dataSources.
+[**customers_id_teams_nk_data_sources_fk_put**](CustomerApi.md#customers_id_teams_nk_data_sources_fk_put) | **PUT** /Customers/{id}/teams/{nk}/dataSources/{fk} | Update a related item by id for dataSources.
+[**customers_id_teams_nk_data_sources_get**](CustomerApi.md#customers_id_teams_nk_data_sources_get) | **GET** /Customers/{id}/teams/{nk}/dataSources | Queries dataSources of Team.
+[**customers_id_teams_nk_data_sources_post**](CustomerApi.md#customers_id_teams_nk_data_sources_post) | **POST** /Customers/{id}/teams/{nk}/dataSources | Creates a new instance in dataSources of this model.
 [**customers_id_teams_nk_image_folders_count_get**](CustomerApi.md#customers_id_teams_nk_image_folders_count_get) | **GET** /Customers/{id}/teams/{nk}/imageFolders/count | Counts imageFolders of Team.
 [**customers_id_teams_nk_image_folders_delete**](CustomerApi.md#customers_id_teams_nk_image_folders_delete) | **DELETE** /Customers/{id}/teams/{nk}/imageFolders | Deletes all imageFolders of this model.
 [**customers_id_teams_nk_image_folders_fk_delete**](CustomerApi.md#customers_id_teams_nk_image_folders_fk_delete) | **DELETE** /Customers/{id}/teams/{nk}/imageFolders/{fk} | Delete a related item by id for imageFolders.
@@ -3031,6 +3038,389 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBrand**](TeamBrand.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_data_sources_count_get**
+> InlineResponse200 customers_id_teams_nk_data_sources_count_get(id, nk, where=where)
+
+Counts dataSources of Team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts dataSources of Team.
+    api_response = api_instance.customers_id_teams_nk_data_sources_count_get(id, nk, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_data_sources_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_data_sources_delete**
+> customers_id_teams_nk_data_sources_delete(id, nk)
+
+Deletes all dataSources of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+
+try: 
+    # Deletes all dataSources of this model.
+    api_instance.customers_id_teams_nk_data_sources_delete(id, nk)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_data_sources_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_data_sources_fk_delete**
+> customers_id_teams_nk_data_sources_fk_delete(id, nk, fk)
+
+Delete a related item by id for dataSources.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+fk = 'fk_example' # str | Foreign key for dataSources
+
+try: 
+    # Delete a related item by id for dataSources.
+    api_instance.customers_id_teams_nk_data_sources_fk_delete(id, nk, fk)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_data_sources_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **fk** | **str**| Foreign key for dataSources | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_data_sources_fk_get**
+> DataSource customers_id_teams_nk_data_sources_fk_get(id, nk, fk)
+
+Find a related item by id for dataSources.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+fk = 'fk_example' # str | Foreign key for dataSources
+
+try: 
+    # Find a related item by id for dataSources.
+    api_response = api_instance.customers_id_teams_nk_data_sources_fk_get(id, nk, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_data_sources_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **fk** | **str**| Foreign key for dataSources | 
+
+### Return type
+
+[**DataSource**](DataSource.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_data_sources_fk_put**
+> DataSource customers_id_teams_nk_data_sources_fk_put(id, nk, fk, data=data)
+
+Update a related item by id for dataSources.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+fk = 'fk_example' # str | Foreign key for dataSources
+data = TweakApi.DataSource() # DataSource |  (optional)
+
+try: 
+    # Update a related item by id for dataSources.
+    api_response = api_instance.customers_id_teams_nk_data_sources_fk_put(id, nk, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_data_sources_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **fk** | **str**| Foreign key for dataSources | 
+ **data** | [**DataSource**](DataSource.md)|  | [optional] 
+
+### Return type
+
+[**DataSource**](DataSource.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_data_sources_get**
+> list[DataSource] customers_id_teams_nk_data_sources_get(id, nk, filter=filter)
+
+Queries dataSources of Team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries dataSources of Team.
+    api_response = api_instance.customers_id_teams_nk_data_sources_get(id, nk, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_data_sources_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[DataSource]**](DataSource.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_data_sources_post**
+> DataSource customers_id_teams_nk_data_sources_post(id, nk, data=data)
+
+Creates a new instance in dataSources of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+data = TweakApi.DataSource() # DataSource |  (optional)
+
+try: 
+    # Creates a new instance in dataSources of this model.
+    api_response = api_instance.customers_id_teams_nk_data_sources_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_data_sources_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **data** | [**DataSource**](DataSource.md)|  | [optional] 
+
+### Return type
+
+[**DataSource**](DataSource.md)
 
 ### Authorization
 
