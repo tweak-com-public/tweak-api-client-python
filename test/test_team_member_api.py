@@ -978,6 +978,62 @@ class TestTeamMemberApi(unittest.TestCase):
         """
         pass
 
+    def test_team_members_id_team_data_sources_count_get(self):
+        """
+        Test case for team_members_id_team_data_sources_count_get
+
+        Counts dataSources of Team.
+        """
+        pass
+
+    def test_team_members_id_team_data_sources_delete(self):
+        """
+        Test case for team_members_id_team_data_sources_delete
+
+        Deletes all dataSources of this model.
+        """
+        pass
+
+    def test_team_members_id_team_data_sources_fk_delete(self):
+        """
+        Test case for team_members_id_team_data_sources_fk_delete
+
+        Delete a related item by id for dataSources.
+        """
+        pass
+
+    def test_team_members_id_team_data_sources_fk_get(self):
+        """
+        Test case for team_members_id_team_data_sources_fk_get
+
+        Find a related item by id for dataSources.
+        """
+        pass
+
+    def test_team_members_id_team_data_sources_fk_put(self):
+        """
+        Test case for team_members_id_team_data_sources_fk_put
+
+        Update a related item by id for dataSources.
+        """
+        pass
+
+    def test_team_members_id_team_data_sources_get(self):
+        """
+        Test case for team_members_id_team_data_sources_get
+
+        Queries dataSources of Team.
+        """
+        pass
+
+    def test_team_members_id_team_data_sources_post(self):
+        """
+        Test case for team_members_id_team_data_sources_post
+
+        Creates a new instance in dataSources of this model.
+        """
+        pass
+
     def test_team_members_id_team_get(self):
         """
         Test case for team_members_id_team_get

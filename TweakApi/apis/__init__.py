@@ -3,6 +3,10 @@ from __future__ import absolute_import
 # import apis into api package
 from .billing_api import BillingApi
 from .customer_api import CustomerApi
+from .data_source_api import DataSourceApi
+from .data_source_key_api import DataSourceKeyApi
+from .data_source_record_api import DataSourceRecordApi
+from .data_source_record_value_api import DataSourceRecordValueApi
 from .design_api import DesignApi
 from .design_comment_api import DesignCommentApi
 from .design_export_api import DesignExportApi

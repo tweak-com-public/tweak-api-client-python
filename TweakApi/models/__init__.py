@@ -30,11 +30,17 @@ from .billing import Billing
 from .billing_card import BillingCard
 from .billing_invoice import BillingInvoice
 from .billing_invoice_line import BillingInvoiceLine
+from .billing_limit import BillingLimit
+from .billing_limit_counter import BillingLimitCounter
 from .billing_plan import BillingPlan
 from .billing_subscription import BillingSubscription
 from .billing_subscription_item import BillingSubscriptionItem
 from .customer import Customer
 from .customer_permission_set import CustomerPermissionSet
+from .data_source import DataSource
+from .data_source_key import DataSourceKey
+from .data_source_record import DataSourceRecord
+from .data_source_record_value import DataSourceRecordValue
 from .design import Design
 from .design_comment import DesignComment
 from .design_export import DesignExport

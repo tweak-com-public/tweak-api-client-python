@@ -54,7 +54,7 @@ class BillingInvoice(object):
             'description': 'str',
             'ending_balance': 'float',
             'forgiven': 'bool',
-            'lines': 'BillingInvoiceLine',
+            'lines': 'list[BillingInvoiceLine]',
             'next_payment_attempt': 'datetime',
             'paid': 'bool',
             'period_end': 'datetime',
@@ -407,7 +407,7 @@ class BillingInvoice(object):
 
 
         :return: The lines of this BillingInvoice.
-        :rtype: BillingInvoiceLine
+        :rtype: list[BillingInvoiceLine]
         """
         return self._lines
 
@@ -418,7 +418,7 @@ class BillingInvoice(object):
 
 
         :param lines: The lines of this BillingInvoice.
-        :type: BillingInvoiceLine
+        :type: list[BillingInvoiceLine]
         """
 
         self._lines = lines
