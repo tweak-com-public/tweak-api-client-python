@@ -81,6 +81,7 @@ Class | Method | HTTP request | Description
 *BillingApi* | [**billings_id_replace_post**](docs/BillingApi.md#billings_id_replace_post) | **POST** /Billings/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 *BillingApi* | [**billings_put**](docs/BillingApi.md#billings_put) | **PUT** /Billings | Replace an existing model instance or insert a new one into the data source.
 *BillingApi* | [**billings_replace_or_create_post**](docs/BillingApi.md#billings_replace_or_create_post) | **POST** /Billings/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
+*BillingApi* | [**billings_tax_evidence_country_vat_get**](docs/BillingApi.md#billings_tax_evidence_country_vat_get) | **GET** /Billings/taxEvidence/{country}/{vat} | Get Tax Evidence by country and VAT
 *BillingApi* | [**billings_upsert_with_where_post**](docs/BillingApi.md#billings_upsert_with_where_post) | **POST** /Billings/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 *CustomerApi* | [**customers_change_password_post**](docs/CustomerApi.md#customers_change_password_post) | **POST** /Customers/change-password | Change a user&#39;s password.
 *CustomerApi* | [**customers_change_stream_get**](docs/CustomerApi.md#customers_change_stream_get) | **GET** /Customers/change-stream | Create a change stream.
@@ -1294,6 +1295,7 @@ Class | Method | HTTP request | Description
 *TeamMemberApi* | [**team_members_id_team_billing_post**](docs/TeamMemberApi.md#team_members_id_team_billing_post) | **POST** /TeamMembers/{id}/team/billing | Creates a new instance in billing of this model.
 *TeamMemberApi* | [**team_members_id_team_billing_put**](docs/TeamMemberApi.md#team_members_id_team_billing_put) | **PUT** /TeamMembers/{id}/team/billing | Update billing of this model.
 *TeamMemberApi* | [**team_members_id_team_billing_subscription_put**](docs/TeamMemberApi.md#team_members_id_team_billing_subscription_put) | **PUT** /TeamMembers/{id}/team/billing/subscription | Update Team Billing Card
+*TeamMemberApi* | [**team_members_id_team_billing_tax_evidence_get**](docs/TeamMemberApi.md#team_members_id_team_billing_tax_evidence_get) | **GET** /TeamMembers/{id}/team/billing/taxEvidence | Get Team Billing Tax Evidence
 *TeamMemberApi* | [**team_members_id_team_brand_delete**](docs/TeamMemberApi.md#team_members_id_team_brand_delete) | **DELETE** /TeamMembers/{id}/team/brand | Deletes brand of this model.
 *TeamMemberApi* | [**team_members_id_team_brand_get**](docs/TeamMemberApi.md#team_members_id_team_brand_get) | **GET** /TeamMembers/{id}/team/brand | Fetches hasOne relation brand.
 *TeamMemberApi* | [**team_members_id_team_brand_post**](docs/TeamMemberApi.md#team_members_id_team_brand_post) | **POST** /TeamMembers/{id}/team/brand | Creates a new instance in brand of this model.

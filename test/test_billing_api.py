@@ -98,6 +98,14 @@ class TestBillingApi(unittest.TestCase):
         """
         pass
 
+    def test_billings_tax_evidence_country_vat_get(self):
+        """
+        Test case for billings_tax_evidence_country_vat_get
+
+        Get Tax Evidence by country and VAT
+        """
+        pass
+
     def test_billings_upsert_with_where_post(self):
         """
         Test case for billings_upsert_with_where_post
