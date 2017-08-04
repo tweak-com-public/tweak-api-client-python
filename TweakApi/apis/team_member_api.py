@@ -12799,9 +12799,9 @@ class TeamMemberApi(object):
                                             _return_http_data_only=params.get('_return_http_data_only'),
                                             collection_formats=collection_formats)
 
-    def team_members_id_team_billing_subscription_put(self, id, **kwargs):
+    def team_members_id_team_billing_subscription_plan_put(self, id, **kwargs):
         """
-        Update Team Billing Card
+        Update Team Billing Subscription Plan
         
 
         This method makes a synchronous HTTP request by default. To make an
@@ -12810,7 +12810,7 @@ class TeamMemberApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.team_members_id_team_billing_subscription_put(id, callback=callback_function)
+        >>> thread = api.team_members_id_team_billing_subscription_plan_put(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -12822,14 +12822,14 @@ class TeamMemberApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
-            return self.team_members_id_team_billing_subscription_put_with_http_info(id, **kwargs)
+            return self.team_members_id_team_billing_subscription_plan_put_with_http_info(id, **kwargs)
         else:
-            (data) = self.team_members_id_team_billing_subscription_put_with_http_info(id, **kwargs)
+            (data) = self.team_members_id_team_billing_subscription_plan_put_with_http_info(id, **kwargs)
             return data
 
-    def team_members_id_team_billing_subscription_put_with_http_info(self, id, **kwargs):
+    def team_members_id_team_billing_subscription_plan_put_with_http_info(self, id, **kwargs):
         """
-        Update Team Billing Card
+        Update Team Billing Subscription Plan
         
 
         This method makes a synchronous HTTP request by default. To make an
@@ -12838,7 +12838,7 @@ class TeamMemberApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.team_members_id_team_billing_subscription_put_with_http_info(id, callback=callback_function)
+        >>> thread = api.team_members_id_team_billing_subscription_plan_put_with_http_info(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -12858,18 +12858,18 @@ class TeamMemberApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method team_members_id_team_billing_subscription_put" % key
+                    " to method team_members_id_team_billing_subscription_plan_put" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `team_members_id_team_billing_subscription_put`")
+            raise ValueError("Missing the required parameter `id` when calling `team_members_id_team_billing_subscription_plan_put`")
 
 
         collection_formats = {}
 
-        resource_path = '/TeamMembers/{id}/team/billing/subscription'.replace('{format}', 'json')
+        resource_path = '/TeamMembers/{id}/team/billing/subscription/plan'.replace('{format}', 'json')
         path_params = {}
         if 'id' in params:
             path_params['id'] = params['id']

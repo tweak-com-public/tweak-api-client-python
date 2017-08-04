@@ -116,7 +116,7 @@ Method | HTTP request | Description
 [**team_members_id_team_billing_invoices_upcoming_get**](TeamMemberApi.md#team_members_id_team_billing_invoices_upcoming_get) | **GET** /TeamMembers/{id}/team/billing/invoices/upcoming | List Upcoming Team Billing Invoices
 [**team_members_id_team_billing_post**](TeamMemberApi.md#team_members_id_team_billing_post) | **POST** /TeamMembers/{id}/team/billing | Creates a new instance in billing of this model.
 [**team_members_id_team_billing_put**](TeamMemberApi.md#team_members_id_team_billing_put) | **PUT** /TeamMembers/{id}/team/billing | Update billing of this model.
-[**team_members_id_team_billing_subscription_put**](TeamMemberApi.md#team_members_id_team_billing_subscription_put) | **PUT** /TeamMembers/{id}/team/billing/subscription | Update Team Billing Card
+[**team_members_id_team_billing_subscription_plan_put**](TeamMemberApi.md#team_members_id_team_billing_subscription_plan_put) | **PUT** /TeamMembers/{id}/team/billing/subscription/plan | Update Team Billing Subscription Plan
 [**team_members_id_team_billing_tax_evidence_get**](TeamMemberApi.md#team_members_id_team_billing_tax_evidence_get) | **GET** /TeamMembers/{id}/team/billing/taxEvidence | Get Team Billing Tax Evidence
 [**team_members_id_team_brand_delete**](TeamMemberApi.md#team_members_id_team_brand_delete) | **DELETE** /TeamMembers/{id}/team/brand | Deletes brand of this model.
 [**team_members_id_team_brand_get**](TeamMemberApi.md#team_members_id_team_brand_get) | **GET** /TeamMembers/{id}/team/brand | Fetches hasOne relation brand.
@@ -6166,10 +6166,10 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **team_members_id_team_billing_subscription_put**
-> Billing team_members_id_team_billing_subscription_put(id, data=data)
+# **team_members_id_team_billing_subscription_plan_put**
+> Billing team_members_id_team_billing_subscription_plan_put(id, data=data)
 
-Update Team Billing Card
+Update Team Billing Subscription Plan
 
 ### Example 
 ```python
@@ -6190,11 +6190,11 @@ id = 'id_example' # str | TeamMember id
 data = TweakApi.TeamMember() # TeamMember |  (optional)
 
 try: 
-    # Update Team Billing Card
-    api_response = api_instance.team_members_id_team_billing_subscription_put(id, data=data)
+    # Update Team Billing Subscription Plan
+    api_response = api_instance.team_members_id_team_billing_subscription_plan_put(id, data=data)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling TeamMemberApi->team_members_id_team_billing_subscription_put: %s\n" % e)
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_subscription_plan_put: %s\n" % e)
 ```
 
 ### Parameters
