@@ -938,11 +938,11 @@ class TestTeamMemberApi(unittest.TestCase):
         """
         pass
 
-    def test_team_members_id_team_billing_subscription_put(self):
+    def test_team_members_id_team_billing_subscription_plan_put(self):
         """
-        Test case for team_members_id_team_billing_subscription_put
+        Test case for team_members_id_team_billing_subscription_plan_put
 
-        Update Team Billing Card
+        Update Team Billing Subscription Plan
         """
         pass
 
