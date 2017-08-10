@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**roles** | **list[str]** |  | [optional] 
 **id** | **str** |  | 
 **ttl** | **float** | time to live in seconds (2 weeks by default) | [optional] [default to 1209600.0]
 **scopes** | **list[str]** | Array of scopes granted to this access token. | [optional] 

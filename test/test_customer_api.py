@@ -1138,6 +1138,14 @@ class TestCustomerApi(unittest.TestCase):
         """
         pass
 
+    def test_customers_me_token_get(self):
+        """
+        Test case for customers_me_token_get
+
+        Get token info
+        """
+        pass
+
     def test_customers_patch(self):
         """
         Test case for customers_patch
