@@ -1612,7 +1612,7 @@ class TemplateApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1639,7 +1639,7 @@ class TemplateApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1698,7 +1698,7 @@ class TemplateApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2002',
+                                            response_type='InlineResponse2001',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1832,7 +1832,7 @@ class TemplateApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1859,7 +1859,7 @@ class TemplateApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1918,7 +1918,7 @@ class TemplateApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2002',
+                                            response_type='InlineResponse2001',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),
@@ -9425,7 +9425,7 @@ class TemplateApi(object):
             for asynchronous request. (optional)
         :param str where: Criteria to match model instances
         :param Template data: An object of model property name/value pairs
-        :return: InlineResponse2001
+        :return: InlineResponse2002
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -9453,7 +9453,7 @@ class TemplateApi(object):
             for asynchronous request. (optional)
         :param str where: Criteria to match model instances
         :param Template data: An object of model property name/value pairs
-        :return: InlineResponse2001
+        :return: InlineResponse2002
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -9511,7 +9511,7 @@ class TemplateApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2001',
+                                            response_type='InlineResponse2002',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),

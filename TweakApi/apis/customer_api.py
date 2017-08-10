@@ -600,6 +600,114 @@ class CustomerApi(object):
                                             _return_http_data_only=params.get('_return_http_data_only'),
                                             collection_formats=collection_formats)
 
+    def customers_email_email_exists_get(self, email, **kwargs):
+        """
+        Define whether customer exists or not
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.customers_email_email_exists_get(email, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str email: Customer email (required)
+        :return: InlineResponse2001
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.customers_email_email_exists_get_with_http_info(email, **kwargs)
+        else:
+            (data) = self.customers_email_email_exists_get_with_http_info(email, **kwargs)
+            return data
+
+    def customers_email_email_exists_get_with_http_info(self, email, **kwargs):
+        """
+        Define whether customer exists or not
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.customers_email_email_exists_get_with_http_info(email, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str email: Customer email (required)
+        :return: InlineResponse2001
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['email']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method customers_email_email_exists_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'email' is set
+        if ('email' not in params) or (params['email'] is None):
+            raise ValueError("Missing the required parameter `email` when calling `customers_email_email_exists_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/Customers/email/{email}/exists'.replace('{format}', 'json')
+        path_params = {}
+        if 'email' in params:
+            path_params['email'] = params['email']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='InlineResponse2001',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
     def customers_find_one_get(self, **kwargs):
         """
         Find first instance of the model matched by filter from the data source.
@@ -2628,7 +2736,7 @@ class CustomerApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2655,7 +2763,7 @@ class CustomerApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2714,7 +2822,7 @@ class CustomerApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2002',
+                                            response_type='InlineResponse2001',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),
@@ -2848,7 +2956,7 @@ class CustomerApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2875,7 +2983,7 @@ class CustomerApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2934,7 +3042,7 @@ class CustomerApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2002',
+                                            response_type='InlineResponse2001',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),
@@ -16907,7 +17015,7 @@ class CustomerApi(object):
             for asynchronous request. (optional)
         :param str where: Criteria to match model instances
         :param Customer data: An object of model property name/value pairs
-        :return: InlineResponse2001
+        :return: InlineResponse2002
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -16935,7 +17043,7 @@ class CustomerApi(object):
             for asynchronous request. (optional)
         :param str where: Criteria to match model instances
         :param Customer data: An object of model property name/value pairs
-        :return: InlineResponse2001
+        :return: InlineResponse2002
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -16993,7 +17101,7 @@ class CustomerApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2001',
+                                            response_type='InlineResponse2002',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),

@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**customers_change_stream_post**](CustomerApi.md#customers_change_stream_post) | **POST** /Customers/change-stream | Create a change stream.
 [**customers_confirm_get**](CustomerApi.md#customers_confirm_get) | **GET** /Customers/confirm | Confirm a user registration with identity verification token.
 [**customers_count_get**](CustomerApi.md#customers_count_get) | **GET** /Customers/count | Count instances of the model matched by where from the data source.
+[**customers_email_email_exists_get**](CustomerApi.md#customers_email_email_exists_get) | **GET** /Customers/email/{email}/exists | Define whether customer exists or not
 [**customers_find_one_get**](CustomerApi.md#customers_find_one_get) | **GET** /Customers/findOne | Find first instance of the model matched by filter from the data source.
 [**customers_get**](CustomerApi.md#customers_get) | **GET** /Customers | Find all instances of the model matched by filter from the data source.
 [**customers_id_access_tokens_count_get**](CustomerApi.md#customers_id_access_tokens_count_get) | **GET** /Customers/{id}/accessTokens/count | Counts accessTokens of Customer.
@@ -400,6 +401,57 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_email_email_exists_get**
+> InlineResponse2001 customers_email_email_exists_get(email)
+
+Define whether customer exists or not
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+email = 'email_example' # str | Customer email
+
+try: 
+    # Define whether customer exists or not
+    api_response = api_instance.customers_email_email_exists_get(email)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_email_email_exists_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **email** | **str**| Customer email | 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1355,7 +1407,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_exists_get**
-> InlineResponse2002 customers_id_exists_get(id)
+> InlineResponse2001 customers_id_exists_get(id)
 
 Check whether a model instance exists in the data source.
 
@@ -1392,7 +1444,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1459,7 +1511,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_head**
-> InlineResponse2002 customers_id_head(id)
+> InlineResponse2001 customers_id_head(id)
 
 Check whether a model instance exists in the data source.
 
@@ -1496,7 +1548,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7915,7 +7967,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_update_post**
-> InlineResponse2001 customers_update_post(where=where, data=data)
+> InlineResponse2002 customers_update_post(where=where, data=data)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -7954,7 +8006,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
