@@ -365,6 +365,7 @@ Class | Method | HTTP request | Description
 *DesignApi* | [**designs_id_portal_get**](docs/DesignApi.md#designs_id_portal_get) | **GET** /Designs/{id}/portal | Fetches belongsTo relation portal.
 *DesignApi* | [**designs_id_put**](docs/DesignApi.md#designs_id_put) | **PUT** /Designs/{id} | Replace attributes for a model instance and persist it into the data source.
 *DesignApi* | [**designs_id_reject_post**](docs/DesignApi.md#designs_id_reject_post) | **POST** /Designs/{id}/reject | Reject design
+*DesignApi* | [**designs_id_rejection_comment_get**](docs/DesignApi.md#designs_id_rejection_comment_get) | **GET** /Designs/{id}/rejectionComment | Fetches belongsTo relation rejectionComment.
 *DesignApi* | [**designs_id_replace_post**](docs/DesignApi.md#designs_id_replace_post) | **POST** /Designs/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 *DesignApi* | [**designs_id_requester_get**](docs/DesignApi.md#designs_id_requester_get) | **GET** /Designs/{id}/requester | Fetches belongsTo relation requester.
 *DesignApi* | [**designs_id_reviewer_get**](docs/DesignApi.md#designs_id_reviewer_get) | **GET** /Designs/{id}/reviewer | Fetches belongsTo relation reviewer.
@@ -668,6 +669,7 @@ Class | Method | HTTP request | Description
 *PortalApi* | [**portals_id_designs_nk_exports_post**](docs/PortalApi.md#portals_id_designs_nk_exports_post) | **POST** /Portals/{id}/designs/{nk}/exports | Creates a new instance in exports of this model.
 *PortalApi* | [**portals_id_designs_nk_folder_get**](docs/PortalApi.md#portals_id_designs_nk_folder_get) | **GET** /Portals/{id}/designs/{nk}/folder | Fetches belongsTo relation folder.
 *PortalApi* | [**portals_id_designs_nk_portal_get**](docs/PortalApi.md#portals_id_designs_nk_portal_get) | **GET** /Portals/{id}/designs/{nk}/portal | Fetches belongsTo relation portal.
+*PortalApi* | [**portals_id_designs_nk_rejection_comment_get**](docs/PortalApi.md#portals_id_designs_nk_rejection_comment_get) | **GET** /Portals/{id}/designs/{nk}/rejectionComment | Fetches belongsTo relation rejectionComment.
 *PortalApi* | [**portals_id_designs_nk_requester_get**](docs/PortalApi.md#portals_id_designs_nk_requester_get) | **GET** /Portals/{id}/designs/{nk}/requester | Fetches belongsTo relation requester.
 *PortalApi* | [**portals_id_designs_nk_reviewer_get**](docs/PortalApi.md#portals_id_designs_nk_reviewer_get) | **GET** /Portals/{id}/designs/{nk}/reviewer | Fetches belongsTo relation reviewer.
 *PortalApi* | [**portals_id_designs_nk_tags_count_get**](docs/PortalApi.md#portals_id_designs_nk_tags_count_get) | **GET** /Portals/{id}/designs/{nk}/tags/count | Counts tags of Design.

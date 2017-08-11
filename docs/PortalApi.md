@@ -51,6 +51,7 @@ Method | HTTP request | Description
 [**portals_id_designs_nk_exports_post**](PortalApi.md#portals_id_designs_nk_exports_post) | **POST** /Portals/{id}/designs/{nk}/exports | Creates a new instance in exports of this model.
 [**portals_id_designs_nk_folder_get**](PortalApi.md#portals_id_designs_nk_folder_get) | **GET** /Portals/{id}/designs/{nk}/folder | Fetches belongsTo relation folder.
 [**portals_id_designs_nk_portal_get**](PortalApi.md#portals_id_designs_nk_portal_get) | **GET** /Portals/{id}/designs/{nk}/portal | Fetches belongsTo relation portal.
+[**portals_id_designs_nk_rejection_comment_get**](PortalApi.md#portals_id_designs_nk_rejection_comment_get) | **GET** /Portals/{id}/designs/{nk}/rejectionComment | Fetches belongsTo relation rejectionComment.
 [**portals_id_designs_nk_requester_get**](PortalApi.md#portals_id_designs_nk_requester_get) | **GET** /Portals/{id}/designs/{nk}/requester | Fetches belongsTo relation requester.
 [**portals_id_designs_nk_reviewer_get**](PortalApi.md#portals_id_designs_nk_reviewer_get) | **GET** /Portals/{id}/designs/{nk}/reviewer | Fetches belongsTo relation reviewer.
 [**portals_id_designs_nk_tags_count_get**](PortalApi.md#portals_id_designs_nk_tags_count_get) | **GET** /Portals/{id}/designs/{nk}/tags/count | Counts tags of Design.
@@ -2654,6 +2655,61 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_rejection_comment_get**
+> DesignComment portals_id_designs_nk_rejection_comment_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation rejectionComment.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation rejectionComment.
+    api_response = api_instance.portals_id_designs_nk_rejection_comment_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_rejection_comment_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DesignComment**](DesignComment.md)
 
 ### Authorization
 
