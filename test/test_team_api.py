@@ -2186,6 +2186,14 @@ class TestTeamApi(unittest.TestCase):
         """
         pass
 
+    def test_teams_name_name_exists_get(self):
+        """
+        Test case for teams_name_name_exists_get
+
+        Define whether team exists or not
+        """
+        pass
+
     def test_teams_patch(self):
         """
         Test case for teams_patch
@@ -2215,6 +2223,14 @@ class TestTeamApi(unittest.TestCase):
         Test case for teams_replace_or_create_post
 
         Replace an existing model instance or insert a new one into the data source.
+        """
+        pass
+
+    def test_teams_subdomain_subdomain_exists_get(self):
+        """
+        Test case for teams_subdomain_subdomain_exists_get
+
+        Define whether team exists or not
         """
         pass
 

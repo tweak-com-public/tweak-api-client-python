@@ -272,10 +272,12 @@ Method | HTTP request | Description
 [**teams_id_workflows_fk_put**](TeamApi.md#teams_id_workflows_fk_put) | **PUT** /Teams/{id}/workflows/{fk} | Update a related item by id for workflows.
 [**teams_id_workflows_get**](TeamApi.md#teams_id_workflows_get) | **GET** /Teams/{id}/workflows | Queries workflows of Team.
 [**teams_id_workflows_post**](TeamApi.md#teams_id_workflows_post) | **POST** /Teams/{id}/workflows | Creates a new instance in workflows of this model.
+[**teams_name_name_exists_get**](TeamApi.md#teams_name_name_exists_get) | **GET** /Teams/name/{name}/exists | Define whether team exists or not
 [**teams_patch**](TeamApi.md#teams_patch) | **PATCH** /Teams | Patch an existing model instance or insert a new one into the data source.
 [**teams_post**](TeamApi.md#teams_post) | **POST** /Teams | Create a new instance of the model and persist it into the data source.
 [**teams_put**](TeamApi.md#teams_put) | **PUT** /Teams | Replace an existing model instance or insert a new one into the data source.
 [**teams_replace_or_create_post**](TeamApi.md#teams_replace_or_create_post) | **POST** /Teams/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
+[**teams_subdomain_subdomain_exists_get**](TeamApi.md#teams_subdomain_subdomain_exists_get) | **GET** /Teams/subdomain/{subdomain}/exists | Define whether team exists or not
 [**teams_update_post**](TeamApi.md#teams_update_post) | **POST** /Teams/update | Update instances of the model matched by {{where}} from the data source.
 [**teams_upsert_with_where_post**](TeamApi.md#teams_upsert_with_where_post) | **POST** /Teams/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
@@ -1374,7 +1376,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_exists_get**
-> InlineResponse2002 teams_id_exists_get(id)
+> InlineResponse2001 teams_id_exists_get(id)
 
 Check whether a model instance exists in the data source.
 
@@ -1411,7 +1413,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1478,7 +1480,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_head**
-> InlineResponse2002 teams_id_head(id)
+> InlineResponse2001 teams_id_head(id)
 
 Check whether a model instance exists in the data source.
 
@@ -1515,7 +1517,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -14768,6 +14770,57 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **teams_name_name_exists_get**
+> InlineResponse2001 teams_name_name_exists_get(name)
+
+Define whether team exists or not
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+name = 'name_example' # str | Team name
+
+try: 
+    # Define whether team exists or not
+    api_response = api_instance.teams_name_name_exists_get(name)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_name_name_exists_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **str**| Team name | 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **teams_patch**
 > Team teams_patch(data=data)
 
@@ -14972,8 +15025,59 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **teams_subdomain_subdomain_exists_get**
+> InlineResponse2001 teams_subdomain_subdomain_exists_get(subdomain)
+
+Define whether team exists or not
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+subdomain = 'subdomain_example' # str | Team subdomain
+
+try: 
+    # Define whether team exists or not
+    api_response = api_instance.teams_subdomain_subdomain_exists_get(subdomain)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_subdomain_subdomain_exists_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **subdomain** | **str**| Team subdomain | 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **teams_update_post**
-> InlineResponse2001 teams_update_post(where=where, data=data)
+> InlineResponse2002 teams_update_post(where=where, data=data)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -15012,7 +15116,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

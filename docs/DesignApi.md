@@ -55,6 +55,7 @@ Method | HTTP request | Description
 [**designs_id_portal_get**](DesignApi.md#designs_id_portal_get) | **GET** /Designs/{id}/portal | Fetches belongsTo relation portal.
 [**designs_id_put**](DesignApi.md#designs_id_put) | **PUT** /Designs/{id} | Replace attributes for a model instance and persist it into the data source.
 [**designs_id_reject_post**](DesignApi.md#designs_id_reject_post) | **POST** /Designs/{id}/reject | Reject design
+[**designs_id_rejection_comment_get**](DesignApi.md#designs_id_rejection_comment_get) | **GET** /Designs/{id}/rejectionComment | Fetches belongsTo relation rejectionComment.
 [**designs_id_replace_post**](DesignApi.md#designs_id_replace_post) | **POST** /Designs/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**designs_id_requester_get**](DesignApi.md#designs_id_requester_get) | **GET** /Designs/{id}/requester | Fetches belongsTo relation requester.
 [**designs_id_reviewer_get**](DesignApi.md#designs_id_reviewer_get) | **GET** /Designs/{id}/reviewer | Fetches belongsTo relation reviewer.
@@ -1990,7 +1991,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **designs_id_exists_get**
-> InlineResponse2002 designs_id_exists_get(id)
+> InlineResponse2001 designs_id_exists_get(id)
 
 Check whether a model instance exists in the data source.
 
@@ -2027,7 +2028,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2516,7 +2517,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **designs_id_head**
-> InlineResponse2002 designs_id_head(id)
+> InlineResponse2001 designs_id_head(id)
 
 Check whether a model instance exists in the data source.
 
@@ -2553,7 +2554,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2726,7 +2727,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **designs_id_reject_post**
-> Design designs_id_reject_post(id, id2)
+> Design designs_id_reject_post(id, id2, data=data)
 
 Reject design
 
@@ -2747,10 +2748,11 @@ TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
 api_instance = TweakApi.DesignApi()
 id = 'id_example' # str | Design id
 id2 = 'id_example' # str | Customer id
+data = TweakApi.Design() # Design |  (optional)
 
 try: 
     # Reject design
-    api_response = api_instance.designs_id_reject_post(id, id2)
+    api_response = api_instance.designs_id_reject_post(id, id2, data=data)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling DesignApi->designs_id_reject_post: %s\n" % e)
@@ -2762,10 +2764,64 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| Design id | 
  **id2** | **str**| Customer id | 
+ **data** | [**Design**](Design.md)|  | [optional] 
 
 ### Return type
 
 [**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **designs_id_rejection_comment_get**
+> DesignComment designs_id_rejection_comment_get(id, refresh=refresh)
+
+Fetches belongsTo relation rejectionComment.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DesignApi()
+id = 'id_example' # str | Design id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation rejectionComment.
+    api_response = api_instance.designs_id_rejection_comment_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DesignApi->designs_id_rejection_comment_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Design id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DesignComment**](DesignComment.md)
 
 ### Authorization
 
@@ -3777,7 +3833,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **designs_update_post**
-> InlineResponse2001 designs_update_post(where=where, data=data)
+> InlineResponse2002 designs_update_post(where=where, data=data)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -3816,7 +3872,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

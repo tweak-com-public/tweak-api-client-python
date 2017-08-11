@@ -2381,7 +2381,7 @@ class TeamApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2408,7 +2408,7 @@ class TeamApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2467,7 +2467,7 @@ class TeamApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2002',
+                                            response_type='InlineResponse2001',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),
@@ -2601,7 +2601,7 @@ class TeamApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2628,7 +2628,7 @@ class TeamApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2687,7 +2687,7 @@ class TeamApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2002',
+                                            response_type='InlineResponse2001',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),
@@ -31645,6 +31645,114 @@ class TeamApi(object):
                                             _return_http_data_only=params.get('_return_http_data_only'),
                                             collection_formats=collection_formats)
 
+    def teams_name_name_exists_get(self, name, **kwargs):
+        """
+        Define whether team exists or not
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.teams_name_name_exists_get(name, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str name: Team name (required)
+        :return: InlineResponse2001
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.teams_name_name_exists_get_with_http_info(name, **kwargs)
+        else:
+            (data) = self.teams_name_name_exists_get_with_http_info(name, **kwargs)
+            return data
+
+    def teams_name_name_exists_get_with_http_info(self, name, **kwargs):
+        """
+        Define whether team exists or not
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.teams_name_name_exists_get_with_http_info(name, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str name: Team name (required)
+        :return: InlineResponse2001
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['name']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method teams_name_name_exists_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'name' is set
+        if ('name' not in params) or (params['name'] is None):
+            raise ValueError("Missing the required parameter `name` when calling `teams_name_name_exists_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/Teams/name/{name}/exists'.replace('{format}', 'json')
+        path_params = {}
+        if 'name' in params:
+            path_params['name'] = params['name']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='InlineResponse2001',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
     def teams_patch(self, **kwargs):
         """
         Patch an existing model instance or insert a new one into the data source.
@@ -32065,6 +32173,114 @@ class TeamApi(object):
                                             _return_http_data_only=params.get('_return_http_data_only'),
                                             collection_formats=collection_formats)
 
+    def teams_subdomain_subdomain_exists_get(self, subdomain, **kwargs):
+        """
+        Define whether team exists or not
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.teams_subdomain_subdomain_exists_get(subdomain, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str subdomain: Team subdomain (required)
+        :return: InlineResponse2001
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.teams_subdomain_subdomain_exists_get_with_http_info(subdomain, **kwargs)
+        else:
+            (data) = self.teams_subdomain_subdomain_exists_get_with_http_info(subdomain, **kwargs)
+            return data
+
+    def teams_subdomain_subdomain_exists_get_with_http_info(self, subdomain, **kwargs):
+        """
+        Define whether team exists or not
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.teams_subdomain_subdomain_exists_get_with_http_info(subdomain, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str subdomain: Team subdomain (required)
+        :return: InlineResponse2001
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['subdomain']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method teams_subdomain_subdomain_exists_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'subdomain' is set
+        if ('subdomain' not in params) or (params['subdomain'] is None):
+            raise ValueError("Missing the required parameter `subdomain` when calling `teams_subdomain_subdomain_exists_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/Teams/subdomain/{subdomain}/exists'.replace('{format}', 'json')
+        path_params = {}
+        if 'subdomain' in params:
+            path_params['subdomain'] = params['subdomain']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='InlineResponse2001',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
     def teams_update_post(self, **kwargs):
         """
         Update instances of the model matched by {{where}} from the data source.
@@ -32082,7 +32298,7 @@ class TeamApi(object):
             for asynchronous request. (optional)
         :param str where: Criteria to match model instances
         :param Team data: An object of model property name/value pairs
-        :return: InlineResponse2001
+        :return: InlineResponse2002
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -32110,7 +32326,7 @@ class TeamApi(object):
             for asynchronous request. (optional)
         :param str where: Criteria to match model instances
         :param Team data: An object of model property name/value pairs
-        :return: InlineResponse2001
+        :return: InlineResponse2002
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -32168,7 +32384,7 @@ class TeamApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2001',
+                                            response_type='InlineResponse2002',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),

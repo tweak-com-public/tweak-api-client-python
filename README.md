@@ -88,6 +88,7 @@ Class | Method | HTTP request | Description
 *CustomerApi* | [**customers_change_stream_post**](docs/CustomerApi.md#customers_change_stream_post) | **POST** /Customers/change-stream | Create a change stream.
 *CustomerApi* | [**customers_confirm_get**](docs/CustomerApi.md#customers_confirm_get) | **GET** /Customers/confirm | Confirm a user registration with identity verification token.
 *CustomerApi* | [**customers_count_get**](docs/CustomerApi.md#customers_count_get) | **GET** /Customers/count | Count instances of the model matched by where from the data source.
+*CustomerApi* | [**customers_email_email_exists_get**](docs/CustomerApi.md#customers_email_email_exists_get) | **GET** /Customers/email/{email}/exists | Define whether customer exists or not
 *CustomerApi* | [**customers_find_one_get**](docs/CustomerApi.md#customers_find_one_get) | **GET** /Customers/findOne | Find first instance of the model matched by filter from the data source.
 *CustomerApi* | [**customers_get**](docs/CustomerApi.md#customers_get) | **GET** /Customers | Find all instances of the model matched by filter from the data source.
 *CustomerApi* | [**customers_id_access_tokens_count_get**](docs/CustomerApi.md#customers_id_access_tokens_count_get) | **GET** /Customers/{id}/accessTokens/count | Counts accessTokens of Customer.
@@ -364,6 +365,7 @@ Class | Method | HTTP request | Description
 *DesignApi* | [**designs_id_portal_get**](docs/DesignApi.md#designs_id_portal_get) | **GET** /Designs/{id}/portal | Fetches belongsTo relation portal.
 *DesignApi* | [**designs_id_put**](docs/DesignApi.md#designs_id_put) | **PUT** /Designs/{id} | Replace attributes for a model instance and persist it into the data source.
 *DesignApi* | [**designs_id_reject_post**](docs/DesignApi.md#designs_id_reject_post) | **POST** /Designs/{id}/reject | Reject design
+*DesignApi* | [**designs_id_rejection_comment_get**](docs/DesignApi.md#designs_id_rejection_comment_get) | **GET** /Designs/{id}/rejectionComment | Fetches belongsTo relation rejectionComment.
 *DesignApi* | [**designs_id_replace_post**](docs/DesignApi.md#designs_id_replace_post) | **POST** /Designs/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 *DesignApi* | [**designs_id_requester_get**](docs/DesignApi.md#designs_id_requester_get) | **GET** /Designs/{id}/requester | Fetches belongsTo relation requester.
 *DesignApi* | [**designs_id_reviewer_get**](docs/DesignApi.md#designs_id_reviewer_get) | **GET** /Designs/{id}/reviewer | Fetches belongsTo relation reviewer.
@@ -667,6 +669,7 @@ Class | Method | HTTP request | Description
 *PortalApi* | [**portals_id_designs_nk_exports_post**](docs/PortalApi.md#portals_id_designs_nk_exports_post) | **POST** /Portals/{id}/designs/{nk}/exports | Creates a new instance in exports of this model.
 *PortalApi* | [**portals_id_designs_nk_folder_get**](docs/PortalApi.md#portals_id_designs_nk_folder_get) | **GET** /Portals/{id}/designs/{nk}/folder | Fetches belongsTo relation folder.
 *PortalApi* | [**portals_id_designs_nk_portal_get**](docs/PortalApi.md#portals_id_designs_nk_portal_get) | **GET** /Portals/{id}/designs/{nk}/portal | Fetches belongsTo relation portal.
+*PortalApi* | [**portals_id_designs_nk_rejection_comment_get**](docs/PortalApi.md#portals_id_designs_nk_rejection_comment_get) | **GET** /Portals/{id}/designs/{nk}/rejectionComment | Fetches belongsTo relation rejectionComment.
 *PortalApi* | [**portals_id_designs_nk_requester_get**](docs/PortalApi.md#portals_id_designs_nk_requester_get) | **GET** /Portals/{id}/designs/{nk}/requester | Fetches belongsTo relation requester.
 *PortalApi* | [**portals_id_designs_nk_reviewer_get**](docs/PortalApi.md#portals_id_designs_nk_reviewer_get) | **GET** /Portals/{id}/designs/{nk}/reviewer | Fetches belongsTo relation reviewer.
 *PortalApi* | [**portals_id_designs_nk_tags_count_get**](docs/PortalApi.md#portals_id_designs_nk_tags_count_get) | **GET** /Portals/{id}/designs/{nk}/tags/count | Counts tags of Design.
@@ -1177,10 +1180,12 @@ Class | Method | HTTP request | Description
 *TeamApi* | [**teams_id_workflows_fk_put**](docs/TeamApi.md#teams_id_workflows_fk_put) | **PUT** /Teams/{id}/workflows/{fk} | Update a related item by id for workflows.
 *TeamApi* | [**teams_id_workflows_get**](docs/TeamApi.md#teams_id_workflows_get) | **GET** /Teams/{id}/workflows | Queries workflows of Team.
 *TeamApi* | [**teams_id_workflows_post**](docs/TeamApi.md#teams_id_workflows_post) | **POST** /Teams/{id}/workflows | Creates a new instance in workflows of this model.
+*TeamApi* | [**teams_name_name_exists_get**](docs/TeamApi.md#teams_name_name_exists_get) | **GET** /Teams/name/{name}/exists | Define whether team exists or not
 *TeamApi* | [**teams_patch**](docs/TeamApi.md#teams_patch) | **PATCH** /Teams | Patch an existing model instance or insert a new one into the data source.
 *TeamApi* | [**teams_post**](docs/TeamApi.md#teams_post) | **POST** /Teams | Create a new instance of the model and persist it into the data source.
 *TeamApi* | [**teams_put**](docs/TeamApi.md#teams_put) | **PUT** /Teams | Replace an existing model instance or insert a new one into the data source.
 *TeamApi* | [**teams_replace_or_create_post**](docs/TeamApi.md#teams_replace_or_create_post) | **POST** /Teams/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
+*TeamApi* | [**teams_subdomain_subdomain_exists_get**](docs/TeamApi.md#teams_subdomain_subdomain_exists_get) | **GET** /Teams/subdomain/{subdomain}/exists | Define whether team exists or not
 *TeamApi* | [**teams_update_post**](docs/TeamApi.md#teams_update_post) | **POST** /Teams/update | Update instances of the model matched by {{where}} from the data source.
 *TeamApi* | [**teams_upsert_with_where_post**](docs/TeamApi.md#teams_upsert_with_where_post) | **POST** /Teams/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 *TeamMemberApi* | [**team_members_change_stream_get**](docs/TeamMemberApi.md#team_members_change_stream_get) | **GET** /TeamMembers/change-stream | Create a change stream.

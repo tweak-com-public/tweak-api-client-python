@@ -4173,7 +4173,7 @@ class DesignApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -4200,7 +4200,7 @@ class DesignApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -4259,7 +4259,7 @@ class DesignApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2002',
+                                            response_type='InlineResponse2001',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),
@@ -5298,7 +5298,7 @@ class DesignApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5325,7 +5325,7 @@ class DesignApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5384,7 +5384,7 @@ class DesignApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2002',
+                                            response_type='InlineResponse2001',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),
@@ -5743,6 +5743,7 @@ class DesignApi(object):
             for asynchronous request. (optional)
         :param str id: Design id (required)
         :param str id2: Customer id (required)
+        :param Design data: 
         :return: Design
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5771,12 +5772,13 @@ class DesignApi(object):
             for asynchronous request. (optional)
         :param str id: Design id (required)
         :param str id2: Customer id (required)
+        :param Design data: 
         :return: Design
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id2']
+        all_params = ['id', 'id2', 'data']
         all_params.append('callback')
         all_params.append('_return_http_data_only')
 
@@ -5814,6 +5816,8 @@ class DesignApi(object):
         local_var_files = {}
 
         body_params = None
+        if 'data' in params:
+            body_params = params['data']
 
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.\
@@ -5836,6 +5840,118 @@ class DesignApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='Design',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def designs_id_rejection_comment_get(self, id, **kwargs):
+        """
+        Fetches belongsTo relation rejectionComment.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.designs_id_rejection_comment_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: Design id (required)
+        :param bool refresh: 
+        :return: DesignComment
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.designs_id_rejection_comment_get_with_http_info(id, **kwargs)
+        else:
+            (data) = self.designs_id_rejection_comment_get_with_http_info(id, **kwargs)
+            return data
+
+    def designs_id_rejection_comment_get_with_http_info(self, id, **kwargs):
+        """
+        Fetches belongsTo relation rejectionComment.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.designs_id_rejection_comment_get_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: Design id (required)
+        :param bool refresh: 
+        :return: DesignComment
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'refresh']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method designs_id_rejection_comment_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `designs_id_rejection_comment_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/Designs/{id}/rejectionComment'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'refresh' in params:
+            query_params['refresh'] = params['refresh']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='DesignComment',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),
@@ -7983,7 +8099,7 @@ class DesignApi(object):
             for asynchronous request. (optional)
         :param str where: Criteria to match model instances
         :param Design data: An object of model property name/value pairs
-        :return: InlineResponse2001
+        :return: InlineResponse2002
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8011,7 +8127,7 @@ class DesignApi(object):
             for asynchronous request. (optional)
         :param str where: Criteria to match model instances
         :param Design data: An object of model property name/value pairs
-        :return: InlineResponse2001
+        :return: InlineResponse2002
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8069,7 +8185,7 @@ class DesignApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2001',
+                                            response_type='InlineResponse2002',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),

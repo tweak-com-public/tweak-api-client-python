@@ -418,6 +418,14 @@ class TestPortalApi(unittest.TestCase):
         """
         pass
 
+    def test_portals_id_designs_nk_rejection_comment_get(self):
+        """
+        Test case for portals_id_designs_nk_rejection_comment_get
+
+        Fetches belongsTo relation rejectionComment.
+        """
+        pass
+
     def test_portals_id_designs_nk_requester_get(self):
         """
         Test case for portals_id_designs_nk_requester_get

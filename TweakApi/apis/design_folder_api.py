@@ -2286,7 +2286,7 @@ class DesignFolderApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2313,7 +2313,7 @@ class DesignFolderApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2372,7 +2372,7 @@ class DesignFolderApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2002',
+                                            response_type='InlineResponse2001',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),
@@ -2506,7 +2506,7 @@ class DesignFolderApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2533,7 +2533,7 @@ class DesignFolderApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str id: Model id (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2592,7 +2592,7 @@ class DesignFolderApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2002',
+                                            response_type='InlineResponse2001',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),
@@ -3707,7 +3707,7 @@ class DesignFolderApi(object):
             for asynchronous request. (optional)
         :param str where: Criteria to match model instances
         :param DesignFolder data: An object of model property name/value pairs
-        :return: InlineResponse2001
+        :return: InlineResponse2002
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -3735,7 +3735,7 @@ class DesignFolderApi(object):
             for asynchronous request. (optional)
         :param str where: Criteria to match model instances
         :param DesignFolder data: An object of model property name/value pairs
-        :return: InlineResponse2001
+        :return: InlineResponse2002
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -3793,7 +3793,7 @@ class DesignFolderApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='InlineResponse2001',
+                                            response_type='InlineResponse2002',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'),
                                             _return_http_data_only=params.get('_return_http_data_only'),

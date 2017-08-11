@@ -450,6 +450,14 @@ class TestDesignApi(unittest.TestCase):
         """
         pass
 
+    def test_designs_id_rejection_comment_get(self):
+        """
+        Test case for designs_id_rejection_comment_get
+
+        Fetches belongsTo relation rejectionComment.
+        """
+        pass
+
     def test_designs_id_replace_post(self):
         """
         Test case for designs_id_replace_post

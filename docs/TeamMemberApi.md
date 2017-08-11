@@ -2232,7 +2232,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **team_members_id_exists_get**
-> InlineResponse2002 team_members_id_exists_get(id)
+> InlineResponse2001 team_members_id_exists_get(id)
 
 Check whether a model instance exists in the data source.
 
@@ -2269,7 +2269,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2336,7 +2336,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **team_members_id_head**
-> InlineResponse2002 team_members_id_head(id)
+> InlineResponse2001 team_members_id_head(id)
 
 Check whether a model instance exists in the data source.
 
@@ -2373,7 +2373,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -12307,7 +12307,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **team_members_update_post**
-> InlineResponse2001 team_members_update_post(where=where, data=data)
+> InlineResponse2002 team_members_update_post(where=where, data=data)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -12346,7 +12346,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

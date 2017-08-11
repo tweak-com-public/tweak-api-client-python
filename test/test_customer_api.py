@@ -82,6 +82,14 @@ class TestCustomerApi(unittest.TestCase):
         """
         pass
 
+    def test_customers_email_email_exists_get(self):
+        """
+        Test case for customers_email_email_exists_get
+
+        Define whether customer exists or not
+        """
+        pass
+
     def test_customers_find_one_get(self):
         """
         Test case for customers_find_one_get
