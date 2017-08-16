@@ -52,6 +52,10 @@ Method | HTTP request | Description
 [**designs_id_get**](DesignApi.md#designs_id_get) | **GET** /Designs/{id} | Find a model instance by {{id}} from the data source.
 [**designs_id_head**](DesignApi.md#designs_id_head) | **HEAD** /Designs/{id} | Check whether a model instance exists in the data source.
 [**designs_id_patch**](DesignApi.md#designs_id_patch) | **PATCH** /Designs/{id} | Patch attributes for a model instance and persist it into the data source.
+[**designs_id_permission_delete**](DesignApi.md#designs_id_permission_delete) | **DELETE** /Designs/{id}/permission | Deletes permission of this model.
+[**designs_id_permission_get**](DesignApi.md#designs_id_permission_get) | **GET** /Designs/{id}/permission | Fetches hasOne relation permission.
+[**designs_id_permission_post**](DesignApi.md#designs_id_permission_post) | **POST** /Designs/{id}/permission | Creates a new instance in permission of this model.
+[**designs_id_permission_put**](DesignApi.md#designs_id_permission_put) | **PUT** /Designs/{id}/permission | Update permission of this model.
 [**designs_id_portal_get**](DesignApi.md#designs_id_portal_get) | **GET** /Designs/{id}/portal | Fetches belongsTo relation portal.
 [**designs_id_put**](DesignApi.md#designs_id_put) | **PUT** /Designs/{id} | Replace attributes for a model instance and persist it into the data source.
 [**designs_id_reject_post**](DesignApi.md#designs_id_reject_post) | **POST** /Designs/{id}/reject | Reject design
@@ -2608,6 +2612,215 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **designs_id_permission_delete**
+> designs_id_permission_delete(id)
+
+Deletes permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DesignApi()
+id = 'id_example' # str | Design id
+
+try: 
+    # Deletes permission of this model.
+    api_instance.designs_id_permission_delete(id)
+except ApiException as e:
+    print("Exception when calling DesignApi->designs_id_permission_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Design id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **designs_id_permission_get**
+> DesignPermissionSet designs_id_permission_get(id, refresh=refresh)
+
+Fetches hasOne relation permission.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DesignApi()
+id = 'id_example' # str | Design id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches hasOne relation permission.
+    api_response = api_instance.designs_id_permission_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DesignApi->designs_id_permission_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Design id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DesignPermissionSet**](DesignPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **designs_id_permission_post**
+> DesignPermissionSet designs_id_permission_post(id, data=data)
+
+Creates a new instance in permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DesignApi()
+id = 'id_example' # str | Design id
+data = TweakApi.DesignPermissionSet() # DesignPermissionSet |  (optional)
+
+try: 
+    # Creates a new instance in permission of this model.
+    api_response = api_instance.designs_id_permission_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DesignApi->designs_id_permission_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Design id | 
+ **data** | [**DesignPermissionSet**](DesignPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**DesignPermissionSet**](DesignPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **designs_id_permission_put**
+> DesignPermissionSet designs_id_permission_put(id, data=data)
+
+Update permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DesignApi()
+id = 'id_example' # str | Design id
+data = TweakApi.DesignPermissionSet() # DesignPermissionSet |  (optional)
+
+try: 
+    # Update permission of this model.
+    api_response = api_instance.designs_id_permission_put(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DesignApi->designs_id_permission_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Design id | 
+ **data** | [**DesignPermissionSet**](DesignPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**DesignPermissionSet**](DesignPermissionSet.md)
 
 ### Authorization
 

@@ -45,6 +45,7 @@ from .design import Design
 from .design_comment import DesignComment
 from .design_export import DesignExport
 from .design_folder import DesignFolder
+from .design_permission_set import DesignPermissionSet
 from .design_tag import DesignTag
 from .flash_var import FlashVar
 from .image import Image
@@ -60,6 +61,7 @@ from .persisted_model import PersistedModel
 from .portal import Portal
 from .portal_image_folder import PortalImageFolder
 from .portal_member import PortalMember
+from .portal_permission_set import PortalPermissionSet
 from .portal_template import PortalTemplate
 from .portal_template_folder import PortalTemplateFolder
 from .q_task import QTask

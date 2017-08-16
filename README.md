@@ -362,6 +362,10 @@ Class | Method | HTTP request | Description
 *DesignApi* | [**designs_id_get**](docs/DesignApi.md#designs_id_get) | **GET** /Designs/{id} | Find a model instance by {{id}} from the data source.
 *DesignApi* | [**designs_id_head**](docs/DesignApi.md#designs_id_head) | **HEAD** /Designs/{id} | Check whether a model instance exists in the data source.
 *DesignApi* | [**designs_id_patch**](docs/DesignApi.md#designs_id_patch) | **PATCH** /Designs/{id} | Patch attributes for a model instance and persist it into the data source.
+*DesignApi* | [**designs_id_permission_delete**](docs/DesignApi.md#designs_id_permission_delete) | **DELETE** /Designs/{id}/permission | Deletes permission of this model.
+*DesignApi* | [**designs_id_permission_get**](docs/DesignApi.md#designs_id_permission_get) | **GET** /Designs/{id}/permission | Fetches hasOne relation permission.
+*DesignApi* | [**designs_id_permission_post**](docs/DesignApi.md#designs_id_permission_post) | **POST** /Designs/{id}/permission | Creates a new instance in permission of this model.
+*DesignApi* | [**designs_id_permission_put**](docs/DesignApi.md#designs_id_permission_put) | **PUT** /Designs/{id}/permission | Update permission of this model.
 *DesignApi* | [**designs_id_portal_get**](docs/DesignApi.md#designs_id_portal_get) | **GET** /Designs/{id}/portal | Fetches belongsTo relation portal.
 *DesignApi* | [**designs_id_put**](docs/DesignApi.md#designs_id_put) | **PUT** /Designs/{id} | Replace attributes for a model instance and persist it into the data source.
 *DesignApi* | [**designs_id_reject_post**](docs/DesignApi.md#designs_id_reject_post) | **POST** /Designs/{id}/reject | Reject design
@@ -470,6 +474,25 @@ Class | Method | HTTP request | Description
 *DesignFolderApi* | [**design_folders_replace_or_create_post**](docs/DesignFolderApi.md#design_folders_replace_or_create_post) | **POST** /DesignFolders/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
 *DesignFolderApi* | [**design_folders_update_post**](docs/DesignFolderApi.md#design_folders_update_post) | **POST** /DesignFolders/update | Update instances of the model matched by {{where}} from the data source.
 *DesignFolderApi* | [**design_folders_upsert_with_where_post**](docs/DesignFolderApi.md#design_folders_upsert_with_where_post) | **POST** /DesignFolders/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
+*DesignPermissionSetApi* | [**design_permission_sets_change_stream_get**](docs/DesignPermissionSetApi.md#design_permission_sets_change_stream_get) | **GET** /DesignPermissionSets/change-stream | Create a change stream.
+*DesignPermissionSetApi* | [**design_permission_sets_change_stream_post**](docs/DesignPermissionSetApi.md#design_permission_sets_change_stream_post) | **POST** /DesignPermissionSets/change-stream | Create a change stream.
+*DesignPermissionSetApi* | [**design_permission_sets_count_get**](docs/DesignPermissionSetApi.md#design_permission_sets_count_get) | **GET** /DesignPermissionSets/count | Count instances of the model matched by where from the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_find_one_get**](docs/DesignPermissionSetApi.md#design_permission_sets_find_one_get) | **GET** /DesignPermissionSets/findOne | Find first instance of the model matched by filter from the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_get**](docs/DesignPermissionSetApi.md#design_permission_sets_get) | **GET** /DesignPermissionSets | Find all instances of the model matched by filter from the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_id_delete**](docs/DesignPermissionSetApi.md#design_permission_sets_id_delete) | **DELETE** /DesignPermissionSets/{id} | Delete a model instance by {{id}} from the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_id_design_get**](docs/DesignPermissionSetApi.md#design_permission_sets_id_design_get) | **GET** /DesignPermissionSets/{id}/design | Fetches belongsTo relation design.
+*DesignPermissionSetApi* | [**design_permission_sets_id_exists_get**](docs/DesignPermissionSetApi.md#design_permission_sets_id_exists_get) | **GET** /DesignPermissionSets/{id}/exists | Check whether a model instance exists in the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_id_get**](docs/DesignPermissionSetApi.md#design_permission_sets_id_get) | **GET** /DesignPermissionSets/{id} | Find a model instance by {{id}} from the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_id_head**](docs/DesignPermissionSetApi.md#design_permission_sets_id_head) | **HEAD** /DesignPermissionSets/{id} | Check whether a model instance exists in the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_id_patch**](docs/DesignPermissionSetApi.md#design_permission_sets_id_patch) | **PATCH** /DesignPermissionSets/{id} | Patch attributes for a model instance and persist it into the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_id_put**](docs/DesignPermissionSetApi.md#design_permission_sets_id_put) | **PUT** /DesignPermissionSets/{id} | Replace attributes for a model instance and persist it into the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_id_replace_post**](docs/DesignPermissionSetApi.md#design_permission_sets_id_replace_post) | **POST** /DesignPermissionSets/{id}/replace | Replace attributes for a model instance and persist it into the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_patch**](docs/DesignPermissionSetApi.md#design_permission_sets_patch) | **PATCH** /DesignPermissionSets | Patch an existing model instance or insert a new one into the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_post**](docs/DesignPermissionSetApi.md#design_permission_sets_post) | **POST** /DesignPermissionSets | Create a new instance of the model and persist it into the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_put**](docs/DesignPermissionSetApi.md#design_permission_sets_put) | **PUT** /DesignPermissionSets | Replace an existing model instance or insert a new one into the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_replace_or_create_post**](docs/DesignPermissionSetApi.md#design_permission_sets_replace_or_create_post) | **POST** /DesignPermissionSets/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_update_post**](docs/DesignPermissionSetApi.md#design_permission_sets_update_post) | **POST** /DesignPermissionSets/update | Update instances of the model matched by {{where}} from the data source.
+*DesignPermissionSetApi* | [**design_permission_sets_upsert_with_where_post**](docs/DesignPermissionSetApi.md#design_permission_sets_upsert_with_where_post) | **POST** /DesignPermissionSets/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 *DesignTagApi* | [**design_tags_change_stream_get**](docs/DesignTagApi.md#design_tags_change_stream_get) | **GET** /DesignTags/change-stream | Create a change stream.
 *DesignTagApi* | [**design_tags_change_stream_post**](docs/DesignTagApi.md#design_tags_change_stream_post) | **POST** /DesignTags/change-stream | Create a change stream.
 *DesignTagApi* | [**design_tags_count_get**](docs/DesignTagApi.md#design_tags_count_get) | **GET** /DesignTags/count | Count instances of the model matched by where from the data source.
@@ -668,6 +691,10 @@ Class | Method | HTTP request | Description
 *PortalApi* | [**portals_id_designs_nk_exports_get**](docs/PortalApi.md#portals_id_designs_nk_exports_get) | **GET** /Portals/{id}/designs/{nk}/exports | Queries exports of Design.
 *PortalApi* | [**portals_id_designs_nk_exports_post**](docs/PortalApi.md#portals_id_designs_nk_exports_post) | **POST** /Portals/{id}/designs/{nk}/exports | Creates a new instance in exports of this model.
 *PortalApi* | [**portals_id_designs_nk_folder_get**](docs/PortalApi.md#portals_id_designs_nk_folder_get) | **GET** /Portals/{id}/designs/{nk}/folder | Fetches belongsTo relation folder.
+*PortalApi* | [**portals_id_designs_nk_permission_delete**](docs/PortalApi.md#portals_id_designs_nk_permission_delete) | **DELETE** /Portals/{id}/designs/{nk}/permission | Deletes permission of this model.
+*PortalApi* | [**portals_id_designs_nk_permission_get**](docs/PortalApi.md#portals_id_designs_nk_permission_get) | **GET** /Portals/{id}/designs/{nk}/permission | Fetches hasOne relation permission.
+*PortalApi* | [**portals_id_designs_nk_permission_post**](docs/PortalApi.md#portals_id_designs_nk_permission_post) | **POST** /Portals/{id}/designs/{nk}/permission | Creates a new instance in permission of this model.
+*PortalApi* | [**portals_id_designs_nk_permission_put**](docs/PortalApi.md#portals_id_designs_nk_permission_put) | **PUT** /Portals/{id}/designs/{nk}/permission | Update permission of this model.
 *PortalApi* | [**portals_id_designs_nk_portal_get**](docs/PortalApi.md#portals_id_designs_nk_portal_get) | **GET** /Portals/{id}/designs/{nk}/portal | Fetches belongsTo relation portal.
 *PortalApi* | [**portals_id_designs_nk_rejection_comment_get**](docs/PortalApi.md#portals_id_designs_nk_rejection_comment_get) | **GET** /Portals/{id}/designs/{nk}/rejectionComment | Fetches belongsTo relation rejectionComment.
 *PortalApi* | [**portals_id_designs_nk_requester_get**](docs/PortalApi.md#portals_id_designs_nk_requester_get) | **GET** /Portals/{id}/designs/{nk}/requester | Fetches belongsTo relation requester.
@@ -712,6 +739,10 @@ Class | Method | HTTP request | Description
 *PortalApi* | [**portals_id_members_rel_fk_head**](docs/PortalApi.md#portals_id_members_rel_fk_head) | **HEAD** /Portals/{id}/members/rel/{fk} | Check the existence of members relation to an item by id.
 *PortalApi* | [**portals_id_members_rel_fk_put**](docs/PortalApi.md#portals_id_members_rel_fk_put) | **PUT** /Portals/{id}/members/rel/{fk} | Add a related item by id for members.
 *PortalApi* | [**portals_id_patch**](docs/PortalApi.md#portals_id_patch) | **PATCH** /Portals/{id} | Patch attributes for a model instance and persist it into the data source.
+*PortalApi* | [**portals_id_permission_delete**](docs/PortalApi.md#portals_id_permission_delete) | **DELETE** /Portals/{id}/permission | Deletes permission of this model.
+*PortalApi* | [**portals_id_permission_get**](docs/PortalApi.md#portals_id_permission_get) | **GET** /Portals/{id}/permission | Fetches hasOne relation permission.
+*PortalApi* | [**portals_id_permission_post**](docs/PortalApi.md#portals_id_permission_post) | **POST** /Portals/{id}/permission | Creates a new instance in permission of this model.
+*PortalApi* | [**portals_id_permission_put**](docs/PortalApi.md#portals_id_permission_put) | **PUT** /Portals/{id}/permission | Update permission of this model.
 *PortalApi* | [**portals_id_portal_members_count_get**](docs/PortalApi.md#portals_id_portal_members_count_get) | **GET** /Portals/{id}/portalMembers/count | Counts portalMembers of Portal.
 *PortalApi* | [**portals_id_portal_members_delete**](docs/PortalApi.md#portals_id_portal_members_delete) | **DELETE** /Portals/{id}/portalMembers | Deletes all portalMembers of this model.
 *PortalApi* | [**portals_id_portal_members_fk_delete**](docs/PortalApi.md#portals_id_portal_members_fk_delete) | **DELETE** /Portals/{id}/portalMembers/{fk} | Delete a related item by id for portalMembers.
@@ -797,6 +828,25 @@ Class | Method | HTTP request | Description
 *PortalMemberApi* | [**portal_members_replace_or_create_post**](docs/PortalMemberApi.md#portal_members_replace_or_create_post) | **POST** /PortalMembers/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
 *PortalMemberApi* | [**portal_members_update_post**](docs/PortalMemberApi.md#portal_members_update_post) | **POST** /PortalMembers/update | Update instances of the model matched by {{where}} from the data source.
 *PortalMemberApi* | [**portal_members_upsert_with_where_post**](docs/PortalMemberApi.md#portal_members_upsert_with_where_post) | **POST** /PortalMembers/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
+*PortalPermissionSetApi* | [**portal_permission_sets_change_stream_get**](docs/PortalPermissionSetApi.md#portal_permission_sets_change_stream_get) | **GET** /PortalPermissionSets/change-stream | Create a change stream.
+*PortalPermissionSetApi* | [**portal_permission_sets_change_stream_post**](docs/PortalPermissionSetApi.md#portal_permission_sets_change_stream_post) | **POST** /PortalPermissionSets/change-stream | Create a change stream.
+*PortalPermissionSetApi* | [**portal_permission_sets_count_get**](docs/PortalPermissionSetApi.md#portal_permission_sets_count_get) | **GET** /PortalPermissionSets/count | Count instances of the model matched by where from the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_find_one_get**](docs/PortalPermissionSetApi.md#portal_permission_sets_find_one_get) | **GET** /PortalPermissionSets/findOne | Find first instance of the model matched by filter from the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_get**](docs/PortalPermissionSetApi.md#portal_permission_sets_get) | **GET** /PortalPermissionSets | Find all instances of the model matched by filter from the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_id_delete**](docs/PortalPermissionSetApi.md#portal_permission_sets_id_delete) | **DELETE** /PortalPermissionSets/{id} | Delete a model instance by {{id}} from the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_id_exists_get**](docs/PortalPermissionSetApi.md#portal_permission_sets_id_exists_get) | **GET** /PortalPermissionSets/{id}/exists | Check whether a model instance exists in the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_id_get**](docs/PortalPermissionSetApi.md#portal_permission_sets_id_get) | **GET** /PortalPermissionSets/{id} | Find a model instance by {{id}} from the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_id_head**](docs/PortalPermissionSetApi.md#portal_permission_sets_id_head) | **HEAD** /PortalPermissionSets/{id} | Check whether a model instance exists in the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_id_patch**](docs/PortalPermissionSetApi.md#portal_permission_sets_id_patch) | **PATCH** /PortalPermissionSets/{id} | Patch attributes for a model instance and persist it into the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_id_portal_get**](docs/PortalPermissionSetApi.md#portal_permission_sets_id_portal_get) | **GET** /PortalPermissionSets/{id}/portal | Fetches belongsTo relation portal.
+*PortalPermissionSetApi* | [**portal_permission_sets_id_put**](docs/PortalPermissionSetApi.md#portal_permission_sets_id_put) | **PUT** /PortalPermissionSets/{id} | Replace attributes for a model instance and persist it into the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_id_replace_post**](docs/PortalPermissionSetApi.md#portal_permission_sets_id_replace_post) | **POST** /PortalPermissionSets/{id}/replace | Replace attributes for a model instance and persist it into the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_patch**](docs/PortalPermissionSetApi.md#portal_permission_sets_patch) | **PATCH** /PortalPermissionSets | Patch an existing model instance or insert a new one into the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_post**](docs/PortalPermissionSetApi.md#portal_permission_sets_post) | **POST** /PortalPermissionSets | Create a new instance of the model and persist it into the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_put**](docs/PortalPermissionSetApi.md#portal_permission_sets_put) | **PUT** /PortalPermissionSets | Replace an existing model instance or insert a new one into the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_replace_or_create_post**](docs/PortalPermissionSetApi.md#portal_permission_sets_replace_or_create_post) | **POST** /PortalPermissionSets/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_update_post**](docs/PortalPermissionSetApi.md#portal_permission_sets_update_post) | **POST** /PortalPermissionSets/update | Update instances of the model matched by {{where}} from the data source.
+*PortalPermissionSetApi* | [**portal_permission_sets_upsert_with_where_post**](docs/PortalPermissionSetApi.md#portal_permission_sets_upsert_with_where_post) | **POST** /PortalPermissionSets/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 *PortalTemplateApi* | [**portal_templates_change_stream_get**](docs/PortalTemplateApi.md#portal_templates_change_stream_get) | **GET** /PortalTemplates/change-stream | Create a change stream.
 *PortalTemplateApi* | [**portal_templates_change_stream_post**](docs/PortalTemplateApi.md#portal_templates_change_stream_post) | **POST** /PortalTemplates/change-stream | Create a change stream.
 *PortalTemplateApi* | [**portal_templates_count_get**](docs/PortalTemplateApi.md#portal_templates_count_get) | **GET** /PortalTemplates/count | Count instances of the model matched by where from the data source.
@@ -1054,6 +1104,10 @@ Class | Method | HTTP request | Description
 *TeamApi* | [**teams_id_portals_nk_members_rel_fk_delete**](docs/TeamApi.md#teams_id_portals_nk_members_rel_fk_delete) | **DELETE** /Teams/{id}/portals/{nk}/members/rel/{fk} | Remove the members relation to an item by id.
 *TeamApi* | [**teams_id_portals_nk_members_rel_fk_head**](docs/TeamApi.md#teams_id_portals_nk_members_rel_fk_head) | **HEAD** /Teams/{id}/portals/{nk}/members/rel/{fk} | Check the existence of members relation to an item by id.
 *TeamApi* | [**teams_id_portals_nk_members_rel_fk_put**](docs/TeamApi.md#teams_id_portals_nk_members_rel_fk_put) | **PUT** /Teams/{id}/portals/{nk}/members/rel/{fk} | Add a related item by id for members.
+*TeamApi* | [**teams_id_portals_nk_permission_delete**](docs/TeamApi.md#teams_id_portals_nk_permission_delete) | **DELETE** /Teams/{id}/portals/{nk}/permission | Deletes permission of this model.
+*TeamApi* | [**teams_id_portals_nk_permission_get**](docs/TeamApi.md#teams_id_portals_nk_permission_get) | **GET** /Teams/{id}/portals/{nk}/permission | Fetches hasOne relation permission.
+*TeamApi* | [**teams_id_portals_nk_permission_post**](docs/TeamApi.md#teams_id_portals_nk_permission_post) | **POST** /Teams/{id}/portals/{nk}/permission | Creates a new instance in permission of this model.
+*TeamApi* | [**teams_id_portals_nk_permission_put**](docs/TeamApi.md#teams_id_portals_nk_permission_put) | **PUT** /Teams/{id}/portals/{nk}/permission | Update permission of this model.
 *TeamApi* | [**teams_id_portals_nk_portal_members_count_get**](docs/TeamApi.md#teams_id_portals_nk_portal_members_count_get) | **GET** /Teams/{id}/portals/{nk}/portalMembers/count | Counts portalMembers of Portal.
 *TeamApi* | [**teams_id_portals_nk_portal_members_delete**](docs/TeamApi.md#teams_id_portals_nk_portal_members_delete) | **DELETE** /Teams/{id}/portals/{nk}/portalMembers | Deletes all portalMembers of this model.
 *TeamApi* | [**teams_id_portals_nk_portal_members_fk_delete**](docs/TeamApi.md#teams_id_portals_nk_portal_members_fk_delete) | **DELETE** /Teams/{id}/portals/{nk}/portalMembers/{fk} | Delete a related item by id for portalMembers.
@@ -1667,6 +1721,7 @@ Class | Method | HTTP request | Description
  - [DesignComment](docs/DesignComment.md)
  - [DesignExport](docs/DesignExport.md)
  - [DesignFolder](docs/DesignFolder.md)
+ - [DesignPermissionSet](docs/DesignPermissionSet.md)
  - [DesignTag](docs/DesignTag.md)
  - [FlashVar](docs/FlashVar.md)
  - [Image](docs/Image.md)
@@ -1682,6 +1737,7 @@ Class | Method | HTTP request | Description
  - [Portal](docs/Portal.md)
  - [PortalImageFolder](docs/PortalImageFolder.md)
  - [PortalMember](docs/PortalMember.md)
+ - [PortalPermissionSet](docs/PortalPermissionSet.md)
  - [PortalTemplate](docs/PortalTemplate.md)
  - [PortalTemplateFolder](docs/PortalTemplateFolder.md)
  - [QTask](docs/QTask.md)

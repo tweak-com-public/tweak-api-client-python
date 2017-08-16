@@ -50,6 +50,10 @@ Method | HTTP request | Description
 [**portals_id_designs_nk_exports_get**](PortalApi.md#portals_id_designs_nk_exports_get) | **GET** /Portals/{id}/designs/{nk}/exports | Queries exports of Design.
 [**portals_id_designs_nk_exports_post**](PortalApi.md#portals_id_designs_nk_exports_post) | **POST** /Portals/{id}/designs/{nk}/exports | Creates a new instance in exports of this model.
 [**portals_id_designs_nk_folder_get**](PortalApi.md#portals_id_designs_nk_folder_get) | **GET** /Portals/{id}/designs/{nk}/folder | Fetches belongsTo relation folder.
+[**portals_id_designs_nk_permission_delete**](PortalApi.md#portals_id_designs_nk_permission_delete) | **DELETE** /Portals/{id}/designs/{nk}/permission | Deletes permission of this model.
+[**portals_id_designs_nk_permission_get**](PortalApi.md#portals_id_designs_nk_permission_get) | **GET** /Portals/{id}/designs/{nk}/permission | Fetches hasOne relation permission.
+[**portals_id_designs_nk_permission_post**](PortalApi.md#portals_id_designs_nk_permission_post) | **POST** /Portals/{id}/designs/{nk}/permission | Creates a new instance in permission of this model.
+[**portals_id_designs_nk_permission_put**](PortalApi.md#portals_id_designs_nk_permission_put) | **PUT** /Portals/{id}/designs/{nk}/permission | Update permission of this model.
 [**portals_id_designs_nk_portal_get**](PortalApi.md#portals_id_designs_nk_portal_get) | **GET** /Portals/{id}/designs/{nk}/portal | Fetches belongsTo relation portal.
 [**portals_id_designs_nk_rejection_comment_get**](PortalApi.md#portals_id_designs_nk_rejection_comment_get) | **GET** /Portals/{id}/designs/{nk}/rejectionComment | Fetches belongsTo relation rejectionComment.
 [**portals_id_designs_nk_requester_get**](PortalApi.md#portals_id_designs_nk_requester_get) | **GET** /Portals/{id}/designs/{nk}/requester | Fetches belongsTo relation requester.
@@ -94,6 +98,10 @@ Method | HTTP request | Description
 [**portals_id_members_rel_fk_head**](PortalApi.md#portals_id_members_rel_fk_head) | **HEAD** /Portals/{id}/members/rel/{fk} | Check the existence of members relation to an item by id.
 [**portals_id_members_rel_fk_put**](PortalApi.md#portals_id_members_rel_fk_put) | **PUT** /Portals/{id}/members/rel/{fk} | Add a related item by id for members.
 [**portals_id_patch**](PortalApi.md#portals_id_patch) | **PATCH** /Portals/{id} | Patch attributes for a model instance and persist it into the data source.
+[**portals_id_permission_delete**](PortalApi.md#portals_id_permission_delete) | **DELETE** /Portals/{id}/permission | Deletes permission of this model.
+[**portals_id_permission_get**](PortalApi.md#portals_id_permission_get) | **GET** /Portals/{id}/permission | Fetches hasOne relation permission.
+[**portals_id_permission_post**](PortalApi.md#portals_id_permission_post) | **POST** /Portals/{id}/permission | Creates a new instance in permission of this model.
+[**portals_id_permission_put**](PortalApi.md#portals_id_permission_put) | **PUT** /Portals/{id}/permission | Update permission of this model.
 [**portals_id_portal_members_count_get**](PortalApi.md#portals_id_portal_members_count_get) | **GET** /Portals/{id}/portalMembers/count | Counts portalMembers of Portal.
 [**portals_id_portal_members_delete**](PortalApi.md#portals_id_portal_members_delete) | **DELETE** /Portals/{id}/portalMembers | Deletes all portalMembers of this model.
 [**portals_id_portal_members_fk_delete**](PortalApi.md#portals_id_portal_members_fk_delete) | **DELETE** /Portals/{id}/portalMembers/{fk} | Delete a related item by id for portalMembers.
@@ -2612,6 +2620,223 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **portals_id_designs_nk_permission_delete**
+> portals_id_designs_nk_permission_delete(id, nk)
+
+Deletes permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+
+try: 
+    # Deletes permission of this model.
+    api_instance.portals_id_designs_nk_permission_delete(id, nk)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_permission_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_permission_get**
+> DesignPermissionSet portals_id_designs_nk_permission_get(id, nk, refresh=refresh)
+
+Fetches hasOne relation permission.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches hasOne relation permission.
+    api_response = api_instance.portals_id_designs_nk_permission_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_permission_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DesignPermissionSet**](DesignPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_permission_post**
+> DesignPermissionSet portals_id_designs_nk_permission_post(id, nk, data=data)
+
+Creates a new instance in permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+data = TweakApi.DesignPermissionSet() # DesignPermissionSet |  (optional)
+
+try: 
+    # Creates a new instance in permission of this model.
+    api_response = api_instance.portals_id_designs_nk_permission_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_permission_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **data** | [**DesignPermissionSet**](DesignPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**DesignPermissionSet**](DesignPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_permission_put**
+> DesignPermissionSet portals_id_designs_nk_permission_put(id, nk, data=data)
+
+Update permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+data = TweakApi.DesignPermissionSet() # DesignPermissionSet |  (optional)
+
+try: 
+    # Update permission of this model.
+    api_response = api_instance.portals_id_designs_nk_permission_put(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_permission_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **data** | [**DesignPermissionSet**](DesignPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**DesignPermissionSet**](DesignPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **portals_id_designs_nk_portal_get**
 > Portal portals_id_designs_nk_portal_get(id, nk, refresh=refresh)
 
@@ -4965,6 +5190,215 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_permission_delete**
+> portals_id_permission_delete(id)
+
+Deletes permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+
+try: 
+    # Deletes permission of this model.
+    api_instance.portals_id_permission_delete(id)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_permission_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_permission_get**
+> PortalPermissionSet portals_id_permission_get(id, refresh=refresh)
+
+Fetches hasOne relation permission.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches hasOne relation permission.
+    api_response = api_instance.portals_id_permission_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_permission_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**PortalPermissionSet**](PortalPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_permission_post**
+> PortalPermissionSet portals_id_permission_post(id, data=data)
+
+Creates a new instance in permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+data = TweakApi.PortalPermissionSet() # PortalPermissionSet |  (optional)
+
+try: 
+    # Creates a new instance in permission of this model.
+    api_response = api_instance.portals_id_permission_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_permission_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **data** | [**PortalPermissionSet**](PortalPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**PortalPermissionSet**](PortalPermissionSet.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_permission_put**
+> PortalPermissionSet portals_id_permission_put(id, data=data)
+
+Update permission of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+data = TweakApi.PortalPermissionSet() # PortalPermissionSet |  (optional)
+
+try: 
+    # Update permission of this model.
+    api_response = api_instance.portals_id_permission_put(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_permission_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **data** | [**PortalPermissionSet**](PortalPermissionSet.md)|  | [optional] 
+
+### Return type
+
+[**PortalPermissionSet**](PortalPermissionSet.md)
 
 ### Authorization
 

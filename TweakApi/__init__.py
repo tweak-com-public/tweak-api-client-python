@@ -45,6 +45,7 @@ from .models.design import Design
 from .models.design_comment import DesignComment
 from .models.design_export import DesignExport
 from .models.design_folder import DesignFolder
+from .models.design_permission_set import DesignPermissionSet
 from .models.design_tag import DesignTag
 from .models.flash_var import FlashVar
 from .models.image import Image
@@ -60,6 +61,7 @@ from .models.persisted_model import PersistedModel
 from .models.portal import Portal
 from .models.portal_image_folder import PortalImageFolder
 from .models.portal_member import PortalMember
+from .models.portal_permission_set import PortalPermissionSet
 from .models.portal_template import PortalTemplate
 from .models.portal_template_folder import PortalTemplateFolder
 from .models.q_task import QTask
@@ -87,6 +89,7 @@ from .apis.design_api import DesignApi
 from .apis.design_comment_api import DesignCommentApi
 from .apis.design_export_api import DesignExportApi
 from .apis.design_folder_api import DesignFolderApi
+from .apis.design_permission_set_api import DesignPermissionSetApi
 from .apis.design_tag_api import DesignTagApi
 from .apis.image_api import ImageApi
 from .apis.image_folder_api import ImageFolderApi
@@ -95,6 +98,7 @@ from .apis.invitation_ticket_api import InvitationTicketApi
 from .apis.portal_api import PortalApi
 from .apis.portal_image_folder_api import PortalImageFolderApi
 from .apis.portal_member_api import PortalMemberApi
+from .apis.portal_permission_set_api import PortalPermissionSetApi
 from .apis.portal_template_api import PortalTemplateApi
 from .apis.portal_template_folder_api import PortalTemplateFolderApi
 from .apis.q_task_api import QTaskApi

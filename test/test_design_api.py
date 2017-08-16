@@ -426,6 +426,38 @@ class TestDesignApi(unittest.TestCase):
         """
         pass
 
+    def test_designs_id_permission_delete(self):
+        """
+        Test case for designs_id_permission_delete
+
+        Deletes permission of this model.
+        """
+        pass
+
+    def test_designs_id_permission_get(self):
+        """
+        Test case for designs_id_permission_get
+
+        Fetches hasOne relation permission.
+        """
+        pass
+
+    def test_designs_id_permission_post(self):
+        """
+        Test case for designs_id_permission_post
+
+        Creates a new instance in permission of this model.
+        """
+        pass
+
+    def test_designs_id_permission_put(self):
+        """
+        Test case for designs_id_permission_put
+
+        Update permission of this model.
+        """
+        pass
+
     def test_designs_id_portal_get(self):
         """
         Test case for designs_id_portal_get
