@@ -954,6 +954,14 @@ class TestTeamMemberApi(unittest.TestCase):
         """
         pass
 
+    def test_team_members_id_team_billing_uncached_get(self):
+        """
+        Test case for team_members_id_team_billing_uncached_get
+
+        Get Team Billing
+        """
+        pass
+
     def test_team_members_id_team_brand_delete(self):
         """
         Test case for team_members_id_team_brand_delete

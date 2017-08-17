@@ -1178,6 +1178,38 @@ class TestTeamApi(unittest.TestCase):
         """
         pass
 
+    def test_teams_id_portals_nk_permission_delete(self):
+        """
+        Test case for teams_id_portals_nk_permission_delete
+
+        Deletes permission of this model.
+        """
+        pass
+
+    def test_teams_id_portals_nk_permission_get(self):
+        """
+        Test case for teams_id_portals_nk_permission_get
+
+        Fetches hasOne relation permission.
+        """
+        pass
+
+    def test_teams_id_portals_nk_permission_post(self):
+        """
+        Test case for teams_id_portals_nk_permission_post
+
+        Creates a new instance in permission of this model.
+        """
+        pass
+
+    def test_teams_id_portals_nk_permission_put(self):
+        """
+        Test case for teams_id_portals_nk_permission_put
+
+        Update permission of this model.
+        """
+        pass
+
     def test_teams_id_portals_nk_portal_members_count_get(self):
         """
         Test case for teams_id_portals_nk_portal_members_count_get

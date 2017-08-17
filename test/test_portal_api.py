@@ -410,6 +410,38 @@ class TestPortalApi(unittest.TestCase):
         """
         pass
 
+    def test_portals_id_designs_nk_permission_delete(self):
+        """
+        Test case for portals_id_designs_nk_permission_delete
+
+        Deletes permission of this model.
+        """
+        pass
+
+    def test_portals_id_designs_nk_permission_get(self):
+        """
+        Test case for portals_id_designs_nk_permission_get
+
+        Fetches hasOne relation permission.
+        """
+        pass
+
+    def test_portals_id_designs_nk_permission_post(self):
+        """
+        Test case for portals_id_designs_nk_permission_post
+
+        Creates a new instance in permission of this model.
+        """
+        pass
+
+    def test_portals_id_designs_nk_permission_put(self):
+        """
+        Test case for portals_id_designs_nk_permission_put
+
+        Update permission of this model.
+        """
+        pass
+
     def test_portals_id_designs_nk_portal_get(self):
         """
         Test case for portals_id_designs_nk_portal_get
@@ -759,6 +791,38 @@ class TestPortalApi(unittest.TestCase):
         Test case for portals_id_patch
 
         Patch attributes for a model instance and persist it into the data source.
+        """
+        pass
+
+    def test_portals_id_permission_delete(self):
+        """
+        Test case for portals_id_permission_delete
+
+        Deletes permission of this model.
+        """
+        pass
+
+    def test_portals_id_permission_get(self):
+        """
+        Test case for portals_id_permission_get
+
+        Fetches hasOne relation permission.
+        """
+        pass
+
+    def test_portals_id_permission_post(self):
+        """
+        Test case for portals_id_permission_post
+
+        Creates a new instance in permission of this model.
+        """
+        pass
+
+    def test_portals_id_permission_put(self):
+        """
+        Test case for portals_id_permission_put
+
+        Update permission of this model.
         """
         pass
 
