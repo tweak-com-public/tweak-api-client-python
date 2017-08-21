@@ -1202,6 +1202,14 @@ class TestCustomerApi(unittest.TestCase):
         """
         pass
 
+    def test_customers_reset_password_token_get(self):
+        """
+        Test case for customers_reset_password_token_get
+
+        Get token info for reset password token
+        """
+        pass
+
     def test_customers_reset_post(self):
         """
         Test case for customers_reset_post

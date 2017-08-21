@@ -149,6 +149,7 @@ Method | HTTP request | Description
 [**customers_register_post**](CustomerApi.md#customers_register_post) | **POST** /Customers/register | Create customer and assign it to a team
 [**customers_replace_or_create_post**](CustomerApi.md#customers_replace_or_create_post) | **POST** /Customers/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
 [**customers_reset_password_post**](CustomerApi.md#customers_reset_password_post) | **POST** /Customers/reset-password | Reset user&#39;s password via a password-reset token.
+[**customers_reset_password_token_get**](CustomerApi.md#customers_reset_password_token_get) | **GET** /Customers/reset-password/token | Get token info for reset password token
 [**customers_reset_post**](CustomerApi.md#customers_reset_post) | **POST** /Customers/reset | Reset password for a user with email.
 [**customers_update_post**](CustomerApi.md#customers_update_post) | **POST** /Customers/update | Update instances of the model matched by {{where}} from the data source.
 [**customers_upsert_with_where_post**](CustomerApi.md#customers_upsert_with_where_post) | **POST** /Customers/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
@@ -7904,6 +7905,57 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_reset_password_token_get**
+> TeamMemberAccessToken customers_reset_password_token_get(token)
+
+Get token info for reset password token
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+token = 'token_example' # str | Reset password access token
+
+try: 
+    # Get token info for reset password token
+    api_response = api_instance.customers_reset_password_token_get(token)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_reset_password_token_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **str**| Reset password access token | 
+
+### Return type
+
+[**TeamMemberAccessToken**](TeamMemberAccessToken.md)
 
 ### Authorization
 
