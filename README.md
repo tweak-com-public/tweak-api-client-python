@@ -228,6 +228,7 @@ Class | Method | HTTP request | Description
 *CustomerApi* | [**customers_register_post**](docs/CustomerApi.md#customers_register_post) | **POST** /Customers/register | Create customer and assign it to a team
 *CustomerApi* | [**customers_replace_or_create_post**](docs/CustomerApi.md#customers_replace_or_create_post) | **POST** /Customers/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
 *CustomerApi* | [**customers_reset_password_post**](docs/CustomerApi.md#customers_reset_password_post) | **POST** /Customers/reset-password | Reset user&#39;s password via a password-reset token.
+*CustomerApi* | [**customers_reset_password_token_get**](docs/CustomerApi.md#customers_reset_password_token_get) | **GET** /Customers/reset-password/token | Get token info for reset password token
 *CustomerApi* | [**customers_reset_post**](docs/CustomerApi.md#customers_reset_post) | **POST** /Customers/reset | Reset password for a user with email.
 *CustomerApi* | [**customers_update_post**](docs/CustomerApi.md#customers_update_post) | **POST** /Customers/update | Update instances of the model matched by {{where}} from the data source.
 *CustomerApi* | [**customers_upsert_with_where_post**](docs/CustomerApi.md#customers_upsert_with_where_post) | **POST** /Customers/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.

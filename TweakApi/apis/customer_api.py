@@ -16890,6 +16890,114 @@ class CustomerApi(object):
                                             _return_http_data_only=params.get('_return_http_data_only'),
                                             collection_formats=collection_formats)
 
+    def customers_reset_password_token_get(self, token, **kwargs):
+        """
+        Get token info for reset password token
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.customers_reset_password_token_get(token, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str token: Reset password access token (required)
+        :return: TeamMemberAccessToken
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.customers_reset_password_token_get_with_http_info(token, **kwargs)
+        else:
+            (data) = self.customers_reset_password_token_get_with_http_info(token, **kwargs)
+            return data
+
+    def customers_reset_password_token_get_with_http_info(self, token, **kwargs):
+        """
+        Get token info for reset password token
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.customers_reset_password_token_get_with_http_info(token, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str token: Reset password access token (required)
+        :return: TeamMemberAccessToken
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['token']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method customers_reset_password_token_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'token' is set
+        if ('token' not in params) or (params['token'] is None):
+            raise ValueError("Missing the required parameter `token` when calling `customers_reset_password_token_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/Customers/reset-password/token'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'token' in params:
+            query_params['token'] = params['token']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TeamMemberAccessToken',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
     def customers_reset_post(self, options, **kwargs):
         """
         Reset password for a user with email.
