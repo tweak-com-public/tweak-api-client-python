@@ -370,6 +370,14 @@ class TestCustomerApi(unittest.TestCase):
         """
         pass
 
+    def test_customers_id_register_team_post(self):
+        """
+        Test case for customers_id_register_team_post
+
+        Register team and assign it to the customer
+        """
+        pass
+
     def test_customers_id_replace_post(self):
         """
         Test case for customers_id_replace_post

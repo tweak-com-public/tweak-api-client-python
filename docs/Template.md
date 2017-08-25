@@ -10,6 +10,8 @@ Name | Type | Description | Notes
 **edited** | **datetime** |  | [optional] 
 **path** | **str** |  | [optional] [default to '/']
 **status** | **str** |  | [optional] 
+**shared** | **datetime** |  | [optional] 
+**permission_set_updated** | **datetime** |  | [optional] 
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
 **id** | **str** |  | [optional] 

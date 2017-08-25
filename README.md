@@ -124,6 +124,7 @@ Class | Method | HTTP request | Description
 *CustomerApi* | [**customers_id_permission_put**](docs/CustomerApi.md#customers_id_permission_put) | **PUT** /Customers/{id}/permission | Update permission of this model.
 *CustomerApi* | [**customers_id_profile_picture_put**](docs/CustomerApi.md#customers_id_profile_picture_put) | **PUT** /Customers/{id}/profilePicture | Change profile picture
 *CustomerApi* | [**customers_id_put**](docs/CustomerApi.md#customers_id_put) | **PUT** /Customers/{id} | Replace attributes for a model instance and persist it into the data source.
+*CustomerApi* | [**customers_id_register_team_post**](docs/CustomerApi.md#customers_id_register_team_post) | **POST** /Customers/{id}/register/team | Register team and assign it to the customer
 *CustomerApi* | [**customers_id_replace_post**](docs/CustomerApi.md#customers_id_replace_post) | **POST** /Customers/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 *CustomerApi* | [**customers_id_teams_count_get**](docs/CustomerApi.md#customers_id_teams_count_get) | **GET** /Customers/{id}/teams/count | Counts teams of Customer.
 *CustomerApi* | [**customers_id_teams_delete**](docs/CustomerApi.md#customers_id_teams_delete) | **DELETE** /Customers/{id}/teams | Deletes all teams of this model.

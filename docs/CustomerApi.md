@@ -45,6 +45,7 @@ Method | HTTP request | Description
 [**customers_id_permission_put**](CustomerApi.md#customers_id_permission_put) | **PUT** /Customers/{id}/permission | Update permission of this model.
 [**customers_id_profile_picture_put**](CustomerApi.md#customers_id_profile_picture_put) | **PUT** /Customers/{id}/profilePicture | Change profile picture
 [**customers_id_put**](CustomerApi.md#customers_id_put) | **PUT** /Customers/{id} | Replace attributes for a model instance and persist it into the data source.
+[**customers_id_register_team_post**](CustomerApi.md#customers_id_register_team_post) | **POST** /Customers/{id}/register/team | Register team and assign it to the customer
 [**customers_id_replace_post**](CustomerApi.md#customers_id_replace_post) | **POST** /Customers/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**customers_id_teams_count_get**](CustomerApi.md#customers_id_teams_count_get) | **GET** /Customers/{id}/teams/count | Counts teams of Customer.
 [**customers_id_teams_delete**](CustomerApi.md#customers_id_teams_delete) | **DELETE** /Customers/{id}/teams | Deletes all teams of this model.
@@ -2289,6 +2290,59 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Customer**](Customer.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_register_team_post**
+> TeamMember customers_id_register_team_post(id, data=data)
+
+Register team and assign it to the customer
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+data = TweakApi.Team() # Team | Model instance data (optional)
+
+try: 
+    # Register team and assign it to the customer
+    api_response = api_instance.customers_id_register_team_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_register_team_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **data** | [**Team**](Team.md)| Model instance data | [optional] 
+
+### Return type
+
+[**TeamMember**](TeamMember.md)
 
 ### Authorization
 
