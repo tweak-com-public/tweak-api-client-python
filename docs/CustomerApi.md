@@ -144,6 +144,7 @@ Method | HTTP request | Description
 [**customers_login_post**](CustomerApi.md#customers_login_post) | **POST** /Customers/login | Login a user with username/email and password.
 [**customers_logout_post**](CustomerApi.md#customers_logout_post) | **POST** /Customers/logout | Logout a user with access token.
 [**customers_me_token_get**](CustomerApi.md#customers_me_token_get) | **GET** /Customers/me/token | Get token info
+[**customers_me_token_refresh_get**](CustomerApi.md#customers_me_token_refresh_get) | **GET** /Customers/me/token/refresh | Refresh current access token
 [**customers_patch**](CustomerApi.md#customers_patch) | **PATCH** /Customers | Patch an existing model instance or insert a new one into the data source.
 [**customers_post**](CustomerApi.md#customers_post) | **POST** /Customers | Create a new instance of the model and persist it into the data source.
 [**customers_put**](CustomerApi.md#customers_put) | **PUT** /Customers | Replace an existing model instance or insert a new one into the data source.
@@ -7650,6 +7651,57 @@ except ApiException as e:
 
 ### Parameters
 This endpoint does not need any parameter.
+
+### Return type
+
+[**TeamMemberAccessToken**](TeamMemberAccessToken.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_me_token_refresh_get**
+> TeamMemberAccessToken customers_me_token_refresh_get(refresh_token)
+
+Refresh current access token
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+refresh_token = 'refresh_token_example' # str | AccessToken refreshToken
+
+try: 
+    # Refresh current access token
+    api_response = api_instance.customers_me_token_refresh_get(refresh_token)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_me_token_refresh_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **refresh_token** | **str**| AccessToken refreshToken | 
 
 ### Return type
 
