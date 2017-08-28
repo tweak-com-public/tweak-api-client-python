@@ -1162,6 +1162,14 @@ class TestCustomerApi(unittest.TestCase):
         """
         pass
 
+    def test_customers_me_token_refresh_get(self):
+        """
+        Test case for customers_me_token_refresh_get
+
+        Refresh current access token
+        """
+        pass
+
     def test_customers_patch(self):
         """
         Test case for customers_patch

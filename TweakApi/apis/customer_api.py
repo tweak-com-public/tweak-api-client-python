@@ -16369,6 +16369,114 @@ class CustomerApi(object):
                                             _return_http_data_only=params.get('_return_http_data_only'),
                                             collection_formats=collection_formats)
 
+    def customers_me_token_refresh_get(self, refresh_token, **kwargs):
+        """
+        Refresh current access token
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.customers_me_token_refresh_get(refresh_token, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str refresh_token: AccessToken refreshToken (required)
+        :return: TeamMemberAccessToken
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.customers_me_token_refresh_get_with_http_info(refresh_token, **kwargs)
+        else:
+            (data) = self.customers_me_token_refresh_get_with_http_info(refresh_token, **kwargs)
+            return data
+
+    def customers_me_token_refresh_get_with_http_info(self, refresh_token, **kwargs):
+        """
+        Refresh current access token
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.customers_me_token_refresh_get_with_http_info(refresh_token, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str refresh_token: AccessToken refreshToken (required)
+        :return: TeamMemberAccessToken
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['refresh_token']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method customers_me_token_refresh_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'refresh_token' is set
+        if ('refresh_token' not in params) or (params['refresh_token'] is None):
+            raise ValueError("Missing the required parameter `refresh_token` when calling `customers_me_token_refresh_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/Customers/me/token/refresh'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'refresh_token' in params:
+            query_params['refreshToken'] = params['refresh_token']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TeamMemberAccessToken',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
     def customers_patch(self, **kwargs):
         """
         Patch an existing model instance or insert a new one into the data source.
