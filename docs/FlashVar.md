@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **allow_high_res_pdf** | **bool** |  | [optional] [default to False]
 **allow_save_for_later** | **bool** |  | [optional] [default to False]
 **allow_save_as_template** | **bool** |  | [optional] [default to False]
+**allow_duplicate_design** | **bool** |  | [optional] [default to False]
 **block_editing** | **bool** |  | [optional] [default to False]
 **make_all_items_editable** | **bool** |  | [optional] [default to False]
 **show_confirm** | **bool** |  | [optional] [default to False]
