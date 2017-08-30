@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **show_confirm** | **bool** |  | [optional] [default to False]
 **allow_approve_plugin_product** | **bool** |  | [optional] [default to False]
 **allow_send_to_approve_plugin_product** | **bool** |  | [optional] [default to False]
-**workflow_form** | **object** |  | [optional] 
+**workflow_form** | **str** |  | [optional] 
 **design_form_data** | **list[object]** |  | [optional] 
 **show_plugin_images** | **bool** |  | [optional] [default to False]
 **plugin_image_libraries** | **list[str]** |  | [optional] 
