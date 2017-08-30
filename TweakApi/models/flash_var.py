@@ -58,7 +58,7 @@ class FlashVar(object):
             'show_confirm': 'bool',
             'allow_approve_plugin_product': 'bool',
             'allow_send_to_approve_plugin_product': 'bool',
-            'workflow_form': 'object',
+            'workflow_form': 'str',
             'design_form_data': 'list[object]',
             'show_plugin_images': 'bool',
             'plugin_image_libraries': 'list[str]',
@@ -535,7 +535,7 @@ class FlashVar(object):
 
 
         :return: The workflow_form of this FlashVar.
-        :rtype: object
+        :rtype: str
         """
         return self._workflow_form
 
@@ -546,7 +546,7 @@ class FlashVar(object):
 
 
         :param workflow_form: The workflow_form of this FlashVar.
-        :type: object
+        :type: str
         """
 
         self._workflow_form = workflow_form
