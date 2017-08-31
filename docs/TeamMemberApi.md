@@ -116,11 +116,20 @@ Method | HTTP request | Description
 [**team_members_id_team_billing_invoices_upcoming_get**](TeamMemberApi.md#team_members_id_team_billing_invoices_upcoming_get) | **GET** /TeamMembers/{id}/team/billing/invoices/upcoming | List Upcoming Team Billing Invoices
 [**team_members_id_team_billing_post**](TeamMemberApi.md#team_members_id_team_billing_post) | **POST** /TeamMembers/{id}/team/billing | Creates a new instance in billing of this model.
 [**team_members_id_team_billing_put**](TeamMemberApi.md#team_members_id_team_billing_put) | **PUT** /TeamMembers/{id}/team/billing | Update billing of this model.
-[**team_members_id_team_billing_subscription_put**](TeamMemberApi.md#team_members_id_team_billing_subscription_put) | **PUT** /TeamMembers/{id}/team/billing/subscription | Update Team Billing Card
+[**team_members_id_team_billing_subscription_plan_put**](TeamMemberApi.md#team_members_id_team_billing_subscription_plan_put) | **PUT** /TeamMembers/{id}/team/billing/subscription/plan | Update Team Billing Subscription Plan
+[**team_members_id_team_billing_tax_evidence_get**](TeamMemberApi.md#team_members_id_team_billing_tax_evidence_get) | **GET** /TeamMembers/{id}/team/billing/taxEvidence | Get Team Billing Tax Evidence
+[**team_members_id_team_billing_uncached_get**](TeamMemberApi.md#team_members_id_team_billing_uncached_get) | **GET** /TeamMembers/{id}/team/billing/uncached | Get Team Billing
 [**team_members_id_team_brand_delete**](TeamMemberApi.md#team_members_id_team_brand_delete) | **DELETE** /TeamMembers/{id}/team/brand | Deletes brand of this model.
 [**team_members_id_team_brand_get**](TeamMemberApi.md#team_members_id_team_brand_get) | **GET** /TeamMembers/{id}/team/brand | Fetches hasOne relation brand.
 [**team_members_id_team_brand_post**](TeamMemberApi.md#team_members_id_team_brand_post) | **POST** /TeamMembers/{id}/team/brand | Creates a new instance in brand of this model.
 [**team_members_id_team_brand_put**](TeamMemberApi.md#team_members_id_team_brand_put) | **PUT** /TeamMembers/{id}/team/brand | Update brand of this model.
+[**team_members_id_team_data_sources_count_get**](TeamMemberApi.md#team_members_id_team_data_sources_count_get) | **GET** /TeamMembers/{id}/team/dataSources/count | Counts dataSources of Team.
+[**team_members_id_team_data_sources_delete**](TeamMemberApi.md#team_members_id_team_data_sources_delete) | **DELETE** /TeamMembers/{id}/team/dataSources | Deletes all dataSources of this model.
+[**team_members_id_team_data_sources_fk_delete**](TeamMemberApi.md#team_members_id_team_data_sources_fk_delete) | **DELETE** /TeamMembers/{id}/team/dataSources/{fk} | Delete a related item by id for dataSources.
+[**team_members_id_team_data_sources_fk_get**](TeamMemberApi.md#team_members_id_team_data_sources_fk_get) | **GET** /TeamMembers/{id}/team/dataSources/{fk} | Find a related item by id for dataSources.
+[**team_members_id_team_data_sources_fk_put**](TeamMemberApi.md#team_members_id_team_data_sources_fk_put) | **PUT** /TeamMembers/{id}/team/dataSources/{fk} | Update a related item by id for dataSources.
+[**team_members_id_team_data_sources_get**](TeamMemberApi.md#team_members_id_team_data_sources_get) | **GET** /TeamMembers/{id}/team/dataSources | Queries dataSources of Team.
+[**team_members_id_team_data_sources_post**](TeamMemberApi.md#team_members_id_team_data_sources_post) | **POST** /TeamMembers/{id}/team/dataSources | Creates a new instance in dataSources of this model.
 [**team_members_id_team_get**](TeamMemberApi.md#team_members_id_team_get) | **GET** /TeamMembers/{id}/team | Fetches belongsTo relation team.
 [**team_members_id_team_image_folders_count_get**](TeamMemberApi.md#team_members_id_team_image_folders_count_get) | **GET** /TeamMembers/{id}/team/imageFolders/count | Counts imageFolders of Team.
 [**team_members_id_team_image_folders_delete**](TeamMemberApi.md#team_members_id_team_image_folders_delete) | **DELETE** /TeamMembers/{id}/team/imageFolders | Deletes all imageFolders of this model.
@@ -203,6 +212,7 @@ Method | HTTP request | Description
 [**team_members_id_tweak_template_folders_nk_get**](TeamMemberApi.md#team_members_id_tweak_template_folders_nk_get) | **GET** /TeamMembers/{id}/tweakTemplateFolders/{nk} | Get Tweak Templates Folders details
 [**team_members_id_tweak_template_folders_nk_templates_fk_get**](TeamMemberApi.md#team_members_id_tweak_template_folders_nk_templates_fk_get) | **GET** /TeamMembers/{id}/tweakTemplateFolders/{nk}/templates/{fk} | Get Tweak Template details within a Tweak Template Folder
 [**team_members_id_tweak_template_folders_nk_templates_get**](TeamMemberApi.md#team_members_id_tweak_template_folders_nk_templates_get) | **GET** /TeamMembers/{id}/tweakTemplateFolders/{nk}/templates | List Tweak Templates within a Tweak Template Folder
+[**team_members_id_tweak_templates_fk_flashvars_get**](TeamMemberApi.md#team_members_id_tweak_templates_fk_flashvars_get) | **GET** /TeamMembers/{id}/tweakTemplates/{fk}/flashvars | Find Template FlashVars by id
 [**team_members_id_tweak_templates_fk_get**](TeamMemberApi.md#team_members_id_tweak_templates_fk_get) | **GET** /TeamMembers/{id}/tweakTemplates/{fk} | Get Tweak Template details
 [**team_members_id_tweak_templates_get**](TeamMemberApi.md#team_members_id_tweak_templates_get) | **GET** /TeamMembers/{id}/tweakTemplates | List Tweak Templates
 [**team_members_id_uploaded_templates_count_get**](TeamMemberApi.md#team_members_id_uploaded_templates_count_get) | **GET** /TeamMembers/{id}/uploadedTemplates/count | Counts uploadedTemplates of TeamMember.
@@ -2223,7 +2233,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **team_members_id_exists_get**
-> InlineResponse2002 team_members_id_exists_get(id)
+> InlineResponse2001 team_members_id_exists_get(id)
 
 Check whether a model instance exists in the data source.
 
@@ -2260,7 +2270,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2327,7 +2337,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **team_members_id_head**
-> InlineResponse2002 team_members_id_head(id)
+> InlineResponse2001 team_members_id_head(id)
 
 Check whether a model instance exists in the data source.
 
@@ -2364,7 +2374,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6157,10 +6167,10 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **team_members_id_team_billing_subscription_put**
-> Billing team_members_id_team_billing_subscription_put(id, data=data)
+# **team_members_id_team_billing_subscription_plan_put**
+> Billing team_members_id_team_billing_subscription_plan_put(id, data=data)
 
-Update Team Billing Card
+Update Team Billing Subscription Plan
 
 ### Example 
 ```python
@@ -6181,11 +6191,11 @@ id = 'id_example' # str | TeamMember id
 data = TweakApi.TeamMember() # TeamMember |  (optional)
 
 try: 
-    # Update Team Billing Card
-    api_response = api_instance.team_members_id_team_billing_subscription_put(id, data=data)
+    # Update Team Billing Subscription Plan
+    api_response = api_instance.team_members_id_team_billing_subscription_plan_put(id, data=data)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling TeamMemberApi->team_members_id_team_billing_subscription_put: %s\n" % e)
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_subscription_plan_put: %s\n" % e)
 ```
 
 ### Parameters
@@ -6194,6 +6204,108 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| TeamMember id | 
  **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_billing_tax_evidence_get**
+> object team_members_id_team_billing_tax_evidence_get(id)
+
+Get Team Billing Tax Evidence
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+
+try: 
+    # Get Team Billing Tax Evidence
+    api_response = api_instance.team_members_id_team_billing_tax_evidence_get(id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_tax_evidence_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+
+### Return type
+
+**object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_billing_uncached_get**
+> Billing team_members_id_team_billing_uncached_get(id)
+
+Get Team Billing
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+
+try: 
+    # Get Team Billing
+    api_response = api_instance.team_members_id_team_billing_uncached_get(id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_uncached_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
 
 ### Return type
 
@@ -6407,6 +6519,375 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBrand**](TeamBrand.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_data_sources_count_get**
+> InlineResponse200 team_members_id_team_data_sources_count_get(id, where=where)
+
+Counts dataSources of Team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts dataSources of Team.
+    api_response = api_instance.team_members_id_team_data_sources_count_get(id, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_data_sources_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_data_sources_delete**
+> team_members_id_team_data_sources_delete(id)
+
+Deletes all dataSources of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+
+try: 
+    # Deletes all dataSources of this model.
+    api_instance.team_members_id_team_data_sources_delete(id)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_data_sources_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_data_sources_fk_delete**
+> team_members_id_team_data_sources_fk_delete(id, fk)
+
+Delete a related item by id for dataSources.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for dataSources
+
+try: 
+    # Delete a related item by id for dataSources.
+    api_instance.team_members_id_team_data_sources_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_data_sources_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for dataSources | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_data_sources_fk_get**
+> DataSource team_members_id_team_data_sources_fk_get(id, fk)
+
+Find a related item by id for dataSources.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for dataSources
+
+try: 
+    # Find a related item by id for dataSources.
+    api_response = api_instance.team_members_id_team_data_sources_fk_get(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_data_sources_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for dataSources | 
+
+### Return type
+
+[**DataSource**](DataSource.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_data_sources_fk_put**
+> DataSource team_members_id_team_data_sources_fk_put(id, fk, data=data)
+
+Update a related item by id for dataSources.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for dataSources
+data = TweakApi.DataSource() # DataSource |  (optional)
+
+try: 
+    # Update a related item by id for dataSources.
+    api_response = api_instance.team_members_id_team_data_sources_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_data_sources_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for dataSources | 
+ **data** | [**DataSource**](DataSource.md)|  | [optional] 
+
+### Return type
+
+[**DataSource**](DataSource.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_data_sources_get**
+> list[DataSource] team_members_id_team_data_sources_get(id, filter=filter)
+
+Queries dataSources of Team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries dataSources of Team.
+    api_response = api_instance.team_members_id_team_data_sources_get(id, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_data_sources_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[DataSource]**](DataSource.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_data_sources_post**
+> DataSource team_members_id_team_data_sources_post(id, data=data)
+
+Creates a new instance in dataSources of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+data = TweakApi.DataSource() # DataSource |  (optional)
+
+try: 
+    # Creates a new instance in dataSources of this model.
+    api_response = api_instance.team_members_id_team_data_sources_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_data_sources_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **data** | [**DataSource**](DataSource.md)|  | [optional] 
+
+### Return type
+
+[**DataSource**](DataSource.md)
 
 ### Authorization
 
@@ -10768,6 +11249,61 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **team_members_id_tweak_templates_fk_flashvars_get**
+> FlashVar team_members_id_tweak_templates_fk_flashvars_get(id, id2, fk)
+
+Find Template FlashVars by id
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+id2 = 'id_example' # str | 
+fk = 'fk_example' # str | 
+
+try: 
+    # Find Template FlashVars by id
+    api_response = api_instance.team_members_id_tweak_templates_fk_flashvars_get(id, id2, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_tweak_templates_fk_flashvars_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **id2** | **str**|  | 
+ **fk** | **str**|  | 
+
+### Return type
+
+[**FlashVar**](FlashVar.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **team_members_id_tweak_templates_fk_get**
 > Template team_members_id_tweak_templates_fk_get(id, id2, fk, filter=filter)
 
@@ -11823,7 +12359,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **team_members_update_post**
-> InlineResponse2001 team_members_update_post(where=where, data=data)
+> InlineResponse2002 team_members_update_post(where=where, data=data)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -11862,7 +12398,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

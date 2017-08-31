@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **master_key** | **str** |  | [optional] 
 **status** | **str** | Status of the application, production/sandbox/disabled | [optional] [default to 'sandbox']
 **members** | [**list[Customer]**](Customer.md) |  | [optional] 
+**data_sources** | [**list[DataSource]**](DataSource.md) |  | [optional] 
 **team_members** | [**list[TeamMember]**](TeamMember.md) |  | [optional] 
 **portals** | [**list[Portal]**](Portal.md) |  | [optional] 
 **templates** | [**list[Template]**](Template.md) |  | [optional] 

@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **template_folders** | [**list[PortalTemplateFolder]**](PortalTemplateFolder.md) |  | [optional] 
 **design_folders** | [**list[DesignFolder]**](DesignFolder.md) |  | [optional] 
 **image_folders** | [**list[ImageFolder]**](ImageFolder.md) |  | [optional] 
+**permission** | [**PortalPermissionSet**](PortalPermissionSet.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

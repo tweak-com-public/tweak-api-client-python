@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **position** | [**Axes**](Axes.md) |  | [optional] 
 **page_index** | **float** |  | [optional] [default to 0.0]
 **status** | **str** |  | [optional] 
+**type** | **str** |  | [optional] 
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
 **id** | **str** |  | [optional] 

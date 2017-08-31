@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** |  | 
+**description** | **str** |  | [optional] [default to '']
 **path** | **str** |  | [optional] [default to '/']
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 

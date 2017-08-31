@@ -11,6 +11,7 @@ Method | HTTP request | Description
 [**billings_id_replace_post**](BillingApi.md#billings_id_replace_post) | **POST** /Billings/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**billings_put**](BillingApi.md#billings_put) | **PUT** /Billings | Replace an existing model instance or insert a new one into the data source.
 [**billings_replace_or_create_post**](BillingApi.md#billings_replace_or_create_post) | **POST** /Billings/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
+[**billings_tax_evidence_country_vat_get**](BillingApi.md#billings_tax_evidence_country_vat_get) | **GET** /Billings/taxEvidence/{country}/{vat} | Get Tax Evidence by country and VAT
 [**billings_upsert_with_where_post**](BillingApi.md#billings_upsert_with_where_post) | **POST** /Billings/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
 
@@ -359,6 +360,59 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **billings_tax_evidence_country_vat_get**
+> object billings_tax_evidence_country_vat_get(country, vat)
+
+Get Tax Evidence by country and VAT
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.BillingApi()
+country = 'country_example' # str | 
+vat = 'vat_example' # str | 
+
+try: 
+    # Get Tax Evidence by country and VAT
+    api_response = api_instance.billings_tax_evidence_country_vat_get(country, vat)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling BillingApi->billings_tax_evidence_country_vat_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **country** | **str**|  | 
+ **vat** | **str**|  | 
+
+### Return type
+
+**object**
 
 ### Authorization
 
