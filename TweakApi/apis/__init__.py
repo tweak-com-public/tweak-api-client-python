@@ -13,6 +13,7 @@ from .design_export_api import DesignExportApi
 from .design_folder_api import DesignFolderApi
 from .design_permission_set_api import DesignPermissionSetApi
 from .design_tag_api import DesignTagApi
+from .dynamic_data_api import DynamicDataApi
 from .image_api import ImageApi
 from .image_folder_api import ImageFolderApi
 from .image_folder_member_api import ImageFolderMemberApi
