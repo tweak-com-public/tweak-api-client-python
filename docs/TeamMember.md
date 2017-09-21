@@ -15,6 +15,8 @@ Name | Type | Description | Notes
 **address_line2** | **str** |  | [optional] 
 **address_state** | **str** |  | [optional] 
 **address_zip** | **str** |  | [optional] 
+**language** | **str** |  | [optional] 
+**timezone** | **str** |  | [optional] 
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
 **id** | **str** |  | [optional] 
@@ -35,6 +37,7 @@ Name | Type | Description | Notes
 **design_folders** | [**list[DesignFolder]**](DesignFolder.md) |  | [optional] 
 **workflows** | [**list[Workflow]**](Workflow.md) |  | [optional] 
 **image_folders** | [**list[ImageFolder]**](ImageFolder.md) |  | [optional] 
+**notifications** | [**list[Notification]**](Notification.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
