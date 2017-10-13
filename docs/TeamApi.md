@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**teams_count_get**](TeamApi.md#teams_count_get) | **GET** /Teams/count | Count instances of the model matched by where from the data source.
 [**teams_find_one_get**](TeamApi.md#teams_find_one_get) | **GET** /Teams/findOne | Find first instance of the model matched by filter from the data source.
 [**teams_get**](TeamApi.md#teams_get) | **GET** /Teams | Find all instances of the model matched by filter from the data source.
+[**teams_id_auth_reset_keys_delete**](TeamApi.md#teams_id_auth_reset_keys_delete) | **DELETE** /Teams/{id}/auth/reset-keys | Reset Team keys
 [**teams_id_billing_delete**](TeamApi.md#teams_id_billing_delete) | **DELETE** /Teams/{id}/billing | Deletes billing of this model.
 [**teams_id_billing_get**](TeamApi.md#teams_id_billing_get) | **GET** /Teams/{id}/billing | Fetches hasOne relation billing.
 [**teams_id_billing_post**](TeamApi.md#teams_id_billing_post) | **POST** /Teams/{id}/billing | Creates a new instance in billing of this model.
@@ -191,6 +192,7 @@ Method | HTTP request | Description
 [**teams_id_team_members_fk_get**](TeamApi.md#teams_id_team_members_fk_get) | **GET** /Teams/{id}/teamMembers/{fk} | Find a related item by id for teamMembers.
 [**teams_id_team_members_fk_put**](TeamApi.md#teams_id_team_members_fk_put) | **PUT** /Teams/{id}/teamMembers/{fk} | Update a related item by id for teamMembers.
 [**teams_id_team_members_get**](TeamApi.md#teams_id_team_members_get) | **GET** /Teams/{id}/teamMembers | Queries teamMembers of Team.
+[**teams_id_team_members_map_keys_get**](TeamApi.md#teams_id_team_members_map_keys_get) | **GET** /Teams/{id}/teamMembers/map-keys | Map teamMembers emails to teamMembers keys
 [**teams_id_team_members_post**](TeamApi.md#teams_id_team_members_post) | **POST** /Teams/{id}/teamMembers | Creates a new instance in teamMembers of this model.
 [**teams_id_template_folders_count_get**](TeamApi.md#teams_id_template_folders_count_get) | **GET** /Teams/{id}/templateFolders/count | Counts templateFolders of Team.
 [**teams_id_template_folders_delete**](TeamApi.md#teams_id_template_folders_delete) | **DELETE** /Teams/{id}/templateFolders | Deletes all templateFolders of this model.
@@ -529,6 +531,57 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[Team]**](Team.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_auth_reset_keys_delete**
+> Team teams_id_auth_reset_keys_delete(id)
+
+Reset Team keys
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+
+try: 
+    # Reset Team keys
+    api_response = api_instance.teams_id_auth_reset_keys_delete(id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_auth_reset_keys_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+
+### Return type
+
+[**Team**](Team.md)
 
 ### Authorization
 
@@ -10365,6 +10418,59 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[TeamMember]**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_team_members_map_keys_get**
+> list[object] teams_id_team_members_map_keys_get(id, data)
+
+Map teamMembers emails to teamMembers keys
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+data = TweakApi.Team() # Team | TeamMember(s) email
+
+try: 
+    # Map teamMembers emails to teamMembers keys
+    api_response = api_instance.teams_id_team_members_map_keys_get(id, data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_team_members_map_keys_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **data** | [**Team**](Team.md)| TeamMember(s) email | 
+
+### Return type
+
+**list[object]**
 
 ### Authorization
 

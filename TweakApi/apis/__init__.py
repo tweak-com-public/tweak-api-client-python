@@ -24,6 +24,8 @@ from .portal_member_api import PortalMemberApi
 from .portal_permission_set_api import PortalPermissionSetApi
 from .portal_template_api import PortalTemplateApi
 from .portal_template_folder_api import PortalTemplateFolderApi
+from .public_v_auth_api import PublicVAuthApi
+from .public_v_team_member_api import PublicVTeamMemberApi
 from .q_task_api import QTaskApi
 from .tag_api import TagApi
 from .team_api import TeamApi
