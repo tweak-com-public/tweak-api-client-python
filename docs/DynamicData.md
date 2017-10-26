@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **validations** | **object** |  | [optional] 
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
+**record_count** | **float** |  | [optional] [default to 0.0]
 **id** | **str** |  | [optional] 
 **team_id** | **str** |  | [optional] 
 **team** | [**Team**](Team.md) |  | [optional] 
