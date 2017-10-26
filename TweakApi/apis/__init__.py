@@ -29,6 +29,7 @@ from .public_v_team_member_api import PublicVTeamMemberApi
 from .q_task_api import QTaskApi
 from .tag_api import TagApi
 from .team_api import TeamApi
+from .team_builder_config_api import TeamBuilderConfigApi
 from .team_member_api import TeamMemberApi
 from .team_permission_set_api import TeamPermissionSetApi
 from .team_template_folder_api import TeamTemplateFolderApi
