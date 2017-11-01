@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **timezone** | **str** |  | [optional] 
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
+**key** | **str** |  | [optional] 
 **id** | **str** |  | [optional] 
 **customer_id** | **str** |  | [optional] 
 **team_id** | **str** |  | [optional] 
