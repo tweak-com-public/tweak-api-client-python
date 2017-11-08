@@ -1124,6 +1124,10780 @@ class TeamBuilderConfigApi(object):
                                             _return_http_data_only=params.get('_return_http_data_only'),
                                             collection_formats=collection_formats)
 
+    def team_builder_configs_id_product_groups_count_get(self, id, **kwargs):
+        """
+        Counts productGroups of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_count_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_count_get_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_count_get_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_count_get_with_http_info(self, id, **kwargs):
+        """
+        Counts productGroups of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_count_get_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'where']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_count_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_count_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups/count'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'where' in params:
+            query_params['where'] = params['where']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='InlineResponse200',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_delete(self, id, **kwargs):
+        """
+        Deletes all productGroups of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_delete(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_delete_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_delete_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_delete_with_http_info(self, id, **kwargs):
+        """
+        Deletes all productGroups of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_delete_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_fk_delete(self, id, fk, **kwargs):
+        """
+        Delete a related item by id for productGroups.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_fk_delete(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productGroups (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_fk_delete_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_fk_delete_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_fk_delete_with_http_info(self, id, fk, **kwargs):
+        """
+        Delete a related item by id for productGroups.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_fk_delete_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productGroups (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_fk_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_fk_delete`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_groups_fk_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_fk_get(self, id, fk, **kwargs):
+        """
+        Find a related item by id for productGroups.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_fk_get(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productGroups (required)
+        :return: ProductGroup
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_fk_get_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_fk_get_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_fk_get_with_http_info(self, id, fk, **kwargs):
+        """
+        Find a related item by id for productGroups.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_fk_get_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productGroups (required)
+        :return: ProductGroup
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_fk_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_fk_get`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_groups_fk_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductGroup',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_fk_put(self, id, fk, **kwargs):
+        """
+        Update a related item by id for productGroups.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_fk_put(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productGroups (required)
+        :param ProductGroup data: 
+        :return: ProductGroup
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_fk_put_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_fk_put_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_fk_put_with_http_info(self, id, fk, **kwargs):
+        """
+        Update a related item by id for productGroups.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_fk_put_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productGroups (required)
+        :param ProductGroup data: 
+        :return: ProductGroup
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_fk_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_fk_put`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_groups_fk_put`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductGroup',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_get(self, id, **kwargs):
+        """
+        Queries productGroups of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str filter: 
+        :return: list[ProductGroup]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_get_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_get_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_get_with_http_info(self, id, **kwargs):
+        """
+        Queries productGroups of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_get_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str filter: 
+        :return: list[ProductGroup]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'filter']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'filter' in params:
+            query_params['filter'] = params['filter']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='list[ProductGroup]',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_nk_types_count_get(self, id, nk, **kwargs):
+        """
+        Counts types of ProductGroup.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_nk_types_count_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productGroups. (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_nk_types_count_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_nk_types_count_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_nk_types_count_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Counts types of ProductGroup.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_nk_types_count_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productGroups. (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'where']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_nk_types_count_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_nk_types_count_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_groups_nk_types_count_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups/{nk}/types/count'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'where' in params:
+            query_params['where'] = params['where']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='InlineResponse200',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_nk_types_delete(self, id, nk, **kwargs):
+        """
+        Deletes all types of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_nk_types_delete(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productGroups. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_nk_types_delete_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_nk_types_delete_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_nk_types_delete_with_http_info(self, id, nk, **kwargs):
+        """
+        Deletes all types of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_nk_types_delete_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productGroups. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_nk_types_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_nk_types_delete`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_groups_nk_types_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups/{nk}/types'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_nk_types_fk_delete(self, id, nk, fk, **kwargs):
+        """
+        Delete a related item by id for types.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_nk_types_fk_delete(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productGroups. (required)
+        :param str fk: Foreign key for types (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_nk_types_fk_delete_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_nk_types_fk_delete_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_nk_types_fk_delete_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Delete a related item by id for types.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_nk_types_fk_delete_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productGroups. (required)
+        :param str fk: Foreign key for types (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_nk_types_fk_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_nk_types_fk_delete`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_groups_nk_types_fk_delete`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_groups_nk_types_fk_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups/{nk}/types/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_nk_types_fk_get(self, id, nk, fk, **kwargs):
+        """
+        Find a related item by id for types.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_nk_types_fk_get(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productGroups. (required)
+        :param str fk: Foreign key for types (required)
+        :return: ProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_nk_types_fk_get_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_nk_types_fk_get_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_nk_types_fk_get_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Find a related item by id for types.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_nk_types_fk_get_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productGroups. (required)
+        :param str fk: Foreign key for types (required)
+        :return: ProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_nk_types_fk_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_nk_types_fk_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_groups_nk_types_fk_get`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_groups_nk_types_fk_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups/{nk}/types/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductType',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_nk_types_fk_put(self, id, nk, fk, **kwargs):
+        """
+        Update a related item by id for types.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_nk_types_fk_put(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productGroups. (required)
+        :param str fk: Foreign key for types (required)
+        :param ProductType data: 
+        :return: ProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_nk_types_fk_put_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_nk_types_fk_put_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_nk_types_fk_put_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Update a related item by id for types.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_nk_types_fk_put_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productGroups. (required)
+        :param str fk: Foreign key for types (required)
+        :param ProductType data: 
+        :return: ProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_nk_types_fk_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_nk_types_fk_put`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_groups_nk_types_fk_put`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_groups_nk_types_fk_put`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups/{nk}/types/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductType',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_nk_types_get(self, id, nk, **kwargs):
+        """
+        Queries types of ProductGroup.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_nk_types_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productGroups. (required)
+        :param str filter: 
+        :return: list[ProductType]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_nk_types_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_nk_types_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_nk_types_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Queries types of ProductGroup.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_nk_types_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productGroups. (required)
+        :param str filter: 
+        :return: list[ProductType]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'filter']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_nk_types_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_nk_types_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_groups_nk_types_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups/{nk}/types'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'filter' in params:
+            query_params['filter'] = params['filter']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='list[ProductType]',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_nk_types_post(self, id, nk, **kwargs):
+        """
+        Creates a new instance in types of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_nk_types_post(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productGroups. (required)
+        :param ProductType data: 
+        :return: ProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_nk_types_post_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_nk_types_post_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_nk_types_post_with_http_info(self, id, nk, **kwargs):
+        """
+        Creates a new instance in types of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_nk_types_post_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productGroups. (required)
+        :param ProductType data: 
+        :return: ProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_nk_types_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_nk_types_post`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_groups_nk_types_post`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups/{nk}/types'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductType',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_post(self, id, **kwargs):
+        """
+        Creates a new instance in productGroups of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_post(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param ProductGroup data: 
+        :return: ProductGroup
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_post_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_post_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_post_with_http_info(self, id, **kwargs):
+        """
+        Creates a new instance in productGroups of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_post_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param ProductGroup data: 
+        :return: ProductGroup
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_post`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductGroup',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_rel_fk_delete(self, id, fk, **kwargs):
+        """
+        Remove the productGroups relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_rel_fk_delete(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productGroups (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_rel_fk_delete_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_rel_fk_delete_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_rel_fk_delete_with_http_info(self, id, fk, **kwargs):
+        """
+        Remove the productGroups relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_rel_fk_delete_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productGroups (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_rel_fk_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_rel_fk_delete`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_groups_rel_fk_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_rel_fk_head(self, id, fk, **kwargs):
+        """
+        Check the existence of productGroups relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_rel_fk_head(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productGroups (required)
+        :return: bool
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_rel_fk_head_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_rel_fk_head_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_rel_fk_head_with_http_info(self, id, fk, **kwargs):
+        """
+        Check the existence of productGroups relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_rel_fk_head_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productGroups (required)
+        :return: bool
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_rel_fk_head" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_rel_fk_head`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_groups_rel_fk_head`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'HEAD',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='bool',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_groups_rel_fk_put(self, id, fk, **kwargs):
+        """
+        Add a related item by id for productGroups.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_rel_fk_put(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productGroups (required)
+        :param TeamBuilderConfigProductGroup data: 
+        :return: TeamBuilderConfigProductGroup
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_groups_rel_fk_put_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_groups_rel_fk_put_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_groups_rel_fk_put_with_http_info(self, id, fk, **kwargs):
+        """
+        Add a related item by id for productGroups.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_groups_rel_fk_put_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productGroups (required)
+        :param TeamBuilderConfigProductGroup data: 
+        :return: TeamBuilderConfigProductGroup
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_groups_rel_fk_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_groups_rel_fk_put`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_groups_rel_fk_put`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productGroups/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TeamBuilderConfigProductGroup',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_count_get(self, id, **kwargs):
+        """
+        Counts productSizeMaterials of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_count_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_count_get_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_count_get_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_count_get_with_http_info(self, id, **kwargs):
+        """
+        Counts productSizeMaterials of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_count_get_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'where']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_count_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_count_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterials/count'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'where' in params:
+            query_params['where'] = params['where']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='InlineResponse200',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_delete(self, id, **kwargs):
+        """
+        Deletes all productSizeMaterials of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_delete(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_delete_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_delete_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_delete_with_http_info(self, id, **kwargs):
+        """
+        Deletes all productSizeMaterials of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_delete_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterials'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_fk_delete(self, id, fk, **kwargs):
+        """
+        Delete a related item by id for productSizeMaterials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_fk_delete(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterials (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_fk_delete_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_fk_delete_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_fk_delete_with_http_info(self, id, fk, **kwargs):
+        """
+        Delete a related item by id for productSizeMaterials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_fk_delete_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterials (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_fk_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_fk_delete`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_size_materials_fk_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterials/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_fk_get(self, id, fk, **kwargs):
+        """
+        Find a related item by id for productSizeMaterials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_fk_get(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterials (required)
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_fk_get_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_fk_get_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_fk_get_with_http_info(self, id, fk, **kwargs):
+        """
+        Find a related item by id for productSizeMaterials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_fk_get_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterials (required)
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_fk_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_fk_get`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_size_materials_fk_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterials/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSizeMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_fk_put(self, id, fk, **kwargs):
+        """
+        Update a related item by id for productSizeMaterials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_fk_put(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterials (required)
+        :param ProductSizeMaterial data: 
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_fk_put_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_fk_put_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_fk_put_with_http_info(self, id, fk, **kwargs):
+        """
+        Update a related item by id for productSizeMaterials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_fk_put_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterials (required)
+        :param ProductSizeMaterial data: 
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_fk_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_fk_put`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_size_materials_fk_put`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterials/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSizeMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_get(self, id, **kwargs):
+        """
+        Queries productSizeMaterials of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str filter: 
+        :return: list[ProductSizeMaterial]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_get_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_get_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_get_with_http_info(self, id, **kwargs):
+        """
+        Queries productSizeMaterials of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_get_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str filter: 
+        :return: list[ProductSizeMaterial]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'filter']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterials'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'filter' in params:
+            query_params['filter'] = params['filter']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='list[ProductSizeMaterial]',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_nk_material_get(self, id, nk, **kwargs):
+        """
+        Fetches belongsTo relation material.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_nk_material_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizeMaterials. (required)
+        :param bool refresh: 
+        :return: ProductMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_nk_material_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_nk_material_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_nk_material_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Fetches belongsTo relation material.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_nk_material_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizeMaterials. (required)
+        :param bool refresh: 
+        :return: ProductMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'refresh']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_nk_material_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_nk_material_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_size_materials_nk_material_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/material'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'refresh' in params:
+            query_params['refresh'] = params['refresh']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_nk_size_get(self, id, nk, **kwargs):
+        """
+        Fetches belongsTo relation size.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_nk_size_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizeMaterials. (required)
+        :param bool refresh: 
+        :return: ProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_nk_size_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_nk_size_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_nk_size_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Fetches belongsTo relation size.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_nk_size_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizeMaterials. (required)
+        :param bool refresh: 
+        :return: ProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'refresh']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_nk_size_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_nk_size_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_size_materials_nk_size_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/size'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'refresh' in params:
+            query_params['refresh'] = params['refresh']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSize',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_nk_team_get(self, id, nk, **kwargs):
+        """
+        Fetches belongsTo relation team.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_nk_team_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizeMaterials. (required)
+        :param bool refresh: 
+        :return: Team
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_nk_team_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_nk_team_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_nk_team_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Fetches belongsTo relation team.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_nk_team_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizeMaterials. (required)
+        :param bool refresh: 
+        :return: Team
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'refresh']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_nk_team_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_nk_team_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_size_materials_nk_team_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/team'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'refresh' in params:
+            query_params['refresh'] = params['refresh']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='Team',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_post(self, id, **kwargs):
+        """
+        Creates a new instance in productSizeMaterials of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_post(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param ProductSizeMaterial data: 
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_post_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_post_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_post_with_http_info(self, id, **kwargs):
+        """
+        Creates a new instance in productSizeMaterials of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_post_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param ProductSizeMaterial data: 
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_post`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterials'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSizeMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_rel_count_get(self, id, **kwargs):
+        """
+        Counts productSizeMaterialsRel of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_count_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_rel_count_get_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_rel_count_get_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_rel_count_get_with_http_info(self, id, **kwargs):
+        """
+        Counts productSizeMaterialsRel of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_count_get_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'where']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_rel_count_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_rel_count_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterialsRel/count'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'where' in params:
+            query_params['where'] = params['where']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='InlineResponse200',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_rel_delete(self, id, **kwargs):
+        """
+        Deletes all productSizeMaterialsRel of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_delete(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_rel_delete_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_rel_delete_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_rel_delete_with_http_info(self, id, **kwargs):
+        """
+        Deletes all productSizeMaterialsRel of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_delete_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_rel_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_rel_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterialsRel'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_rel_fk_delete(self, id, fk, **kwargs):
+        """
+        Remove the productSizeMaterials relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_fk_delete(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterials (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_rel_fk_delete_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_rel_fk_delete_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_rel_fk_delete_with_http_info(self, id, fk, **kwargs):
+        """
+        Remove the productSizeMaterials relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_fk_delete_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterials (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_rel_fk_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_rel_fk_delete`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_size_materials_rel_fk_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterials/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_rel_fk_delete_0(self, id, fk, **kwargs):
+        """
+        Delete a related item by id for productSizeMaterialsRel.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_fk_delete_0(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterialsRel (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_rel_fk_delete_0_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_rel_fk_delete_0_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_rel_fk_delete_0_with_http_info(self, id, fk, **kwargs):
+        """
+        Delete a related item by id for productSizeMaterialsRel.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_fk_delete_0_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterialsRel (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_rel_fk_delete_0" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_rel_fk_delete_0`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_size_materials_rel_fk_delete_0`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterialsRel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_rel_fk_get(self, id, fk, **kwargs):
+        """
+        Find a related item by id for productSizeMaterialsRel.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_fk_get(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterialsRel (required)
+        :return: TeamBuilderConfigProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_rel_fk_get_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_rel_fk_get_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_rel_fk_get_with_http_info(self, id, fk, **kwargs):
+        """
+        Find a related item by id for productSizeMaterialsRel.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_fk_get_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterialsRel (required)
+        :return: TeamBuilderConfigProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_rel_fk_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_rel_fk_get`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_size_materials_rel_fk_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterialsRel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TeamBuilderConfigProductSizeMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_rel_fk_head(self, id, fk, **kwargs):
+        """
+        Check the existence of productSizeMaterials relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_fk_head(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterials (required)
+        :return: bool
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_rel_fk_head_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_rel_fk_head_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_rel_fk_head_with_http_info(self, id, fk, **kwargs):
+        """
+        Check the existence of productSizeMaterials relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_fk_head_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterials (required)
+        :return: bool
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_rel_fk_head" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_rel_fk_head`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_size_materials_rel_fk_head`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterials/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'HEAD',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='bool',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_rel_fk_put(self, id, fk, **kwargs):
+        """
+        Add a related item by id for productSizeMaterials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_fk_put(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterials (required)
+        :param TeamBuilderConfigProductSizeMaterial data: 
+        :return: TeamBuilderConfigProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_rel_fk_put_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_rel_fk_put_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_rel_fk_put_with_http_info(self, id, fk, **kwargs):
+        """
+        Add a related item by id for productSizeMaterials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_fk_put_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterials (required)
+        :param TeamBuilderConfigProductSizeMaterial data: 
+        :return: TeamBuilderConfigProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_rel_fk_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_rel_fk_put`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_size_materials_rel_fk_put`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterials/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TeamBuilderConfigProductSizeMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_rel_fk_put_0(self, id, fk, **kwargs):
+        """
+        Update a related item by id for productSizeMaterialsRel.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_fk_put_0(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterialsRel (required)
+        :param TeamBuilderConfigProductSizeMaterial data: 
+        :return: TeamBuilderConfigProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_rel_fk_put_0_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_rel_fk_put_0_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_rel_fk_put_0_with_http_info(self, id, fk, **kwargs):
+        """
+        Update a related item by id for productSizeMaterialsRel.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_fk_put_0_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizeMaterialsRel (required)
+        :param TeamBuilderConfigProductSizeMaterial data: 
+        :return: TeamBuilderConfigProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_rel_fk_put_0" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_rel_fk_put_0`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_size_materials_rel_fk_put_0`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterialsRel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TeamBuilderConfigProductSizeMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_rel_get(self, id, **kwargs):
+        """
+        Queries productSizeMaterialsRel of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str filter: 
+        :return: list[TeamBuilderConfigProductSizeMaterial]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_rel_get_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_rel_get_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_rel_get_with_http_info(self, id, **kwargs):
+        """
+        Queries productSizeMaterialsRel of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_get_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str filter: 
+        :return: list[TeamBuilderConfigProductSizeMaterial]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'filter']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_rel_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_rel_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterialsRel'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'filter' in params:
+            query_params['filter'] = params['filter']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='list[TeamBuilderConfigProductSizeMaterial]',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_rel_nk_builder_config_get(self, id, nk, **kwargs):
+        """
+        Fetches belongsTo relation builderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_nk_builder_config_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizeMaterialsRel. (required)
+        :param bool refresh: 
+        :return: TeamBuilderConfig
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_rel_nk_builder_config_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_rel_nk_builder_config_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_rel_nk_builder_config_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Fetches belongsTo relation builderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_nk_builder_config_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizeMaterialsRel. (required)
+        :param bool refresh: 
+        :return: TeamBuilderConfig
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'refresh']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_rel_nk_builder_config_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_rel_nk_builder_config_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_size_materials_rel_nk_builder_config_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterialsRel/{nk}/builderConfig'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'refresh' in params:
+            query_params['refresh'] = params['refresh']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TeamBuilderConfig',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get(self, id, nk, **kwargs):
+        """
+        Fetches belongsTo relation productSizeMaterial.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizeMaterialsRel. (required)
+        :param bool refresh: 
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Fetches belongsTo relation productSizeMaterial.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizeMaterialsRel. (required)
+        :param bool refresh: 
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'refresh']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterialsRel/{nk}/productSizeMaterial'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'refresh' in params:
+            query_params['refresh'] = params['refresh']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSizeMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_size_materials_rel_post(self, id, **kwargs):
+        """
+        Creates a new instance in productSizeMaterialsRel of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_post(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param TeamBuilderConfigProductSizeMaterial data: 
+        :return: TeamBuilderConfigProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_size_materials_rel_post_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_size_materials_rel_post_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_size_materials_rel_post_with_http_info(self, id, **kwargs):
+        """
+        Creates a new instance in productSizeMaterialsRel of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_size_materials_rel_post_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param TeamBuilderConfigProductSizeMaterial data: 
+        :return: TeamBuilderConfigProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_size_materials_rel_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_size_materials_rel_post`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizeMaterialsRel'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TeamBuilderConfigProductSizeMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_count_get(self, id, **kwargs):
+        """
+        Counts productSizes of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_count_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_count_get_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_count_get_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_count_get_with_http_info(self, id, **kwargs):
+        """
+        Counts productSizes of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_count_get_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'where']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_count_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_count_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/count'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'where' in params:
+            query_params['where'] = params['where']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='InlineResponse200',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_delete(self, id, **kwargs):
+        """
+        Deletes all productSizes of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_delete(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_delete_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_delete_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_delete_with_http_info(self, id, **kwargs):
+        """
+        Deletes all productSizes of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_delete_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_fk_delete(self, id, fk, **kwargs):
+        """
+        Delete a related item by id for productSizes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_fk_delete(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizes (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_fk_delete_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_fk_delete_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_fk_delete_with_http_info(self, id, fk, **kwargs):
+        """
+        Delete a related item by id for productSizes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_fk_delete_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizes (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_fk_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_fk_delete`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_fk_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_fk_get(self, id, fk, **kwargs):
+        """
+        Find a related item by id for productSizes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_fk_get(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizes (required)
+        :return: ProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_fk_get_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_fk_get_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_fk_get_with_http_info(self, id, fk, **kwargs):
+        """
+        Find a related item by id for productSizes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_fk_get_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizes (required)
+        :return: ProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_fk_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_fk_get`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_fk_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSize',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_fk_put(self, id, fk, **kwargs):
+        """
+        Update a related item by id for productSizes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_fk_put(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizes (required)
+        :param ProductSize data: 
+        :return: ProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_fk_put_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_fk_put_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_fk_put_with_http_info(self, id, fk, **kwargs):
+        """
+        Update a related item by id for productSizes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_fk_put_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizes (required)
+        :param ProductSize data: 
+        :return: ProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_fk_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_fk_put`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_fk_put`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSize',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_get(self, id, **kwargs):
+        """
+        Queries productSizes of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str filter: 
+        :return: list[ProductSize]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_get_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_get_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_get_with_http_info(self, id, **kwargs):
+        """
+        Queries productSizes of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_get_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str filter: 
+        :return: list[ProductSize]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'filter']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'filter' in params:
+            query_params['filter'] = params['filter']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='list[ProductSize]',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_materials_count_get(self, id, nk, **kwargs):
+        """
+        Counts materials of ProductSize.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_count_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_materials_count_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_materials_count_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_materials_count_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Counts materials of ProductSize.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_count_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'where']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_materials_count_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_materials_count_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_materials_count_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/materials/count'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'where' in params:
+            query_params['where'] = params['where']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='InlineResponse200',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_materials_delete(self, id, nk, **kwargs):
+        """
+        Deletes all materials of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_delete(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_materials_delete_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_materials_delete_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_materials_delete_with_http_info(self, id, nk, **kwargs):
+        """
+        Deletes all materials of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_delete_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_materials_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_materials_delete`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_materials_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/materials'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_materials_fk_delete(self, id, nk, fk, **kwargs):
+        """
+        Delete a related item by id for materials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_fk_delete(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for materials (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_materials_fk_delete_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_materials_fk_delete_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_materials_fk_delete_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Delete a related item by id for materials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_fk_delete_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for materials (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_materials_fk_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_materials_fk_delete`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_materials_fk_delete`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_nk_materials_fk_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/materials/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_materials_fk_get(self, id, nk, fk, **kwargs):
+        """
+        Find a related item by id for materials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_fk_get(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for materials (required)
+        :return: ProductMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_materials_fk_get_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_materials_fk_get_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_materials_fk_get_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Find a related item by id for materials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_fk_get_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for materials (required)
+        :return: ProductMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_materials_fk_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_materials_fk_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_materials_fk_get`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_nk_materials_fk_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/materials/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_materials_fk_put(self, id, nk, fk, **kwargs):
+        """
+        Update a related item by id for materials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_fk_put(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for materials (required)
+        :param ProductMaterial data: 
+        :return: ProductMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_materials_fk_put_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_materials_fk_put_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_materials_fk_put_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Update a related item by id for materials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_fk_put_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for materials (required)
+        :param ProductMaterial data: 
+        :return: ProductMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_materials_fk_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_materials_fk_put`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_materials_fk_put`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_nk_materials_fk_put`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/materials/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_materials_get(self, id, nk, **kwargs):
+        """
+        Queries materials of ProductSize.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str filter: 
+        :return: list[ProductMaterial]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_materials_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_materials_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_materials_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Queries materials of ProductSize.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str filter: 
+        :return: list[ProductMaterial]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'filter']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_materials_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_materials_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_materials_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/materials'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'filter' in params:
+            query_params['filter'] = params['filter']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='list[ProductMaterial]',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_materials_post(self, id, nk, **kwargs):
+        """
+        Creates a new instance in materials of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_post(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param ProductMaterial data: 
+        :return: ProductMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_materials_post_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_materials_post_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_materials_post_with_http_info(self, id, nk, **kwargs):
+        """
+        Creates a new instance in materials of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_post_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param ProductMaterial data: 
+        :return: ProductMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_materials_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_materials_post`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_materials_post`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/materials'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete(self, id, nk, fk, **kwargs):
+        """
+        Remove the materials relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for materials (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Remove the materials relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for materials (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/materials/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_materials_rel_fk_head(self, id, nk, fk, **kwargs):
+        """
+        Check the existence of materials relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_rel_fk_head(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for materials (required)
+        :return: bool
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_materials_rel_fk_head_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_materials_rel_fk_head_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_materials_rel_fk_head_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Check the existence of materials relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_rel_fk_head_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for materials (required)
+        :return: bool
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_materials_rel_fk_head" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_materials_rel_fk_head`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_materials_rel_fk_head`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_nk_materials_rel_fk_head`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/materials/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'HEAD',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='bool',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_materials_rel_fk_put(self, id, nk, fk, **kwargs):
+        """
+        Add a related item by id for materials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_rel_fk_put(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for materials (required)
+        :param ProductSizeMaterial data: 
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_materials_rel_fk_put_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_materials_rel_fk_put_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_materials_rel_fk_put_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Add a related item by id for materials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_materials_rel_fk_put_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for materials (required)
+        :param ProductSizeMaterial data: 
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_materials_rel_fk_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_materials_rel_fk_put`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_materials_rel_fk_put`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_nk_materials_rel_fk_put`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/materials/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSizeMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_products_count_get(self, id, nk, **kwargs):
+        """
+        Counts products of ProductSize.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_products_count_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_products_count_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_products_count_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_products_count_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Counts products of ProductSize.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_products_count_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'where']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_products_count_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_products_count_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_products_count_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/products/count'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'where' in params:
+            query_params['where'] = params['where']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='InlineResponse200',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_products_delete(self, id, nk, **kwargs):
+        """
+        Deletes all products of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_products_delete(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_products_delete_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_products_delete_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_products_delete_with_http_info(self, id, nk, **kwargs):
+        """
+        Deletes all products of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_products_delete_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_products_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_products_delete`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_products_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/products'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_products_fk_delete(self, id, nk, fk, **kwargs):
+        """
+        Delete a related item by id for products.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_products_fk_delete(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for products (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_products_fk_delete_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_products_fk_delete_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_products_fk_delete_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Delete a related item by id for products.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_products_fk_delete_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for products (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_products_fk_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_products_fk_delete`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_products_fk_delete`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_nk_products_fk_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/products/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_products_fk_get(self, id, nk, fk, **kwargs):
+        """
+        Find a related item by id for products.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_products_fk_get(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for products (required)
+        :return: Product
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_products_fk_get_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_products_fk_get_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_products_fk_get_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Find a related item by id for products.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_products_fk_get_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for products (required)
+        :return: Product
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_products_fk_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_products_fk_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_products_fk_get`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_nk_products_fk_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/products/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='Product',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_products_fk_put(self, id, nk, fk, **kwargs):
+        """
+        Update a related item by id for products.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_products_fk_put(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for products (required)
+        :param Product data: 
+        :return: Product
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_products_fk_put_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_products_fk_put_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_products_fk_put_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Update a related item by id for products.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_products_fk_put_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for products (required)
+        :param Product data: 
+        :return: Product
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_products_fk_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_products_fk_put`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_products_fk_put`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_nk_products_fk_put`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/products/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='Product',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_products_get(self, id, nk, **kwargs):
+        """
+        Queries products of ProductSize.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_products_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str filter: 
+        :return: list[Product]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_products_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_products_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_products_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Queries products of ProductSize.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_products_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str filter: 
+        :return: list[Product]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'filter']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_products_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_products_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_products_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/products'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'filter' in params:
+            query_params['filter'] = params['filter']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='list[Product]',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_products_post(self, id, nk, **kwargs):
+        """
+        Creates a new instance in products of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_products_post(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param Product data: 
+        :return: Product
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_products_post_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_products_post_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_products_post_with_http_info(self, id, nk, **kwargs):
+        """
+        Creates a new instance in products of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_products_post_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param Product data: 
+        :return: Product
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_products_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_products_post`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_products_post`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/products'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='Product',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_size_materials_count_get(self, id, nk, **kwargs):
+        """
+        Counts sizeMaterials of ProductSize.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_size_materials_count_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_size_materials_count_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_size_materials_count_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_size_materials_count_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Counts sizeMaterials of ProductSize.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_size_materials_count_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'where']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_size_materials_count_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_size_materials_count_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_size_materials_count_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials/count'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'where' in params:
+            query_params['where'] = params['where']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='InlineResponse200',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_size_materials_delete(self, id, nk, **kwargs):
+        """
+        Deletes all sizeMaterials of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_size_materials_delete(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_size_materials_delete_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_size_materials_delete_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_size_materials_delete_with_http_info(self, id, nk, **kwargs):
+        """
+        Deletes all sizeMaterials of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_size_materials_delete_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_size_materials_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_size_materials_delete`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_size_materials_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_size_materials_fk_delete(self, id, nk, fk, **kwargs):
+        """
+        Delete a related item by id for sizeMaterials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_size_materials_fk_delete(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for sizeMaterials (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_size_materials_fk_delete_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_size_materials_fk_delete_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_size_materials_fk_delete_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Delete a related item by id for sizeMaterials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_size_materials_fk_delete_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for sizeMaterials (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_size_materials_fk_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_size_materials_fk_delete`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_size_materials_fk_delete`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_nk_size_materials_fk_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_size_materials_fk_get(self, id, nk, fk, **kwargs):
+        """
+        Find a related item by id for sizeMaterials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_size_materials_fk_get(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for sizeMaterials (required)
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_size_materials_fk_get_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_size_materials_fk_get_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_size_materials_fk_get_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Find a related item by id for sizeMaterials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_size_materials_fk_get_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for sizeMaterials (required)
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_size_materials_fk_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_size_materials_fk_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_size_materials_fk_get`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_nk_size_materials_fk_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSizeMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_size_materials_fk_put(self, id, nk, fk, **kwargs):
+        """
+        Update a related item by id for sizeMaterials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_size_materials_fk_put(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for sizeMaterials (required)
+        :param ProductSizeMaterial data: 
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_size_materials_fk_put_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_size_materials_fk_put_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_size_materials_fk_put_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Update a related item by id for sizeMaterials.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_size_materials_fk_put_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str fk: Foreign key for sizeMaterials (required)
+        :param ProductSizeMaterial data: 
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_size_materials_fk_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_size_materials_fk_put`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_size_materials_fk_put`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_nk_size_materials_fk_put`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSizeMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_size_materials_get(self, id, nk, **kwargs):
+        """
+        Queries sizeMaterials of ProductSize.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_size_materials_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str filter: 
+        :return: list[ProductSizeMaterial]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_size_materials_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_size_materials_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_size_materials_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Queries sizeMaterials of ProductSize.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_size_materials_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param str filter: 
+        :return: list[ProductSizeMaterial]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'filter']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_size_materials_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_size_materials_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_size_materials_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'filter' in params:
+            query_params['filter'] = params['filter']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='list[ProductSizeMaterial]',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_size_materials_post(self, id, nk, **kwargs):
+        """
+        Creates a new instance in sizeMaterials of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_size_materials_post(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param ProductSizeMaterial data: 
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_size_materials_post_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_size_materials_post_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_size_materials_post_with_http_info(self, id, nk, **kwargs):
+        """
+        Creates a new instance in sizeMaterials of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_size_materials_post_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param ProductSizeMaterial data: 
+        :return: ProductSizeMaterial
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_size_materials_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_size_materials_post`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_size_materials_post`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSizeMaterial',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_nk_type_get(self, id, nk, **kwargs):
+        """
+        Fetches belongsTo relation type.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_type_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param bool refresh: 
+        :return: ProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_nk_type_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_nk_type_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_nk_type_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Fetches belongsTo relation type.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_nk_type_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productSizes. (required)
+        :param bool refresh: 
+        :return: ProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'refresh']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_nk_type_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_nk_type_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_sizes_nk_type_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/{nk}/type'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'refresh' in params:
+            query_params['refresh'] = params['refresh']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductType',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_post(self, id, **kwargs):
+        """
+        Creates a new instance in productSizes of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_post(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param ProductSize data: 
+        :return: ProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_post_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_post_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_post_with_http_info(self, id, **kwargs):
+        """
+        Creates a new instance in productSizes of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_post_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param ProductSize data: 
+        :return: ProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_post`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSize',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_rel_fk_delete(self, id, fk, **kwargs):
+        """
+        Remove the productSizes relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_rel_fk_delete(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizes (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_rel_fk_delete_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_rel_fk_delete_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_rel_fk_delete_with_http_info(self, id, fk, **kwargs):
+        """
+        Remove the productSizes relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_rel_fk_delete_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizes (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_rel_fk_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_rel_fk_delete`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_rel_fk_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_rel_fk_head(self, id, fk, **kwargs):
+        """
+        Check the existence of productSizes relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_rel_fk_head(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizes (required)
+        :return: bool
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_rel_fk_head_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_rel_fk_head_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_rel_fk_head_with_http_info(self, id, fk, **kwargs):
+        """
+        Check the existence of productSizes relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_rel_fk_head_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizes (required)
+        :return: bool
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_rel_fk_head" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_rel_fk_head`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_rel_fk_head`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'HEAD',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='bool',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_sizes_rel_fk_put(self, id, fk, **kwargs):
+        """
+        Add a related item by id for productSizes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_rel_fk_put(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizes (required)
+        :param TeamBuilderConfigProductSize data: 
+        :return: TeamBuilderConfigProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_sizes_rel_fk_put_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_sizes_rel_fk_put_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_sizes_rel_fk_put_with_http_info(self, id, fk, **kwargs):
+        """
+        Add a related item by id for productSizes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_sizes_rel_fk_put_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productSizes (required)
+        :param TeamBuilderConfigProductSize data: 
+        :return: TeamBuilderConfigProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_sizes_rel_fk_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_sizes_rel_fk_put`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_sizes_rel_fk_put`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productSizes/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TeamBuilderConfigProductSize',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_count_get(self, id, **kwargs):
+        """
+        Counts productTypes of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_count_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_count_get_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_count_get_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_count_get_with_http_info(self, id, **kwargs):
+        """
+        Counts productTypes of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_count_get_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'where']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_count_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_count_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/count'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'where' in params:
+            query_params['where'] = params['where']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='InlineResponse200',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_delete(self, id, **kwargs):
+        """
+        Deletes all productTypes of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_delete(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_delete_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_delete_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_delete_with_http_info(self, id, **kwargs):
+        """
+        Deletes all productTypes of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_delete_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_fk_delete(self, id, fk, **kwargs):
+        """
+        Delete a related item by id for productTypes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_fk_delete(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productTypes (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_fk_delete_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_fk_delete_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_fk_delete_with_http_info(self, id, fk, **kwargs):
+        """
+        Delete a related item by id for productTypes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_fk_delete_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productTypes (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_fk_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_fk_delete`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_types_fk_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_fk_get(self, id, fk, **kwargs):
+        """
+        Find a related item by id for productTypes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_fk_get(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productTypes (required)
+        :return: ProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_fk_get_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_fk_get_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_fk_get_with_http_info(self, id, fk, **kwargs):
+        """
+        Find a related item by id for productTypes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_fk_get_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productTypes (required)
+        :return: ProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_fk_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_fk_get`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_types_fk_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductType',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_fk_put(self, id, fk, **kwargs):
+        """
+        Update a related item by id for productTypes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_fk_put(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productTypes (required)
+        :param ProductType data: 
+        :return: ProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_fk_put_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_fk_put_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_fk_put_with_http_info(self, id, fk, **kwargs):
+        """
+        Update a related item by id for productTypes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_fk_put_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productTypes (required)
+        :param ProductType data: 
+        :return: ProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_fk_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_fk_put`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_types_fk_put`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductType',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_get(self, id, **kwargs):
+        """
+        Queries productTypes of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str filter: 
+        :return: list[ProductType]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_get_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_get_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_get_with_http_info(self, id, **kwargs):
+        """
+        Queries productTypes of TeamBuilderConfig.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_get_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str filter: 
+        :return: list[ProductType]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'filter']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'filter' in params:
+            query_params['filter'] = params['filter']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='list[ProductType]',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_nk_group_get(self, id, nk, **kwargs):
+        """
+        Fetches belongsTo relation group.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_group_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :param bool refresh: 
+        :return: ProductGroup
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_nk_group_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_nk_group_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_nk_group_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Fetches belongsTo relation group.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_group_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :param bool refresh: 
+        :return: ProductGroup
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'refresh']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_nk_group_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_nk_group_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_types_nk_group_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/{nk}/group'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'refresh' in params:
+            query_params['refresh'] = params['refresh']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductGroup',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_nk_sizes_count_get(self, id, nk, **kwargs):
+        """
+        Counts sizes of ProductType.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_sizes_count_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_nk_sizes_count_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_nk_sizes_count_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_nk_sizes_count_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Counts sizes of ProductType.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_sizes_count_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :param str where: Criteria to match model instances
+        :return: InlineResponse200
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'where']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_nk_sizes_count_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_nk_sizes_count_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_types_nk_sizes_count_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/{nk}/sizes/count'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'where' in params:
+            query_params['where'] = params['where']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='InlineResponse200',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_nk_sizes_delete(self, id, nk, **kwargs):
+        """
+        Deletes all sizes of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_sizes_delete(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_nk_sizes_delete_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_nk_sizes_delete_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_nk_sizes_delete_with_http_info(self, id, nk, **kwargs):
+        """
+        Deletes all sizes of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_sizes_delete_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_nk_sizes_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_nk_sizes_delete`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_types_nk_sizes_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/{nk}/sizes'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_nk_sizes_fk_delete(self, id, nk, fk, **kwargs):
+        """
+        Delete a related item by id for sizes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_sizes_fk_delete(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :param str fk: Foreign key for sizes (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_nk_sizes_fk_delete_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_nk_sizes_fk_delete_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_nk_sizes_fk_delete_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Delete a related item by id for sizes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_sizes_fk_delete_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :param str fk: Foreign key for sizes (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_nk_sizes_fk_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_nk_sizes_fk_delete`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_types_nk_sizes_fk_delete`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_types_nk_sizes_fk_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/{nk}/sizes/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_nk_sizes_fk_get(self, id, nk, fk, **kwargs):
+        """
+        Find a related item by id for sizes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_sizes_fk_get(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :param str fk: Foreign key for sizes (required)
+        :return: ProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_nk_sizes_fk_get_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_nk_sizes_fk_get_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_nk_sizes_fk_get_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Find a related item by id for sizes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_sizes_fk_get_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :param str fk: Foreign key for sizes (required)
+        :return: ProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_nk_sizes_fk_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_nk_sizes_fk_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_types_nk_sizes_fk_get`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_types_nk_sizes_fk_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/{nk}/sizes/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSize',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_nk_sizes_fk_put(self, id, nk, fk, **kwargs):
+        """
+        Update a related item by id for sizes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_sizes_fk_put(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :param str fk: Foreign key for sizes (required)
+        :param ProductSize data: 
+        :return: ProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_nk_sizes_fk_put_with_http_info(id, nk, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_nk_sizes_fk_put_with_http_info(id, nk, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_nk_sizes_fk_put_with_http_info(self, id, nk, fk, **kwargs):
+        """
+        Update a related item by id for sizes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_sizes_fk_put_with_http_info(id, nk, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :param str fk: Foreign key for sizes (required)
+        :param ProductSize data: 
+        :return: ProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_nk_sizes_fk_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_nk_sizes_fk_put`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_types_nk_sizes_fk_put`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_types_nk_sizes_fk_put`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/{nk}/sizes/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSize',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_nk_sizes_get(self, id, nk, **kwargs):
+        """
+        Queries sizes of ProductType.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_sizes_get(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :param str filter: 
+        :return: list[ProductSize]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_nk_sizes_get_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_nk_sizes_get_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_nk_sizes_get_with_http_info(self, id, nk, **kwargs):
+        """
+        Queries sizes of ProductType.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_sizes_get_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :param str filter: 
+        :return: list[ProductSize]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'filter']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_nk_sizes_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_nk_sizes_get`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_types_nk_sizes_get`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/{nk}/sizes'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+        if 'filter' in params:
+            query_params['filter'] = params['filter']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='list[ProductSize]',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_nk_sizes_post(self, id, nk, **kwargs):
+        """
+        Creates a new instance in sizes of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_sizes_post(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :param ProductSize data: 
+        :return: ProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_nk_sizes_post_with_http_info(id, nk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_nk_sizes_post_with_http_info(id, nk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_nk_sizes_post_with_http_info(self, id, nk, **kwargs):
+        """
+        Creates a new instance in sizes of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_nk_sizes_post_with_http_info(id, nk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str nk: Foreign key for productTypes. (required)
+        :param ProductSize data: 
+        :return: ProductSize
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'nk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_nk_sizes_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_nk_sizes_post`")
+        # verify the required parameter 'nk' is set
+        if ('nk' not in params) or (params['nk'] is None):
+            raise ValueError("Missing the required parameter `nk` when calling `team_builder_configs_id_product_types_nk_sizes_post`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/{nk}/sizes'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'nk' in params:
+            path_params['nk'] = params['nk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductSize',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_post(self, id, **kwargs):
+        """
+        Creates a new instance in productTypes of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_post(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param ProductType data: 
+        :return: ProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_post_with_http_info(id, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_post_with_http_info(id, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_post_with_http_info(self, id, **kwargs):
+        """
+        Creates a new instance in productTypes of this model.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_post_with_http_info(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param ProductType data: 
+        :return: ProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_post`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ProductType',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_rel_fk_delete(self, id, fk, **kwargs):
+        """
+        Remove the productTypes relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_rel_fk_delete(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productTypes (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_rel_fk_delete_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_rel_fk_delete_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_rel_fk_delete_with_http_info(self, id, fk, **kwargs):
+        """
+        Remove the productTypes relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_rel_fk_delete_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productTypes (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_rel_fk_delete" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_rel_fk_delete`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_types_rel_fk_delete`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'DELETE',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type=None,
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_rel_fk_head(self, id, fk, **kwargs):
+        """
+        Check the existence of productTypes relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_rel_fk_head(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productTypes (required)
+        :return: bool
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_rel_fk_head_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_rel_fk_head_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_rel_fk_head_with_http_info(self, id, fk, **kwargs):
+        """
+        Check the existence of productTypes relation to an item by id.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_rel_fk_head_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productTypes (required)
+        :return: bool
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_rel_fk_head" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_rel_fk_head`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_types_rel_fk_head`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'HEAD',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='bool',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
+    def team_builder_configs_id_product_types_rel_fk_put(self, id, fk, **kwargs):
+        """
+        Add a related item by id for productTypes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_rel_fk_put(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productTypes (required)
+        :param TeamBuilderConfigProductType data: 
+        :return: TeamBuilderConfigProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('callback'):
+            return self.team_builder_configs_id_product_types_rel_fk_put_with_http_info(id, fk, **kwargs)
+        else:
+            (data) = self.team_builder_configs_id_product_types_rel_fk_put_with_http_info(id, fk, **kwargs)
+            return data
+
+    def team_builder_configs_id_product_types_rel_fk_put_with_http_info(self, id, fk, **kwargs):
+        """
+        Add a related item by id for productTypes.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.team_builder_configs_id_product_types_rel_fk_put_with_http_info(id, fk, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str id: TeamBuilderConfig id (required)
+        :param str fk: Foreign key for productTypes (required)
+        :param TeamBuilderConfigProductType data: 
+        :return: TeamBuilderConfigProductType
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'fk', 'data']
+        all_params.append('callback')
+        all_params.append('_return_http_data_only')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method team_builder_configs_id_product_types_rel_fk_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `team_builder_configs_id_product_types_rel_fk_put`")
+        # verify the required parameter 'fk' is set
+        if ('fk' not in params) or (params['fk'] is None):
+            raise ValueError("Missing the required parameter `fk` when calling `team_builder_configs_id_product_types_rel_fk_put`")
+
+
+        collection_formats = {}
+
+        resource_path = '/TeamBuilderConfigs/{id}/productTypes/rel/{fk}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'fk' in params:
+            path_params['fk'] = params['fk']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in params:
+            body_params = params['data']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json', 'application/xml', 'text/xml', 'application/javascript', 'text/javascript'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json', 'application/x-www-form-urlencoded', 'application/xml', 'text/xml'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        return self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TeamBuilderConfigProductType',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'),
+                                            _return_http_data_only=params.get('_return_http_data_only'),
+                                            collection_formats=collection_formats)
+
     def team_builder_configs_id_put(self, id, **kwargs):
         """
         Replace attributes for a model instance and persist it into the data source.

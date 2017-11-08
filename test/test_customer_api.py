@@ -914,6 +914,118 @@ class TestCustomerApi(unittest.TestCase):
         """
         pass
 
+    def test_customers_id_teams_nk_product_materials_count_get(self):
+        """
+        Test case for customers_id_teams_nk_product_materials_count_get
+
+        Counts productMaterials of Team.
+        """
+        pass
+
+    def test_customers_id_teams_nk_product_materials_delete(self):
+        """
+        Test case for customers_id_teams_nk_product_materials_delete
+
+        Deletes all productMaterials of this model.
+        """
+        pass
+
+    def test_customers_id_teams_nk_product_materials_fk_delete(self):
+        """
+        Test case for customers_id_teams_nk_product_materials_fk_delete
+
+        Delete a related item by id for productMaterials.
+        """
+        pass
+
+    def test_customers_id_teams_nk_product_materials_fk_get(self):
+        """
+        Test case for customers_id_teams_nk_product_materials_fk_get
+
+        Find a related item by id for productMaterials.
+        """
+        pass
+
+    def test_customers_id_teams_nk_product_materials_fk_put(self):
+        """
+        Test case for customers_id_teams_nk_product_materials_fk_put
+
+        Update a related item by id for productMaterials.
+        """
+        pass
+
+    def test_customers_id_teams_nk_product_materials_get(self):
+        """
+        Test case for customers_id_teams_nk_product_materials_get
+
+        Queries productMaterials of Team.
+        """
+        pass
+
+    def test_customers_id_teams_nk_product_materials_post(self):
+        """
+        Test case for customers_id_teams_nk_product_materials_post
+
+        Creates a new instance in productMaterials of this model.
+        """
+        pass
+
+    def test_customers_id_teams_nk_product_size_materials_count_get(self):
+        """
+        Test case for customers_id_teams_nk_product_size_materials_count_get
+
+        Counts productSizeMaterials of Team.
+        """
+        pass
+
+    def test_customers_id_teams_nk_product_size_materials_delete(self):
+        """
+        Test case for customers_id_teams_nk_product_size_materials_delete
+
+        Deletes all productSizeMaterials of this model.
+        """
+        pass
+
+    def test_customers_id_teams_nk_product_size_materials_fk_delete(self):
+        """
+        Test case for customers_id_teams_nk_product_size_materials_fk_delete
+
+        Delete a related item by id for productSizeMaterials.
+        """
+        pass
+
+    def test_customers_id_teams_nk_product_size_materials_fk_get(self):
+        """
+        Test case for customers_id_teams_nk_product_size_materials_fk_get
+
+        Find a related item by id for productSizeMaterials.
+        """
+        pass
+
+    def test_customers_id_teams_nk_product_size_materials_fk_put(self):
+        """
+        Test case for customers_id_teams_nk_product_size_materials_fk_put
+
+        Update a related item by id for productSizeMaterials.
+        """
+        pass
+
+    def test_customers_id_teams_nk_product_size_materials_get(self):
+        """
+        Test case for customers_id_teams_nk_product_size_materials_get
+
+        Queries productSizeMaterials of Team.
+        """
+        pass
+
+    def test_customers_id_teams_nk_product_size_materials_post(self):
+        """
+        Test case for customers_id_teams_nk_product_size_materials_post
+
+        Creates a new instance in productSizeMaterials of this model.
+        """
+        pass
+
     def test_customers_id_teams_nk_team_members_count_get(self):
         """
         Test case for customers_id_teams_nk_team_members_count_get

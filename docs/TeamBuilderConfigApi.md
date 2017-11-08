@@ -14,6 +14,98 @@ Method | HTTP request | Description
 [**team_builder_configs_id_get**](TeamBuilderConfigApi.md#team_builder_configs_id_get) | **GET** /TeamBuilderConfigs/{id} | Find a model instance by {{id}} from the data source.
 [**team_builder_configs_id_head**](TeamBuilderConfigApi.md#team_builder_configs_id_head) | **HEAD** /TeamBuilderConfigs/{id} | Check whether a model instance exists in the data source.
 [**team_builder_configs_id_patch**](TeamBuilderConfigApi.md#team_builder_configs_id_patch) | **PATCH** /TeamBuilderConfigs/{id} | Patch attributes for a model instance and persist it into the data source.
+[**team_builder_configs_id_product_groups_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_count_get) | **GET** /TeamBuilderConfigs/{id}/productGroups/count | Counts productGroups of TeamBuilderConfig.
+[**team_builder_configs_id_product_groups_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_delete) | **DELETE** /TeamBuilderConfigs/{id}/productGroups | Deletes all productGroups of this model.
+[**team_builder_configs_id_product_groups_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productGroups/{fk} | Delete a related item by id for productGroups.
+[**team_builder_configs_id_product_groups_fk_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_fk_get) | **GET** /TeamBuilderConfigs/{id}/productGroups/{fk} | Find a related item by id for productGroups.
+[**team_builder_configs_id_product_groups_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productGroups/{fk} | Update a related item by id for productGroups.
+[**team_builder_configs_id_product_groups_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_get) | **GET** /TeamBuilderConfigs/{id}/productGroups | Queries productGroups of TeamBuilderConfig.
+[**team_builder_configs_id_product_groups_nk_types_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_nk_types_count_get) | **GET** /TeamBuilderConfigs/{id}/productGroups/{nk}/types/count | Counts types of ProductGroup.
+[**team_builder_configs_id_product_groups_nk_types_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_nk_types_delete) | **DELETE** /TeamBuilderConfigs/{id}/productGroups/{nk}/types | Deletes all types of this model.
+[**team_builder_configs_id_product_groups_nk_types_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_nk_types_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productGroups/{nk}/types/{fk} | Delete a related item by id for types.
+[**team_builder_configs_id_product_groups_nk_types_fk_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_nk_types_fk_get) | **GET** /TeamBuilderConfigs/{id}/productGroups/{nk}/types/{fk} | Find a related item by id for types.
+[**team_builder_configs_id_product_groups_nk_types_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_nk_types_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productGroups/{nk}/types/{fk} | Update a related item by id for types.
+[**team_builder_configs_id_product_groups_nk_types_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_nk_types_get) | **GET** /TeamBuilderConfigs/{id}/productGroups/{nk}/types | Queries types of ProductGroup.
+[**team_builder_configs_id_product_groups_nk_types_post**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_nk_types_post) | **POST** /TeamBuilderConfigs/{id}/productGroups/{nk}/types | Creates a new instance in types of this model.
+[**team_builder_configs_id_product_groups_post**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_post) | **POST** /TeamBuilderConfigs/{id}/productGroups | Creates a new instance in productGroups of this model.
+[**team_builder_configs_id_product_groups_rel_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_rel_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productGroups/rel/{fk} | Remove the productGroups relation to an item by id.
+[**team_builder_configs_id_product_groups_rel_fk_head**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_rel_fk_head) | **HEAD** /TeamBuilderConfigs/{id}/productGroups/rel/{fk} | Check the existence of productGroups relation to an item by id.
+[**team_builder_configs_id_product_groups_rel_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_rel_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productGroups/rel/{fk} | Add a related item by id for productGroups.
+[**team_builder_configs_id_product_size_materials_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_count_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/count | Counts productSizeMaterials of TeamBuilderConfig.
+[**team_builder_configs_id_product_size_materials_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizeMaterials | Deletes all productSizeMaterials of this model.
+[**team_builder_configs_id_product_size_materials_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizeMaterials/{fk} | Delete a related item by id for productSizeMaterials.
+[**team_builder_configs_id_product_size_materials_fk_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_fk_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/{fk} | Find a related item by id for productSizeMaterials.
+[**team_builder_configs_id_product_size_materials_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productSizeMaterials/{fk} | Update a related item by id for productSizeMaterials.
+[**team_builder_configs_id_product_size_materials_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials | Queries productSizeMaterials of TeamBuilderConfig.
+[**team_builder_configs_id_product_size_materials_nk_material_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_nk_material_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/material | Fetches belongsTo relation material.
+[**team_builder_configs_id_product_size_materials_nk_size_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_nk_size_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/size | Fetches belongsTo relation size.
+[**team_builder_configs_id_product_size_materials_nk_team_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_nk_team_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/team | Fetches belongsTo relation team.
+[**team_builder_configs_id_product_size_materials_post**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_post) | **POST** /TeamBuilderConfigs/{id}/productSizeMaterials | Creates a new instance in productSizeMaterials of this model.
+[**team_builder_configs_id_product_size_materials_rel_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_count_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/count | Counts productSizeMaterialsRel of TeamBuilderConfig.
+[**team_builder_configs_id_product_size_materials_rel_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizeMaterialsRel | Deletes all productSizeMaterialsRel of this model.
+[**team_builder_configs_id_product_size_materials_rel_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizeMaterials/rel/{fk} | Remove the productSizeMaterials relation to an item by id.
+[**team_builder_configs_id_product_size_materials_rel_fk_delete_0**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_fk_delete_0) | **DELETE** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{fk} | Delete a related item by id for productSizeMaterialsRel.
+[**team_builder_configs_id_product_size_materials_rel_fk_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_fk_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{fk} | Find a related item by id for productSizeMaterialsRel.
+[**team_builder_configs_id_product_size_materials_rel_fk_head**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_fk_head) | **HEAD** /TeamBuilderConfigs/{id}/productSizeMaterials/rel/{fk} | Check the existence of productSizeMaterials relation to an item by id.
+[**team_builder_configs_id_product_size_materials_rel_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productSizeMaterials/rel/{fk} | Add a related item by id for productSizeMaterials.
+[**team_builder_configs_id_product_size_materials_rel_fk_put_0**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_fk_put_0) | **PUT** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{fk} | Update a related item by id for productSizeMaterialsRel.
+[**team_builder_configs_id_product_size_materials_rel_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel | Queries productSizeMaterialsRel of TeamBuilderConfig.
+[**team_builder_configs_id_product_size_materials_rel_nk_builder_config_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_nk_builder_config_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{nk}/builderConfig | Fetches belongsTo relation builderConfig.
+[**team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{nk}/productSizeMaterial | Fetches belongsTo relation productSizeMaterial.
+[**team_builder_configs_id_product_size_materials_rel_post**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_post) | **POST** /TeamBuilderConfigs/{id}/productSizeMaterialsRel | Creates a new instance in productSizeMaterialsRel of this model.
+[**team_builder_configs_id_product_sizes_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_count_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/count | Counts productSizes of TeamBuilderConfig.
+[**team_builder_configs_id_product_sizes_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes | Deletes all productSizes of this model.
+[**team_builder_configs_id_product_sizes_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{fk} | Delete a related item by id for productSizes.
+[**team_builder_configs_id_product_sizes_fk_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_fk_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/{fk} | Find a related item by id for productSizes.
+[**team_builder_configs_id_product_sizes_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productSizes/{fk} | Update a related item by id for productSizes.
+[**team_builder_configs_id_product_sizes_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_get) | **GET** /TeamBuilderConfigs/{id}/productSizes | Queries productSizes of TeamBuilderConfig.
+[**team_builder_configs_id_product_sizes_nk_materials_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_materials_count_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/count | Counts materials of ProductSize.
+[**team_builder_configs_id_product_sizes_nk_materials_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_materials_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials | Deletes all materials of this model.
+[**team_builder_configs_id_product_sizes_nk_materials_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_materials_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/{fk} | Delete a related item by id for materials.
+[**team_builder_configs_id_product_sizes_nk_materials_fk_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_materials_fk_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/{fk} | Find a related item by id for materials.
+[**team_builder_configs_id_product_sizes_nk_materials_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_materials_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/{fk} | Update a related item by id for materials.
+[**team_builder_configs_id_product_sizes_nk_materials_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_materials_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials | Queries materials of ProductSize.
+[**team_builder_configs_id_product_sizes_nk_materials_post**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_materials_post) | **POST** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials | Creates a new instance in materials of this model.
+[**team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/rel/{fk} | Remove the materials relation to an item by id.
+[**team_builder_configs_id_product_sizes_nk_materials_rel_fk_head**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_materials_rel_fk_head) | **HEAD** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/rel/{fk} | Check the existence of materials relation to an item by id.
+[**team_builder_configs_id_product_sizes_nk_materials_rel_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_materials_rel_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/rel/{fk} | Add a related item by id for materials.
+[**team_builder_configs_id_product_sizes_nk_products_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_products_count_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/products/count | Counts products of ProductSize.
+[**team_builder_configs_id_product_sizes_nk_products_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_products_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/products | Deletes all products of this model.
+[**team_builder_configs_id_product_sizes_nk_products_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_products_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/products/{fk} | Delete a related item by id for products.
+[**team_builder_configs_id_product_sizes_nk_products_fk_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_products_fk_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/products/{fk} | Find a related item by id for products.
+[**team_builder_configs_id_product_sizes_nk_products_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_products_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productSizes/{nk}/products/{fk} | Update a related item by id for products.
+[**team_builder_configs_id_product_sizes_nk_products_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_products_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/products | Queries products of ProductSize.
+[**team_builder_configs_id_product_sizes_nk_products_post**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_products_post) | **POST** /TeamBuilderConfigs/{id}/productSizes/{nk}/products | Creates a new instance in products of this model.
+[**team_builder_configs_id_product_sizes_nk_size_materials_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_size_materials_count_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials/count | Counts sizeMaterials of ProductSize.
+[**team_builder_configs_id_product_sizes_nk_size_materials_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_size_materials_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials | Deletes all sizeMaterials of this model.
+[**team_builder_configs_id_product_sizes_nk_size_materials_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_size_materials_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials/{fk} | Delete a related item by id for sizeMaterials.
+[**team_builder_configs_id_product_sizes_nk_size_materials_fk_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_size_materials_fk_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials/{fk} | Find a related item by id for sizeMaterials.
+[**team_builder_configs_id_product_sizes_nk_size_materials_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_size_materials_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials/{fk} | Update a related item by id for sizeMaterials.
+[**team_builder_configs_id_product_sizes_nk_size_materials_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_size_materials_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials | Queries sizeMaterials of ProductSize.
+[**team_builder_configs_id_product_sizes_nk_size_materials_post**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_size_materials_post) | **POST** /TeamBuilderConfigs/{id}/productSizes/{nk}/sizeMaterials | Creates a new instance in sizeMaterials of this model.
+[**team_builder_configs_id_product_sizes_nk_type_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_type_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/type | Fetches belongsTo relation type.
+[**team_builder_configs_id_product_sizes_post**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_post) | **POST** /TeamBuilderConfigs/{id}/productSizes | Creates a new instance in productSizes of this model.
+[**team_builder_configs_id_product_sizes_rel_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_rel_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/rel/{fk} | Remove the productSizes relation to an item by id.
+[**team_builder_configs_id_product_sizes_rel_fk_head**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_rel_fk_head) | **HEAD** /TeamBuilderConfigs/{id}/productSizes/rel/{fk} | Check the existence of productSizes relation to an item by id.
+[**team_builder_configs_id_product_sizes_rel_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_rel_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productSizes/rel/{fk} | Add a related item by id for productSizes.
+[**team_builder_configs_id_product_types_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_count_get) | **GET** /TeamBuilderConfigs/{id}/productTypes/count | Counts productTypes of TeamBuilderConfig.
+[**team_builder_configs_id_product_types_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_delete) | **DELETE** /TeamBuilderConfigs/{id}/productTypes | Deletes all productTypes of this model.
+[**team_builder_configs_id_product_types_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productTypes/{fk} | Delete a related item by id for productTypes.
+[**team_builder_configs_id_product_types_fk_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_fk_get) | **GET** /TeamBuilderConfigs/{id}/productTypes/{fk} | Find a related item by id for productTypes.
+[**team_builder_configs_id_product_types_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productTypes/{fk} | Update a related item by id for productTypes.
+[**team_builder_configs_id_product_types_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_get) | **GET** /TeamBuilderConfigs/{id}/productTypes | Queries productTypes of TeamBuilderConfig.
+[**team_builder_configs_id_product_types_nk_group_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_nk_group_get) | **GET** /TeamBuilderConfigs/{id}/productTypes/{nk}/group | Fetches belongsTo relation group.
+[**team_builder_configs_id_product_types_nk_sizes_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_nk_sizes_count_get) | **GET** /TeamBuilderConfigs/{id}/productTypes/{nk}/sizes/count | Counts sizes of ProductType.
+[**team_builder_configs_id_product_types_nk_sizes_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_nk_sizes_delete) | **DELETE** /TeamBuilderConfigs/{id}/productTypes/{nk}/sizes | Deletes all sizes of this model.
+[**team_builder_configs_id_product_types_nk_sizes_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_nk_sizes_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productTypes/{nk}/sizes/{fk} | Delete a related item by id for sizes.
+[**team_builder_configs_id_product_types_nk_sizes_fk_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_nk_sizes_fk_get) | **GET** /TeamBuilderConfigs/{id}/productTypes/{nk}/sizes/{fk} | Find a related item by id for sizes.
+[**team_builder_configs_id_product_types_nk_sizes_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_nk_sizes_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productTypes/{nk}/sizes/{fk} | Update a related item by id for sizes.
+[**team_builder_configs_id_product_types_nk_sizes_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_nk_sizes_get) | **GET** /TeamBuilderConfigs/{id}/productTypes/{nk}/sizes | Queries sizes of ProductType.
+[**team_builder_configs_id_product_types_nk_sizes_post**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_nk_sizes_post) | **POST** /TeamBuilderConfigs/{id}/productTypes/{nk}/sizes | Creates a new instance in sizes of this model.
+[**team_builder_configs_id_product_types_post**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_post) | **POST** /TeamBuilderConfigs/{id}/productTypes | Creates a new instance in productTypes of this model.
+[**team_builder_configs_id_product_types_rel_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_rel_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productTypes/rel/{fk} | Remove the productTypes relation to an item by id.
+[**team_builder_configs_id_product_types_rel_fk_head**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_rel_fk_head) | **HEAD** /TeamBuilderConfigs/{id}/productTypes/rel/{fk} | Check the existence of productTypes relation to an item by id.
+[**team_builder_configs_id_product_types_rel_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_types_rel_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productTypes/rel/{fk} | Add a related item by id for productTypes.
 [**team_builder_configs_id_put**](TeamBuilderConfigApi.md#team_builder_configs_id_put) | **PUT** /TeamBuilderConfigs/{id} | Replace attributes for a model instance and persist it into the data source.
 [**team_builder_configs_id_replace_post**](TeamBuilderConfigApi.md#team_builder_configs_id_replace_post) | **POST** /TeamBuilderConfigs/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**team_builder_configs_id_team_get**](TeamBuilderConfigApi.md#team_builder_configs_id_team_get) | **GET** /TeamBuilderConfigs/{id}/team | Fetches belongsTo relation team.
@@ -527,6 +619,4957 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_count_get**
+> InlineResponse200 team_builder_configs_id_product_groups_count_get(id, where=where)
+
+Counts productGroups of TeamBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts productGroups of TeamBuilderConfig.
+    api_response = api_instance.team_builder_configs_id_product_groups_count_get(id, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_delete**
+> team_builder_configs_id_product_groups_delete(id)
+
+Deletes all productGroups of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+
+try: 
+    # Deletes all productGroups of this model.
+    api_instance.team_builder_configs_id_product_groups_delete(id)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_fk_delete**
+> team_builder_configs_id_product_groups_fk_delete(id, fk)
+
+Delete a related item by id for productGroups.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productGroups
+
+try: 
+    # Delete a related item by id for productGroups.
+    api_instance.team_builder_configs_id_product_groups_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productGroups | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_fk_get**
+> ProductGroup team_builder_configs_id_product_groups_fk_get(id, fk)
+
+Find a related item by id for productGroups.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productGroups
+
+try: 
+    # Find a related item by id for productGroups.
+    api_response = api_instance.team_builder_configs_id_product_groups_fk_get(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productGroups | 
+
+### Return type
+
+[**ProductGroup**](ProductGroup.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_fk_put**
+> ProductGroup team_builder_configs_id_product_groups_fk_put(id, fk, data=data)
+
+Update a related item by id for productGroups.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productGroups
+data = TweakApi.ProductGroup() # ProductGroup |  (optional)
+
+try: 
+    # Update a related item by id for productGroups.
+    api_response = api_instance.team_builder_configs_id_product_groups_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productGroups | 
+ **data** | [**ProductGroup**](ProductGroup.md)|  | [optional] 
+
+### Return type
+
+[**ProductGroup**](ProductGroup.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_get**
+> list[ProductGroup] team_builder_configs_id_product_groups_get(id, filter=filter)
+
+Queries productGroups of TeamBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries productGroups of TeamBuilderConfig.
+    api_response = api_instance.team_builder_configs_id_product_groups_get(id, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[ProductGroup]**](ProductGroup.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_nk_types_count_get**
+> InlineResponse200 team_builder_configs_id_product_groups_nk_types_count_get(id, nk, where=where)
+
+Counts types of ProductGroup.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productGroups.
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts types of ProductGroup.
+    api_response = api_instance.team_builder_configs_id_product_groups_nk_types_count_get(id, nk, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_nk_types_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productGroups. | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_nk_types_delete**
+> team_builder_configs_id_product_groups_nk_types_delete(id, nk)
+
+Deletes all types of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productGroups.
+
+try: 
+    # Deletes all types of this model.
+    api_instance.team_builder_configs_id_product_groups_nk_types_delete(id, nk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_nk_types_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productGroups. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_nk_types_fk_delete**
+> team_builder_configs_id_product_groups_nk_types_fk_delete(id, nk, fk)
+
+Delete a related item by id for types.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productGroups.
+fk = 'fk_example' # str | Foreign key for types
+
+try: 
+    # Delete a related item by id for types.
+    api_instance.team_builder_configs_id_product_groups_nk_types_fk_delete(id, nk, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_nk_types_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productGroups. | 
+ **fk** | **str**| Foreign key for types | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_nk_types_fk_get**
+> ProductType team_builder_configs_id_product_groups_nk_types_fk_get(id, nk, fk)
+
+Find a related item by id for types.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productGroups.
+fk = 'fk_example' # str | Foreign key for types
+
+try: 
+    # Find a related item by id for types.
+    api_response = api_instance.team_builder_configs_id_product_groups_nk_types_fk_get(id, nk, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_nk_types_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productGroups. | 
+ **fk** | **str**| Foreign key for types | 
+
+### Return type
+
+[**ProductType**](ProductType.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_nk_types_fk_put**
+> ProductType team_builder_configs_id_product_groups_nk_types_fk_put(id, nk, fk, data=data)
+
+Update a related item by id for types.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productGroups.
+fk = 'fk_example' # str | Foreign key for types
+data = TweakApi.ProductType() # ProductType |  (optional)
+
+try: 
+    # Update a related item by id for types.
+    api_response = api_instance.team_builder_configs_id_product_groups_nk_types_fk_put(id, nk, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_nk_types_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productGroups. | 
+ **fk** | **str**| Foreign key for types | 
+ **data** | [**ProductType**](ProductType.md)|  | [optional] 
+
+### Return type
+
+[**ProductType**](ProductType.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_nk_types_get**
+> list[ProductType] team_builder_configs_id_product_groups_nk_types_get(id, nk, filter=filter)
+
+Queries types of ProductGroup.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productGroups.
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries types of ProductGroup.
+    api_response = api_instance.team_builder_configs_id_product_groups_nk_types_get(id, nk, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_nk_types_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productGroups. | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[ProductType]**](ProductType.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_nk_types_post**
+> ProductType team_builder_configs_id_product_groups_nk_types_post(id, nk, data=data)
+
+Creates a new instance in types of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productGroups.
+data = TweakApi.ProductType() # ProductType |  (optional)
+
+try: 
+    # Creates a new instance in types of this model.
+    api_response = api_instance.team_builder_configs_id_product_groups_nk_types_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_nk_types_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productGroups. | 
+ **data** | [**ProductType**](ProductType.md)|  | [optional] 
+
+### Return type
+
+[**ProductType**](ProductType.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_post**
+> ProductGroup team_builder_configs_id_product_groups_post(id, data=data)
+
+Creates a new instance in productGroups of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+data = TweakApi.ProductGroup() # ProductGroup |  (optional)
+
+try: 
+    # Creates a new instance in productGroups of this model.
+    api_response = api_instance.team_builder_configs_id_product_groups_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **data** | [**ProductGroup**](ProductGroup.md)|  | [optional] 
+
+### Return type
+
+[**ProductGroup**](ProductGroup.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_rel_fk_delete**
+> team_builder_configs_id_product_groups_rel_fk_delete(id, fk)
+
+Remove the productGroups relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productGroups
+
+try: 
+    # Remove the productGroups relation to an item by id.
+    api_instance.team_builder_configs_id_product_groups_rel_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_rel_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productGroups | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_rel_fk_head**
+> bool team_builder_configs_id_product_groups_rel_fk_head(id, fk)
+
+Check the existence of productGroups relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productGroups
+
+try: 
+    # Check the existence of productGroups relation to an item by id.
+    api_response = api_instance.team_builder_configs_id_product_groups_rel_fk_head(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_rel_fk_head: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productGroups | 
+
+### Return type
+
+**bool**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_groups_rel_fk_put**
+> TeamBuilderConfigProductGroup team_builder_configs_id_product_groups_rel_fk_put(id, fk, data=data)
+
+Add a related item by id for productGroups.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productGroups
+data = TweakApi.TeamBuilderConfigProductGroup() # TeamBuilderConfigProductGroup |  (optional)
+
+try: 
+    # Add a related item by id for productGroups.
+    api_response = api_instance.team_builder_configs_id_product_groups_rel_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_groups_rel_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productGroups | 
+ **data** | [**TeamBuilderConfigProductGroup**](TeamBuilderConfigProductGroup.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfigProductGroup**](TeamBuilderConfigProductGroup.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_count_get**
+> InlineResponse200 team_builder_configs_id_product_size_materials_count_get(id, where=where)
+
+Counts productSizeMaterials of TeamBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts productSizeMaterials of TeamBuilderConfig.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_count_get(id, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_delete**
+> team_builder_configs_id_product_size_materials_delete(id)
+
+Deletes all productSizeMaterials of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+
+try: 
+    # Deletes all productSizeMaterials of this model.
+    api_instance.team_builder_configs_id_product_size_materials_delete(id)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_fk_delete**
+> team_builder_configs_id_product_size_materials_fk_delete(id, fk)
+
+Delete a related item by id for productSizeMaterials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizeMaterials
+
+try: 
+    # Delete a related item by id for productSizeMaterials.
+    api_instance.team_builder_configs_id_product_size_materials_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizeMaterials | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_fk_get**
+> ProductSizeMaterial team_builder_configs_id_product_size_materials_fk_get(id, fk)
+
+Find a related item by id for productSizeMaterials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizeMaterials
+
+try: 
+    # Find a related item by id for productSizeMaterials.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_fk_get(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizeMaterials | 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_fk_put**
+> ProductSizeMaterial team_builder_configs_id_product_size_materials_fk_put(id, fk, data=data)
+
+Update a related item by id for productSizeMaterials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizeMaterials
+data = TweakApi.ProductSizeMaterial() # ProductSizeMaterial |  (optional)
+
+try: 
+    # Update a related item by id for productSizeMaterials.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizeMaterials | 
+ **data** | [**ProductSizeMaterial**](ProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_get**
+> list[ProductSizeMaterial] team_builder_configs_id_product_size_materials_get(id, filter=filter)
+
+Queries productSizeMaterials of TeamBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries productSizeMaterials of TeamBuilderConfig.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_get(id, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[ProductSizeMaterial]**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_nk_material_get**
+> ProductMaterial team_builder_configs_id_product_size_materials_nk_material_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation material.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizeMaterials.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation material.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_nk_material_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_nk_material_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizeMaterials. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_nk_size_get**
+> ProductSize team_builder_configs_id_product_size_materials_nk_size_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation size.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizeMaterials.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation size.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_nk_size_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_nk_size_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizeMaterials. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**ProductSize**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_nk_team_get**
+> Team team_builder_configs_id_product_size_materials_nk_team_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizeMaterials.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation team.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_nk_team_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_nk_team_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizeMaterials. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**Team**](Team.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_post**
+> ProductSizeMaterial team_builder_configs_id_product_size_materials_post(id, data=data)
+
+Creates a new instance in productSizeMaterials of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+data = TweakApi.ProductSizeMaterial() # ProductSizeMaterial |  (optional)
+
+try: 
+    # Creates a new instance in productSizeMaterials of this model.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **data** | [**ProductSizeMaterial**](ProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_rel_count_get**
+> InlineResponse200 team_builder_configs_id_product_size_materials_rel_count_get(id, where=where)
+
+Counts productSizeMaterialsRel of TeamBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts productSizeMaterialsRel of TeamBuilderConfig.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_rel_count_get(id, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_rel_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_rel_delete**
+> team_builder_configs_id_product_size_materials_rel_delete(id)
+
+Deletes all productSizeMaterialsRel of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+
+try: 
+    # Deletes all productSizeMaterialsRel of this model.
+    api_instance.team_builder_configs_id_product_size_materials_rel_delete(id)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_rel_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_rel_fk_delete**
+> team_builder_configs_id_product_size_materials_rel_fk_delete(id, fk)
+
+Remove the productSizeMaterials relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizeMaterials
+
+try: 
+    # Remove the productSizeMaterials relation to an item by id.
+    api_instance.team_builder_configs_id_product_size_materials_rel_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_rel_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizeMaterials | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_rel_fk_delete_0**
+> team_builder_configs_id_product_size_materials_rel_fk_delete_0(id, fk)
+
+Delete a related item by id for productSizeMaterialsRel.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizeMaterialsRel
+
+try: 
+    # Delete a related item by id for productSizeMaterialsRel.
+    api_instance.team_builder_configs_id_product_size_materials_rel_fk_delete_0(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_rel_fk_delete_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizeMaterialsRel | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_rel_fk_get**
+> TeamBuilderConfigProductSizeMaterial team_builder_configs_id_product_size_materials_rel_fk_get(id, fk)
+
+Find a related item by id for productSizeMaterialsRel.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizeMaterialsRel
+
+try: 
+    # Find a related item by id for productSizeMaterialsRel.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_rel_fk_get(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_rel_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizeMaterialsRel | 
+
+### Return type
+
+[**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_rel_fk_head**
+> bool team_builder_configs_id_product_size_materials_rel_fk_head(id, fk)
+
+Check the existence of productSizeMaterials relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizeMaterials
+
+try: 
+    # Check the existence of productSizeMaterials relation to an item by id.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_rel_fk_head(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_rel_fk_head: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizeMaterials | 
+
+### Return type
+
+**bool**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_rel_fk_put**
+> TeamBuilderConfigProductSizeMaterial team_builder_configs_id_product_size_materials_rel_fk_put(id, fk, data=data)
+
+Add a related item by id for productSizeMaterials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizeMaterials
+data = TweakApi.TeamBuilderConfigProductSizeMaterial() # TeamBuilderConfigProductSizeMaterial |  (optional)
+
+try: 
+    # Add a related item by id for productSizeMaterials.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_rel_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_rel_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizeMaterials | 
+ **data** | [**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_rel_fk_put_0**
+> TeamBuilderConfigProductSizeMaterial team_builder_configs_id_product_size_materials_rel_fk_put_0(id, fk, data=data)
+
+Update a related item by id for productSizeMaterialsRel.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizeMaterialsRel
+data = TweakApi.TeamBuilderConfigProductSizeMaterial() # TeamBuilderConfigProductSizeMaterial |  (optional)
+
+try: 
+    # Update a related item by id for productSizeMaterialsRel.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_rel_fk_put_0(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_rel_fk_put_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizeMaterialsRel | 
+ **data** | [**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_rel_get**
+> list[TeamBuilderConfigProductSizeMaterial] team_builder_configs_id_product_size_materials_rel_get(id, filter=filter)
+
+Queries productSizeMaterialsRel of TeamBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries productSizeMaterialsRel of TeamBuilderConfig.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_rel_get(id, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_rel_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[TeamBuilderConfigProductSizeMaterial]**](TeamBuilderConfigProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_rel_nk_builder_config_get**
+> TeamBuilderConfig team_builder_configs_id_product_size_materials_rel_nk_builder_config_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation builderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizeMaterialsRel.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation builderConfig.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_rel_nk_builder_config_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_rel_nk_builder_config_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizeMaterialsRel. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get**
+> ProductSizeMaterial team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation productSizeMaterial.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizeMaterialsRel.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation productSizeMaterial.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizeMaterialsRel. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_rel_post**
+> TeamBuilderConfigProductSizeMaterial team_builder_configs_id_product_size_materials_rel_post(id, data=data)
+
+Creates a new instance in productSizeMaterialsRel of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+data = TweakApi.TeamBuilderConfigProductSizeMaterial() # TeamBuilderConfigProductSizeMaterial |  (optional)
+
+try: 
+    # Creates a new instance in productSizeMaterialsRel of this model.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_rel_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_rel_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **data** | [**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_count_get**
+> InlineResponse200 team_builder_configs_id_product_sizes_count_get(id, where=where)
+
+Counts productSizes of TeamBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts productSizes of TeamBuilderConfig.
+    api_response = api_instance.team_builder_configs_id_product_sizes_count_get(id, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_delete**
+> team_builder_configs_id_product_sizes_delete(id)
+
+Deletes all productSizes of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+
+try: 
+    # Deletes all productSizes of this model.
+    api_instance.team_builder_configs_id_product_sizes_delete(id)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_fk_delete**
+> team_builder_configs_id_product_sizes_fk_delete(id, fk)
+
+Delete a related item by id for productSizes.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizes
+
+try: 
+    # Delete a related item by id for productSizes.
+    api_instance.team_builder_configs_id_product_sizes_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizes | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_fk_get**
+> ProductSize team_builder_configs_id_product_sizes_fk_get(id, fk)
+
+Find a related item by id for productSizes.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizes
+
+try: 
+    # Find a related item by id for productSizes.
+    api_response = api_instance.team_builder_configs_id_product_sizes_fk_get(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizes | 
+
+### Return type
+
+[**ProductSize**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_fk_put**
+> ProductSize team_builder_configs_id_product_sizes_fk_put(id, fk, data=data)
+
+Update a related item by id for productSizes.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizes
+data = TweakApi.ProductSize() # ProductSize |  (optional)
+
+try: 
+    # Update a related item by id for productSizes.
+    api_response = api_instance.team_builder_configs_id_product_sizes_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizes | 
+ **data** | [**ProductSize**](ProductSize.md)|  | [optional] 
+
+### Return type
+
+[**ProductSize**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_get**
+> list[ProductSize] team_builder_configs_id_product_sizes_get(id, filter=filter)
+
+Queries productSizes of TeamBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries productSizes of TeamBuilderConfig.
+    api_response = api_instance.team_builder_configs_id_product_sizes_get(id, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[ProductSize]**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_materials_count_get**
+> InlineResponse200 team_builder_configs_id_product_sizes_nk_materials_count_get(id, nk, where=where)
+
+Counts materials of ProductSize.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts materials of ProductSize.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_materials_count_get(id, nk, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_materials_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_materials_delete**
+> team_builder_configs_id_product_sizes_nk_materials_delete(id, nk)
+
+Deletes all materials of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+
+try: 
+    # Deletes all materials of this model.
+    api_instance.team_builder_configs_id_product_sizes_nk_materials_delete(id, nk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_materials_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_materials_fk_delete**
+> team_builder_configs_id_product_sizes_nk_materials_fk_delete(id, nk, fk)
+
+Delete a related item by id for materials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+fk = 'fk_example' # str | Foreign key for materials
+
+try: 
+    # Delete a related item by id for materials.
+    api_instance.team_builder_configs_id_product_sizes_nk_materials_fk_delete(id, nk, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_materials_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **fk** | **str**| Foreign key for materials | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_materials_fk_get**
+> ProductMaterial team_builder_configs_id_product_sizes_nk_materials_fk_get(id, nk, fk)
+
+Find a related item by id for materials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+fk = 'fk_example' # str | Foreign key for materials
+
+try: 
+    # Find a related item by id for materials.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_materials_fk_get(id, nk, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_materials_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **fk** | **str**| Foreign key for materials | 
+
+### Return type
+
+[**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_materials_fk_put**
+> ProductMaterial team_builder_configs_id_product_sizes_nk_materials_fk_put(id, nk, fk, data=data)
+
+Update a related item by id for materials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+fk = 'fk_example' # str | Foreign key for materials
+data = TweakApi.ProductMaterial() # ProductMaterial |  (optional)
+
+try: 
+    # Update a related item by id for materials.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_materials_fk_put(id, nk, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_materials_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **fk** | **str**| Foreign key for materials | 
+ **data** | [**ProductMaterial**](ProductMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_materials_get**
+> list[ProductMaterial] team_builder_configs_id_product_sizes_nk_materials_get(id, nk, filter=filter)
+
+Queries materials of ProductSize.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries materials of ProductSize.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_materials_get(id, nk, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_materials_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[ProductMaterial]**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_materials_post**
+> ProductMaterial team_builder_configs_id_product_sizes_nk_materials_post(id, nk, data=data)
+
+Creates a new instance in materials of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+data = TweakApi.ProductMaterial() # ProductMaterial |  (optional)
+
+try: 
+    # Creates a new instance in materials of this model.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_materials_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_materials_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **data** | [**ProductMaterial**](ProductMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete**
+> team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete(id, nk, fk)
+
+Remove the materials relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+fk = 'fk_example' # str | Foreign key for materials
+
+try: 
+    # Remove the materials relation to an item by id.
+    api_instance.team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete(id, nk, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **fk** | **str**| Foreign key for materials | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_materials_rel_fk_head**
+> bool team_builder_configs_id_product_sizes_nk_materials_rel_fk_head(id, nk, fk)
+
+Check the existence of materials relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+fk = 'fk_example' # str | Foreign key for materials
+
+try: 
+    # Check the existence of materials relation to an item by id.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_materials_rel_fk_head(id, nk, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_materials_rel_fk_head: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **fk** | **str**| Foreign key for materials | 
+
+### Return type
+
+**bool**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_materials_rel_fk_put**
+> ProductSizeMaterial team_builder_configs_id_product_sizes_nk_materials_rel_fk_put(id, nk, fk, data=data)
+
+Add a related item by id for materials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+fk = 'fk_example' # str | Foreign key for materials
+data = TweakApi.ProductSizeMaterial() # ProductSizeMaterial |  (optional)
+
+try: 
+    # Add a related item by id for materials.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_materials_rel_fk_put(id, nk, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_materials_rel_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **fk** | **str**| Foreign key for materials | 
+ **data** | [**ProductSizeMaterial**](ProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_products_count_get**
+> InlineResponse200 team_builder_configs_id_product_sizes_nk_products_count_get(id, nk, where=where)
+
+Counts products of ProductSize.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts products of ProductSize.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_products_count_get(id, nk, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_products_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_products_delete**
+> team_builder_configs_id_product_sizes_nk_products_delete(id, nk)
+
+Deletes all products of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+
+try: 
+    # Deletes all products of this model.
+    api_instance.team_builder_configs_id_product_sizes_nk_products_delete(id, nk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_products_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_products_fk_delete**
+> team_builder_configs_id_product_sizes_nk_products_fk_delete(id, nk, fk)
+
+Delete a related item by id for products.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+fk = 'fk_example' # str | Foreign key for products
+
+try: 
+    # Delete a related item by id for products.
+    api_instance.team_builder_configs_id_product_sizes_nk_products_fk_delete(id, nk, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_products_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **fk** | **str**| Foreign key for products | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_products_fk_get**
+> Product team_builder_configs_id_product_sizes_nk_products_fk_get(id, nk, fk)
+
+Find a related item by id for products.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+fk = 'fk_example' # str | Foreign key for products
+
+try: 
+    # Find a related item by id for products.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_products_fk_get(id, nk, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_products_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **fk** | **str**| Foreign key for products | 
+
+### Return type
+
+[**Product**](Product.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_products_fk_put**
+> Product team_builder_configs_id_product_sizes_nk_products_fk_put(id, nk, fk, data=data)
+
+Update a related item by id for products.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+fk = 'fk_example' # str | Foreign key for products
+data = TweakApi.Product() # Product |  (optional)
+
+try: 
+    # Update a related item by id for products.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_products_fk_put(id, nk, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_products_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **fk** | **str**| Foreign key for products | 
+ **data** | [**Product**](Product.md)|  | [optional] 
+
+### Return type
+
+[**Product**](Product.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_products_get**
+> list[Product] team_builder_configs_id_product_sizes_nk_products_get(id, nk, filter=filter)
+
+Queries products of ProductSize.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries products of ProductSize.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_products_get(id, nk, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_products_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[Product]**](Product.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_products_post**
+> Product team_builder_configs_id_product_sizes_nk_products_post(id, nk, data=data)
+
+Creates a new instance in products of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+data = TweakApi.Product() # Product |  (optional)
+
+try: 
+    # Creates a new instance in products of this model.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_products_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_products_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **data** | [**Product**](Product.md)|  | [optional] 
+
+### Return type
+
+[**Product**](Product.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_size_materials_count_get**
+> InlineResponse200 team_builder_configs_id_product_sizes_nk_size_materials_count_get(id, nk, where=where)
+
+Counts sizeMaterials of ProductSize.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts sizeMaterials of ProductSize.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_size_materials_count_get(id, nk, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_size_materials_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_size_materials_delete**
+> team_builder_configs_id_product_sizes_nk_size_materials_delete(id, nk)
+
+Deletes all sizeMaterials of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+
+try: 
+    # Deletes all sizeMaterials of this model.
+    api_instance.team_builder_configs_id_product_sizes_nk_size_materials_delete(id, nk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_size_materials_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_size_materials_fk_delete**
+> team_builder_configs_id_product_sizes_nk_size_materials_fk_delete(id, nk, fk)
+
+Delete a related item by id for sizeMaterials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+fk = 'fk_example' # str | Foreign key for sizeMaterials
+
+try: 
+    # Delete a related item by id for sizeMaterials.
+    api_instance.team_builder_configs_id_product_sizes_nk_size_materials_fk_delete(id, nk, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_size_materials_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **fk** | **str**| Foreign key for sizeMaterials | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_size_materials_fk_get**
+> ProductSizeMaterial team_builder_configs_id_product_sizes_nk_size_materials_fk_get(id, nk, fk)
+
+Find a related item by id for sizeMaterials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+fk = 'fk_example' # str | Foreign key for sizeMaterials
+
+try: 
+    # Find a related item by id for sizeMaterials.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_size_materials_fk_get(id, nk, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_size_materials_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **fk** | **str**| Foreign key for sizeMaterials | 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_size_materials_fk_put**
+> ProductSizeMaterial team_builder_configs_id_product_sizes_nk_size_materials_fk_put(id, nk, fk, data=data)
+
+Update a related item by id for sizeMaterials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+fk = 'fk_example' # str | Foreign key for sizeMaterials
+data = TweakApi.ProductSizeMaterial() # ProductSizeMaterial |  (optional)
+
+try: 
+    # Update a related item by id for sizeMaterials.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_size_materials_fk_put(id, nk, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_size_materials_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **fk** | **str**| Foreign key for sizeMaterials | 
+ **data** | [**ProductSizeMaterial**](ProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_size_materials_get**
+> list[ProductSizeMaterial] team_builder_configs_id_product_sizes_nk_size_materials_get(id, nk, filter=filter)
+
+Queries sizeMaterials of ProductSize.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries sizeMaterials of ProductSize.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_size_materials_get(id, nk, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_size_materials_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[ProductSizeMaterial]**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_size_materials_post**
+> ProductSizeMaterial team_builder_configs_id_product_sizes_nk_size_materials_post(id, nk, data=data)
+
+Creates a new instance in sizeMaterials of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+data = TweakApi.ProductSizeMaterial() # ProductSizeMaterial |  (optional)
+
+try: 
+    # Creates a new instance in sizeMaterials of this model.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_size_materials_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_size_materials_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **data** | [**ProductSizeMaterial**](ProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_type_get**
+> ProductType team_builder_configs_id_product_sizes_nk_type_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation type.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation type.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_type_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_type_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**ProductType**](ProductType.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_post**
+> ProductSize team_builder_configs_id_product_sizes_post(id, data=data)
+
+Creates a new instance in productSizes of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+data = TweakApi.ProductSize() # ProductSize |  (optional)
+
+try: 
+    # Creates a new instance in productSizes of this model.
+    api_response = api_instance.team_builder_configs_id_product_sizes_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **data** | [**ProductSize**](ProductSize.md)|  | [optional] 
+
+### Return type
+
+[**ProductSize**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_rel_fk_delete**
+> team_builder_configs_id_product_sizes_rel_fk_delete(id, fk)
+
+Remove the productSizes relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizes
+
+try: 
+    # Remove the productSizes relation to an item by id.
+    api_instance.team_builder_configs_id_product_sizes_rel_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_rel_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizes | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_rel_fk_head**
+> bool team_builder_configs_id_product_sizes_rel_fk_head(id, fk)
+
+Check the existence of productSizes relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizes
+
+try: 
+    # Check the existence of productSizes relation to an item by id.
+    api_response = api_instance.team_builder_configs_id_product_sizes_rel_fk_head(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_rel_fk_head: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizes | 
+
+### Return type
+
+**bool**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_rel_fk_put**
+> TeamBuilderConfigProductSize team_builder_configs_id_product_sizes_rel_fk_put(id, fk, data=data)
+
+Add a related item by id for productSizes.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productSizes
+data = TweakApi.TeamBuilderConfigProductSize() # TeamBuilderConfigProductSize |  (optional)
+
+try: 
+    # Add a related item by id for productSizes.
+    api_response = api_instance.team_builder_configs_id_product_sizes_rel_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_rel_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productSizes | 
+ **data** | [**TeamBuilderConfigProductSize**](TeamBuilderConfigProductSize.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfigProductSize**](TeamBuilderConfigProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_count_get**
+> InlineResponse200 team_builder_configs_id_product_types_count_get(id, where=where)
+
+Counts productTypes of TeamBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts productTypes of TeamBuilderConfig.
+    api_response = api_instance.team_builder_configs_id_product_types_count_get(id, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_delete**
+> team_builder_configs_id_product_types_delete(id)
+
+Deletes all productTypes of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+
+try: 
+    # Deletes all productTypes of this model.
+    api_instance.team_builder_configs_id_product_types_delete(id)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_fk_delete**
+> team_builder_configs_id_product_types_fk_delete(id, fk)
+
+Delete a related item by id for productTypes.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productTypes
+
+try: 
+    # Delete a related item by id for productTypes.
+    api_instance.team_builder_configs_id_product_types_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productTypes | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_fk_get**
+> ProductType team_builder_configs_id_product_types_fk_get(id, fk)
+
+Find a related item by id for productTypes.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productTypes
+
+try: 
+    # Find a related item by id for productTypes.
+    api_response = api_instance.team_builder_configs_id_product_types_fk_get(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productTypes | 
+
+### Return type
+
+[**ProductType**](ProductType.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_fk_put**
+> ProductType team_builder_configs_id_product_types_fk_put(id, fk, data=data)
+
+Update a related item by id for productTypes.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productTypes
+data = TweakApi.ProductType() # ProductType |  (optional)
+
+try: 
+    # Update a related item by id for productTypes.
+    api_response = api_instance.team_builder_configs_id_product_types_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productTypes | 
+ **data** | [**ProductType**](ProductType.md)|  | [optional] 
+
+### Return type
+
+[**ProductType**](ProductType.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_get**
+> list[ProductType] team_builder_configs_id_product_types_get(id, filter=filter)
+
+Queries productTypes of TeamBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries productTypes of TeamBuilderConfig.
+    api_response = api_instance.team_builder_configs_id_product_types_get(id, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[ProductType]**](ProductType.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_nk_group_get**
+> ProductGroup team_builder_configs_id_product_types_nk_group_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation group.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productTypes.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation group.
+    api_response = api_instance.team_builder_configs_id_product_types_nk_group_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_nk_group_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productTypes. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**ProductGroup**](ProductGroup.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_nk_sizes_count_get**
+> InlineResponse200 team_builder_configs_id_product_types_nk_sizes_count_get(id, nk, where=where)
+
+Counts sizes of ProductType.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productTypes.
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts sizes of ProductType.
+    api_response = api_instance.team_builder_configs_id_product_types_nk_sizes_count_get(id, nk, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_nk_sizes_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productTypes. | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_nk_sizes_delete**
+> team_builder_configs_id_product_types_nk_sizes_delete(id, nk)
+
+Deletes all sizes of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productTypes.
+
+try: 
+    # Deletes all sizes of this model.
+    api_instance.team_builder_configs_id_product_types_nk_sizes_delete(id, nk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_nk_sizes_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productTypes. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_nk_sizes_fk_delete**
+> team_builder_configs_id_product_types_nk_sizes_fk_delete(id, nk, fk)
+
+Delete a related item by id for sizes.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productTypes.
+fk = 'fk_example' # str | Foreign key for sizes
+
+try: 
+    # Delete a related item by id for sizes.
+    api_instance.team_builder_configs_id_product_types_nk_sizes_fk_delete(id, nk, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_nk_sizes_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productTypes. | 
+ **fk** | **str**| Foreign key for sizes | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_nk_sizes_fk_get**
+> ProductSize team_builder_configs_id_product_types_nk_sizes_fk_get(id, nk, fk)
+
+Find a related item by id for sizes.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productTypes.
+fk = 'fk_example' # str | Foreign key for sizes
+
+try: 
+    # Find a related item by id for sizes.
+    api_response = api_instance.team_builder_configs_id_product_types_nk_sizes_fk_get(id, nk, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_nk_sizes_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productTypes. | 
+ **fk** | **str**| Foreign key for sizes | 
+
+### Return type
+
+[**ProductSize**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_nk_sizes_fk_put**
+> ProductSize team_builder_configs_id_product_types_nk_sizes_fk_put(id, nk, fk, data=data)
+
+Update a related item by id for sizes.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productTypes.
+fk = 'fk_example' # str | Foreign key for sizes
+data = TweakApi.ProductSize() # ProductSize |  (optional)
+
+try: 
+    # Update a related item by id for sizes.
+    api_response = api_instance.team_builder_configs_id_product_types_nk_sizes_fk_put(id, nk, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_nk_sizes_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productTypes. | 
+ **fk** | **str**| Foreign key for sizes | 
+ **data** | [**ProductSize**](ProductSize.md)|  | [optional] 
+
+### Return type
+
+[**ProductSize**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_nk_sizes_get**
+> list[ProductSize] team_builder_configs_id_product_types_nk_sizes_get(id, nk, filter=filter)
+
+Queries sizes of ProductType.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productTypes.
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries sizes of ProductType.
+    api_response = api_instance.team_builder_configs_id_product_types_nk_sizes_get(id, nk, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_nk_sizes_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productTypes. | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[ProductSize]**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_nk_sizes_post**
+> ProductSize team_builder_configs_id_product_types_nk_sizes_post(id, nk, data=data)
+
+Creates a new instance in sizes of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productTypes.
+data = TweakApi.ProductSize() # ProductSize |  (optional)
+
+try: 
+    # Creates a new instance in sizes of this model.
+    api_response = api_instance.team_builder_configs_id_product_types_nk_sizes_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_nk_sizes_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productTypes. | 
+ **data** | [**ProductSize**](ProductSize.md)|  | [optional] 
+
+### Return type
+
+[**ProductSize**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_post**
+> ProductType team_builder_configs_id_product_types_post(id, data=data)
+
+Creates a new instance in productTypes of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+data = TweakApi.ProductType() # ProductType |  (optional)
+
+try: 
+    # Creates a new instance in productTypes of this model.
+    api_response = api_instance.team_builder_configs_id_product_types_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **data** | [**ProductType**](ProductType.md)|  | [optional] 
+
+### Return type
+
+[**ProductType**](ProductType.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_rel_fk_delete**
+> team_builder_configs_id_product_types_rel_fk_delete(id, fk)
+
+Remove the productTypes relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productTypes
+
+try: 
+    # Remove the productTypes relation to an item by id.
+    api_instance.team_builder_configs_id_product_types_rel_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_rel_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productTypes | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_rel_fk_head**
+> bool team_builder_configs_id_product_types_rel_fk_head(id, fk)
+
+Check the existence of productTypes relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productTypes
+
+try: 
+    # Check the existence of productTypes relation to an item by id.
+    api_response = api_instance.team_builder_configs_id_product_types_rel_fk_head(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_rel_fk_head: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productTypes | 
+
+### Return type
+
+**bool**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_types_rel_fk_put**
+> TeamBuilderConfigProductType team_builder_configs_id_product_types_rel_fk_put(id, fk, data=data)
+
+Add a related item by id for productTypes.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for productTypes
+data = TweakApi.TeamBuilderConfigProductType() # TeamBuilderConfigProductType |  (optional)
+
+try: 
+    # Add a related item by id for productTypes.
+    api_response = api_instance.team_builder_configs_id_product_types_rel_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_types_rel_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for productTypes | 
+ **data** | [**TeamBuilderConfigProductType**](TeamBuilderConfigProductType.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfigProductType**](TeamBuilderConfigProductType.md)
 
 ### Authorization
 

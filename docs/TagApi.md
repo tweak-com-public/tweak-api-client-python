@@ -24,6 +24,16 @@ Method | HTTP request | Description
 [**tags_id_get**](TagApi.md#tags_id_get) | **GET** /Tags/{id} | Find a model instance by {{id}} from the data source.
 [**tags_id_head**](TagApi.md#tags_id_head) | **HEAD** /Tags/{id} | Check whether a model instance exists in the data source.
 [**tags_id_patch**](TagApi.md#tags_id_patch) | **PATCH** /Tags/{id} | Patch attributes for a model instance and persist it into the data source.
+[**tags_id_products_count_get**](TagApi.md#tags_id_products_count_get) | **GET** /Tags/{id}/products/count | Counts products of Tag.
+[**tags_id_products_delete**](TagApi.md#tags_id_products_delete) | **DELETE** /Tags/{id}/products | Deletes all products of this model.
+[**tags_id_products_fk_delete**](TagApi.md#tags_id_products_fk_delete) | **DELETE** /Tags/{id}/products/{fk} | Delete a related item by id for products.
+[**tags_id_products_fk_get**](TagApi.md#tags_id_products_fk_get) | **GET** /Tags/{id}/products/{fk} | Find a related item by id for products.
+[**tags_id_products_fk_put**](TagApi.md#tags_id_products_fk_put) | **PUT** /Tags/{id}/products/{fk} | Update a related item by id for products.
+[**tags_id_products_get**](TagApi.md#tags_id_products_get) | **GET** /Tags/{id}/products | Queries products of Tag.
+[**tags_id_products_post**](TagApi.md#tags_id_products_post) | **POST** /Tags/{id}/products | Creates a new instance in products of this model.
+[**tags_id_products_rel_fk_delete**](TagApi.md#tags_id_products_rel_fk_delete) | **DELETE** /Tags/{id}/products/rel/{fk} | Remove the products relation to an item by id.
+[**tags_id_products_rel_fk_head**](TagApi.md#tags_id_products_rel_fk_head) | **HEAD** /Tags/{id}/products/rel/{fk} | Check the existence of products relation to an item by id.
+[**tags_id_products_rel_fk_put**](TagApi.md#tags_id_products_rel_fk_put) | **PUT** /Tags/{id}/products/rel/{fk} | Add a related item by id for products.
 [**tags_id_put**](TagApi.md#tags_id_put) | **PUT** /Tags/{id} | Replace attributes for a model instance and persist it into the data source.
 [**tags_id_replace_post**](TagApi.md#tags_id_replace_post) | **POST** /Tags/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**tags_id_templates_count_get**](TagApi.md#tags_id_templates_count_get) | **GET** /Tags/{id}/templates/count | Counts templates of Tag.
@@ -1075,6 +1085,535 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Tag**](Tag.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **tags_id_products_count_get**
+> InlineResponse200 tags_id_products_count_get(id, where=where)
+
+Counts products of Tag.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TagApi()
+id = 'id_example' # str | Tag id
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts products of Tag.
+    api_response = api_instance.tags_id_products_count_get(id, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TagApi->tags_id_products_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Tag id | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **tags_id_products_delete**
+> tags_id_products_delete(id)
+
+Deletes all products of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TagApi()
+id = 'id_example' # str | Tag id
+
+try: 
+    # Deletes all products of this model.
+    api_instance.tags_id_products_delete(id)
+except ApiException as e:
+    print("Exception when calling TagApi->tags_id_products_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Tag id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **tags_id_products_fk_delete**
+> tags_id_products_fk_delete(id, fk)
+
+Delete a related item by id for products.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TagApi()
+id = 'id_example' # str | Tag id
+fk = 'fk_example' # str | Foreign key for products
+
+try: 
+    # Delete a related item by id for products.
+    api_instance.tags_id_products_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TagApi->tags_id_products_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Tag id | 
+ **fk** | **str**| Foreign key for products | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **tags_id_products_fk_get**
+> Product tags_id_products_fk_get(id, fk)
+
+Find a related item by id for products.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TagApi()
+id = 'id_example' # str | Tag id
+fk = 'fk_example' # str | Foreign key for products
+
+try: 
+    # Find a related item by id for products.
+    api_response = api_instance.tags_id_products_fk_get(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TagApi->tags_id_products_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Tag id | 
+ **fk** | **str**| Foreign key for products | 
+
+### Return type
+
+[**Product**](Product.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **tags_id_products_fk_put**
+> Product tags_id_products_fk_put(id, fk, data=data)
+
+Update a related item by id for products.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TagApi()
+id = 'id_example' # str | Tag id
+fk = 'fk_example' # str | Foreign key for products
+data = TweakApi.Product() # Product |  (optional)
+
+try: 
+    # Update a related item by id for products.
+    api_response = api_instance.tags_id_products_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TagApi->tags_id_products_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Tag id | 
+ **fk** | **str**| Foreign key for products | 
+ **data** | [**Product**](Product.md)|  | [optional] 
+
+### Return type
+
+[**Product**](Product.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **tags_id_products_get**
+> list[Product] tags_id_products_get(id, filter=filter)
+
+Queries products of Tag.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TagApi()
+id = 'id_example' # str | Tag id
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries products of Tag.
+    api_response = api_instance.tags_id_products_get(id, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TagApi->tags_id_products_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Tag id | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[Product]**](Product.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **tags_id_products_post**
+> Product tags_id_products_post(id, data=data)
+
+Creates a new instance in products of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TagApi()
+id = 'id_example' # str | Tag id
+data = TweakApi.Product() # Product |  (optional)
+
+try: 
+    # Creates a new instance in products of this model.
+    api_response = api_instance.tags_id_products_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TagApi->tags_id_products_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Tag id | 
+ **data** | [**Product**](Product.md)|  | [optional] 
+
+### Return type
+
+[**Product**](Product.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **tags_id_products_rel_fk_delete**
+> tags_id_products_rel_fk_delete(id, fk)
+
+Remove the products relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TagApi()
+id = 'id_example' # str | Tag id
+fk = 'fk_example' # str | Foreign key for products
+
+try: 
+    # Remove the products relation to an item by id.
+    api_instance.tags_id_products_rel_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TagApi->tags_id_products_rel_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Tag id | 
+ **fk** | **str**| Foreign key for products | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **tags_id_products_rel_fk_head**
+> bool tags_id_products_rel_fk_head(id, fk)
+
+Check the existence of products relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TagApi()
+id = 'id_example' # str | Tag id
+fk = 'fk_example' # str | Foreign key for products
+
+try: 
+    # Check the existence of products relation to an item by id.
+    api_response = api_instance.tags_id_products_rel_fk_head(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TagApi->tags_id_products_rel_fk_head: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Tag id | 
+ **fk** | **str**| Foreign key for products | 
+
+### Return type
+
+**bool**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **tags_id_products_rel_fk_put**
+> ProductTag tags_id_products_rel_fk_put(id, fk, data=data)
+
+Add a related item by id for products.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TagApi()
+id = 'id_example' # str | Tag id
+fk = 'fk_example' # str | Foreign key for products
+data = TweakApi.ProductTag() # ProductTag |  (optional)
+
+try: 
+    # Add a related item by id for products.
+    api_response = api_instance.tags_id_products_rel_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TagApi->tags_id_products_rel_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Tag id | 
+ **fk** | **str**| Foreign key for products | 
+ **data** | [**ProductTag**](ProductTag.md)|  | [optional] 
+
+### Return type
+
+[**ProductTag**](ProductTag.md)
 
 ### Authorization
 

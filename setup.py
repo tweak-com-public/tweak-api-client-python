@@ -26,7 +26,7 @@ import sys
 from setuptools import setup, find_packages
 
 NAME = "TweakApi"
-VERSION = "1.0.2-alpha.6"
+VERSION = "1.0.2-alpha.7"
 
 # To install the library, run the following
 #

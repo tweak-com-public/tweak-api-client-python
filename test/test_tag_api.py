@@ -202,6 +202,86 @@ class TestTagApi(unittest.TestCase):
         """
         pass
 
+    def test_tags_id_products_count_get(self):
+        """
+        Test case for tags_id_products_count_get
+
+        Counts products of Tag.
+        """
+        pass
+
+    def test_tags_id_products_delete(self):
+        """
+        Test case for tags_id_products_delete
+
+        Deletes all products of this model.
+        """
+        pass
+
+    def test_tags_id_products_fk_delete(self):
+        """
+        Test case for tags_id_products_fk_delete
+
+        Delete a related item by id for products.
+        """
+        pass
+
+    def test_tags_id_products_fk_get(self):
+        """
+        Test case for tags_id_products_fk_get
+
+        Find a related item by id for products.
+        """
+        pass
+
+    def test_tags_id_products_fk_put(self):
+        """
+        Test case for tags_id_products_fk_put
+
+        Update a related item by id for products.
+        """
+        pass
+
+    def test_tags_id_products_get(self):
+        """
+        Test case for tags_id_products_get
+
+        Queries products of Tag.
+        """
+        pass
+
+    def test_tags_id_products_post(self):
+        """
+        Test case for tags_id_products_post
+
+        Creates a new instance in products of this model.
+        """
+        pass
+
+    def test_tags_id_products_rel_fk_delete(self):
+        """
+        Test case for tags_id_products_rel_fk_delete
+
+        Remove the products relation to an item by id.
+        """
+        pass
+
+    def test_tags_id_products_rel_fk_head(self):
+        """
+        Test case for tags_id_products_rel_fk_head
+
+        Check the existence of products relation to an item by id.
+        """
+        pass
+
+    def test_tags_id_products_rel_fk_put(self):
+        """
+        Test case for tags_id_products_rel_fk_put
+
+        Add a related item by id for products.
+        """
+        pass
+
     def test_tags_id_put(self):
         """
         Test case for tags_id_put

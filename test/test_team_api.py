@@ -186,6 +186,382 @@ class TestTeamApi(unittest.TestCase):
         """
         pass
 
+    def test_teams_id_builder_configs_nk_product_groups_count_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_groups_count_get
+
+        Counts productGroups of TeamBuilderConfig.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_groups_delete(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_groups_delete
+
+        Deletes all productGroups of this model.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_groups_fk_delete(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_groups_fk_delete
+
+        Delete a related item by id for productGroups.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_groups_fk_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_groups_fk_get
+
+        Find a related item by id for productGroups.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_groups_fk_put(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_groups_fk_put
+
+        Update a related item by id for productGroups.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_groups_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_groups_get
+
+        Queries productGroups of TeamBuilderConfig.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_groups_post(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_groups_post
+
+        Creates a new instance in productGroups of this model.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_groups_rel_fk_delete(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_groups_rel_fk_delete
+
+        Remove the productGroups relation to an item by id.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_groups_rel_fk_head(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_groups_rel_fk_head
+
+        Check the existence of productGroups relation to an item by id.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_groups_rel_fk_put(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_groups_rel_fk_put
+
+        Add a related item by id for productGroups.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_count_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_count_get
+
+        Counts productSizeMaterials of TeamBuilderConfig.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_delete(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_delete
+
+        Deletes all productSizeMaterials of this model.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_fk_delete(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_fk_delete
+
+        Delete a related item by id for productSizeMaterials.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_fk_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_fk_get
+
+        Find a related item by id for productSizeMaterials.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_fk_put(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_fk_put
+
+        Update a related item by id for productSizeMaterials.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_get
+
+        Queries productSizeMaterials of TeamBuilderConfig.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_post(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_post
+
+        Creates a new instance in productSizeMaterials of this model.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_rel_count_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_rel_count_get
+
+        Counts productSizeMaterialsRel of TeamBuilderConfig.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_rel_delete(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_rel_delete
+
+        Deletes all productSizeMaterialsRel of this model.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_rel_fk_delete(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_rel_fk_delete
+
+        Remove the productSizeMaterials relation to an item by id.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_rel_fk_delete_0(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_rel_fk_delete_0
+
+        Delete a related item by id for productSizeMaterialsRel.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_rel_fk_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_rel_fk_get
+
+        Find a related item by id for productSizeMaterialsRel.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_rel_fk_head(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_rel_fk_head
+
+        Check the existence of productSizeMaterials relation to an item by id.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_rel_fk_put(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_rel_fk_put
+
+        Add a related item by id for productSizeMaterials.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_rel_fk_put_0(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_rel_fk_put_0
+
+        Update a related item by id for productSizeMaterialsRel.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_rel_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_rel_get
+
+        Queries productSizeMaterialsRel of TeamBuilderConfig.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_size_materials_rel_post(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_size_materials_rel_post
+
+        Creates a new instance in productSizeMaterialsRel of this model.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_sizes_count_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_sizes_count_get
+
+        Counts productSizes of TeamBuilderConfig.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_sizes_delete(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_sizes_delete
+
+        Deletes all productSizes of this model.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_sizes_fk_delete(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_sizes_fk_delete
+
+        Delete a related item by id for productSizes.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_sizes_fk_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_sizes_fk_get
+
+        Find a related item by id for productSizes.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_sizes_fk_put(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_sizes_fk_put
+
+        Update a related item by id for productSizes.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_sizes_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_sizes_get
+
+        Queries productSizes of TeamBuilderConfig.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_sizes_post(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_sizes_post
+
+        Creates a new instance in productSizes of this model.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_sizes_rel_fk_delete(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_sizes_rel_fk_delete
+
+        Remove the productSizes relation to an item by id.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_sizes_rel_fk_head(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_sizes_rel_fk_head
+
+        Check the existence of productSizes relation to an item by id.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_sizes_rel_fk_put(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_sizes_rel_fk_put
+
+        Add a related item by id for productSizes.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_types_count_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_types_count_get
+
+        Counts productTypes of TeamBuilderConfig.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_types_delete(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_types_delete
+
+        Deletes all productTypes of this model.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_types_fk_delete(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_types_fk_delete
+
+        Delete a related item by id for productTypes.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_types_fk_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_types_fk_get
+
+        Find a related item by id for productTypes.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_types_fk_put(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_types_fk_put
+
+        Update a related item by id for productTypes.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_types_get(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_types_get
+
+        Queries productTypes of TeamBuilderConfig.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_types_post(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_types_post
+
+        Creates a new instance in productTypes of this model.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_types_rel_fk_delete(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_types_rel_fk_delete
+
+        Remove the productTypes relation to an item by id.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_types_rel_fk_head(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_types_rel_fk_head
+
+        Check the existence of productTypes relation to an item by id.
+        """
+        pass
+
+    def test_teams_id_builder_configs_nk_product_types_rel_fk_put(self):
+        """
+        Test case for teams_id_builder_configs_nk_product_types_rel_fk_put
+
+        Add a related item by id for productTypes.
+        """
+        pass
+
     def test_teams_id_builder_configs_nk_team_get(self):
         """
         Test case for teams_id_builder_configs_nk_team_get
@@ -1663,6 +2039,150 @@ class TestTeamApi(unittest.TestCase):
         Test case for teams_id_portals_post
 
         Creates a new instance in portals of this model.
+        """
+        pass
+
+    def test_teams_id_product_materials_count_get(self):
+        """
+        Test case for teams_id_product_materials_count_get
+
+        Counts productMaterials of Team.
+        """
+        pass
+
+    def test_teams_id_product_materials_delete(self):
+        """
+        Test case for teams_id_product_materials_delete
+
+        Deletes all productMaterials of this model.
+        """
+        pass
+
+    def test_teams_id_product_materials_fk_delete(self):
+        """
+        Test case for teams_id_product_materials_fk_delete
+
+        Delete a related item by id for productMaterials.
+        """
+        pass
+
+    def test_teams_id_product_materials_fk_get(self):
+        """
+        Test case for teams_id_product_materials_fk_get
+
+        Find a related item by id for productMaterials.
+        """
+        pass
+
+    def test_teams_id_product_materials_fk_put(self):
+        """
+        Test case for teams_id_product_materials_fk_put
+
+        Update a related item by id for productMaterials.
+        """
+        pass
+
+    def test_teams_id_product_materials_get(self):
+        """
+        Test case for teams_id_product_materials_get
+
+        Queries productMaterials of Team.
+        """
+        pass
+
+    def test_teams_id_product_materials_nk_team_get(self):
+        """
+        Test case for teams_id_product_materials_nk_team_get
+
+        Fetches belongsTo relation team.
+        """
+        pass
+
+    def test_teams_id_product_materials_post(self):
+        """
+        Test case for teams_id_product_materials_post
+
+        Creates a new instance in productMaterials of this model.
+        """
+        pass
+
+    def test_teams_id_product_size_materials_count_get(self):
+        """
+        Test case for teams_id_product_size_materials_count_get
+
+        Counts productSizeMaterials of Team.
+        """
+        pass
+
+    def test_teams_id_product_size_materials_delete(self):
+        """
+        Test case for teams_id_product_size_materials_delete
+
+        Deletes all productSizeMaterials of this model.
+        """
+        pass
+
+    def test_teams_id_product_size_materials_fk_delete(self):
+        """
+        Test case for teams_id_product_size_materials_fk_delete
+
+        Delete a related item by id for productSizeMaterials.
+        """
+        pass
+
+    def test_teams_id_product_size_materials_fk_get(self):
+        """
+        Test case for teams_id_product_size_materials_fk_get
+
+        Find a related item by id for productSizeMaterials.
+        """
+        pass
+
+    def test_teams_id_product_size_materials_fk_put(self):
+        """
+        Test case for teams_id_product_size_materials_fk_put
+
+        Update a related item by id for productSizeMaterials.
+        """
+        pass
+
+    def test_teams_id_product_size_materials_get(self):
+        """
+        Test case for teams_id_product_size_materials_get
+
+        Queries productSizeMaterials of Team.
+        """
+        pass
+
+    def test_teams_id_product_size_materials_nk_material_get(self):
+        """
+        Test case for teams_id_product_size_materials_nk_material_get
+
+        Fetches belongsTo relation material.
+        """
+        pass
+
+    def test_teams_id_product_size_materials_nk_size_get(self):
+        """
+        Test case for teams_id_product_size_materials_nk_size_get
+
+        Fetches belongsTo relation size.
+        """
+        pass
+
+    def test_teams_id_product_size_materials_nk_team_get(self):
+        """
+        Test case for teams_id_product_size_materials_nk_team_get
+
+        Fetches belongsTo relation team.
+        """
+        pass
+
+    def test_teams_id_product_size_materials_post(self):
+        """
+        Test case for teams_id_product_size_materials_post
+
+        Creates a new instance in productSizeMaterials of this model.
         """
         pass
 
