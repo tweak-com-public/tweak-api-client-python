@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **paid** | **bool** |  | [optional] 
 **period_end** | **datetime** |  | [optional] 
 **period_start** | **datetime** |  | [optional] 
+**number** | **str** |  | [optional] 
 **recipt_number** | **str** |  | [optional] 
 **starting_balance** | **float** |  | [optional] 
 **statement_descriptor** | **str** |  | [optional] 

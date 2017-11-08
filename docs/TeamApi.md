@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**teams_count_get**](TeamApi.md#teams_count_get) | **GET** /Teams/count | Count instances of the model matched by where from the data source.
 [**teams_find_one_get**](TeamApi.md#teams_find_one_get) | **GET** /Teams/findOne | Find first instance of the model matched by filter from the data source.
 [**teams_get**](TeamApi.md#teams_get) | **GET** /Teams | Find all instances of the model matched by filter from the data source.
+[**teams_id_auth_reset_keys_delete**](TeamApi.md#teams_id_auth_reset_keys_delete) | **DELETE** /Teams/{id}/auth/reset-keys | Reset Team keys
 [**teams_id_billing_delete**](TeamApi.md#teams_id_billing_delete) | **DELETE** /Teams/{id}/billing | Deletes billing of this model.
 [**teams_id_billing_get**](TeamApi.md#teams_id_billing_get) | **GET** /Teams/{id}/billing | Fetches hasOne relation billing.
 [**teams_id_billing_post**](TeamApi.md#teams_id_billing_post) | **POST** /Teams/{id}/billing | Creates a new instance in billing of this model.
@@ -17,6 +18,15 @@ Method | HTTP request | Description
 [**teams_id_brand_get**](TeamApi.md#teams_id_brand_get) | **GET** /Teams/{id}/brand | Fetches hasOne relation brand.
 [**teams_id_brand_post**](TeamApi.md#teams_id_brand_post) | **POST** /Teams/{id}/brand | Creates a new instance in brand of this model.
 [**teams_id_brand_put**](TeamApi.md#teams_id_brand_put) | **PUT** /Teams/{id}/brand | Update brand of this model.
+[**teams_id_builder_configs_count_get**](TeamApi.md#teams_id_builder_configs_count_get) | **GET** /Teams/{id}/builderConfigs/count | Counts builderConfigs of Team.
+[**teams_id_builder_configs_default_get**](TeamApi.md#teams_id_builder_configs_default_get) | **GET** /Teams/{id}/builderConfigs/default | Get default TeamBuilderConfig
+[**teams_id_builder_configs_delete**](TeamApi.md#teams_id_builder_configs_delete) | **DELETE** /Teams/{id}/builderConfigs | Deletes all builderConfigs of this model.
+[**teams_id_builder_configs_fk_delete**](TeamApi.md#teams_id_builder_configs_fk_delete) | **DELETE** /Teams/{id}/builderConfigs/{fk} | Delete a related item by id for builderConfigs.
+[**teams_id_builder_configs_fk_get**](TeamApi.md#teams_id_builder_configs_fk_get) | **GET** /Teams/{id}/builderConfigs/{fk} | Find a related item by id for builderConfigs.
+[**teams_id_builder_configs_fk_put**](TeamApi.md#teams_id_builder_configs_fk_put) | **PUT** /Teams/{id}/builderConfigs/{fk} | Update a related item by id for builderConfigs.
+[**teams_id_builder_configs_get**](TeamApi.md#teams_id_builder_configs_get) | **GET** /Teams/{id}/builderConfigs | Queries builderConfigs of Team.
+[**teams_id_builder_configs_nk_team_get**](TeamApi.md#teams_id_builder_configs_nk_team_get) | **GET** /Teams/{id}/builderConfigs/{nk}/team | Fetches belongsTo relation team.
+[**teams_id_builder_configs_post**](TeamApi.md#teams_id_builder_configs_post) | **POST** /Teams/{id}/builderConfigs | Creates a new instance in builderConfigs of this model.
 [**teams_id_data_sources_count_get**](TeamApi.md#teams_id_data_sources_count_get) | **GET** /Teams/{id}/dataSources/count | Counts dataSources of Team.
 [**teams_id_data_sources_delete**](TeamApi.md#teams_id_data_sources_delete) | **DELETE** /Teams/{id}/dataSources | Deletes all dataSources of this model.
 [**teams_id_data_sources_fk_delete**](TeamApi.md#teams_id_data_sources_fk_delete) | **DELETE** /Teams/{id}/dataSources/{fk} | Delete a related item by id for dataSources.
@@ -25,6 +35,23 @@ Method | HTTP request | Description
 [**teams_id_data_sources_get**](TeamApi.md#teams_id_data_sources_get) | **GET** /Teams/{id}/dataSources | Queries dataSources of Team.
 [**teams_id_data_sources_post**](TeamApi.md#teams_id_data_sources_post) | **POST** /Teams/{id}/dataSources | Creates a new instance in dataSources of this model.
 [**teams_id_delete**](TeamApi.md#teams_id_delete) | **DELETE** /Teams/{id} | Delete a model instance by {{id}} from the data source.
+[**teams_id_dynamic_datas_count_get**](TeamApi.md#teams_id_dynamic_datas_count_get) | **GET** /Teams/{id}/dynamicDatas/count | Counts dynamicDatas of Team.
+[**teams_id_dynamic_datas_delete**](TeamApi.md#teams_id_dynamic_datas_delete) | **DELETE** /Teams/{id}/dynamicDatas | Deletes all dynamicDatas of this model.
+[**teams_id_dynamic_datas_fk_delete**](TeamApi.md#teams_id_dynamic_datas_fk_delete) | **DELETE** /Teams/{id}/dynamicDatas/{fk} | Delete a related item by id for dynamicDatas.
+[**teams_id_dynamic_datas_fk_get**](TeamApi.md#teams_id_dynamic_datas_fk_get) | **GET** /Teams/{id}/dynamicDatas/{fk} | Find a related item by id for dynamicDatas.
+[**teams_id_dynamic_datas_fk_put**](TeamApi.md#teams_id_dynamic_datas_fk_put) | **PUT** /Teams/{id}/dynamicDatas/{fk} | Update a related item by id for dynamicDatas.
+[**teams_id_dynamic_datas_get**](TeamApi.md#teams_id_dynamic_datas_get) | **GET** /Teams/{id}/dynamicDatas | Queries dynamicDatas of Team.
+[**teams_id_dynamic_datas_nk_records_count_get**](TeamApi.md#teams_id_dynamic_datas_nk_records_count_get) | **GET** /Teams/{id}/dynamicDatas/{nk}/records/count | Count Dynamic Data records
+[**teams_id_dynamic_datas_nk_records_delete**](TeamApi.md#teams_id_dynamic_datas_nk_records_delete) | **DELETE** /Teams/{id}/dynamicDatas/{nk}/records | Delete all matching records.
+[**teams_id_dynamic_datas_nk_records_fk_delete**](TeamApi.md#teams_id_dynamic_datas_nk_records_fk_delete) | **DELETE** /Teams/{id}/dynamicDatas/{nk}/records/{fk} | Delete a model instance by {{fk}} from the data source.
+[**teams_id_dynamic_datas_nk_records_fk_get**](TeamApi.md#teams_id_dynamic_datas_nk_records_fk_get) | **GET** /Teams/{id}/dynamicDatas/{nk}/records/{fk} | Find a model instance by {{fk}} from the data source.
+[**teams_id_dynamic_datas_nk_records_fk_put**](TeamApi.md#teams_id_dynamic_datas_nk_records_fk_put) | **PUT** /Teams/{id}/dynamicDatas/{nk}/records/{fk} | Replace attributes for a model instance and persist it into the data source.
+[**teams_id_dynamic_datas_nk_records_get**](TeamApi.md#teams_id_dynamic_datas_nk_records_get) | **GET** /Teams/{id}/dynamicDatas/{nk}/records | Find all instances of the model matched by filter from the data source.
+[**teams_id_dynamic_datas_nk_records_migrate_post**](TeamApi.md#teams_id_dynamic_datas_nk_records_migrate_post) | **POST** /Teams/{id}/dynamicDatas/{nk}/records/migrate | Request migration for Dynamic Data records
+[**teams_id_dynamic_datas_nk_records_post**](TeamApi.md#teams_id_dynamic_datas_nk_records_post) | **POST** /Teams/{id}/dynamicDatas/{nk}/records | Create a new instance of the model and persist it into the data source.
+[**teams_id_dynamic_datas_nk_records_upload_csv_post**](TeamApi.md#teams_id_dynamic_datas_nk_records_upload_csv_post) | **POST** /Teams/{id}/dynamicDatas/{nk}/records/upload/csv | Upload CSV for this Dynamic Data
+[**teams_id_dynamic_datas_nk_team_get**](TeamApi.md#teams_id_dynamic_datas_nk_team_get) | **GET** /Teams/{id}/dynamicDatas/{nk}/team | Fetches belongsTo relation team.
+[**teams_id_dynamic_datas_post**](TeamApi.md#teams_id_dynamic_datas_post) | **POST** /Teams/{id}/dynamicDatas | Creates a new instance in dynamicDatas of this model.
 [**teams_id_exists_get**](TeamApi.md#teams_id_exists_get) | **GET** /Teams/{id}/exists | Check whether a model instance exists in the data source.
 [**teams_id_get**](TeamApi.md#teams_id_get) | **GET** /Teams/{id} | Find a model instance by {{id}} from the data source.
 [**teams_id_head**](TeamApi.md#teams_id_head) | **HEAD** /Teams/{id} | Check whether a model instance exists in the data source.
@@ -191,6 +218,7 @@ Method | HTTP request | Description
 [**teams_id_team_members_fk_get**](TeamApi.md#teams_id_team_members_fk_get) | **GET** /Teams/{id}/teamMembers/{fk} | Find a related item by id for teamMembers.
 [**teams_id_team_members_fk_put**](TeamApi.md#teams_id_team_members_fk_put) | **PUT** /Teams/{id}/teamMembers/{fk} | Update a related item by id for teamMembers.
 [**teams_id_team_members_get**](TeamApi.md#teams_id_team_members_get) | **GET** /Teams/{id}/teamMembers | Queries teamMembers of Team.
+[**teams_id_team_members_map_keys_get**](TeamApi.md#teams_id_team_members_map_keys_get) | **GET** /Teams/{id}/teamMembers/map-keys | Map teamMembers emails to teamMembers keys
 [**teams_id_team_members_post**](TeamApi.md#teams_id_team_members_post) | **POST** /Teams/{id}/teamMembers | Creates a new instance in teamMembers of this model.
 [**teams_id_template_folders_count_get**](TeamApi.md#teams_id_template_folders_count_get) | **GET** /Teams/{id}/templateFolders/count | Counts templateFolders of Team.
 [**teams_id_template_folders_delete**](TeamApi.md#teams_id_template_folders_delete) | **DELETE** /Teams/{id}/templateFolders | Deletes all templateFolders of this model.
@@ -529,6 +557,57 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[Team]**](Team.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_auth_reset_keys_delete**
+> Team teams_id_auth_reset_keys_delete(id)
+
+Reset Team keys
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+
+try: 
+    # Reset Team keys
+    api_response = api_instance.teams_id_auth_reset_keys_delete(id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_auth_reset_keys_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+
+### Return type
+
+[**Team**](Team.md)
 
 ### Authorization
 
@@ -959,6 +1038,481 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **teams_id_builder_configs_count_get**
+> InlineResponse200 teams_id_builder_configs_count_get(id, where=where)
+
+Counts builderConfigs of Team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts builderConfigs of Team.
+    api_response = api_instance.teams_id_builder_configs_count_get(id, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_default_get**
+> TeamBuilderConfig teams_id_builder_configs_default_get(id)
+
+Get default TeamBuilderConfig
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+
+try: 
+    # Get default TeamBuilderConfig
+    api_response = api_instance.teams_id_builder_configs_default_get(id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_default_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_delete**
+> teams_id_builder_configs_delete(id)
+
+Deletes all builderConfigs of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+
+try: 
+    # Deletes all builderConfigs of this model.
+    api_instance.teams_id_builder_configs_delete(id)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_fk_delete**
+> teams_id_builder_configs_fk_delete(id, fk)
+
+Delete a related item by id for builderConfigs.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+fk = 'fk_example' # str | Foreign key for builderConfigs
+
+try: 
+    # Delete a related item by id for builderConfigs.
+    api_instance.teams_id_builder_configs_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **fk** | **str**| Foreign key for builderConfigs | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_fk_get**
+> TeamBuilderConfig teams_id_builder_configs_fk_get(id, fk)
+
+Find a related item by id for builderConfigs.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+fk = 'fk_example' # str | Foreign key for builderConfigs
+
+try: 
+    # Find a related item by id for builderConfigs.
+    api_response = api_instance.teams_id_builder_configs_fk_get(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **fk** | **str**| Foreign key for builderConfigs | 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_fk_put**
+> TeamBuilderConfig teams_id_builder_configs_fk_put(id, fk, data=data)
+
+Update a related item by id for builderConfigs.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+fk = 'fk_example' # str | Foreign key for builderConfigs
+data = TweakApi.TeamBuilderConfig() # TeamBuilderConfig |  (optional)
+
+try: 
+    # Update a related item by id for builderConfigs.
+    api_response = api_instance.teams_id_builder_configs_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **fk** | **str**| Foreign key for builderConfigs | 
+ **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_get**
+> list[TeamBuilderConfig] teams_id_builder_configs_get(id, filter=filter)
+
+Queries builderConfigs of Team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries builderConfigs of Team.
+    api_response = api_instance.teams_id_builder_configs_get(id, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[TeamBuilderConfig]**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_nk_team_get**
+> Team teams_id_builder_configs_nk_team_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for builderConfigs.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation team.
+    api_response = api_instance.teams_id_builder_configs_nk_team_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_nk_team_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for builderConfigs. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**Team**](Team.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_post**
+> TeamBuilderConfig teams_id_builder_configs_post(id, data=data)
+
+Creates a new instance in builderConfigs of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+data = TweakApi.TeamBuilderConfig() # TeamBuilderConfig |  (optional)
+
+try: 
+    # Creates a new instance in builderConfigs of this model.
+    api_response = api_instance.teams_id_builder_configs_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **teams_id_data_sources_count_get**
 > InlineResponse200 teams_id_data_sources_count_get(id, where=where)
 
@@ -1367,6 +1921,927 @@ Name | Type | Description  | Notes
 ### Return type
 
 **object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_count_get**
+> InlineResponse200 teams_id_dynamic_datas_count_get(id, where=where)
+
+Counts dynamicDatas of Team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts dynamicDatas of Team.
+    api_response = api_instance.teams_id_dynamic_datas_count_get(id, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_delete**
+> teams_id_dynamic_datas_delete(id)
+
+Deletes all dynamicDatas of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+
+try: 
+    # Deletes all dynamicDatas of this model.
+    api_instance.teams_id_dynamic_datas_delete(id)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_fk_delete**
+> teams_id_dynamic_datas_fk_delete(id, fk)
+
+Delete a related item by id for dynamicDatas.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+fk = 'fk_example' # str | Foreign key for dynamicDatas
+
+try: 
+    # Delete a related item by id for dynamicDatas.
+    api_instance.teams_id_dynamic_datas_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **fk** | **str**| Foreign key for dynamicDatas | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_fk_get**
+> DynamicData teams_id_dynamic_datas_fk_get(id, fk)
+
+Find a related item by id for dynamicDatas.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+fk = 'fk_example' # str | Foreign key for dynamicDatas
+
+try: 
+    # Find a related item by id for dynamicDatas.
+    api_response = api_instance.teams_id_dynamic_datas_fk_get(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **fk** | **str**| Foreign key for dynamicDatas | 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_fk_put**
+> DynamicData teams_id_dynamic_datas_fk_put(id, fk, data=data)
+
+Update a related item by id for dynamicDatas.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+fk = 'fk_example' # str | Foreign key for dynamicDatas
+data = TweakApi.DynamicData() # DynamicData |  (optional)
+
+try: 
+    # Update a related item by id for dynamicDatas.
+    api_response = api_instance.teams_id_dynamic_datas_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **fk** | **str**| Foreign key for dynamicDatas | 
+ **data** | [**DynamicData**](DynamicData.md)|  | [optional] 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_get**
+> list[DynamicData] teams_id_dynamic_datas_get(id, filter=filter)
+
+Queries dynamicDatas of Team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries dynamicDatas of Team.
+    api_response = api_instance.teams_id_dynamic_datas_get(id, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[DynamicData]**](DynamicData.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_records_count_get**
+> InlineResponse200 teams_id_dynamic_datas_nk_records_count_get(id, nk, where=where)
+
+Count Dynamic Data records
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Count Dynamic Data records
+    api_response = api_instance.teams_id_dynamic_datas_nk_records_count_get(id, nk, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_records_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_records_delete**
+> object teams_id_dynamic_datas_nk_records_delete(id, nk, where=where)
+
+Delete all matching records.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+where = 'where_example' # str | filter.where object (optional)
+
+try: 
+    # Delete all matching records.
+    api_response = api_instance.teams_id_dynamic_datas_nk_records_delete(id, nk, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_records_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **where** | **str**| filter.where object | [optional] 
+
+### Return type
+
+**object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_records_fk_delete**
+> object teams_id_dynamic_datas_nk_records_fk_delete(id, nk, fk)
+
+Delete a model instance by {{fk}} from the data source.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+fk = 'fk_example' # str | Model id
+
+try: 
+    # Delete a model instance by {{fk}} from the data source.
+    api_response = api_instance.teams_id_dynamic_datas_nk_records_fk_delete(id, nk, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_records_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **fk** | **str**| Model id | 
+
+### Return type
+
+**object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_records_fk_get**
+> object teams_id_dynamic_datas_nk_records_fk_get(id, nk, fk, filter=filter)
+
+Find a model instance by {{fk}} from the data source.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+fk = 'fk_example' # str | Model id
+filter = 'filter_example' # str | Filter defining fields and include - must be a JSON-encoded string ({\"something\":\"value\"}) (optional)
+
+try: 
+    # Find a model instance by {{fk}} from the data source.
+    api_response = api_instance.teams_id_dynamic_datas_nk_records_fk_get(id, nk, fk, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_records_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **fk** | **str**| Model id | 
+ **filter** | **str**| Filter defining fields and include - must be a JSON-encoded string ({\&quot;something\&quot;:\&quot;value\&quot;}) | [optional] 
+
+### Return type
+
+**object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_records_fk_put**
+> object teams_id_dynamic_datas_nk_records_fk_put(id, nk, fk, data=data)
+
+Replace attributes for a model instance and persist it into the data source.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+fk = 'fk_example' # str | Model id
+data = TweakApi.Team() # Team | Model instance data (optional)
+
+try: 
+    # Replace attributes for a model instance and persist it into the data source.
+    api_response = api_instance.teams_id_dynamic_datas_nk_records_fk_put(id, nk, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_records_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **fk** | **str**| Model id | 
+ **data** | [**Team**](Team.md)| Model instance data | [optional] 
+
+### Return type
+
+**object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_records_get**
+> list[object] teams_id_dynamic_datas_nk_records_get(id, nk, filter=filter)
+
+Find all instances of the model matched by filter from the data source.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+filter = 'filter_example' # str | Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({\"something\":\"value\"}) (optional)
+
+try: 
+    # Find all instances of the model matched by filter from the data source.
+    api_response = api_instance.teams_id_dynamic_datas_nk_records_get(id, nk, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_records_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **filter** | **str**| Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({\&quot;something\&quot;:\&quot;value\&quot;}) | [optional] 
+
+### Return type
+
+**list[object]**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_records_migrate_post**
+> object teams_id_dynamic_datas_nk_records_migrate_post(id, nk, data=data)
+
+Request migration for Dynamic Data records
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+data = TweakApi.Team() # Team |  (optional)
+
+try: 
+    # Request migration for Dynamic Data records
+    api_response = api_instance.teams_id_dynamic_datas_nk_records_migrate_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_records_migrate_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **data** | [**Team**](Team.md)|  | [optional] 
+
+### Return type
+
+**object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_records_post**
+> object teams_id_dynamic_datas_nk_records_post(id, nk, data=data)
+
+Create a new instance of the model and persist it into the data source.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+data = TweakApi.Team() # Team | Model instance data (optional)
+
+try: 
+    # Create a new instance of the model and persist it into the data source.
+    api_response = api_instance.teams_id_dynamic_datas_nk_records_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_records_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **data** | [**Team**](Team.md)| Model instance data | [optional] 
+
+### Return type
+
+**object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_records_upload_csv_post**
+> object teams_id_dynamic_datas_nk_records_upload_csv_post(id, nk)
+
+Upload CSV for this Dynamic Data
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+
+try: 
+    # Upload CSV for this Dynamic Data
+    api_response = api_instance.teams_id_dynamic_datas_nk_records_upload_csv_post(id, nk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_records_upload_csv_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+
+### Return type
+
+**object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_team_get**
+> Team teams_id_dynamic_datas_nk_team_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation team.
+    api_response = api_instance.teams_id_dynamic_datas_nk_team_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_team_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**Team**](Team.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_post**
+> DynamicData teams_id_dynamic_datas_post(id, data=data)
+
+Creates a new instance in dynamicDatas of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+data = TweakApi.DynamicData() # DynamicData |  (optional)
+
+try: 
+    # Creates a new instance in dynamicDatas of this model.
+    api_response = api_instance.teams_id_dynamic_datas_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **data** | [**DynamicData**](DynamicData.md)|  | [optional] 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
 
 ### Authorization
 
@@ -10365,6 +11840,59 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[TeamMember]**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_team_members_map_keys_get**
+> list[object] teams_id_team_members_map_keys_get(id, data)
+
+Map teamMembers emails to teamMembers keys
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+data = TweakApi.Team() # Team | TeamMember(s) email
+
+try: 
+    # Map teamMembers emails to teamMembers keys
+    api_response = api_instance.teams_id_team_members_map_keys_get(id, data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_team_members_map_keys_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **data** | [**Team**](Team.md)| TeamMember(s) email | 
+
+### Return type
+
+**list[object]**
 
 ### Authorization
 
