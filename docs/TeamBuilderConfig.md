@@ -12,6 +12,11 @@ Name | Type | Description | Notes
 **id** | **str** |  | [optional] 
 **team_id** | **str** |  | [optional] 
 **team** | [**Team**](Team.md) |  | [optional] 
+**product_groups** | [**list[ProductGroup]**](ProductGroup.md) |  | [optional] 
+**product_types** | [**list[ProductType]**](ProductType.md) |  | [optional] 
+**product_sizes** | [**list[ProductSize]**](ProductSize.md) |  | [optional] 
+**product_size_materials** | [**list[ProductSizeMaterial]**](ProductSizeMaterial.md) |  | [optional] 
+**product_size_materials_rel** | [**list[TeamBuilderConfigProductSizeMaterial]**](TeamBuilderConfigProductSizeMaterial.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

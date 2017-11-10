@@ -31,6 +31,8 @@ Name | Type | Description | Notes
 **image_folders** | [**list[ImageFolder]**](ImageFolder.md) |  | [optional] 
 **billing** | [**Billing**](Billing.md) |  | [optional] 
 **permission** | [**TeamPermissionSet**](TeamPermissionSet.md) |  | [optional] 
+**product_materials** | [**list[ProductMaterial]**](ProductMaterial.md) |  | [optional] 
+**product_size_materials** | [**list[ProductSizeMaterial]**](ProductSizeMaterial.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -1,6 +1,6 @@
 # TweakApi.PortalApi
 
-All URIs are relative to *https://apicdn.tweak.com/api*
+All URIs are relative to *https://apidevcdn.tweak.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -42,6 +42,7 @@ Method | HTTP request | Description
 [**portals_id_designs_nk_comments_get**](PortalApi.md#portals_id_designs_nk_comments_get) | **GET** /Portals/{id}/designs/{nk}/comments | Queries comments of Design.
 [**portals_id_designs_nk_comments_post**](PortalApi.md#portals_id_designs_nk_comments_post) | **POST** /Portals/{id}/designs/{nk}/comments | Creates a new instance in comments of this model.
 [**portals_id_designs_nk_customer_get**](PortalApi.md#portals_id_designs_nk_customer_get) | **GET** /Portals/{id}/designs/{nk}/customer | Fetches belongsTo relation customer.
+[**portals_id_designs_nk_dynamic_data_get**](PortalApi.md#portals_id_designs_nk_dynamic_data_get) | **GET** /Portals/{id}/designs/{nk}/dynamicData | Fetches belongsTo relation dynamicData.
 [**portals_id_designs_nk_exports_count_get**](PortalApi.md#portals_id_designs_nk_exports_count_get) | **GET** /Portals/{id}/designs/{nk}/exports/count | Counts exports of Design.
 [**portals_id_designs_nk_exports_delete**](PortalApi.md#portals_id_designs_nk_exports_delete) | **DELETE** /Portals/{id}/designs/{nk}/exports | Deletes all exports of this model.
 [**portals_id_designs_nk_exports_fk_delete**](PortalApi.md#portals_id_designs_nk_exports_fk_delete) | **DELETE** /Portals/{id}/designs/{nk}/exports/{fk} | Delete a related item by id for exports.
@@ -2170,6 +2171,61 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Customer**](Customer.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_dynamic_data_get**
+> DynamicData portals_id_designs_nk_dynamic_data_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation dynamicData.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dynamicData.
+    api_response = api_instance.portals_id_designs_nk_dynamic_data_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_dynamic_data_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
 
 ### Authorization
 

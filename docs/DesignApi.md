@@ -1,6 +1,6 @@
 # TweakApi.DesignApi
 
-All URIs are relative to *https://apicdn.tweak.com/api*
+All URIs are relative to *https://apidevcdn.tweak.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -40,6 +40,7 @@ Method | HTTP request | Description
 [**designs_id_comments_post**](DesignApi.md#designs_id_comments_post) | **POST** /Designs/{id}/comments | Creates a new instance in comments of this model.
 [**designs_id_customer_get**](DesignApi.md#designs_id_customer_get) | **GET** /Designs/{id}/customer | Fetches belongsTo relation customer.
 [**designs_id_delete**](DesignApi.md#designs_id_delete) | **DELETE** /Designs/{id} | Delete a model instance by {{id}} from the data source.
+[**designs_id_dynamic_data_get**](DesignApi.md#designs_id_dynamic_data_get) | **GET** /Designs/{id}/dynamicData | Fetches belongsTo relation dynamicData.
 [**designs_id_exists_get**](DesignApi.md#designs_id_exists_get) | **GET** /Designs/{id}/exists | Check whether a model instance exists in the data source.
 [**designs_id_exports_count_get**](DesignApi.md#designs_id_exports_count_get) | **GET** /Designs/{id}/exports/count | Counts exports of Design.
 [**designs_id_exports_delete**](DesignApi.md#designs_id_exports_delete) | **DELETE** /Designs/{id}/exports | Deletes all exports of this model.
@@ -1982,6 +1983,59 @@ Name | Type | Description  | Notes
 ### Return type
 
 **object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **designs_id_dynamic_data_get**
+> DynamicData designs_id_dynamic_data_get(id, refresh=refresh)
+
+Fetches belongsTo relation dynamicData.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DesignApi()
+id = 'id_example' # str | Design id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dynamicData.
+    api_response = api_instance.designs_id_dynamic_data_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DesignApi->designs_id_dynamic_data_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Design id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
 
 ### Authorization
 

@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **id** | **str** |  | [optional] 
 **templates** | [**list[Template]**](Template.md) |  | [optional] 
 **designs** | [**list[Design]**](Design.md) |  | [optional] 
+**products** | [**list[Product]**](Product.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
