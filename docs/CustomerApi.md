@@ -120,6 +120,7 @@ Method | HTTP request | Description
 [**customers_id_teams_nk_product_size_materials_fk_put**](CustomerApi.md#customers_id_teams_nk_product_size_materials_fk_put) | **PUT** /Customers/{id}/teams/{nk}/productSizeMaterials/{fk} | Update a related item by id for productSizeMaterials.
 [**customers_id_teams_nk_product_size_materials_get**](CustomerApi.md#customers_id_teams_nk_product_size_materials_get) | **GET** /Customers/{id}/teams/{nk}/productSizeMaterials | Queries productSizeMaterials of Team.
 [**customers_id_teams_nk_product_size_materials_post**](CustomerApi.md#customers_id_teams_nk_product_size_materials_post) | **POST** /Customers/{id}/teams/{nk}/productSizeMaterials | Creates a new instance in productSizeMaterials of this model.
+[**customers_id_teams_nk_team_data_get**](CustomerApi.md#customers_id_teams_nk_team_data_get) | **GET** /Customers/{id}/teams/{nk}/teamData | Fetches belongsTo relation teamData.
 [**customers_id_teams_nk_team_members_count_get**](CustomerApi.md#customers_id_teams_nk_team_members_count_get) | **GET** /Customers/{id}/teams/{nk}/teamMembers/count | Counts teamMembers of Team.
 [**customers_id_teams_nk_team_members_delete**](CustomerApi.md#customers_id_teams_nk_team_members_delete) | **DELETE** /Customers/{id}/teams/{nk}/teamMembers | Deletes all teamMembers of this model.
 [**customers_id_teams_nk_team_members_fk_delete**](CustomerApi.md#customers_id_teams_nk_team_members_fk_delete) | **DELETE** /Customers/{id}/teams/{nk}/teamMembers/{fk} | Delete a related item by id for teamMembers.
@@ -6408,6 +6409,61 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_team_data_get**
+> DynamicData customers_id_teams_nk_team_data_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation teamData.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation teamData.
+    api_response = api_instance.customers_id_teams_nk_team_data_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_team_data_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
 
 ### Authorization
 
