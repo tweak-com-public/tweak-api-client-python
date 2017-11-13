@@ -42,6 +42,13 @@ Method | HTTP request | Description
 [**team_members_id_design_folders_fk_put**](TeamMemberApi.md#team_members_id_design_folders_fk_put) | **PUT** /TeamMembers/{id}/designFolders/{fk} | Update a related item by id for designFolders.
 [**team_members_id_design_folders_get**](TeamMemberApi.md#team_members_id_design_folders_get) | **GET** /TeamMembers/{id}/designFolders | Queries designFolders of TeamMember.
 [**team_members_id_design_folders_post**](TeamMemberApi.md#team_members_id_design_folders_post) | **POST** /TeamMembers/{id}/designFolders | Creates a new instance in designFolders of this model.
+[**team_members_id_design_shares_count_get**](TeamMemberApi.md#team_members_id_design_shares_count_get) | **GET** /TeamMembers/{id}/designShares/count | Counts designShares of TeamMember.
+[**team_members_id_design_shares_delete**](TeamMemberApi.md#team_members_id_design_shares_delete) | **DELETE** /TeamMembers/{id}/designShares | Deletes all designShares of this model.
+[**team_members_id_design_shares_fk_delete**](TeamMemberApi.md#team_members_id_design_shares_fk_delete) | **DELETE** /TeamMembers/{id}/designShares/{fk} | Delete a related item by id for designShares.
+[**team_members_id_design_shares_fk_get**](TeamMemberApi.md#team_members_id_design_shares_fk_get) | **GET** /TeamMembers/{id}/designShares/{fk} | Find a related item by id for designShares.
+[**team_members_id_design_shares_fk_put**](TeamMemberApi.md#team_members_id_design_shares_fk_put) | **PUT** /TeamMembers/{id}/designShares/{fk} | Update a related item by id for designShares.
+[**team_members_id_design_shares_get**](TeamMemberApi.md#team_members_id_design_shares_get) | **GET** /TeamMembers/{id}/designShares | Queries designShares of TeamMember.
+[**team_members_id_design_shares_post**](TeamMemberApi.md#team_members_id_design_shares_post) | **POST** /TeamMembers/{id}/designShares | Creates a new instance in designShares of this model.
 [**team_members_id_exists_get**](TeamMemberApi.md#team_members_id_exists_get) | **GET** /TeamMembers/{id}/exists | Check whether a model instance exists in the data source.
 [**team_members_id_get**](TeamMemberApi.md#team_members_id_get) | **GET** /TeamMembers/{id} | Find a model instance by {{id}} from the data source.
 [**team_members_id_head**](TeamMemberApi.md#team_members_id_head) | **HEAD** /TeamMembers/{id} | Check whether a model instance exists in the data source.
@@ -109,6 +116,16 @@ Method | HTTP request | Description
 [**team_members_id_reviewed_designs_fk_put**](TeamMemberApi.md#team_members_id_reviewed_designs_fk_put) | **PUT** /TeamMembers/{id}/reviewedDesigns/{fk} | Update a related item by id for reviewedDesigns.
 [**team_members_id_reviewed_designs_get**](TeamMemberApi.md#team_members_id_reviewed_designs_get) | **GET** /TeamMembers/{id}/reviewedDesigns | Queries reviewedDesigns of TeamMember.
 [**team_members_id_reviewed_designs_post**](TeamMemberApi.md#team_members_id_reviewed_designs_post) | **POST** /TeamMembers/{id}/reviewedDesigns | Creates a new instance in reviewedDesigns of this model.
+[**team_members_id_shared_designs_count_get**](TeamMemberApi.md#team_members_id_shared_designs_count_get) | **GET** /TeamMembers/{id}/sharedDesigns/count | Counts sharedDesigns of TeamMember.
+[**team_members_id_shared_designs_delete**](TeamMemberApi.md#team_members_id_shared_designs_delete) | **DELETE** /TeamMembers/{id}/sharedDesigns | Deletes all sharedDesigns of this model.
+[**team_members_id_shared_designs_fk_delete**](TeamMemberApi.md#team_members_id_shared_designs_fk_delete) | **DELETE** /TeamMembers/{id}/sharedDesigns/{fk} | Delete a related item by id for sharedDesigns.
+[**team_members_id_shared_designs_fk_get**](TeamMemberApi.md#team_members_id_shared_designs_fk_get) | **GET** /TeamMembers/{id}/sharedDesigns/{fk} | Find a related item by id for sharedDesigns.
+[**team_members_id_shared_designs_fk_put**](TeamMemberApi.md#team_members_id_shared_designs_fk_put) | **PUT** /TeamMembers/{id}/sharedDesigns/{fk} | Update a related item by id for sharedDesigns.
+[**team_members_id_shared_designs_get**](TeamMemberApi.md#team_members_id_shared_designs_get) | **GET** /TeamMembers/{id}/sharedDesigns | Queries sharedDesigns of TeamMember.
+[**team_members_id_shared_designs_post**](TeamMemberApi.md#team_members_id_shared_designs_post) | **POST** /TeamMembers/{id}/sharedDesigns | Creates a new instance in sharedDesigns of this model.
+[**team_members_id_shared_designs_rel_fk_delete**](TeamMemberApi.md#team_members_id_shared_designs_rel_fk_delete) | **DELETE** /TeamMembers/{id}/sharedDesigns/rel/{fk} | Remove the sharedDesigns relation to an item by id.
+[**team_members_id_shared_designs_rel_fk_head**](TeamMemberApi.md#team_members_id_shared_designs_rel_fk_head) | **HEAD** /TeamMembers/{id}/sharedDesigns/rel/{fk} | Check the existence of sharedDesigns relation to an item by id.
+[**team_members_id_shared_designs_rel_fk_put**](TeamMemberApi.md#team_members_id_shared_designs_rel_fk_put) | **PUT** /TeamMembers/{id}/sharedDesigns/rel/{fk} | Add a related item by id for sharedDesigns.
 [**team_members_id_target_model_target_id_invite_invitee_post**](TeamMemberApi.md#team_members_id_target_model_target_id_invite_invitee_post) | **POST** /TeamMembers/{id}/{targetModel}/{targetId}/invite/{invitee} | Invite somebody to join a team, portal or other targets
 [**team_members_id_target_model_target_id_invite_post**](TeamMemberApi.md#team_members_id_target_model_target_id_invite_post) | **POST** /TeamMembers/{id}/{targetModel}/{targetId}/invite | Invite a group of people to join a team, portal or other targets
 [**team_members_id_team_billing_available_plans_get**](TeamMemberApi.md#team_members_id_team_billing_available_plans_get) | **GET** /TeamMembers/{id}/team/billing/availablePlans | Get Available Plans
@@ -2254,6 +2271,375 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DesignFolder**](DesignFolder.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_design_shares_count_get**
+> InlineResponse200 team_members_id_design_shares_count_get(id, where=where)
+
+Counts designShares of TeamMember.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts designShares of TeamMember.
+    api_response = api_instance.team_members_id_design_shares_count_get(id, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_design_shares_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_design_shares_delete**
+> team_members_id_design_shares_delete(id)
+
+Deletes all designShares of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+
+try: 
+    # Deletes all designShares of this model.
+    api_instance.team_members_id_design_shares_delete(id)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_design_shares_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_design_shares_fk_delete**
+> team_members_id_design_shares_fk_delete(id, fk)
+
+Delete a related item by id for designShares.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for designShares
+
+try: 
+    # Delete a related item by id for designShares.
+    api_instance.team_members_id_design_shares_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_design_shares_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for designShares | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_design_shares_fk_get**
+> DesignMember team_members_id_design_shares_fk_get(id, fk)
+
+Find a related item by id for designShares.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for designShares
+
+try: 
+    # Find a related item by id for designShares.
+    api_response = api_instance.team_members_id_design_shares_fk_get(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_design_shares_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for designShares | 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_design_shares_fk_put**
+> DesignMember team_members_id_design_shares_fk_put(id, fk, data=data)
+
+Update a related item by id for designShares.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for designShares
+data = TweakApi.DesignMember() # DesignMember |  (optional)
+
+try: 
+    # Update a related item by id for designShares.
+    api_response = api_instance.team_members_id_design_shares_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_design_shares_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for designShares | 
+ **data** | [**DesignMember**](DesignMember.md)|  | [optional] 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_design_shares_get**
+> list[DesignMember] team_members_id_design_shares_get(id, filter=filter)
+
+Queries designShares of TeamMember.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries designShares of TeamMember.
+    api_response = api_instance.team_members_id_design_shares_get(id, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_design_shares_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[DesignMember]**](DesignMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_design_shares_post**
+> DesignMember team_members_id_design_shares_post(id, data=data)
+
+Creates a new instance in designShares of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+data = TweakApi.DesignMember() # DesignMember |  (optional)
+
+try: 
+    # Creates a new instance in designShares of this model.
+    api_response = api_instance.team_members_id_design_shares_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_design_shares_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **data** | [**DesignMember**](DesignMember.md)|  | [optional] 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
 
 ### Authorization
 
@@ -5811,6 +6197,535 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_shared_designs_count_get**
+> InlineResponse200 team_members_id_shared_designs_count_get(id, where=where)
+
+Counts sharedDesigns of TeamMember.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts sharedDesigns of TeamMember.
+    api_response = api_instance.team_members_id_shared_designs_count_get(id, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_shared_designs_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_shared_designs_delete**
+> team_members_id_shared_designs_delete(id)
+
+Deletes all sharedDesigns of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+
+try: 
+    # Deletes all sharedDesigns of this model.
+    api_instance.team_members_id_shared_designs_delete(id)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_shared_designs_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_shared_designs_fk_delete**
+> team_members_id_shared_designs_fk_delete(id, fk)
+
+Delete a related item by id for sharedDesigns.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for sharedDesigns
+
+try: 
+    # Delete a related item by id for sharedDesigns.
+    api_instance.team_members_id_shared_designs_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_shared_designs_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for sharedDesigns | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_shared_designs_fk_get**
+> Design team_members_id_shared_designs_fk_get(id, fk)
+
+Find a related item by id for sharedDesigns.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for sharedDesigns
+
+try: 
+    # Find a related item by id for sharedDesigns.
+    api_response = api_instance.team_members_id_shared_designs_fk_get(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_shared_designs_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for sharedDesigns | 
+
+### Return type
+
+[**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_shared_designs_fk_put**
+> Design team_members_id_shared_designs_fk_put(id, fk, data=data)
+
+Update a related item by id for sharedDesigns.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for sharedDesigns
+data = TweakApi.Design() # Design |  (optional)
+
+try: 
+    # Update a related item by id for sharedDesigns.
+    api_response = api_instance.team_members_id_shared_designs_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_shared_designs_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for sharedDesigns | 
+ **data** | [**Design**](Design.md)|  | [optional] 
+
+### Return type
+
+[**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_shared_designs_get**
+> list[Design] team_members_id_shared_designs_get(id, filter=filter)
+
+Queries sharedDesigns of TeamMember.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries sharedDesigns of TeamMember.
+    api_response = api_instance.team_members_id_shared_designs_get(id, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_shared_designs_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[Design]**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_shared_designs_post**
+> Design team_members_id_shared_designs_post(id, data=data)
+
+Creates a new instance in sharedDesigns of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+data = TweakApi.Design() # Design |  (optional)
+
+try: 
+    # Creates a new instance in sharedDesigns of this model.
+    api_response = api_instance.team_members_id_shared_designs_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_shared_designs_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **data** | [**Design**](Design.md)|  | [optional] 
+
+### Return type
+
+[**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_shared_designs_rel_fk_delete**
+> team_members_id_shared_designs_rel_fk_delete(id, fk)
+
+Remove the sharedDesigns relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for sharedDesigns
+
+try: 
+    # Remove the sharedDesigns relation to an item by id.
+    api_instance.team_members_id_shared_designs_rel_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_shared_designs_rel_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for sharedDesigns | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_shared_designs_rel_fk_head**
+> bool team_members_id_shared_designs_rel_fk_head(id, fk)
+
+Check the existence of sharedDesigns relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for sharedDesigns
+
+try: 
+    # Check the existence of sharedDesigns relation to an item by id.
+    api_response = api_instance.team_members_id_shared_designs_rel_fk_head(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_shared_designs_rel_fk_head: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for sharedDesigns | 
+
+### Return type
+
+**bool**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_shared_designs_rel_fk_put**
+> DesignMember team_members_id_shared_designs_rel_fk_put(id, fk, data=data)
+
+Add a related item by id for sharedDesigns.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for sharedDesigns
+data = TweakApi.DesignMember() # DesignMember |  (optional)
+
+try: 
+    # Add a related item by id for sharedDesigns.
+    api_response = api_instance.team_members_id_shared_designs_rel_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_shared_designs_rel_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for sharedDesigns | 
+ **data** | [**DesignMember**](DesignMember.md)|  | [optional] 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
 
 ### Authorization
 

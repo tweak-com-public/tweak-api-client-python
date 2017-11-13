@@ -11,6 +11,7 @@ from .design_api import DesignApi
 from .design_comment_api import DesignCommentApi
 from .design_export_api import DesignExportApi
 from .design_folder_api import DesignFolderApi
+from .design_member_api import DesignMemberApi
 from .design_permission_set_api import DesignPermissionSetApi
 from .design_tag_api import DesignTagApi
 from .dynamic_data_api import DynamicDataApi
