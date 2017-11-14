@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **binding_type** | **str** |  | [optional] 
 **default_bleed** | [**Bounds**](Bounds.md) |  | [optional] 
+**pdf_color_profile** | **str** |  | [optional] [default to '']
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
 **id** | **str** |  | [optional] 

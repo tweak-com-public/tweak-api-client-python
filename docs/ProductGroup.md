@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** |  | 
+**code** | **str** |  | 
 **description** | **str** |  | [optional] 
 **thumbnail** | **str** |  | [optional] 
 **created** | **datetime** |  | [optional] 
