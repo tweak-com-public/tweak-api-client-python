@@ -21,13 +21,6 @@ Method | HTTP request | Description
 [**customers_id_access_tokens_post**](CustomerApi.md#customers_id_access_tokens_post) | **POST** /Customers/{id}/accessTokens | Creates a new instance in accessTokens of this model.
 [**customers_id_active_get**](CustomerApi.md#customers_id_active_get) | **GET** /Customers/{id}/active | Define whether customer is active or not
 [**customers_id_delete**](CustomerApi.md#customers_id_delete) | **DELETE** /Customers/{id} | Delete a model instance by {{id}} from the data source.
-[**customers_id_designs_count_get**](CustomerApi.md#customers_id_designs_count_get) | **GET** /Customers/{id}/designs/count | Counts designs of Customer.
-[**customers_id_designs_delete**](CustomerApi.md#customers_id_designs_delete) | **DELETE** /Customers/{id}/designs | Deletes all designs of this model.
-[**customers_id_designs_fk_delete**](CustomerApi.md#customers_id_designs_fk_delete) | **DELETE** /Customers/{id}/designs/{fk} | Delete a related item by id for designs.
-[**customers_id_designs_fk_get**](CustomerApi.md#customers_id_designs_fk_get) | **GET** /Customers/{id}/designs/{fk} | Find a related item by id for designs.
-[**customers_id_designs_fk_put**](CustomerApi.md#customers_id_designs_fk_put) | **PUT** /Customers/{id}/designs/{fk} | Update a related item by id for designs.
-[**customers_id_designs_get**](CustomerApi.md#customers_id_designs_get) | **GET** /Customers/{id}/designs | Queries designs of Customer.
-[**customers_id_designs_post**](CustomerApi.md#customers_id_designs_post) | **POST** /Customers/{id}/designs | Creates a new instance in designs of this model.
 [**customers_id_exists_get**](CustomerApi.md#customers_id_exists_get) | **GET** /Customers/{id}/exists | Check whether a model instance exists in the data source.
 [**customers_id_get**](CustomerApi.md#customers_id_get) | **GET** /Customers/{id} | Find a model instance by {{id}} from the data source.
 [**customers_id_head**](CustomerApi.md#customers_id_head) | **HEAD** /Customers/{id} | Check whether a model instance exists in the data source.
@@ -53,10 +46,6 @@ Method | HTTP request | Description
 [**customers_id_teams_fk_get**](CustomerApi.md#customers_id_teams_fk_get) | **GET** /Customers/{id}/teams/{fk} | Find a related item by id for teams.
 [**customers_id_teams_fk_put**](CustomerApi.md#customers_id_teams_fk_put) | **PUT** /Customers/{id}/teams/{fk} | Update a related item by id for teams.
 [**customers_id_teams_get**](CustomerApi.md#customers_id_teams_get) | **GET** /Customers/{id}/teams | Queries teams of Customer.
-[**customers_id_teams_nk_billing_delete**](CustomerApi.md#customers_id_teams_nk_billing_delete) | **DELETE** /Customers/{id}/teams/{nk}/billing | Deletes billing of this model.
-[**customers_id_teams_nk_billing_get**](CustomerApi.md#customers_id_teams_nk_billing_get) | **GET** /Customers/{id}/teams/{nk}/billing | Fetches hasOne relation billing.
-[**customers_id_teams_nk_billing_post**](CustomerApi.md#customers_id_teams_nk_billing_post) | **POST** /Customers/{id}/teams/{nk}/billing | Creates a new instance in billing of this model.
-[**customers_id_teams_nk_billing_put**](CustomerApi.md#customers_id_teams_nk_billing_put) | **PUT** /Customers/{id}/teams/{nk}/billing | Update billing of this model.
 [**customers_id_teams_nk_brand_delete**](CustomerApi.md#customers_id_teams_nk_brand_delete) | **DELETE** /Customers/{id}/teams/{nk}/brand | Deletes brand of this model.
 [**customers_id_teams_nk_brand_get**](CustomerApi.md#customers_id_teams_nk_brand_get) | **GET** /Customers/{id}/teams/{nk}/brand | Fetches hasOne relation brand.
 [**customers_id_teams_nk_brand_post**](CustomerApi.md#customers_id_teams_nk_brand_post) | **POST** /Customers/{id}/teams/{nk}/brand | Creates a new instance in brand of this model.
@@ -117,6 +106,21 @@ Method | HTTP request | Description
 [**customers_id_teams_nk_portals_fk_put**](CustomerApi.md#customers_id_teams_nk_portals_fk_put) | **PUT** /Customers/{id}/teams/{nk}/portals/{fk} | Update a related item by id for portals.
 [**customers_id_teams_nk_portals_get**](CustomerApi.md#customers_id_teams_nk_portals_get) | **GET** /Customers/{id}/teams/{nk}/portals | Queries portals of Team.
 [**customers_id_teams_nk_portals_post**](CustomerApi.md#customers_id_teams_nk_portals_post) | **POST** /Customers/{id}/teams/{nk}/portals | Creates a new instance in portals of this model.
+[**customers_id_teams_nk_product_materials_count_get**](CustomerApi.md#customers_id_teams_nk_product_materials_count_get) | **GET** /Customers/{id}/teams/{nk}/productMaterials/count | Counts productMaterials of Team.
+[**customers_id_teams_nk_product_materials_delete**](CustomerApi.md#customers_id_teams_nk_product_materials_delete) | **DELETE** /Customers/{id}/teams/{nk}/productMaterials | Deletes all productMaterials of this model.
+[**customers_id_teams_nk_product_materials_fk_delete**](CustomerApi.md#customers_id_teams_nk_product_materials_fk_delete) | **DELETE** /Customers/{id}/teams/{nk}/productMaterials/{fk} | Delete a related item by id for productMaterials.
+[**customers_id_teams_nk_product_materials_fk_get**](CustomerApi.md#customers_id_teams_nk_product_materials_fk_get) | **GET** /Customers/{id}/teams/{nk}/productMaterials/{fk} | Find a related item by id for productMaterials.
+[**customers_id_teams_nk_product_materials_fk_put**](CustomerApi.md#customers_id_teams_nk_product_materials_fk_put) | **PUT** /Customers/{id}/teams/{nk}/productMaterials/{fk} | Update a related item by id for productMaterials.
+[**customers_id_teams_nk_product_materials_get**](CustomerApi.md#customers_id_teams_nk_product_materials_get) | **GET** /Customers/{id}/teams/{nk}/productMaterials | Queries productMaterials of Team.
+[**customers_id_teams_nk_product_materials_post**](CustomerApi.md#customers_id_teams_nk_product_materials_post) | **POST** /Customers/{id}/teams/{nk}/productMaterials | Creates a new instance in productMaterials of this model.
+[**customers_id_teams_nk_product_size_materials_count_get**](CustomerApi.md#customers_id_teams_nk_product_size_materials_count_get) | **GET** /Customers/{id}/teams/{nk}/productSizeMaterials/count | Counts productSizeMaterials of Team.
+[**customers_id_teams_nk_product_size_materials_delete**](CustomerApi.md#customers_id_teams_nk_product_size_materials_delete) | **DELETE** /Customers/{id}/teams/{nk}/productSizeMaterials | Deletes all productSizeMaterials of this model.
+[**customers_id_teams_nk_product_size_materials_fk_delete**](CustomerApi.md#customers_id_teams_nk_product_size_materials_fk_delete) | **DELETE** /Customers/{id}/teams/{nk}/productSizeMaterials/{fk} | Delete a related item by id for productSizeMaterials.
+[**customers_id_teams_nk_product_size_materials_fk_get**](CustomerApi.md#customers_id_teams_nk_product_size_materials_fk_get) | **GET** /Customers/{id}/teams/{nk}/productSizeMaterials/{fk} | Find a related item by id for productSizeMaterials.
+[**customers_id_teams_nk_product_size_materials_fk_put**](CustomerApi.md#customers_id_teams_nk_product_size_materials_fk_put) | **PUT** /Customers/{id}/teams/{nk}/productSizeMaterials/{fk} | Update a related item by id for productSizeMaterials.
+[**customers_id_teams_nk_product_size_materials_get**](CustomerApi.md#customers_id_teams_nk_product_size_materials_get) | **GET** /Customers/{id}/teams/{nk}/productSizeMaterials | Queries productSizeMaterials of Team.
+[**customers_id_teams_nk_product_size_materials_post**](CustomerApi.md#customers_id_teams_nk_product_size_materials_post) | **POST** /Customers/{id}/teams/{nk}/productSizeMaterials | Creates a new instance in productSizeMaterials of this model.
+[**customers_id_teams_nk_team_data_get**](CustomerApi.md#customers_id_teams_nk_team_data_get) | **GET** /Customers/{id}/teams/{nk}/teamData | Fetches belongsTo relation teamData.
 [**customers_id_teams_nk_team_members_count_get**](CustomerApi.md#customers_id_teams_nk_team_members_count_get) | **GET** /Customers/{id}/teams/{nk}/teamMembers/count | Counts teamMembers of Team.
 [**customers_id_teams_nk_team_members_delete**](CustomerApi.md#customers_id_teams_nk_team_members_delete) | **DELETE** /Customers/{id}/teams/{nk}/teamMembers | Deletes all teamMembers of this model.
 [**customers_id_teams_nk_team_members_fk_delete**](CustomerApi.md#customers_id_teams_nk_team_members_fk_delete) | **DELETE** /Customers/{id}/teams/{nk}/teamMembers/{fk} | Delete a related item by id for teamMembers.
@@ -1042,375 +1046,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **object**
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_id_designs_count_get**
-> InlineResponse200 customers_id_designs_count_get(id, where=where)
-
-Counts designs of Customer.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-id = 'id_example' # str | Customer id
-where = 'where_example' # str | Criteria to match model instances (optional)
-
-try: 
-    # Counts designs of Customer.
-    api_response = api_instance.customers_id_designs_count_get(id, where=where)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_designs_count_get: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Customer id | 
- **where** | **str**| Criteria to match model instances | [optional] 
-
-### Return type
-
-[**InlineResponse200**](InlineResponse200.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_id_designs_delete**
-> customers_id_designs_delete(id)
-
-Deletes all designs of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-id = 'id_example' # str | Customer id
-
-try: 
-    # Deletes all designs of this model.
-    api_instance.customers_id_designs_delete(id)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_designs_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Customer id | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_id_designs_fk_delete**
-> customers_id_designs_fk_delete(id, fk)
-
-Delete a related item by id for designs.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-id = 'id_example' # str | Customer id
-fk = 'fk_example' # str | Foreign key for designs
-
-try: 
-    # Delete a related item by id for designs.
-    api_instance.customers_id_designs_fk_delete(id, fk)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_designs_fk_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Customer id | 
- **fk** | **str**| Foreign key for designs | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_id_designs_fk_get**
-> Design customers_id_designs_fk_get(id, fk)
-
-Find a related item by id for designs.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-id = 'id_example' # str | Customer id
-fk = 'fk_example' # str | Foreign key for designs
-
-try: 
-    # Find a related item by id for designs.
-    api_response = api_instance.customers_id_designs_fk_get(id, fk)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_designs_fk_get: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Customer id | 
- **fk** | **str**| Foreign key for designs | 
-
-### Return type
-
-[**Design**](Design.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_id_designs_fk_put**
-> Design customers_id_designs_fk_put(id, fk, data=data)
-
-Update a related item by id for designs.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-id = 'id_example' # str | Customer id
-fk = 'fk_example' # str | Foreign key for designs
-data = TweakApi.Design() # Design |  (optional)
-
-try: 
-    # Update a related item by id for designs.
-    api_response = api_instance.customers_id_designs_fk_put(id, fk, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_designs_fk_put: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Customer id | 
- **fk** | **str**| Foreign key for designs | 
- **data** | [**Design**](Design.md)|  | [optional] 
-
-### Return type
-
-[**Design**](Design.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_id_designs_get**
-> list[Design] customers_id_designs_get(id, filter=filter)
-
-Queries designs of Customer.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-id = 'id_example' # str | Customer id
-filter = 'filter_example' # str |  (optional)
-
-try: 
-    # Queries designs of Customer.
-    api_response = api_instance.customers_id_designs_get(id, filter=filter)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_designs_get: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Customer id | 
- **filter** | **str**|  | [optional] 
-
-### Return type
-
-[**list[Design]**](Design.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_id_designs_post**
-> Design customers_id_designs_post(id, data=data)
-
-Creates a new instance in designs of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-id = 'id_example' # str | Customer id
-data = TweakApi.Design() # Design |  (optional)
-
-try: 
-    # Creates a new instance in designs of this model.
-    api_response = api_instance.customers_id_designs_post(id, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_designs_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Customer id | 
- **data** | [**Design**](Design.md)|  | [optional] 
-
-### Return type
-
-[**Design**](Design.md)
 
 ### Authorization
 
@@ -2727,223 +2362,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[Team]**](Team.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_id_teams_nk_billing_delete**
-> customers_id_teams_nk_billing_delete(id, nk)
-
-Deletes billing of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-id = 'id_example' # str | Customer id
-nk = 'nk_example' # str | Foreign key for teams.
-
-try: 
-    # Deletes billing of this model.
-    api_instance.customers_id_teams_nk_billing_delete(id, nk)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_teams_nk_billing_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Customer id | 
- **nk** | **str**| Foreign key for teams. | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_id_teams_nk_billing_get**
-> Billing customers_id_teams_nk_billing_get(id, nk, refresh=refresh)
-
-Fetches hasOne relation billing.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-id = 'id_example' # str | Customer id
-nk = 'nk_example' # str | Foreign key for teams.
-refresh = true # bool |  (optional)
-
-try: 
-    # Fetches hasOne relation billing.
-    api_response = api_instance.customers_id_teams_nk_billing_get(id, nk, refresh=refresh)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_teams_nk_billing_get: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Customer id | 
- **nk** | **str**| Foreign key for teams. | 
- **refresh** | **bool**|  | [optional] 
-
-### Return type
-
-[**Billing**](Billing.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_id_teams_nk_billing_post**
-> Billing customers_id_teams_nk_billing_post(id, nk, data=data)
-
-Creates a new instance in billing of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-id = 'id_example' # str | Customer id
-nk = 'nk_example' # str | Foreign key for teams.
-data = TweakApi.Billing() # Billing |  (optional)
-
-try: 
-    # Creates a new instance in billing of this model.
-    api_response = api_instance.customers_id_teams_nk_billing_post(id, nk, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_teams_nk_billing_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Customer id | 
- **nk** | **str**| Foreign key for teams. | 
- **data** | [**Billing**](Billing.md)|  | [optional] 
-
-### Return type
-
-[**Billing**](Billing.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_id_teams_nk_billing_put**
-> Billing customers_id_teams_nk_billing_put(id, nk, data=data)
-
-Update billing of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-id = 'id_example' # str | Customer id
-nk = 'nk_example' # str | Foreign key for teams.
-data = TweakApi.Billing() # Billing |  (optional)
-
-try: 
-    # Update billing of this model.
-    api_response = api_instance.customers_id_teams_nk_billing_put(id, nk, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_teams_nk_billing_put: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Customer id | 
- **nk** | **str**| Foreign key for teams. | 
- **data** | [**Billing**](Billing.md)|  | [optional] 
-
-### Return type
-
-[**Billing**](Billing.md)
 
 ### Authorization
 
@@ -6225,6 +5643,827 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_product_materials_count_get**
+> InlineResponse200 customers_id_teams_nk_product_materials_count_get(id, nk, where=where)
+
+Counts productMaterials of Team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts productMaterials of Team.
+    api_response = api_instance.customers_id_teams_nk_product_materials_count_get(id, nk, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_product_materials_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_product_materials_delete**
+> customers_id_teams_nk_product_materials_delete(id, nk)
+
+Deletes all productMaterials of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+
+try: 
+    # Deletes all productMaterials of this model.
+    api_instance.customers_id_teams_nk_product_materials_delete(id, nk)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_product_materials_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_product_materials_fk_delete**
+> customers_id_teams_nk_product_materials_fk_delete(id, nk, fk)
+
+Delete a related item by id for productMaterials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+fk = 'fk_example' # str | Foreign key for productMaterials
+
+try: 
+    # Delete a related item by id for productMaterials.
+    api_instance.customers_id_teams_nk_product_materials_fk_delete(id, nk, fk)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_product_materials_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **fk** | **str**| Foreign key for productMaterials | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_product_materials_fk_get**
+> ProductMaterial customers_id_teams_nk_product_materials_fk_get(id, nk, fk)
+
+Find a related item by id for productMaterials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+fk = 'fk_example' # str | Foreign key for productMaterials
+
+try: 
+    # Find a related item by id for productMaterials.
+    api_response = api_instance.customers_id_teams_nk_product_materials_fk_get(id, nk, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_product_materials_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **fk** | **str**| Foreign key for productMaterials | 
+
+### Return type
+
+[**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_product_materials_fk_put**
+> ProductMaterial customers_id_teams_nk_product_materials_fk_put(id, nk, fk, data=data)
+
+Update a related item by id for productMaterials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+fk = 'fk_example' # str | Foreign key for productMaterials
+data = TweakApi.ProductMaterial() # ProductMaterial |  (optional)
+
+try: 
+    # Update a related item by id for productMaterials.
+    api_response = api_instance.customers_id_teams_nk_product_materials_fk_put(id, nk, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_product_materials_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **fk** | **str**| Foreign key for productMaterials | 
+ **data** | [**ProductMaterial**](ProductMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_product_materials_get**
+> list[ProductMaterial] customers_id_teams_nk_product_materials_get(id, nk, filter=filter)
+
+Queries productMaterials of Team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries productMaterials of Team.
+    api_response = api_instance.customers_id_teams_nk_product_materials_get(id, nk, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_product_materials_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[ProductMaterial]**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_product_materials_post**
+> ProductMaterial customers_id_teams_nk_product_materials_post(id, nk, data=data)
+
+Creates a new instance in productMaterials of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+data = TweakApi.ProductMaterial() # ProductMaterial |  (optional)
+
+try: 
+    # Creates a new instance in productMaterials of this model.
+    api_response = api_instance.customers_id_teams_nk_product_materials_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_product_materials_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **data** | [**ProductMaterial**](ProductMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_product_size_materials_count_get**
+> InlineResponse200 customers_id_teams_nk_product_size_materials_count_get(id, nk, where=where)
+
+Counts productSizeMaterials of Team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts productSizeMaterials of Team.
+    api_response = api_instance.customers_id_teams_nk_product_size_materials_count_get(id, nk, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_product_size_materials_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_product_size_materials_delete**
+> customers_id_teams_nk_product_size_materials_delete(id, nk)
+
+Deletes all productSizeMaterials of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+
+try: 
+    # Deletes all productSizeMaterials of this model.
+    api_instance.customers_id_teams_nk_product_size_materials_delete(id, nk)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_product_size_materials_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_product_size_materials_fk_delete**
+> customers_id_teams_nk_product_size_materials_fk_delete(id, nk, fk)
+
+Delete a related item by id for productSizeMaterials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+fk = 'fk_example' # str | Foreign key for productSizeMaterials
+
+try: 
+    # Delete a related item by id for productSizeMaterials.
+    api_instance.customers_id_teams_nk_product_size_materials_fk_delete(id, nk, fk)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_product_size_materials_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **fk** | **str**| Foreign key for productSizeMaterials | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_product_size_materials_fk_get**
+> ProductSizeMaterial customers_id_teams_nk_product_size_materials_fk_get(id, nk, fk)
+
+Find a related item by id for productSizeMaterials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+fk = 'fk_example' # str | Foreign key for productSizeMaterials
+
+try: 
+    # Find a related item by id for productSizeMaterials.
+    api_response = api_instance.customers_id_teams_nk_product_size_materials_fk_get(id, nk, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_product_size_materials_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **fk** | **str**| Foreign key for productSizeMaterials | 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_product_size_materials_fk_put**
+> ProductSizeMaterial customers_id_teams_nk_product_size_materials_fk_put(id, nk, fk, data=data)
+
+Update a related item by id for productSizeMaterials.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+fk = 'fk_example' # str | Foreign key for productSizeMaterials
+data = TweakApi.ProductSizeMaterial() # ProductSizeMaterial |  (optional)
+
+try: 
+    # Update a related item by id for productSizeMaterials.
+    api_response = api_instance.customers_id_teams_nk_product_size_materials_fk_put(id, nk, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_product_size_materials_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **fk** | **str**| Foreign key for productSizeMaterials | 
+ **data** | [**ProductSizeMaterial**](ProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_product_size_materials_get**
+> list[ProductSizeMaterial] customers_id_teams_nk_product_size_materials_get(id, nk, filter=filter)
+
+Queries productSizeMaterials of Team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries productSizeMaterials of Team.
+    api_response = api_instance.customers_id_teams_nk_product_size_materials_get(id, nk, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_product_size_materials_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[ProductSizeMaterial]**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_product_size_materials_post**
+> ProductSizeMaterial customers_id_teams_nk_product_size_materials_post(id, nk, data=data)
+
+Creates a new instance in productSizeMaterials of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+data = TweakApi.ProductSizeMaterial() # ProductSizeMaterial |  (optional)
+
+try: 
+    # Creates a new instance in productSizeMaterials of this model.
+    api_response = api_instance.customers_id_teams_nk_product_size_materials_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_product_size_materials_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **data** | [**ProductSizeMaterial**](ProductSizeMaterial.md)|  | [optional] 
+
+### Return type
+
+[**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **customers_id_teams_nk_team_data_get**
+> DynamicData customers_id_teams_nk_team_data_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation teamData.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.CustomerApi()
+id = 'id_example' # str | Customer id
+nk = 'nk_example' # str | Foreign key for teams.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation teamData.
+    api_response = api_instance.customers_id_teams_nk_team_data_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling CustomerApi->customers_id_teams_nk_team_data_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Customer id | 
+ **nk** | **str**| Foreign key for teams. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DynamicData**](DynamicData.md)
 
 ### Authorization
 

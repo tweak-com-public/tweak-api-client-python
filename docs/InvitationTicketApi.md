@@ -18,6 +18,8 @@ Method | HTTP request | Description
 [**invitation_tickets_id_patch**](InvitationTicketApi.md#invitation_tickets_id_patch) | **PATCH** /InvitationTickets/{id} | Patch attributes for a model instance and persist it into the data source.
 [**invitation_tickets_id_put**](InvitationTicketApi.md#invitation_tickets_id_put) | **PUT** /InvitationTickets/{id} | Replace attributes for a model instance and persist it into the data source.
 [**invitation_tickets_id_replace_post**](InvitationTicketApi.md#invitation_tickets_id_replace_post) | **POST** /InvitationTickets/{id}/replace | Replace attributes for a model instance and persist it into the data source.
+[**invitation_tickets_id_target_design_get**](InvitationTicketApi.md#invitation_tickets_id_target_design_get) | **GET** /InvitationTickets/{id}/targetDesign | Fetches belongsTo relation targetDesign.
+[**invitation_tickets_id_target_design_member_get**](InvitationTicketApi.md#invitation_tickets_id_target_design_member_get) | **GET** /InvitationTickets/{id}/targetDesignMember | Fetches belongsTo relation targetDesignMember.
 [**invitation_tickets_id_target_image_folder_get**](InvitationTicketApi.md#invitation_tickets_id_target_image_folder_get) | **GET** /InvitationTickets/{id}/targetImageFolder | Fetches belongsTo relation targetImageFolder.
 [**invitation_tickets_id_target_image_folder_member_get**](InvitationTicketApi.md#invitation_tickets_id_target_image_folder_member_get) | **GET** /InvitationTickets/{id}/targetImageFolderMember | Fetches belongsTo relation targetImageFolderMember.
 [**invitation_tickets_id_target_portal_get**](InvitationTicketApi.md#invitation_tickets_id_target_portal_get) | **GET** /InvitationTickets/{id}/targetPortal | Fetches belongsTo relation targetPortal.
@@ -748,6 +750,112 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InvitationTicket**](InvitationTicket.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **invitation_tickets_id_target_design_get**
+> Design invitation_tickets_id_target_design_get(id, refresh=refresh)
+
+Fetches belongsTo relation targetDesign.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.InvitationTicketApi()
+id = 'id_example' # str | InvitationTicket id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation targetDesign.
+    api_response = api_instance.invitation_tickets_id_target_design_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling InvitationTicketApi->invitation_tickets_id_target_design_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| InvitationTicket id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**Design**](Design.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **invitation_tickets_id_target_design_member_get**
+> DesignMember invitation_tickets_id_target_design_member_get(id, refresh=refresh)
+
+Fetches belongsTo relation targetDesignMember.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.InvitationTicketApi()
+id = 'id_example' # str | InvitationTicket id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation targetDesignMember.
+    api_response = api_instance.invitation_tickets_id_target_design_member_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling InvitationTicketApi->invitation_tickets_id_target_design_member_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| InvitationTicket id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
 
 ### Authorization
 

@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **email_notification** | **bool** |  | [optional] [default to True]
 **template_permission** | [**TemplatePermissionSet**](TemplatePermissionSet.md) |  | [optional] 
 **tweak_template_permission** | [**TemplatePermissionSet**](TemplatePermissionSet.md) |  | [optional] 
+**team_customer_permission** | [**TeamCustomerPermissionSet**](TeamCustomerPermissionSet.md) |  | [optional] 
 **id** | **str** |  | [optional] 
 **team_id** | **str** |  | [optional] 
 **team** | [**Team**](Team.md) |  | [optional] 
