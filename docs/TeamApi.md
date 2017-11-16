@@ -21,6 +21,7 @@ Method | HTTP request | Description
 [**teams_id_builder_configs_fk_get**](TeamApi.md#teams_id_builder_configs_fk_get) | **GET** /Teams/{id}/builderConfigs/{fk} | Find a related item by id for builderConfigs.
 [**teams_id_builder_configs_fk_logo_put**](TeamApi.md#teams_id_builder_configs_fk_logo_put) | **PUT** /Teams/{id}/builderConfigs/{fk}/logo | Change Builder Config logo
 [**teams_id_builder_configs_fk_put**](TeamApi.md#teams_id_builder_configs_fk_put) | **PUT** /Teams/{id}/builderConfigs/{fk} | Update a related item by id for builderConfigs.
+[**teams_id_builder_configs_fk_watermark_put**](TeamApi.md#teams_id_builder_configs_fk_watermark_put) | **PUT** /Teams/{id}/builderConfigs/{fk}/watermark | Change Builder Config watermark
 [**teams_id_builder_configs_get**](TeamApi.md#teams_id_builder_configs_get) | **GET** /Teams/{id}/builderConfigs | Queries builderConfigs of Team.
 [**teams_id_builder_configs_nk_product_groups_count_get**](TeamApi.md#teams_id_builder_configs_nk_product_groups_count_get) | **GET** /Teams/{id}/builderConfigs/{nk}/productGroups/count | Counts productGroups of TeamBuilderConfig.
 [**teams_id_builder_configs_nk_product_groups_delete**](TeamApi.md#teams_id_builder_configs_nk_product_groups_delete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productGroups | Deletes all productGroups of this model.
@@ -1269,6 +1270,61 @@ Name | Type | Description  | Notes
  **id** | **str**| Team id | 
  **fk** | **str**| Foreign key for builderConfigs | 
  **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_fk_watermark_put**
+> TeamBuilderConfig teams_id_builder_configs_fk_watermark_put(id, fk, data)
+
+Change Builder Config watermark
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+fk = 'fk_example' # str | BuilderConfig id
+data = TweakApi.Team() # Team | Watermark
+
+try: 
+    # Change Builder Config watermark
+    api_response = api_instance.teams_id_builder_configs_fk_watermark_put(id, fk, data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_fk_watermark_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **fk** | **str**| BuilderConfig id | 
+ **data** | [**Team**](Team.md)| Watermark | 
 
 ### Return type
 

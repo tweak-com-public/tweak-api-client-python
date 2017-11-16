@@ -151,6 +151,7 @@ Method | HTTP request | Description
 [**team_members_id_team_builder_configs_fk_get**](TeamMemberApi.md#team_members_id_team_builder_configs_fk_get) | **GET** /TeamMembers/{id}/team/builderConfigs/{fk} | Find a related item by id for builderConfigs.
 [**team_members_id_team_builder_configs_fk_logo_put**](TeamMemberApi.md#team_members_id_team_builder_configs_fk_logo_put) | **PUT** /TeamMembers/{id}/team/builderConfigs/{fk}/logo | Change Builder Config logo
 [**team_members_id_team_builder_configs_fk_put**](TeamMemberApi.md#team_members_id_team_builder_configs_fk_put) | **PUT** /TeamMembers/{id}/team/builderConfigs/{fk} | Update a related item by id for builderConfigs.
+[**team_members_id_team_builder_configs_fk_watermark_put**](TeamMemberApi.md#team_members_id_team_builder_configs_fk_watermark_put) | **PUT** /TeamMembers/{id}/team/builderConfigs/{fk}/watermark | Change Builder Config watermark
 [**team_members_id_team_builder_configs_get**](TeamMemberApi.md#team_members_id_team_builder_configs_get) | **GET** /TeamMembers/{id}/team/builderConfigs | Queries builderConfigs of Team.
 [**team_members_id_team_builder_configs_post**](TeamMemberApi.md#team_members_id_team_builder_configs_post) | **POST** /TeamMembers/{id}/team/builderConfigs | Creates a new instance in builderConfigs of this model.
 [**team_members_id_team_data_record_get**](TeamMemberApi.md#team_members_id_team_data_record_get) | **GET** /TeamMembers/{id}/teamData/record | Get TeamData Record
@@ -8050,6 +8051,61 @@ Name | Type | Description  | Notes
  **id** | **str**| TeamMember id | 
  **fk** | **str**| Foreign key for builderConfigs | 
  **data** | [**TeamBuilderConfig**](TeamBuilderConfig.md)|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_builder_configs_fk_watermark_put**
+> TeamBuilderConfig team_members_id_team_builder_configs_fk_watermark_put(id, fk, data)
+
+Change Builder Config watermark
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | BuilderConfig id
+data = TweakApi.TeamMember() # TeamMember | Watermark
+
+try: 
+    # Change Builder Config watermark
+    api_response = api_instance.team_members_id_team_builder_configs_fk_watermark_put(id, fk, data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_builder_configs_fk_watermark_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| BuilderConfig id | 
+ **data** | [**TeamMember**](TeamMember.md)| Watermark | 
 
 ### Return type
 
