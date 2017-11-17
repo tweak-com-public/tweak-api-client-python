@@ -38,6 +38,7 @@ Method | HTTP request | Description
 [**team_builder_configs_id_product_size_materials_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productSizeMaterials/{fk} | Update a related item by id for productSizeMaterials.
 [**team_builder_configs_id_product_size_materials_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials | Queries productSizeMaterials of TeamBuilderConfig.
 [**team_builder_configs_id_product_size_materials_nk_material_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_nk_material_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/material | Fetches belongsTo relation material.
+[**team_builder_configs_id_product_size_materials_nk_pdf_color_profile_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_nk_pdf_color_profile_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/pdfColorProfile | Fetches belongsTo relation pdfColorProfile.
 [**team_builder_configs_id_product_size_materials_nk_size_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_nk_size_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/size | Fetches belongsTo relation size.
 [**team_builder_configs_id_product_size_materials_nk_team_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_nk_team_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterials/{nk}/team | Fetches belongsTo relation team.
 [**team_builder_configs_id_product_size_materials_post**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_post) | **POST** /TeamBuilderConfigs/{id}/productSizeMaterials | Creates a new instance in productSizeMaterials of this model.
@@ -51,6 +52,7 @@ Method | HTTP request | Description
 [**team_builder_configs_id_product_size_materials_rel_fk_put_0**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_fk_put_0) | **PUT** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{fk} | Update a related item by id for productSizeMaterialsRel.
 [**team_builder_configs_id_product_size_materials_rel_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel | Queries productSizeMaterialsRel of TeamBuilderConfig.
 [**team_builder_configs_id_product_size_materials_rel_nk_builder_config_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_nk_builder_config_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{nk}/builderConfig | Fetches belongsTo relation builderConfig.
+[**team_builder_configs_id_product_size_materials_rel_nk_pdf_color_profile_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_nk_pdf_color_profile_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{nk}/pdfColorProfile | Fetches belongsTo relation pdfColorProfile.
 [**team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_nk_product_size_material_get) | **GET** /TeamBuilderConfigs/{id}/productSizeMaterialsRel/{nk}/productSizeMaterial | Fetches belongsTo relation productSizeMaterial.
 [**team_builder_configs_id_product_size_materials_rel_post**](TeamBuilderConfigApi.md#team_builder_configs_id_product_size_materials_rel_post) | **POST** /TeamBuilderConfigs/{id}/productSizeMaterialsRel | Creates a new instance in productSizeMaterialsRel of this model.
 [**team_builder_configs_id_product_sizes_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_count_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/count | Counts productSizes of TeamBuilderConfig.
@@ -69,6 +71,7 @@ Method | HTTP request | Description
 [**team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_materials_rel_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/rel/{fk} | Remove the materials relation to an item by id.
 [**team_builder_configs_id_product_sizes_nk_materials_rel_fk_head**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_materials_rel_fk_head) | **HEAD** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/rel/{fk} | Check the existence of materials relation to an item by id.
 [**team_builder_configs_id_product_sizes_nk_materials_rel_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_materials_rel_fk_put) | **PUT** /TeamBuilderConfigs/{id}/productSizes/{nk}/materials/rel/{fk} | Add a related item by id for materials.
+[**team_builder_configs_id_product_sizes_nk_pdf_color_profile_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_pdf_color_profile_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/pdfColorProfile | Fetches belongsTo relation pdfColorProfile.
 [**team_builder_configs_id_product_sizes_nk_products_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_products_count_get) | **GET** /TeamBuilderConfigs/{id}/productSizes/{nk}/products/count | Counts products of ProductSize.
 [**team_builder_configs_id_product_sizes_nk_products_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_products_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/products | Deletes all products of this model.
 [**team_builder_configs_id_product_sizes_nk_products_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_sizes_nk_products_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productSizes/{nk}/products/{fk} | Delete a related item by id for products.
@@ -1914,6 +1917,61 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **team_builder_configs_id_product_size_materials_nk_pdf_color_profile_get**
+> ProductPdfColorProfile team_builder_configs_id_product_size_materials_nk_pdf_color_profile_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation pdfColorProfile.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizeMaterials.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation pdfColorProfile.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_nk_pdf_color_profile_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_nk_pdf_color_profile_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizeMaterials. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **team_builder_configs_id_product_size_materials_nk_size_get**
 > ProductSize team_builder_configs_id_product_size_materials_nk_size_get(id, nk, refresh=refresh)
 
@@ -2596,6 +2654,61 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_size_materials_rel_nk_pdf_color_profile_get**
+> ProductPdfColorProfile team_builder_configs_id_product_size_materials_rel_nk_pdf_color_profile_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation pdfColorProfile.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizeMaterialsRel.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation pdfColorProfile.
+    api_response = api_instance.team_builder_configs_id_product_size_materials_rel_nk_pdf_color_profile_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_size_materials_rel_nk_pdf_color_profile_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizeMaterialsRel. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
 
 ### Authorization
 
@@ -3569,6 +3682,61 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_product_sizes_nk_pdf_color_profile_get**
+> ProductPdfColorProfile team_builder_configs_id_product_sizes_nk_pdf_color_profile_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation pdfColorProfile.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+nk = 'nk_example' # str | Foreign key for productSizes.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation pdfColorProfile.
+    api_response = api_instance.team_builder_configs_id_product_sizes_nk_pdf_color_profile_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_product_sizes_nk_pdf_color_profile_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **nk** | **str**| Foreign key for productSizes. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
 
 ### Authorization
 

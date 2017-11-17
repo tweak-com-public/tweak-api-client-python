@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **pdf_size** | [**Dimensions**](Dimensions.md) |  | [optional] 
 **pdf_page_count** | **float** |  | [optional] [default to 1.0]
 **pdf_dpi** | **float** |  | [optional] [default to 300.0]
-**pdf_color_profile** | **str** |  | [optional] [default to '']
+**print_profile** | [**Stirng**](Stirng.md) |  | [optional] 
 **customer_size** | [**Dimensions**](Dimensions.md) |  | [optional] 
 **customer_page_count** | **float** |  | [optional] [default to 1.0]
 **max_bleed** | [**Bounds**](Bounds.md) |  | [optional] 
@@ -32,11 +32,13 @@ Name | Type | Description | Notes
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
 **id** | **str** |  | [optional] 
+**pdf_color_profile_id** | **str** |  | [optional] 
 **type_id** | **str** |  | [optional] 
 **type** | [**ProductType**](ProductType.md) |  | [optional] 
 **materials** | [**list[ProductMaterial]**](ProductMaterial.md) |  | [optional] 
 **size_materials** | [**list[ProductSizeMaterial]**](ProductSizeMaterial.md) |  | [optional] 
 **products** | [**list[Product]**](Product.md) |  | [optional] 
+**pdf_color_profile** | [**ProductPdfColorProfile**](ProductPdfColorProfile.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

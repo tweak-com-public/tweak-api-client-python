@@ -215,6 +215,14 @@ Method | HTTP request | Description
 [**team_members_id_team_product_materials_fk_put**](TeamMemberApi.md#team_members_id_team_product_materials_fk_put) | **PUT** /TeamMembers/{id}/team/productMaterials/{fk} | Update a related item by id for productMaterials.
 [**team_members_id_team_product_materials_get**](TeamMemberApi.md#team_members_id_team_product_materials_get) | **GET** /TeamMembers/{id}/team/productMaterials | Queries productMaterials of Team.
 [**team_members_id_team_product_materials_post**](TeamMemberApi.md#team_members_id_team_product_materials_post) | **POST** /TeamMembers/{id}/team/productMaterials | Creates a new instance in productMaterials of this model.
+[**team_members_id_team_product_pdf_color_profiles_available_get**](TeamMemberApi.md#team_members_id_team_product_pdf_color_profiles_available_get) | **GET** /TeamMembers/{id}/team/productPdfColorProfiles/available | Find all available PdfColorProfile
+[**team_members_id_team_product_pdf_color_profiles_count_get**](TeamMemberApi.md#team_members_id_team_product_pdf_color_profiles_count_get) | **GET** /TeamMembers/{id}/team/productPdfColorProfiles/count | Counts productPdfColorProfiles of Team.
+[**team_members_id_team_product_pdf_color_profiles_delete**](TeamMemberApi.md#team_members_id_team_product_pdf_color_profiles_delete) | **DELETE** /TeamMembers/{id}/team/productPdfColorProfiles | Deletes all productPdfColorProfiles of this model.
+[**team_members_id_team_product_pdf_color_profiles_fk_delete**](TeamMemberApi.md#team_members_id_team_product_pdf_color_profiles_fk_delete) | **DELETE** /TeamMembers/{id}/team/productPdfColorProfiles/{fk} | Delete a related item by id for productPdfColorProfiles.
+[**team_members_id_team_product_pdf_color_profiles_fk_get**](TeamMemberApi.md#team_members_id_team_product_pdf_color_profiles_fk_get) | **GET** /TeamMembers/{id}/team/productPdfColorProfiles/{fk} | Find a related item by id for productPdfColorProfiles.
+[**team_members_id_team_product_pdf_color_profiles_fk_put**](TeamMemberApi.md#team_members_id_team_product_pdf_color_profiles_fk_put) | **PUT** /TeamMembers/{id}/team/productPdfColorProfiles/{fk} | Update a related item by id for productPdfColorProfiles.
+[**team_members_id_team_product_pdf_color_profiles_get**](TeamMemberApi.md#team_members_id_team_product_pdf_color_profiles_get) | **GET** /TeamMembers/{id}/team/productPdfColorProfiles | Queries productPdfColorProfiles of Team.
+[**team_members_id_team_product_pdf_color_profiles_upload_post**](TeamMemberApi.md#team_members_id_team_product_pdf_color_profiles_upload_post) | **POST** /TeamMembers/{id}/team/productPdfColorProfiles/upload | Upload ICC PDF Color Profile for this Team
 [**team_members_id_team_product_size_materials_count_get**](TeamMemberApi.md#team_members_id_team_product_size_materials_count_get) | **GET** /TeamMembers/{id}/team/productSizeMaterials/count | Counts productSizeMaterials of Team.
 [**team_members_id_team_product_size_materials_delete**](TeamMemberApi.md#team_members_id_team_product_size_materials_delete) | **DELETE** /TeamMembers/{id}/team/productSizeMaterials | Deletes all productSizeMaterials of this model.
 [**team_members_id_team_product_size_materials_fk_delete**](TeamMemberApi.md#team_members_id_team_product_size_materials_fk_delete) | **DELETE** /TeamMembers/{id}/team/productSizeMaterials/{fk} | Delete a related item by id for productSizeMaterials.
@@ -11433,6 +11441,426 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ProductMaterial**](ProductMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_product_pdf_color_profiles_available_get**
+> list[ProductPdfColorProfile] team_members_id_team_product_pdf_color_profiles_available_get(id, filter=filter)
+
+Find all available PdfColorProfile
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+filter = 'filter_example' # str | Filter defining fields and include - must be a JSON-encoded string ({\"something\":\"value\"}) (optional)
+
+try: 
+    # Find all available PdfColorProfile
+    api_response = api_instance.team_members_id_team_product_pdf_color_profiles_available_get(id, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_product_pdf_color_profiles_available_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **filter** | **str**| Filter defining fields and include - must be a JSON-encoded string ({\&quot;something\&quot;:\&quot;value\&quot;}) | [optional] 
+
+### Return type
+
+[**list[ProductPdfColorProfile]**](ProductPdfColorProfile.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_product_pdf_color_profiles_count_get**
+> InlineResponse200 team_members_id_team_product_pdf_color_profiles_count_get(id, where=where)
+
+Counts productPdfColorProfiles of Team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts productPdfColorProfiles of Team.
+    api_response = api_instance.team_members_id_team_product_pdf_color_profiles_count_get(id, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_product_pdf_color_profiles_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_product_pdf_color_profiles_delete**
+> team_members_id_team_product_pdf_color_profiles_delete(id)
+
+Deletes all productPdfColorProfiles of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+
+try: 
+    # Deletes all productPdfColorProfiles of this model.
+    api_instance.team_members_id_team_product_pdf_color_profiles_delete(id)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_product_pdf_color_profiles_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_product_pdf_color_profiles_fk_delete**
+> team_members_id_team_product_pdf_color_profiles_fk_delete(id, fk)
+
+Delete a related item by id for productPdfColorProfiles.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for productPdfColorProfiles
+
+try: 
+    # Delete a related item by id for productPdfColorProfiles.
+    api_instance.team_members_id_team_product_pdf_color_profiles_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_product_pdf_color_profiles_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for productPdfColorProfiles | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_product_pdf_color_profiles_fk_get**
+> ProductPdfColorProfile team_members_id_team_product_pdf_color_profiles_fk_get(id, fk)
+
+Find a related item by id for productPdfColorProfiles.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for productPdfColorProfiles
+
+try: 
+    # Find a related item by id for productPdfColorProfiles.
+    api_response = api_instance.team_members_id_team_product_pdf_color_profiles_fk_get(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_product_pdf_color_profiles_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for productPdfColorProfiles | 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_product_pdf_color_profiles_fk_put**
+> ProductPdfColorProfile team_members_id_team_product_pdf_color_profiles_fk_put(id, fk, data=data)
+
+Update a related item by id for productPdfColorProfiles.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+fk = 'fk_example' # str | Foreign key for productPdfColorProfiles
+data = TweakApi.ProductPdfColorProfile() # ProductPdfColorProfile |  (optional)
+
+try: 
+    # Update a related item by id for productPdfColorProfiles.
+    api_response = api_instance.team_members_id_team_product_pdf_color_profiles_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_product_pdf_color_profiles_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **fk** | **str**| Foreign key for productPdfColorProfiles | 
+ **data** | [**ProductPdfColorProfile**](ProductPdfColorProfile.md)|  | [optional] 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_product_pdf_color_profiles_get**
+> list[ProductPdfColorProfile] team_members_id_team_product_pdf_color_profiles_get(id, filter=filter)
+
+Queries productPdfColorProfiles of Team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries productPdfColorProfiles of Team.
+    api_response = api_instance.team_members_id_team_product_pdf_color_profiles_get(id, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_product_pdf_color_profiles_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[ProductPdfColorProfile]**](ProductPdfColorProfile.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_product_pdf_color_profiles_upload_post**
+> ProductPdfColorProfile team_members_id_team_product_pdf_color_profiles_upload_post(id)
+
+Upload ICC PDF Color Profile for this Team
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+
+try: 
+    # Upload ICC PDF Color Profile for this Team
+    api_response = api_instance.team_members_id_team_product_pdf_color_profiles_upload_post(id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_product_pdf_color_profiles_upload_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
 
 ### Authorization
 

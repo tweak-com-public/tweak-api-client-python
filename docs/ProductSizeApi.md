@@ -24,6 +24,7 @@ Method | HTTP request | Description
 [**product_sizes_id_materials_rel_fk_head**](ProductSizeApi.md#product_sizes_id_materials_rel_fk_head) | **HEAD** /ProductSizes/{id}/materials/rel/{fk} | Check the existence of materials relation to an item by id.
 [**product_sizes_id_materials_rel_fk_put**](ProductSizeApi.md#product_sizes_id_materials_rel_fk_put) | **PUT** /ProductSizes/{id}/materials/rel/{fk} | Add a related item by id for materials.
 [**product_sizes_id_patch**](ProductSizeApi.md#product_sizes_id_patch) | **PATCH** /ProductSizes/{id} | Patch attributes for a model instance and persist it into the data source.
+[**product_sizes_id_pdf_color_profile_get**](ProductSizeApi.md#product_sizes_id_pdf_color_profile_get) | **GET** /ProductSizes/{id}/pdfColorProfile | Fetches belongsTo relation pdfColorProfile.
 [**product_sizes_id_products_count_get**](ProductSizeApi.md#product_sizes_id_products_count_get) | **GET** /ProductSizes/{id}/products/count | Counts products of ProductSize.
 [**product_sizes_id_products_delete**](ProductSizeApi.md#product_sizes_id_products_delete) | **DELETE** /ProductSizes/{id}/products | Deletes all products of this model.
 [**product_sizes_id_products_fk_delete**](ProductSizeApi.md#product_sizes_id_products_fk_delete) | **DELETE** /ProductSizes/{id}/products/{fk} | Delete a related item by id for products.
@@ -1080,6 +1081,59 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ProductSize**](ProductSize.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **product_sizes_id_pdf_color_profile_get**
+> ProductPdfColorProfile product_sizes_id_pdf_color_profile_get(id, refresh=refresh)
+
+Fetches belongsTo relation pdfColorProfile.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.ProductSizeApi()
+id = 'id_example' # str | ProductSize id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation pdfColorProfile.
+    api_response = api_instance.product_sizes_id_pdf_color_profile_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ProductSizeApi->product_sizes_id_pdf_color_profile_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| ProductSize id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
 
 ### Authorization
 
