@@ -44,7 +44,7 @@ class TeamBuilderConfigProductSizeMaterial(object):
         self.swagger_types = {
             'binding_type': 'str',
             'default_bleed': 'Bounds',
-            'print_profile': 'Stirng',
+            'print_profile': 'str',
             'created': 'datetime',
             'modified': 'datetime',
             'id': 'str',
@@ -144,7 +144,7 @@ class TeamBuilderConfigProductSizeMaterial(object):
 
 
         :return: The print_profile of this TeamBuilderConfigProductSizeMaterial.
-        :rtype: Stirng
+        :rtype: str
         """
         return self._print_profile
 
@@ -155,8 +155,14 @@ class TeamBuilderConfigProductSizeMaterial(object):
 
 
         :param print_profile: The print_profile of this TeamBuilderConfigProductSizeMaterial.
-        :type: Stirng
+        :type: str
         """
+        allowed_values = ["PDFX1A", "PDFX3A"]
+        if print_profile not in allowed_values:
+            raise ValueError(
+                "Invalid value for `print_profile` ({0}), must be one of {1}"
+                .format(print_profile, allowed_values)
+            )
 
         self._print_profile = print_profile
 

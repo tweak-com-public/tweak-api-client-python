@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **pdf_size** | [**Dimensions**](Dimensions.md) |  | [optional] 
 **pdf_page_count** | **float** |  | [optional] [default to 1.0]
 **pdf_dpi** | **float** |  | [optional] [default to 300.0]
-**print_profile** | [**Stirng**](Stirng.md) |  | [optional] 
+**print_profile** | **str** |  | [optional] 
 **customer_size** | [**Dimensions**](Dimensions.md) |  | [optional] 
 **customer_page_count** | **float** |  | [optional] [default to 1.0]
 **max_bleed** | [**Bounds**](Bounds.md) |  | [optional] 

@@ -55,7 +55,7 @@ class ProductSize(object):
             'pdf_size': 'Dimensions',
             'pdf_page_count': 'float',
             'pdf_dpi': 'float',
-            'print_profile': 'Stirng',
+            'print_profile': 'str',
             'customer_size': 'Dimensions',
             'customer_page_count': 'float',
             'max_bleed': 'Bounds',
@@ -488,7 +488,7 @@ class ProductSize(object):
 
 
         :return: The print_profile of this ProductSize.
-        :rtype: Stirng
+        :rtype: str
         """
         return self._print_profile
 
@@ -499,8 +499,14 @@ class ProductSize(object):
 
 
         :param print_profile: The print_profile of this ProductSize.
-        :type: Stirng
+        :type: str
         """
+        allowed_values = ["PDFX1A", "PDFX3A"]
+        if print_profile not in allowed_values:
+            raise ValueError(
+                "Invalid value for `print_profile` ({0}), must be one of {1}"
+                .format(print_profile, allowed_values)
+            )
 
         self._print_profile = print_profile
 
