@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** |  | 
-**logo** | **object** |  | [optional] 
+**logo** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **subdomain** | **str** |  | [optional] 
 **country** | **str** |  | [optional] [default to 'Ireland']
 **created** | **datetime** |  | [optional] 

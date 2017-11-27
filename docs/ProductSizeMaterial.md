@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | **str** |  | 
 **description** | **str** |  | [optional] 
-**thumbnail** | **str** |  | [optional] 
+**thumbnail** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **status** | **str** |  | [optional] 
 **binding_type** | **str** |  | [optional] 
 **default_bleed** | [**Bounds**](Bounds.md) |  | [optional] 

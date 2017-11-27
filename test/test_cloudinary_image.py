@@ -30,11 +30,11 @@ import unittest
 
 import TweakApi
 from TweakApi.rest import ApiException
-from TweakApi.models.portal_permission_set import PortalPermissionSet
+from TweakApi.models.cloudinary_image import CloudinaryImage
 
 
-class TestPortalPermissionSet(unittest.TestCase):
-    """ PortalPermissionSet unit test stubs """
+class TestCloudinaryImage(unittest.TestCase):
+    """ CloudinaryImage unit test stubs """
 
     def setUp(self):
         pass
@@ -42,11 +42,11 @@ class TestPortalPermissionSet(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testPortalPermissionSet(self):
+    def testCloudinaryImage(self):
         """
-        Test PortalPermissionSet
+        Test CloudinaryImage
         """
-        model = TweakApi.models.portal_permission_set.PortalPermissionSet()
+        model = TweakApi.models.cloudinary_image.CloudinaryImage()
 
 
 if __name__ == '__main__':

@@ -26,6 +26,7 @@ Method | HTTP request | Description
 [**dynamic_data_id_records_delete**](DynamicDataApi.md#dynamic_data_id_records_delete) | **DELETE** /DynamicData/{id}/records | Delete all matching records.
 [**dynamic_data_id_records_fk_delete**](DynamicDataApi.md#dynamic_data_id_records_fk_delete) | **DELETE** /DynamicData/{id}/records/{fk} | Delete a model instance by {{fk}} from the data source.
 [**dynamic_data_id_records_fk_get**](DynamicDataApi.md#dynamic_data_id_records_fk_get) | **GET** /DynamicData/{id}/records/{fk} | Find a model instance by {{fk}} from the data source.
+[**dynamic_data_id_records_fk_property_name_upload_put**](DynamicDataApi.md#dynamic_data_id_records_fk_property_name_upload_put) | **PUT** /DynamicData/{id}/records/{fk}/{propertyName}/upload | Replace attributes for a model instance and persist it into the data source.
 [**dynamic_data_id_records_fk_put**](DynamicDataApi.md#dynamic_data_id_records_fk_put) | **PUT** /DynamicData/{id}/records/{fk} | Replace attributes for a model instance and persist it into the data source.
 [**dynamic_data_id_records_get**](DynamicDataApi.md#dynamic_data_id_records_get) | **GET** /DynamicData/{id}/records | Find all instances of the model matched by filter from the data source.
 [**dynamic_data_id_records_migrate_post**](DynamicDataApi.md#dynamic_data_id_records_migrate_post) | **POST** /DynamicData/{id}/records/migrate | Request migration for Dynamic Data records
@@ -1175,6 +1176,63 @@ Name | Type | Description  | Notes
  **id** | **str**| DynamicData id | 
  **fk** | **str**| Model id | 
  **filter** | **str**| Filter defining fields and include - must be a JSON-encoded string ({\&quot;something\&quot;:\&quot;value\&quot;}) | [optional] 
+
+### Return type
+
+**object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **dynamic_data_id_records_fk_property_name_upload_put**
+> object dynamic_data_id_records_fk_property_name_upload_put(id, fk, property_name, data=data)
+
+Replace attributes for a model instance and persist it into the data source.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DynamicDataApi()
+id = 'id_example' # str | DynamicData id
+fk = 'fk_example' # str | Model id
+property_name = 'property_name_example' # str | Model property name
+data = TweakApi.DynamicData() # DynamicData | Model instance data (optional)
+
+try: 
+    # Replace attributes for a model instance and persist it into the data source.
+    api_response = api_instance.dynamic_data_id_records_fk_property_name_upload_put(id, fk, property_name, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DynamicDataApi->dynamic_data_id_records_fk_property_name_upload_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| DynamicData id | 
+ **fk** | **str**| Model id | 
+ **property_name** | **str**| Model property name | 
+ **data** | [**DynamicData**](DynamicData.md)| Model instance data | [optional] 
 
 ### Return type
 

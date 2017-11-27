@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** |  | 
 **code** | **str** |  | 
-**thumbnail** | **str** |  | [optional] 
+**thumbnail** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **folding_type** | **str** |  | [optional] 
 **folding_method** | **str** |  | [optional] 
 **binding_type** | **str** |  | [optional] 

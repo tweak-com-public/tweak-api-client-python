@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** |  | 
 **description** | **str** |  | [optional] [default to '']
-**thumbnail** | **object** |  | [optional] 
+**thumbnail** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **object** | **object** |  | [optional] 
 **idml** | **object** |  | [optional] 
 **language** | **str** |  | [optional] 
