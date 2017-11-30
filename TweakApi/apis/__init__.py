@@ -28,6 +28,7 @@ from .portal_template_folder_api import PortalTemplateFolderApi
 from .product_api import ProductApi
 from .product_group_api import ProductGroupApi
 from .product_material_api import ProductMaterialApi
+from .product_pdf_color_profile_api import ProductPdfColorProfileApi
 from .product_size_api import ProductSizeApi
 from .product_size_material_api import ProductSizeMaterialApi
 from .product_tag_api import ProductTagApi

@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **name** | **str** |  | 
 **code** | **str** |  | 
 **description** | **str** |  | [optional] 
-**thumbnail** | **str** |  | [optional] 
+**thumbnail** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **status** | **str** |  | [optional] 
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
