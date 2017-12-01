@@ -91,6 +91,7 @@ Method | HTTP request | Description
 [**designs_id_tags_rel_fk_delete**](DesignApi.md#designs_id_tags_rel_fk_delete) | **DELETE** /Designs/{id}/tags/rel/{fk} | Remove the tags relation to an item by id.
 [**designs_id_tags_rel_fk_head**](DesignApi.md#designs_id_tags_rel_fk_head) | **HEAD** /Designs/{id}/tags/rel/{fk} | Check the existence of tags relation to an item by id.
 [**designs_id_tags_rel_fk_put**](DesignApi.md#designs_id_tags_rel_fk_put) | **PUT** /Designs/{id}/tags/rel/{fk} | Add a related item by id for tags.
+[**designs_id_team_get**](DesignApi.md#designs_id_team_get) | **GET** /Designs/{id}/team | Fetches belongsTo relation team.
 [**designs_id_template_get**](DesignApi.md#designs_id_template_get) | **GET** /Designs/{id}/template | Fetches belongsTo relation template.
 [**designs_patch**](DesignApi.md#designs_patch) | **PATCH** /Designs | Patch an existing model instance or insert a new one into the data source.
 [**designs_post**](DesignApi.md#designs_post) | **POST** /Designs | Create a new instance of the model and persist it into the data source.
@@ -4691,6 +4692,59 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DesignTag**](DesignTag.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **designs_id_team_get**
+> Team designs_id_team_get(id, refresh=refresh)
+
+Fetches belongsTo relation team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DesignApi()
+id = 'id_example' # str | Design id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation team.
+    api_response = api_instance.designs_id_team_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DesignApi->designs_id_team_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Design id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**Team**](Team.md)
 
 ### Authorization
 
