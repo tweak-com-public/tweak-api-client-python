@@ -36,6 +36,7 @@ from .models.billing_plan import BillingPlan
 from .models.billing_subscription import BillingSubscription
 from .models.billing_subscription_item import BillingSubscriptionItem
 from .models.bounds import Bounds
+from .models.builder_asset_background_folder import BuilderAssetBackgroundFolder
 from .models.cloudinary_image import CloudinaryImage
 from .models.customer import Customer
 from .models.customer_permission_set import CustomerPermissionSet
@@ -101,6 +102,7 @@ from .models.workflow import Workflow
 
 # import apis into sdk package
 from .apis.billing_api import BillingApi
+from .apis.builder_asset_background_api import BuilderAssetBackgroundApi
 from .apis.customer_api import CustomerApi
 from .apis.data_source_api import DataSourceApi
 from .apis.data_source_key_api import DataSourceKeyApi
@@ -133,6 +135,7 @@ from .apis.product_size_material_api import ProductSizeMaterialApi
 from .apis.product_tag_api import ProductTagApi
 from .apis.product_type_api import ProductTypeApi
 from .apis.public_v_auth_api import PublicVAuthApi
+from .apis.public_v_builder_asset_api import PublicVBuilderAssetApi
 from .apis.public_v_builder_config_api import PublicVBuilderConfigApi
 from .apis.public_v_team_api import PublicVTeamApi
 from .apis.public_v_team_member_api import PublicVTeamMemberApi

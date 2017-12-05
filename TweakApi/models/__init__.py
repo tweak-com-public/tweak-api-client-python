@@ -36,6 +36,7 @@ from .billing_plan import BillingPlan
 from .billing_subscription import BillingSubscription
 from .billing_subscription_item import BillingSubscriptionItem
 from .bounds import Bounds
+from .builder_asset_background_folder import BuilderAssetBackgroundFolder
 from .cloudinary_image import CloudinaryImage
 from .customer import Customer
 from .customer_permission_set import CustomerPermissionSet
