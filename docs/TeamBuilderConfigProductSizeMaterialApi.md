@@ -1,6 +1,6 @@
 # TweakApi.TeamBuilderConfigProductSizeMaterialApi
 
-All URIs are relative to *https://apidevcdn.tweak.com/api*
+All URIs are relative to *https://apicdn.tweak.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,6 +15,7 @@ Method | HTTP request | Description
 [**team_builder_config_product_size_materials_id_get**](TeamBuilderConfigProductSizeMaterialApi.md#team_builder_config_product_size_materials_id_get) | **GET** /TeamBuilderConfigProductSizeMaterials/{id} | Find a model instance by {{id}} from the data source.
 [**team_builder_config_product_size_materials_id_head**](TeamBuilderConfigProductSizeMaterialApi.md#team_builder_config_product_size_materials_id_head) | **HEAD** /TeamBuilderConfigProductSizeMaterials/{id} | Check whether a model instance exists in the data source.
 [**team_builder_config_product_size_materials_id_patch**](TeamBuilderConfigProductSizeMaterialApi.md#team_builder_config_product_size_materials_id_patch) | **PATCH** /TeamBuilderConfigProductSizeMaterials/{id} | Patch attributes for a model instance and persist it into the data source.
+[**team_builder_config_product_size_materials_id_pdf_color_profile_get**](TeamBuilderConfigProductSizeMaterialApi.md#team_builder_config_product_size_materials_id_pdf_color_profile_get) | **GET** /TeamBuilderConfigProductSizeMaterials/{id}/pdfColorProfile | Fetches belongsTo relation pdfColorProfile.
 [**team_builder_config_product_size_materials_id_product_size_material_get**](TeamBuilderConfigProductSizeMaterialApi.md#team_builder_config_product_size_materials_id_product_size_material_get) | **GET** /TeamBuilderConfigProductSizeMaterials/{id}/productSizeMaterial | Fetches belongsTo relation productSizeMaterial.
 [**team_builder_config_product_size_materials_id_put**](TeamBuilderConfigProductSizeMaterialApi.md#team_builder_config_product_size_materials_id_put) | **PUT** /TeamBuilderConfigProductSizeMaterials/{id} | Replace attributes for a model instance and persist it into the data source.
 [**team_builder_config_product_size_materials_id_replace_post**](TeamBuilderConfigProductSizeMaterialApi.md#team_builder_config_product_size_materials_id_replace_post) | **POST** /TeamBuilderConfigProductSizeMaterials/{id}/replace | Replace attributes for a model instance and persist it into the data source.
@@ -581,6 +582,59 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBuilderConfigProductSizeMaterial**](TeamBuilderConfigProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_config_product_size_materials_id_pdf_color_profile_get**
+> ProductPdfColorProfile team_builder_config_product_size_materials_id_pdf_color_profile_get(id, refresh=refresh)
+
+Fetches belongsTo relation pdfColorProfile.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigProductSizeMaterialApi()
+id = 'id_example' # str | TeamBuilderConfigProductSizeMaterial id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation pdfColorProfile.
+    api_response = api_instance.team_builder_config_product_size_materials_id_pdf_color_profile_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigProductSizeMaterialApi->team_builder_config_product_size_materials_id_pdf_color_profile_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfigProductSizeMaterial id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
 
 ### Authorization
 

@@ -1,6 +1,6 @@
 # TweakApi.PortalApi
 
-All URIs are relative to *https://apidevcdn.tweak.com/api*
+All URIs are relative to *https://apicdn.tweak.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -41,7 +41,13 @@ Method | HTTP request | Description
 [**portals_id_designs_nk_comments_fk_put**](PortalApi.md#portals_id_designs_nk_comments_fk_put) | **PUT** /Portals/{id}/designs/{nk}/comments/{fk} | Update a related item by id for comments.
 [**portals_id_designs_nk_comments_get**](PortalApi.md#portals_id_designs_nk_comments_get) | **GET** /Portals/{id}/designs/{nk}/comments | Queries comments of Design.
 [**portals_id_designs_nk_comments_post**](PortalApi.md#portals_id_designs_nk_comments_post) | **POST** /Portals/{id}/designs/{nk}/comments | Creates a new instance in comments of this model.
-[**portals_id_designs_nk_customer_get**](PortalApi.md#portals_id_designs_nk_customer_get) | **GET** /Portals/{id}/designs/{nk}/customer | Fetches belongsTo relation customer.
+[**portals_id_designs_nk_design_members_count_get**](PortalApi.md#portals_id_designs_nk_design_members_count_get) | **GET** /Portals/{id}/designs/{nk}/designMembers/count | Counts designMembers of Design.
+[**portals_id_designs_nk_design_members_delete**](PortalApi.md#portals_id_designs_nk_design_members_delete) | **DELETE** /Portals/{id}/designs/{nk}/designMembers | Deletes all designMembers of this model.
+[**portals_id_designs_nk_design_members_fk_delete**](PortalApi.md#portals_id_designs_nk_design_members_fk_delete) | **DELETE** /Portals/{id}/designs/{nk}/designMembers/{fk} | Delete a related item by id for designMembers.
+[**portals_id_designs_nk_design_members_fk_get**](PortalApi.md#portals_id_designs_nk_design_members_fk_get) | **GET** /Portals/{id}/designs/{nk}/designMembers/{fk} | Find a related item by id for designMembers.
+[**portals_id_designs_nk_design_members_fk_put**](PortalApi.md#portals_id_designs_nk_design_members_fk_put) | **PUT** /Portals/{id}/designs/{nk}/designMembers/{fk} | Update a related item by id for designMembers.
+[**portals_id_designs_nk_design_members_get**](PortalApi.md#portals_id_designs_nk_design_members_get) | **GET** /Portals/{id}/designs/{nk}/designMembers | Queries designMembers of Design.
+[**portals_id_designs_nk_design_members_post**](PortalApi.md#portals_id_designs_nk_design_members_post) | **POST** /Portals/{id}/designs/{nk}/designMembers | Creates a new instance in designMembers of this model.
 [**portals_id_designs_nk_dynamic_data_get**](PortalApi.md#portals_id_designs_nk_dynamic_data_get) | **GET** /Portals/{id}/designs/{nk}/dynamicData | Fetches belongsTo relation dynamicData.
 [**portals_id_designs_nk_exports_count_get**](PortalApi.md#portals_id_designs_nk_exports_count_get) | **GET** /Portals/{id}/designs/{nk}/exports/count | Counts exports of Design.
 [**portals_id_designs_nk_exports_delete**](PortalApi.md#portals_id_designs_nk_exports_delete) | **DELETE** /Portals/{id}/designs/{nk}/exports | Deletes all exports of this model.
@@ -51,6 +57,16 @@ Method | HTTP request | Description
 [**portals_id_designs_nk_exports_get**](PortalApi.md#portals_id_designs_nk_exports_get) | **GET** /Portals/{id}/designs/{nk}/exports | Queries exports of Design.
 [**portals_id_designs_nk_exports_post**](PortalApi.md#portals_id_designs_nk_exports_post) | **POST** /Portals/{id}/designs/{nk}/exports | Creates a new instance in exports of this model.
 [**portals_id_designs_nk_folder_get**](PortalApi.md#portals_id_designs_nk_folder_get) | **GET** /Portals/{id}/designs/{nk}/folder | Fetches belongsTo relation folder.
+[**portals_id_designs_nk_members_count_get**](PortalApi.md#portals_id_designs_nk_members_count_get) | **GET** /Portals/{id}/designs/{nk}/members/count | Counts members of Design.
+[**portals_id_designs_nk_members_delete**](PortalApi.md#portals_id_designs_nk_members_delete) | **DELETE** /Portals/{id}/designs/{nk}/members | Deletes all members of this model.
+[**portals_id_designs_nk_members_fk_delete**](PortalApi.md#portals_id_designs_nk_members_fk_delete) | **DELETE** /Portals/{id}/designs/{nk}/members/{fk} | Delete a related item by id for members.
+[**portals_id_designs_nk_members_fk_get**](PortalApi.md#portals_id_designs_nk_members_fk_get) | **GET** /Portals/{id}/designs/{nk}/members/{fk} | Find a related item by id for members.
+[**portals_id_designs_nk_members_fk_put**](PortalApi.md#portals_id_designs_nk_members_fk_put) | **PUT** /Portals/{id}/designs/{nk}/members/{fk} | Update a related item by id for members.
+[**portals_id_designs_nk_members_get**](PortalApi.md#portals_id_designs_nk_members_get) | **GET** /Portals/{id}/designs/{nk}/members | Queries members of Design.
+[**portals_id_designs_nk_members_post**](PortalApi.md#portals_id_designs_nk_members_post) | **POST** /Portals/{id}/designs/{nk}/members | Creates a new instance in members of this model.
+[**portals_id_designs_nk_members_rel_fk_delete**](PortalApi.md#portals_id_designs_nk_members_rel_fk_delete) | **DELETE** /Portals/{id}/designs/{nk}/members/rel/{fk} | Remove the members relation to an item by id.
+[**portals_id_designs_nk_members_rel_fk_head**](PortalApi.md#portals_id_designs_nk_members_rel_fk_head) | **HEAD** /Portals/{id}/designs/{nk}/members/rel/{fk} | Check the existence of members relation to an item by id.
+[**portals_id_designs_nk_members_rel_fk_put**](PortalApi.md#portals_id_designs_nk_members_rel_fk_put) | **PUT** /Portals/{id}/designs/{nk}/members/rel/{fk} | Add a related item by id for members.
 [**portals_id_designs_nk_permission_delete**](PortalApi.md#portals_id_designs_nk_permission_delete) | **DELETE** /Portals/{id}/designs/{nk}/permission | Deletes permission of this model.
 [**portals_id_designs_nk_permission_get**](PortalApi.md#portals_id_designs_nk_permission_get) | **GET** /Portals/{id}/designs/{nk}/permission | Fetches hasOne relation permission.
 [**portals_id_designs_nk_permission_post**](PortalApi.md#portals_id_designs_nk_permission_post) | **POST** /Portals/{id}/designs/{nk}/permission | Creates a new instance in permission of this model.
@@ -69,6 +85,7 @@ Method | HTTP request | Description
 [**portals_id_designs_nk_tags_rel_fk_delete**](PortalApi.md#portals_id_designs_nk_tags_rel_fk_delete) | **DELETE** /Portals/{id}/designs/{nk}/tags/rel/{fk} | Remove the tags relation to an item by id.
 [**portals_id_designs_nk_tags_rel_fk_head**](PortalApi.md#portals_id_designs_nk_tags_rel_fk_head) | **HEAD** /Portals/{id}/designs/{nk}/tags/rel/{fk} | Check the existence of tags relation to an item by id.
 [**portals_id_designs_nk_tags_rel_fk_put**](PortalApi.md#portals_id_designs_nk_tags_rel_fk_put) | **PUT** /Portals/{id}/designs/{nk}/tags/rel/{fk} | Add a related item by id for tags.
+[**portals_id_designs_nk_team_get**](PortalApi.md#portals_id_designs_nk_team_get) | **GET** /Portals/{id}/designs/{nk}/team | Fetches belongsTo relation team.
 [**portals_id_designs_nk_template_get**](PortalApi.md#portals_id_designs_nk_template_get) | **GET** /Portals/{id}/designs/{nk}/template | Fetches belongsTo relation template.
 [**portals_id_designs_post**](PortalApi.md#portals_id_designs_post) | **POST** /Portals/{id}/designs | Creates a new instance in designs of this model.
 [**portals_id_exists_get**](PortalApi.md#portals_id_exists_get) | **GET** /Portals/{id}/exists | Check whether a model instance exists in the data source.
@@ -2128,10 +2145,10 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **portals_id_designs_nk_customer_get**
-> Customer portals_id_designs_nk_customer_get(id, nk, refresh=refresh)
+# **portals_id_designs_nk_design_members_count_get**
+> InlineResponse200 portals_id_designs_nk_design_members_count_get(id, nk, where=where)
 
-Fetches belongsTo relation customer.
+Counts designMembers of Design.
 
 ### Example 
 ```python
@@ -2150,14 +2167,14 @@ TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
 api_instance = TweakApi.PortalApi()
 id = 'id_example' # str | Portal id
 nk = 'nk_example' # str | Foreign key for designs.
-refresh = true # bool |  (optional)
+where = 'where_example' # str | Criteria to match model instances (optional)
 
 try: 
-    # Fetches belongsTo relation customer.
-    api_response = api_instance.portals_id_designs_nk_customer_get(id, nk, refresh=refresh)
+    # Counts designMembers of Design.
+    api_response = api_instance.portals_id_designs_nk_design_members_count_get(id, nk, where=where)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling PortalApi->portals_id_designs_nk_customer_get: %s\n" % e)
+    print("Exception when calling PortalApi->portals_id_designs_nk_design_members_count_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -2166,11 +2183,339 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| Portal id | 
  **nk** | **str**| Foreign key for designs. | 
- **refresh** | **bool**|  | [optional] 
+ **where** | **str**| Criteria to match model instances | [optional] 
 
 ### Return type
 
-[**Customer**](Customer.md)
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_design_members_delete**
+> portals_id_designs_nk_design_members_delete(id, nk)
+
+Deletes all designMembers of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+
+try: 
+    # Deletes all designMembers of this model.
+    api_instance.portals_id_designs_nk_design_members_delete(id, nk)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_design_members_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_design_members_fk_delete**
+> portals_id_designs_nk_design_members_fk_delete(id, nk, fk)
+
+Delete a related item by id for designMembers.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+fk = 'fk_example' # str | Foreign key for designMembers
+
+try: 
+    # Delete a related item by id for designMembers.
+    api_instance.portals_id_designs_nk_design_members_fk_delete(id, nk, fk)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_design_members_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **fk** | **str**| Foreign key for designMembers | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_design_members_fk_get**
+> DesignMember portals_id_designs_nk_design_members_fk_get(id, nk, fk)
+
+Find a related item by id for designMembers.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+fk = 'fk_example' # str | Foreign key for designMembers
+
+try: 
+    # Find a related item by id for designMembers.
+    api_response = api_instance.portals_id_designs_nk_design_members_fk_get(id, nk, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_design_members_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **fk** | **str**| Foreign key for designMembers | 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_design_members_fk_put**
+> DesignMember portals_id_designs_nk_design_members_fk_put(id, nk, fk, data=data)
+
+Update a related item by id for designMembers.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+fk = 'fk_example' # str | Foreign key for designMembers
+data = TweakApi.DesignMember() # DesignMember |  (optional)
+
+try: 
+    # Update a related item by id for designMembers.
+    api_response = api_instance.portals_id_designs_nk_design_members_fk_put(id, nk, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_design_members_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **fk** | **str**| Foreign key for designMembers | 
+ **data** | [**DesignMember**](DesignMember.md)|  | [optional] 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_design_members_get**
+> list[DesignMember] portals_id_designs_nk_design_members_get(id, nk, filter=filter)
+
+Queries designMembers of Design.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries designMembers of Design.
+    api_response = api_instance.portals_id_designs_nk_design_members_get(id, nk, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_design_members_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[DesignMember]**](DesignMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_design_members_post**
+> DesignMember portals_id_designs_nk_design_members_post(id, nk, data=data)
+
+Creates a new instance in designMembers of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+data = TweakApi.DesignMember() # DesignMember |  (optional)
+
+try: 
+    # Creates a new instance in designMembers of this model.
+    api_response = api_instance.portals_id_designs_nk_design_members_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_design_members_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **data** | [**DesignMember**](DesignMember.md)|  | [optional] 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
 
 ### Authorization
 
@@ -2664,6 +3009,555 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DesignFolder**](DesignFolder.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_members_count_get**
+> InlineResponse200 portals_id_designs_nk_members_count_get(id, nk, where=where)
+
+Counts members of Design.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts members of Design.
+    api_response = api_instance.portals_id_designs_nk_members_count_get(id, nk, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_members_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_members_delete**
+> portals_id_designs_nk_members_delete(id, nk)
+
+Deletes all members of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+
+try: 
+    # Deletes all members of this model.
+    api_instance.portals_id_designs_nk_members_delete(id, nk)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_members_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_members_fk_delete**
+> portals_id_designs_nk_members_fk_delete(id, nk, fk)
+
+Delete a related item by id for members.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+fk = 'fk_example' # str | Foreign key for members
+
+try: 
+    # Delete a related item by id for members.
+    api_instance.portals_id_designs_nk_members_fk_delete(id, nk, fk)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_members_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **fk** | **str**| Foreign key for members | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_members_fk_get**
+> TeamMember portals_id_designs_nk_members_fk_get(id, nk, fk)
+
+Find a related item by id for members.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+fk = 'fk_example' # str | Foreign key for members
+
+try: 
+    # Find a related item by id for members.
+    api_response = api_instance.portals_id_designs_nk_members_fk_get(id, nk, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_members_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **fk** | **str**| Foreign key for members | 
+
+### Return type
+
+[**TeamMember**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_members_fk_put**
+> TeamMember portals_id_designs_nk_members_fk_put(id, nk, fk, data=data)
+
+Update a related item by id for members.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+fk = 'fk_example' # str | Foreign key for members
+data = TweakApi.TeamMember() # TeamMember |  (optional)
+
+try: 
+    # Update a related item by id for members.
+    api_response = api_instance.portals_id_designs_nk_members_fk_put(id, nk, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_members_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **fk** | **str**| Foreign key for members | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**TeamMember**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_members_get**
+> list[TeamMember] portals_id_designs_nk_members_get(id, nk, filter=filter)
+
+Queries members of Design.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries members of Design.
+    api_response = api_instance.portals_id_designs_nk_members_get(id, nk, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_members_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[TeamMember]**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_members_post**
+> TeamMember portals_id_designs_nk_members_post(id, nk, data=data)
+
+Creates a new instance in members of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+data = TweakApi.TeamMember() # TeamMember |  (optional)
+
+try: 
+    # Creates a new instance in members of this model.
+    api_response = api_instance.portals_id_designs_nk_members_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_members_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**TeamMember**](TeamMember.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_members_rel_fk_delete**
+> portals_id_designs_nk_members_rel_fk_delete(id, nk, fk)
+
+Remove the members relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+fk = 'fk_example' # str | Foreign key for members
+
+try: 
+    # Remove the members relation to an item by id.
+    api_instance.portals_id_designs_nk_members_rel_fk_delete(id, nk, fk)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_members_rel_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **fk** | **str**| Foreign key for members | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_members_rel_fk_head**
+> bool portals_id_designs_nk_members_rel_fk_head(id, nk, fk)
+
+Check the existence of members relation to an item by id.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+fk = 'fk_example' # str | Foreign key for members
+
+try: 
+    # Check the existence of members relation to an item by id.
+    api_response = api_instance.portals_id_designs_nk_members_rel_fk_head(id, nk, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_members_rel_fk_head: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **fk** | **str**| Foreign key for members | 
+
+### Return type
+
+**bool**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_members_rel_fk_put**
+> DesignMember portals_id_designs_nk_members_rel_fk_put(id, nk, fk, data=data)
+
+Add a related item by id for members.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+fk = 'fk_example' # str | Foreign key for members
+data = TweakApi.DesignMember() # DesignMember |  (optional)
+
+try: 
+    # Add a related item by id for members.
+    api_response = api_instance.portals_id_designs_nk_members_rel_fk_put(id, nk, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_members_rel_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **fk** | **str**| Foreign key for members | 
+ **data** | [**DesignMember**](DesignMember.md)|  | [optional] 
+
+### Return type
+
+[**DesignMember**](DesignMember.md)
 
 ### Authorization
 
@@ -3650,6 +4544,61 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DesignTag**](DesignTag.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_designs_nk_team_get**
+> Team portals_id_designs_nk_team_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation team.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+nk = 'nk_example' # str | Foreign key for designs.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation team.
+    api_response = api_instance.portals_id_designs_nk_team_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_designs_nk_team_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **nk** | **str**| Foreign key for designs. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**Team**](Team.md)
 
 ### Authorization
 

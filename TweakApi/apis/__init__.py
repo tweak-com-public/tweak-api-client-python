@@ -2,6 +2,7 @@ from __future__ import absolute_import
 
 # import apis into api package
 from .billing_api import BillingApi
+from .builder_asset_background_api import BuilderAssetBackgroundApi
 from .customer_api import CustomerApi
 from .data_source_api import DataSourceApi
 from .data_source_key_api import DataSourceKeyApi
@@ -11,6 +12,7 @@ from .design_api import DesignApi
 from .design_comment_api import DesignCommentApi
 from .design_export_api import DesignExportApi
 from .design_folder_api import DesignFolderApi
+from .design_member_api import DesignMemberApi
 from .design_permission_set_api import DesignPermissionSetApi
 from .design_tag_api import DesignTagApi
 from .dynamic_data_api import DynamicDataApi
@@ -27,11 +29,13 @@ from .portal_template_folder_api import PortalTemplateFolderApi
 from .product_api import ProductApi
 from .product_group_api import ProductGroupApi
 from .product_material_api import ProductMaterialApi
+from .product_pdf_color_profile_api import ProductPdfColorProfileApi
 from .product_size_api import ProductSizeApi
 from .product_size_material_api import ProductSizeMaterialApi
 from .product_tag_api import ProductTagApi
 from .product_type_api import ProductTypeApi
 from .public_v_auth_api import PublicVAuthApi
+from .public_v_builder_asset_api import PublicVBuilderAssetApi
 from .public_v_builder_config_api import PublicVBuilderConfigApi
 from .public_v_team_api import PublicVTeamApi
 from .public_v_team_member_api import PublicVTeamMemberApi

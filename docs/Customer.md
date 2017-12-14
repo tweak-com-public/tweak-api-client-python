@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**profile_picture** | **object** |  | [optional] 
+**profile_picture** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **first_name** | **str** |  | 
 **last_name** | **str** |  | 
 **initials** | **str** |  | 
@@ -15,7 +15,6 @@ Name | Type | Description | Notes
 **email** | **str** |  | 
 **email_verified** | **bool** |  | [optional] 
 **id** | **str** |  | [optional] 
-**designs** | [**list[Design]**](Design.md) |  | [optional] 
 **teams** | [**list[Team]**](Team.md) |  | [optional] 
 **invitation_tickets** | [**list[InvitationTicket]**](InvitationTicket.md) |  | [optional] 
 **access_tokens** | [**list[TeamMemberAccessToken]**](TeamMemberAccessToken.md) |  | [optional] 

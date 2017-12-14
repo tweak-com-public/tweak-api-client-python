@@ -1,6 +1,6 @@
 # TweakApi.ProductSizeMaterialApi
 
-All URIs are relative to *https://apidevcdn.tweak.com/api*
+All URIs are relative to *https://apicdn.tweak.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,6 +15,7 @@ Method | HTTP request | Description
 [**product_size_materials_id_head**](ProductSizeMaterialApi.md#product_size_materials_id_head) | **HEAD** /ProductSizeMaterials/{id} | Check whether a model instance exists in the data source.
 [**product_size_materials_id_material_get**](ProductSizeMaterialApi.md#product_size_materials_id_material_get) | **GET** /ProductSizeMaterials/{id}/material | Fetches belongsTo relation material.
 [**product_size_materials_id_patch**](ProductSizeMaterialApi.md#product_size_materials_id_patch) | **PATCH** /ProductSizeMaterials/{id} | Patch attributes for a model instance and persist it into the data source.
+[**product_size_materials_id_pdf_color_profile_get**](ProductSizeMaterialApi.md#product_size_materials_id_pdf_color_profile_get) | **GET** /ProductSizeMaterials/{id}/pdfColorProfile | Fetches belongsTo relation pdfColorProfile.
 [**product_size_materials_id_put**](ProductSizeMaterialApi.md#product_size_materials_id_put) | **PUT** /ProductSizeMaterials/{id} | Replace attributes for a model instance and persist it into the data source.
 [**product_size_materials_id_replace_post**](ProductSizeMaterialApi.md#product_size_materials_id_replace_post) | **POST** /ProductSizeMaterials/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**product_size_materials_id_size_get**](ProductSizeMaterialApi.md#product_size_materials_id_size_get) | **GET** /ProductSizeMaterials/{id}/size | Fetches belongsTo relation size.
@@ -582,6 +583,59 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ProductSizeMaterial**](ProductSizeMaterial.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **product_size_materials_id_pdf_color_profile_get**
+> ProductPdfColorProfile product_size_materials_id_pdf_color_profile_get(id, refresh=refresh)
+
+Fetches belongsTo relation pdfColorProfile.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.ProductSizeMaterialApi()
+id = 'id_example' # str | ProductSizeMaterial id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation pdfColorProfile.
+    api_response = api_instance.product_size_materials_id_pdf_color_profile_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ProductSizeMaterialApi->product_size_materials_id_pdf_color_profile_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| ProductSizeMaterial id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**ProductPdfColorProfile**](ProductPdfColorProfile.md)
 
 ### Authorization
 

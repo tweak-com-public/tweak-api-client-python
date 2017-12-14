@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** |  | 
-**logo** | **object** |  | [optional] 
+**logo** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **subdomain** | **str** |  | [optional] 
 **country** | **str** |  | [optional] [default to 'Ireland']
 **created** | **datetime** |  | [optional] 
@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **windows_key** | **str** |  | [optional] 
 **master_key** | **str** |  | [optional] 
 **status** | **str** | Status of the application, production/sandbox/disabled | [optional] [default to 'sandbox']
+**team_data_id** | **str** |  | [optional] 
 **members** | [**list[Customer]**](Customer.md) |  | [optional] 
 **builder_configs** | [**list[TeamBuilderConfig]**](TeamBuilderConfig.md) |  | [optional] 
 **data_sources** | [**list[DataSource]**](DataSource.md) |  | [optional] 
@@ -33,6 +34,8 @@ Name | Type | Description | Notes
 **permission** | [**TeamPermissionSet**](TeamPermissionSet.md) |  | [optional] 
 **product_materials** | [**list[ProductMaterial]**](ProductMaterial.md) |  | [optional] 
 **product_size_materials** | [**list[ProductSizeMaterial]**](ProductSizeMaterial.md) |  | [optional] 
+**product_pdf_color_profiles** | [**list[ProductPdfColorProfile]**](ProductPdfColorProfile.md) |  | [optional] 
+**team_data** | [**DynamicData**](DynamicData.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **target_id** | **str** |  | 
 **target_attrs** | **object** |  | [optional] 
 **status** | **str** |  | [optional] 
+**notify** | **bool** |  | [optional] [default to True]
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
 **id** | **str** |  | [optional] 
@@ -20,7 +21,9 @@ Name | Type | Description | Notes
 **target_portal_id** | **str** |  | [optional] 
 **target_portal_member_id** | **str** |  | [optional] 
 **target_template_id** | **str** |  | [optional] 
+**target_design_id** | **str** |  | [optional] 
 **target_template_member_id** | **str** |  | [optional] 
+**target_design_member_id** | **str** |  | [optional] 
 **target_image_folder_id** | **str** |  | [optional] 
 **target_image_folder_member_id** | **str** |  | [optional] 
 **invitee** | [**Customer**](Customer.md) |  | [optional] 
@@ -33,6 +36,8 @@ Name | Type | Description | Notes
 **target_template_member** | [**TemplateMember**](TemplateMember.md) |  | [optional] 
 **target_image_folder** | [**ImageFolder**](ImageFolder.md) |  | [optional] 
 **target_image_folder_member** | [**ImageFolderMember**](ImageFolderMember.md) |  | [optional] 
+**target_design** | [**Design**](Design.md) |  | [optional] 
+**target_design_member** | [**DesignMember**](DesignMember.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
