@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** |  | 
 **code** | **str** |  | 
+**legacy_code** | **str** |  | [optional] 
 **thumbnail** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **folding_type** | **str** |  | [optional] 
 **folding_method** | **str** |  | [optional] 
@@ -16,6 +17,7 @@ Name | Type | Description | Notes
 **pdf_size** | [**Dimensions**](Dimensions.md) |  | [optional] 
 **pdf_page_count** | **float** |  | [optional] [default to 1.0]
 **pdf_dpi** | **float** |  | [optional] [default to 300.0]
+**pdf_output_scale** | **float** |  | [optional] [default to 100.0]
 **print_profile** | **str** |  | [optional] 
 **customer_size** | [**Dimensions**](Dimensions.md) |  | [optional] 
 **customer_page_count** | **float** |  | [optional] [default to 1.0]
@@ -29,6 +31,8 @@ Name | Type | Description | Notes
 **format** | **str** |  | 
 **envelope_window** | **str** |  | [optional] 
 **canvas_image_count** | **float** |  | [optional] [default to 0.0]
+**options** | **str** |  | [optional] [default to 'none']
+**display_type** | **str** |  | [optional] [default to 'none']
 **created** | **datetime** |  | [optional] 
 **modified** | **datetime** |  | [optional] 
 **id** | **str** |  | [optional] 
