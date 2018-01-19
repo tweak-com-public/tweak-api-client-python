@@ -54,4 +54,5 @@ from .template_api import TemplateApi
 from .template_member_api import TemplateMemberApi
 from .template_permission_set_api import TemplatePermissionSetApi
 from .template_tag_api import TemplateTagApi
+from .test_cache_api import TestCacheApi
 from .workflow_api import WorkflowApi
