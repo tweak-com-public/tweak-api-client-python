@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_count_get**
-> InlineResponse200 portals_count_get(where=where)
+> InlineResponse2001 portals_count_get(where=where)
 
 Count instances of the model matched by where from the data source.
 
@@ -307,7 +307,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -474,7 +474,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_design_folders_count_get**
-> InlineResponse200 portals_id_design_folders_count_get(id, where=where)
+> InlineResponse2001 portals_id_design_folders_count_get(id, where=where)
 
 Counts designFolders of Portal.
 
@@ -513,7 +513,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -843,7 +843,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_designs_count_get**
-> InlineResponse200 portals_id_designs_count_get(id, where=where)
+> InlineResponse2001 portals_id_designs_count_get(id, where=where)
 
 Counts designs of Portal.
 
@@ -882,7 +882,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1214,7 +1214,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_designs_nk_commenters_count_get**
-> InlineResponse200 portals_id_designs_nk_commenters_count_get(id, nk, where=where)
+> InlineResponse2001 portals_id_designs_nk_commenters_count_get(id, nk, where=where)
 
 Counts commenters of Design.
 
@@ -1255,7 +1255,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1763,7 +1763,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_designs_nk_comments_count_get**
-> InlineResponse200 portals_id_designs_nk_comments_count_get(id, nk, where=where)
+> InlineResponse2001 portals_id_designs_nk_comments_count_get(id, nk, where=where)
 
 Counts comments of Design.
 
@@ -1804,7 +1804,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2146,7 +2146,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_designs_nk_design_members_count_get**
-> InlineResponse200 portals_id_designs_nk_design_members_count_get(id, nk, where=where)
+> InlineResponse2001 portals_id_designs_nk_design_members_count_get(id, nk, where=where)
 
 Counts designMembers of Design.
 
@@ -2187,7 +2187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2584,7 +2584,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_designs_nk_exports_count_get**
-> InlineResponse200 portals_id_designs_nk_exports_count_get(id, nk, where=where)
+> InlineResponse2001 portals_id_designs_nk_exports_count_get(id, nk, where=where)
 
 Counts exports of Design.
 
@@ -2625,7 +2625,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3022,7 +3022,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_designs_nk_members_count_get**
-> InlineResponse200 portals_id_designs_nk_members_count_get(id, nk, where=where)
+> InlineResponse2001 portals_id_designs_nk_members_count_get(id, nk, where=where)
 
 Counts members of Design.
 
@@ -3063,7 +3063,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4008,7 +4008,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_designs_nk_tags_count_get**
-> InlineResponse200 portals_id_designs_nk_tags_count_get(id, nk, where=where)
+> InlineResponse2001 portals_id_designs_nk_tags_count_get(id, nk, where=where)
 
 Counts tags of Design.
 
@@ -4049,7 +4049,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4720,7 +4720,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_exists_get**
-> InlineResponse2001 portals_id_exists_get(id)
+> InlineResponse2002 portals_id_exists_get(id)
 
 Check whether a model instance exists in the data source.
 
@@ -4757,7 +4757,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -4824,7 +4824,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_head**
-> InlineResponse2001 portals_id_head(id)
+> InlineResponse2002 portals_id_head(id)
 
 Check whether a model instance exists in the data source.
 
@@ -4861,7 +4861,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -4875,7 +4875,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_image_folders_count_get**
-> InlineResponse200 portals_id_image_folders_count_get(id, where=where)
+> InlineResponse2001 portals_id_image_folders_count_get(id, where=where)
 
 Counts imageFolders of Portal.
 
@@ -4914,7 +4914,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5626,7 +5626,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_members_count_get**
-> InlineResponse200 portals_id_members_count_get(id, where=where)
+> InlineResponse2001 portals_id_members_count_get(id, where=where)
 
 Counts members of Portal.
 
@@ -5665,7 +5665,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6417,7 +6417,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_portal_members_count_get**
-> InlineResponse200 portals_id_portal_members_count_get(id, where=where)
+> InlineResponse2001 portals_id_portal_members_count_get(id, where=where)
 
 Counts portalMembers of Portal.
 
@@ -6456,7 +6456,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6945,7 +6945,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_template_folders_count_get**
-> InlineResponse200 portals_id_template_folders_count_get(id, where=where)
+> InlineResponse2001 portals_id_template_folders_count_get(id, where=where)
 
 Counts templateFolders of Portal.
 
@@ -6984,7 +6984,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7483,7 +7483,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_template_rels_count_get**
-> InlineResponse200 portals_id_template_rels_count_get(id, where=where)
+> InlineResponse2001 portals_id_template_rels_count_get(id, where=where)
 
 Counts templateRels of Portal.
 
@@ -7522,7 +7522,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7852,7 +7852,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_id_templates_count_get**
-> InlineResponse200 portals_id_templates_count_get(id, where=where)
+> InlineResponse2001 portals_id_templates_count_get(id, where=where)
 
 Counts templates of Portal.
 
@@ -7891,7 +7891,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -8699,7 +8699,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **portals_update_post**
-> InlineResponse2002 portals_update_post(where=where, data=data)
+> InlineResponse2003 portals_update_post(where=where, data=data)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -8738,7 +8738,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

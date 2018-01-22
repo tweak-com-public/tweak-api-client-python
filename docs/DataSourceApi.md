@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **data_sources_id_keys_count_get**
-> InlineResponse200 data_sources_id_keys_count_get(id, where=where)
+> InlineResponse2001 data_sources_id_keys_count_get(id, where=where)
 
 Counts keys of DataSource.
 
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 

@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **templates_count_get**
-> InlineResponse200 templates_count_get(where=where)
+> InlineResponse2001 templates_count_get(where=where)
 
 Count instances of the model matched by where from the data source.
 
@@ -231,7 +231,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -398,7 +398,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **templates_id_designs_count_get**
-> InlineResponse200 templates_id_designs_count_get(id, where=where)
+> InlineResponse2001 templates_id_designs_count_get(id, where=where)
 
 Counts designs of Template.
 
@@ -437,7 +437,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -822,7 +822,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **templates_id_exists_get**
-> InlineResponse2001 templates_id_exists_get(id)
+> InlineResponse2002 templates_id_exists_get(id)
 
 Check whether a model instance exists in the data source.
 
@@ -859,7 +859,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -926,7 +926,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **templates_id_head**
-> InlineResponse2001 templates_id_head(id)
+> InlineResponse2002 templates_id_head(id)
 
 Check whether a model instance exists in the data source.
 
@@ -963,7 +963,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1144,7 +1144,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **templates_id_members_count_get**
-> InlineResponse200 templates_id_members_count_get(id, where=where)
+> InlineResponse2001 templates_id_members_count_get(id, where=where)
 
 Counts members of Template.
 
@@ -1183,7 +1183,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1935,7 +1935,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **templates_id_portal_folders_count_get**
-> InlineResponse200 templates_id_portal_folders_count_get(id, where=where)
+> InlineResponse2001 templates_id_portal_folders_count_get(id, where=where)
 
 Counts portalFolders of Template.
 
@@ -1974,7 +1974,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2464,7 +2464,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **templates_id_portals_count_get**
-> InlineResponse200 templates_id_portals_count_get(id, where=where)
+> InlineResponse2001 templates_id_portals_count_get(id, where=where)
 
 Counts portals of Template.
 
@@ -2503,7 +2503,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3099,7 +3099,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **templates_id_tags_count_get**
-> InlineResponse200 templates_id_tags_count_get(id, where=where)
+> InlineResponse2001 templates_id_tags_count_get(id, where=where)
 
 Counts tags of Template.
 
@@ -3138,7 +3138,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3734,7 +3734,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **templates_id_template_members_count_get**
-> InlineResponse200 templates_id_template_members_count_get(id, where=where)
+> InlineResponse2001 templates_id_template_members_count_get(id, where=where)
 
 Counts templateMembers of Template.
 
@@ -3773,7 +3773,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4464,7 +4464,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **templates_update_post**
-> InlineResponse2002 templates_update_post(where=where, data=data)
+> InlineResponse2003 templates_update_post(where=where, data=data)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -4503,7 +4503,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
