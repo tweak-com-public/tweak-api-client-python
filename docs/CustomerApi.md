@@ -390,7 +390,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_count_get**
-> InlineResponse200 customers_count_get(where=where)
+> InlineResponse2001 customers_count_get(where=where)
 
 Count instances of the model matched by where from the data source.
 
@@ -427,7 +427,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -441,7 +441,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_email_email_exists_get**
-> InlineResponse2001 customers_email_email_exists_get(email)
+> InlineResponse2002 customers_email_email_exists_get(email)
 
 Define whether customer exists or not
 
@@ -478,7 +478,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -594,7 +594,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_access_tokens_count_get**
-> InlineResponse200 customers_id_access_tokens_count_get(id, where=where)
+> InlineResponse2001 customers_id_access_tokens_count_get(id, where=where)
 
 Counts accessTokens of Customer.
 
@@ -633,7 +633,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -963,7 +963,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_active_get**
-> InlineResponse2003 customers_id_active_get(id)
+> InlineResponse2004 customers_id_active_get(id)
 
 Define whether customer is active or not
 
@@ -1000,7 +1000,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
@@ -1065,7 +1065,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_exists_get**
-> InlineResponse2001 customers_id_exists_get(id)
+> InlineResponse2002 customers_id_exists_get(id)
 
 Check whether a model instance exists in the data source.
 
@@ -1102,7 +1102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1169,7 +1169,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_head**
-> InlineResponse2001 customers_id_head(id)
+> InlineResponse2002 customers_id_head(id)
 
 Check whether a model instance exists in the data source.
 
@@ -1206,7 +1206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -1220,7 +1220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_invitation_tickets_count_get**
-> InlineResponse200 customers_id_invitation_tickets_count_get(id, where=where)
+> InlineResponse2001 customers_id_invitation_tickets_count_get(id, where=where)
 
 Counts invitationTickets of Customer.
 
@@ -1259,7 +1259,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2065,7 +2065,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_count_get**
-> InlineResponse200 customers_id_teams_count_get(id, where=where)
+> InlineResponse2001 customers_id_teams_count_get(id, where=where)
 
 Counts teams of Customer.
 
@@ -2104,7 +2104,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2598,7 +2598,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_nk_builder_configs_count_get**
-> InlineResponse200 customers_id_teams_nk_builder_configs_count_get(id, nk, where=where)
+> InlineResponse2001 customers_id_teams_nk_builder_configs_count_get(id, nk, where=where)
 
 Counts builderConfigs of Team.
 
@@ -2639,7 +2639,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2981,7 +2981,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_nk_data_sources_count_get**
-> InlineResponse200 customers_id_teams_nk_data_sources_count_get(id, nk, where=where)
+> InlineResponse2001 customers_id_teams_nk_data_sources_count_get(id, nk, where=where)
 
 Counts dataSources of Team.
 
@@ -3022,7 +3022,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3364,7 +3364,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_nk_dynamic_datas_count_get**
-> InlineResponse200 customers_id_teams_nk_dynamic_datas_count_get(id, nk, where=where)
+> InlineResponse2001 customers_id_teams_nk_dynamic_datas_count_get(id, nk, where=where)
 
 Counts dynamicDatas of Team.
 
@@ -3405,7 +3405,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3747,7 +3747,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_nk_image_folders_count_get**
-> InlineResponse200 customers_id_teams_nk_image_folders_count_get(id, nk, where=where)
+> InlineResponse2001 customers_id_teams_nk_image_folders_count_get(id, nk, where=where)
 
 Counts imageFolders of Team.
 
@@ -3788,7 +3788,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4130,7 +4130,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_nk_images_count_get**
-> InlineResponse200 customers_id_teams_nk_images_count_get(id, nk, where=where)
+> InlineResponse2001 customers_id_teams_nk_images_count_get(id, nk, where=where)
 
 Counts images of Team.
 
@@ -4171,7 +4171,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4513,7 +4513,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_nk_members_count_get**
-> InlineResponse200 customers_id_teams_nk_members_count_get(id, nk, where=where)
+> InlineResponse2001 customers_id_teams_nk_members_count_get(id, nk, where=where)
 
 Counts members of Team.
 
@@ -4554,7 +4554,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5279,7 +5279,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_nk_portals_count_get**
-> InlineResponse200 customers_id_teams_nk_portals_count_get(id, nk, where=where)
+> InlineResponse2001 customers_id_teams_nk_portals_count_get(id, nk, where=where)
 
 Counts portals of Team.
 
@@ -5320,7 +5320,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5662,7 +5662,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_nk_product_materials_count_get**
-> InlineResponse200 customers_id_teams_nk_product_materials_count_get(id, nk, where=where)
+> InlineResponse2001 customers_id_teams_nk_product_materials_count_get(id, nk, where=where)
 
 Counts productMaterials of Team.
 
@@ -5703,7 +5703,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6045,7 +6045,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_nk_product_pdf_color_profiles_count_get**
-> InlineResponse200 customers_id_teams_nk_product_pdf_color_profiles_count_get(id, nk, where=where)
+> InlineResponse2001 customers_id_teams_nk_product_pdf_color_profiles_count_get(id, nk, where=where)
 
 Counts productPdfColorProfiles of Team.
 
@@ -6086,7 +6086,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6373,7 +6373,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_nk_product_size_materials_count_get**
-> InlineResponse200 customers_id_teams_nk_product_size_materials_count_get(id, nk, where=where)
+> InlineResponse2001 customers_id_teams_nk_product_size_materials_count_get(id, nk, where=where)
 
 Counts productSizeMaterials of Team.
 
@@ -6414,7 +6414,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6811,7 +6811,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_nk_team_members_count_get**
-> InlineResponse200 customers_id_teams_nk_team_members_count_get(id, nk, where=where)
+> InlineResponse2001 customers_id_teams_nk_team_members_count_get(id, nk, where=where)
 
 Counts teamMembers of Team.
 
@@ -6852,7 +6852,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7194,7 +7194,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_nk_template_folders_count_get**
-> InlineResponse200 customers_id_teams_nk_template_folders_count_get(id, nk, where=where)
+> InlineResponse2001 customers_id_teams_nk_template_folders_count_get(id, nk, where=where)
 
 Counts templateFolders of Team.
 
@@ -7235,7 +7235,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7577,7 +7577,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_nk_templates_count_get**
-> InlineResponse200 customers_id_teams_nk_templates_count_get(id, nk, where=where)
+> InlineResponse2001 customers_id_teams_nk_templates_count_get(id, nk, where=where)
 
 Counts templates of Team.
 
@@ -7618,7 +7618,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7960,7 +7960,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_teams_nk_workflows_count_get**
-> InlineResponse200 customers_id_teams_nk_workflows_count_get(id, nk, where=where)
+> InlineResponse2001 customers_id_teams_nk_workflows_count_get(id, nk, where=where)
 
 Counts workflows of Team.
 
@@ -8001,7 +8001,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -9478,7 +9478,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_update_post**
-> InlineResponse2002 customers_update_post(where=where, data=data)
+> InlineResponse2003 customers_update_post(where=where, data=data)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -9517,7 +9517,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

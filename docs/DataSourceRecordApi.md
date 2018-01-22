@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **data_source_records_count_get**
-> InlineResponse200 data_source_records_count_get(where=where)
+> InlineResponse2001 data_source_records_count_get(where=where)
 
 Count instances of the model matched by where from the data source.
 
@@ -173,7 +173,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -393,7 +393,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **data_source_records_id_exists_get**
-> InlineResponse2001 data_source_records_id_exists_get(id)
+> InlineResponse2002 data_source_records_id_exists_get(id)
 
 Check whether a model instance exists in the data source.
 
@@ -430,7 +430,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -497,7 +497,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **data_source_records_id_head**
-> InlineResponse2001 data_source_records_id_head(id)
+> InlineResponse2002 data_source_records_id_head(id)
 
 Check whether a model instance exists in the data source.
 
@@ -534,7 +534,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -760,7 +760,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **data_source_records_id_values_count_get**
-> InlineResponse200 data_source_records_id_values_count_get(id, where=where)
+> InlineResponse2001 data_source_records_id_values_count_get(id, where=where)
 
 Counts values of DataSourceRecord.
 
@@ -799,7 +799,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1333,7 +1333,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **data_source_records_update_post**
-> InlineResponse2002 data_source_records_update_post(where=where, data=data)
+> InlineResponse2003 data_source_records_update_post(where=where, data=data)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -1372,7 +1372,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
