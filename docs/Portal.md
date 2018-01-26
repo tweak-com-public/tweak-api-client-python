@@ -11,6 +11,8 @@ Name | Type | Description | Notes
 **modified** | **datetime** |  | [optional] 
 **id** | **str** |  | [optional] 
 **team_id** | **str** |  | [optional] 
+**default_builder_config_id** | **str** |  | [optional] 
+**default_builder_config** | [**TeamBuilderConfig**](TeamBuilderConfig.md) |  | [optional] 
 **templates** | [**list[Template]**](Template.md) |  | [optional] 
 **template_rels** | [**list[PortalTemplate]**](PortalTemplate.md) |  | [optional] 
 **members** | [**list[TeamMember]**](TeamMember.md) |  | [optional] 
