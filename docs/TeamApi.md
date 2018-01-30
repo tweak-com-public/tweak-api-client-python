@@ -15,7 +15,7 @@ Method | HTTP request | Description
 [**teams_id_brand_post**](TeamApi.md#teams_id_brand_post) | **POST** /Teams/{id}/brand | Creates a new instance in brand of this model.
 [**teams_id_brand_put**](TeamApi.md#teams_id_brand_put) | **PUT** /Teams/{id}/brand | Update brand of this model.
 [**teams_id_builder_configs_count_get**](TeamApi.md#teams_id_builder_configs_count_get) | **GET** /Teams/{id}/builderConfigs/count | Counts builderConfigs of Team.
-[**teams_id_builder_configs_default_get**](TeamApi.md#teams_id_builder_configs_default_get) | **GET** /Teams/{id}/builderConfigs/default | Get default TeamBuilderConfig
+[**teams_id_builder_configs_default_get**](TeamApi.md#teams_id_builder_configs_default_get) | **GET** /Teams/{id}/builderConfigs/default | Get default TeamBuilderConfig for this Team
 [**teams_id_builder_configs_delete**](TeamApi.md#teams_id_builder_configs_delete) | **DELETE** /Teams/{id}/builderConfigs | Deletes all builderConfigs of this model.
 [**teams_id_builder_configs_fk_delete**](TeamApi.md#teams_id_builder_configs_fk_delete) | **DELETE** /Teams/{id}/builderConfigs/{fk} | Delete a related item by id for builderConfigs.
 [**teams_id_builder_configs_fk_get**](TeamApi.md#teams_id_builder_configs_fk_get) | **GET** /Teams/{id}/builderConfigs/{fk} | Find a related item by id for builderConfigs.
@@ -23,6 +23,13 @@ Method | HTTP request | Description
 [**teams_id_builder_configs_fk_put**](TeamApi.md#teams_id_builder_configs_fk_put) | **PUT** /Teams/{id}/builderConfigs/{fk} | Update a related item by id for builderConfigs.
 [**teams_id_builder_configs_fk_watermark_put**](TeamApi.md#teams_id_builder_configs_fk_watermark_put) | **PUT** /Teams/{id}/builderConfigs/{fk}/watermark | Change Builder Config watermark
 [**teams_id_builder_configs_get**](TeamApi.md#teams_id_builder_configs_get) | **GET** /Teams/{id}/builderConfigs | Queries builderConfigs of Team.
+[**teams_id_builder_configs_nk_portals_count_get**](TeamApi.md#teams_id_builder_configs_nk_portals_count_get) | **GET** /Teams/{id}/builderConfigs/{nk}/portals/count | Counts portals of TeamBuilderConfig.
+[**teams_id_builder_configs_nk_portals_delete**](TeamApi.md#teams_id_builder_configs_nk_portals_delete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/portals | Deletes all portals of this model.
+[**teams_id_builder_configs_nk_portals_fk_delete**](TeamApi.md#teams_id_builder_configs_nk_portals_fk_delete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/portals/{fk} | Delete a related item by id for portals.
+[**teams_id_builder_configs_nk_portals_fk_get**](TeamApi.md#teams_id_builder_configs_nk_portals_fk_get) | **GET** /Teams/{id}/builderConfigs/{nk}/portals/{fk} | Find a related item by id for portals.
+[**teams_id_builder_configs_nk_portals_fk_put**](TeamApi.md#teams_id_builder_configs_nk_portals_fk_put) | **PUT** /Teams/{id}/builderConfigs/{nk}/portals/{fk} | Update a related item by id for portals.
+[**teams_id_builder_configs_nk_portals_get**](TeamApi.md#teams_id_builder_configs_nk_portals_get) | **GET** /Teams/{id}/builderConfigs/{nk}/portals | Queries portals of TeamBuilderConfig.
+[**teams_id_builder_configs_nk_portals_post**](TeamApi.md#teams_id_builder_configs_nk_portals_post) | **POST** /Teams/{id}/builderConfigs/{nk}/portals | Creates a new instance in portals of this model.
 [**teams_id_builder_configs_nk_product_groups_count_get**](TeamApi.md#teams_id_builder_configs_nk_product_groups_count_get) | **GET** /Teams/{id}/builderConfigs/{nk}/productGroups/count | Counts productGroups of TeamBuilderConfig.
 [**teams_id_builder_configs_nk_product_groups_delete**](TeamApi.md#teams_id_builder_configs_nk_product_groups_delete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productGroups | Deletes all productGroups of this model.
 [**teams_id_builder_configs_nk_product_groups_fk_delete**](TeamApi.md#teams_id_builder_configs_nk_product_groups_fk_delete) | **DELETE** /Teams/{id}/builderConfigs/{nk}/productGroups/{fk} | Delete a related item by id for productGroups.
@@ -192,6 +199,7 @@ Method | HTTP request | Description
 [**teams_id_portals_fk_get**](TeamApi.md#teams_id_portals_fk_get) | **GET** /Teams/{id}/portals/{fk} | Find a related item by id for portals.
 [**teams_id_portals_fk_put**](TeamApi.md#teams_id_portals_fk_put) | **PUT** /Teams/{id}/portals/{fk} | Update a related item by id for portals.
 [**teams_id_portals_get**](TeamApi.md#teams_id_portals_get) | **GET** /Teams/{id}/portals | Queries portals of Team.
+[**teams_id_portals_nk_default_builder_config_get**](TeamApi.md#teams_id_portals_nk_default_builder_config_get) | **GET** /Teams/{id}/portals/{nk}/defaultBuilderConfig | Fetches belongsTo relation defaultBuilderConfig.
 [**teams_id_portals_nk_design_folders_count_get**](TeamApi.md#teams_id_portals_nk_design_folders_count_get) | **GET** /Teams/{id}/portals/{nk}/designFolders/count | Counts designFolders of Portal.
 [**teams_id_portals_nk_design_folders_delete**](TeamApi.md#teams_id_portals_nk_design_folders_delete) | **DELETE** /Teams/{id}/portals/{nk}/designFolders | Deletes all designFolders of this model.
 [**teams_id_portals_nk_design_folders_fk_delete**](TeamApi.md#teams_id_portals_nk_design_folders_fk_delete) | **DELETE** /Teams/{id}/portals/{nk}/designFolders/{fk} | Delete a related item by id for designFolders.
@@ -516,7 +524,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_count_get**
-> InlineResponse200 teams_count_get(where=where)
+> InlineResponse2001 teams_count_get(where=where)
 
 Count instances of the model matched by where from the data source.
 
@@ -553,7 +561,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -929,7 +937,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_builder_configs_count_get**
-> InlineResponse200 teams_id_builder_configs_count_get(id, where=where)
+> InlineResponse2001 teams_id_builder_configs_count_get(id, where=where)
 
 Counts builderConfigs of Team.
 
@@ -968,7 +976,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -984,7 +992,7 @@ Name | Type | Description  | Notes
 # **teams_id_builder_configs_default_get**
 > TeamBuilderConfig teams_id_builder_configs_default_get(id)
 
-Get default TeamBuilderConfig
+Get default TeamBuilderConfig for this Team
 
 ### Example 
 ```python
@@ -1004,7 +1012,7 @@ api_instance = TweakApi.TeamApi()
 id = 'id_example' # str | Team id
 
 try: 
-    # Get default TeamBuilderConfig
+    # Get default TeamBuilderConfig for this Team
     api_response = api_instance.teams_id_builder_configs_default_get(id)
     pprint(api_response)
 except ApiException as e:
@@ -1405,8 +1413,391 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **teams_id_builder_configs_nk_portals_count_get**
+> InlineResponse2001 teams_id_builder_configs_nk_portals_count_get(id, nk, where=where)
+
+Counts portals of TeamBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for builderConfigs.
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts portals of TeamBuilderConfig.
+    api_response = api_instance.teams_id_builder_configs_nk_portals_count_get(id, nk, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_nk_portals_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for builderConfigs. | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_nk_portals_delete**
+> teams_id_builder_configs_nk_portals_delete(id, nk)
+
+Deletes all portals of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for builderConfigs.
+
+try: 
+    # Deletes all portals of this model.
+    api_instance.teams_id_builder_configs_nk_portals_delete(id, nk)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_nk_portals_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for builderConfigs. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_nk_portals_fk_delete**
+> teams_id_builder_configs_nk_portals_fk_delete(id, nk, fk)
+
+Delete a related item by id for portals.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for builderConfigs.
+fk = 'fk_example' # str | Foreign key for portals
+
+try: 
+    # Delete a related item by id for portals.
+    api_instance.teams_id_builder_configs_nk_portals_fk_delete(id, nk, fk)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_nk_portals_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for builderConfigs. | 
+ **fk** | **str**| Foreign key for portals | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_nk_portals_fk_get**
+> Portal teams_id_builder_configs_nk_portals_fk_get(id, nk, fk)
+
+Find a related item by id for portals.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for builderConfigs.
+fk = 'fk_example' # str | Foreign key for portals
+
+try: 
+    # Find a related item by id for portals.
+    api_response = api_instance.teams_id_builder_configs_nk_portals_fk_get(id, nk, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_nk_portals_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for builderConfigs. | 
+ **fk** | **str**| Foreign key for portals | 
+
+### Return type
+
+[**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_nk_portals_fk_put**
+> Portal teams_id_builder_configs_nk_portals_fk_put(id, nk, fk, data=data)
+
+Update a related item by id for portals.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for builderConfigs.
+fk = 'fk_example' # str | Foreign key for portals
+data = TweakApi.Portal() # Portal |  (optional)
+
+try: 
+    # Update a related item by id for portals.
+    api_response = api_instance.teams_id_builder_configs_nk_portals_fk_put(id, nk, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_nk_portals_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for builderConfigs. | 
+ **fk** | **str**| Foreign key for portals | 
+ **data** | [**Portal**](Portal.md)|  | [optional] 
+
+### Return type
+
+[**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_nk_portals_get**
+> list[Portal] teams_id_builder_configs_nk_portals_get(id, nk, filter=filter)
+
+Queries portals of TeamBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for builderConfigs.
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries portals of TeamBuilderConfig.
+    api_response = api_instance.teams_id_builder_configs_nk_portals_get(id, nk, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_nk_portals_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for builderConfigs. | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[Portal]**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_nk_portals_post**
+> Portal teams_id_builder_configs_nk_portals_post(id, nk, data=data)
+
+Creates a new instance in portals of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for builderConfigs.
+data = TweakApi.Portal() # Portal |  (optional)
+
+try: 
+    # Creates a new instance in portals of this model.
+    api_response = api_instance.teams_id_builder_configs_nk_portals_post(id, nk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_nk_portals_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for builderConfigs. | 
+ **data** | [**Portal**](Portal.md)|  | [optional] 
+
+### Return type
+
+[**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **teams_id_builder_configs_nk_product_groups_count_get**
-> InlineResponse200 teams_id_builder_configs_nk_product_groups_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_builder_configs_nk_product_groups_count_get(id, nk, where=where)
 
 Counts productGroups of TeamBuilderConfig.
 
@@ -1447,7 +1838,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1955,7 +2346,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_builder_configs_nk_product_size_materials_count_get**
-> InlineResponse200 teams_id_builder_configs_nk_product_size_materials_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_builder_configs_nk_product_size_materials_count_get(id, nk, where=where)
 
 Counts productSizeMaterials of TeamBuilderConfig.
 
@@ -1996,7 +2387,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2338,7 +2729,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_builder_configs_nk_product_size_materials_rel_count_get**
-> InlineResponse200 teams_id_builder_configs_nk_product_size_materials_rel_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_builder_configs_nk_product_size_materials_rel_count_get(id, nk, where=where)
 
 Counts productSizeMaterialsRel of TeamBuilderConfig.
 
@@ -2379,7 +2770,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -2887,7 +3278,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_builder_configs_nk_product_sizes_count_get**
-> InlineResponse200 teams_id_builder_configs_nk_product_sizes_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_builder_configs_nk_product_sizes_count_get(id, nk, where=where)
 
 Counts productSizes of TeamBuilderConfig.
 
@@ -2928,7 +3319,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -3436,7 +3827,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_builder_configs_nk_product_types_count_get**
-> InlineResponse200 teams_id_builder_configs_nk_product_types_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_builder_configs_nk_product_types_count_get(id, nk, where=where)
 
 Counts productTypes of TeamBuilderConfig.
 
@@ -3477,7 +3868,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4093,7 +4484,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_data_sources_count_get**
-> InlineResponse200 teams_id_data_sources_count_get(id, where=where)
+> InlineResponse2001 teams_id_data_sources_count_get(id, where=where)
 
 Counts dataSources of Team.
 
@@ -4132,7 +4523,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4513,7 +4904,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_dynamic_datas_count_get**
-> InlineResponse200 teams_id_dynamic_datas_count_get(id, where=where)
+> InlineResponse2001 teams_id_dynamic_datas_count_get(id, where=where)
 
 Counts dynamicDatas of Team.
 
@@ -4552,7 +4943,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -4829,7 +5220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_dynamic_datas_nk_designs_count_get**
-> InlineResponse200 teams_id_dynamic_datas_nk_designs_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_dynamic_datas_nk_designs_count_get(id, nk, where=where)
 
 Counts designs of DynamicData.
 
@@ -4870,7 +5261,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5212,7 +5603,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_dynamic_datas_nk_records_count_get**
-> InlineResponse200 teams_id_dynamic_datas_nk_records_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_dynamic_datas_nk_records_count_get(id, nk, where=where)
 
 Count Dynamic Data records
 
@@ -5253,7 +5644,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -5876,7 +6267,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_exists_get**
-> InlineResponse2001 teams_id_exists_get(id)
+> InlineResponse2002 teams_id_exists_get(id)
 
 Check whether a model instance exists in the data source.
 
@@ -5913,7 +6304,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -5980,7 +6371,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_head**
-> InlineResponse2001 teams_id_head(id)
+> InlineResponse2002 teams_id_head(id)
 
 Check whether a model instance exists in the data source.
 
@@ -6017,7 +6408,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -6031,7 +6422,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_image_folders_count_get**
-> InlineResponse200 teams_id_image_folders_count_get(id, where=where)
+> InlineResponse2001 teams_id_image_folders_count_get(id, where=where)
 
 Counts imageFolders of Team.
 
@@ -6070,7 +6461,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6347,7 +6738,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_image_folders_nk_children_count_get**
-> InlineResponse200 teams_id_image_folders_nk_children_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_image_folders_nk_children_count_get(id, nk, where=where)
 
 Counts children of ImageFolder.
 
@@ -6388,7 +6779,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -6730,7 +7121,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_image_folders_nk_folder_members_count_get**
-> InlineResponse200 teams_id_image_folders_nk_folder_members_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_image_folders_nk_folder_members_count_get(id, nk, where=where)
 
 Counts folderMembers of ImageFolder.
 
@@ -6771,7 +7162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7113,7 +7504,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_image_folders_nk_images_count_get**
-> InlineResponse200 teams_id_image_folders_nk_images_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_image_folders_nk_images_count_get(id, nk, where=where)
 
 Counts images of ImageFolder.
 
@@ -7154,7 +7545,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -7496,7 +7887,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_image_folders_nk_members_count_get**
-> InlineResponse200 teams_id_image_folders_nk_members_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_image_folders_nk_members_count_get(id, nk, where=where)
 
 Counts members of ImageFolder.
 
@@ -7537,7 +7928,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -8100,7 +8491,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_image_folders_nk_portals_count_get**
-> InlineResponse200 teams_id_image_folders_nk_portals_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_image_folders_nk_portals_count_get(id, nk, where=where)
 
 Counts portals of ImageFolder.
 
@@ -8141,7 +8532,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -8757,7 +9148,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_images_count_get**
-> InlineResponse200 teams_id_images_count_get(id, where=where)
+> InlineResponse2001 teams_id_images_count_get(id, where=where)
 
 Counts images of Team.
 
@@ -8796,7 +9187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -9458,7 +9849,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_members_count_get**
-> InlineResponse200 teams_id_members_count_get(id, where=where)
+> InlineResponse2001 teams_id_members_count_get(id, where=where)
 
 Counts members of Team.
 
@@ -9497,7 +9888,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -10249,7 +10640,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_portals_count_get**
-> InlineResponse200 teams_id_portals_count_get(id, where=where)
+> InlineResponse2001 teams_id_portals_count_get(id, where=where)
 
 Counts portals of Team.
 
@@ -10288,7 +10679,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -10564,8 +10955,63 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **teams_id_portals_nk_default_builder_config_get**
+> TeamBuilderConfig teams_id_portals_nk_default_builder_config_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation defaultBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for portals.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation defaultBuilderConfig.
+    api_response = api_instance.teams_id_portals_nk_default_builder_config_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_portals_nk_default_builder_config_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for portals. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **teams_id_portals_nk_design_folders_count_get**
-> InlineResponse200 teams_id_portals_nk_design_folders_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_portals_nk_design_folders_count_get(id, nk, where=where)
 
 Counts designFolders of Portal.
 
@@ -10606,7 +11052,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -10948,7 +11394,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_portals_nk_designs_count_get**
-> InlineResponse200 teams_id_portals_nk_designs_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_portals_nk_designs_count_get(id, nk, where=where)
 
 Counts designs of Portal.
 
@@ -10989,7 +11435,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -11331,7 +11777,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_portals_nk_image_folders_count_get**
-> InlineResponse200 teams_id_portals_nk_image_folders_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_portals_nk_image_folders_count_get(id, nk, where=where)
 
 Counts imageFolders of Portal.
 
@@ -11372,7 +11818,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -11880,7 +12326,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_portals_nk_members_count_get**
-> InlineResponse200 teams_id_portals_nk_members_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_portals_nk_members_count_get(id, nk, where=where)
 
 Counts members of Portal.
 
@@ -11921,7 +12367,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -12646,7 +13092,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_portals_nk_portal_members_count_get**
-> InlineResponse200 teams_id_portals_nk_portal_members_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_portals_nk_portal_members_count_get(id, nk, where=where)
 
 Counts portalMembers of Portal.
 
@@ -12687,7 +13133,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -13084,7 +13530,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_portals_nk_template_folders_count_get**
-> InlineResponse200 teams_id_portals_nk_template_folders_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_portals_nk_template_folders_count_get(id, nk, where=where)
 
 Counts templateFolders of Portal.
 
@@ -13125,7 +13571,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -13467,7 +13913,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_portals_nk_template_rels_count_get**
-> InlineResponse200 teams_id_portals_nk_template_rels_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_portals_nk_template_rels_count_get(id, nk, where=where)
 
 Counts templateRels of Portal.
 
@@ -13508,7 +13954,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -13850,7 +14296,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_portals_nk_templates_count_get**
-> InlineResponse200 teams_id_portals_nk_templates_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_portals_nk_templates_count_get(id, nk, where=where)
 
 Counts templates of Portal.
 
@@ -13891,7 +14337,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -14452,7 +14898,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_product_materials_count_get**
-> InlineResponse200 teams_id_product_materials_count_get(id, where=where)
+> InlineResponse2001 teams_id_product_materials_count_get(id, where=where)
 
 Counts productMaterials of Team.
 
@@ -14491,7 +14937,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -14929,7 +15375,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_product_pdf_color_profiles_count_get**
-> InlineResponse200 teams_id_product_pdf_color_profiles_count_get(id, where=where)
+> InlineResponse2001 teams_id_product_pdf_color_profiles_count_get(id, where=where)
 
 Counts productPdfColorProfiles of Team.
 
@@ -14968,7 +15414,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -15296,7 +15742,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_product_size_materials_count_get**
-> InlineResponse200 teams_id_product_size_materials_count_get(id, where=where)
+> InlineResponse2001 teams_id_product_size_materials_count_get(id, where=where)
 
 Counts productSizeMaterials of Team.
 
@@ -15335,7 +15781,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -15991,7 +16437,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_team_data_designs_count_get**
-> InlineResponse200 teams_id_team_data_designs_count_get(id, where=where)
+> InlineResponse2001 teams_id_team_data_designs_count_get(id, where=where)
 
 Counts designs of DynamicData.
 
@@ -16030,7 +16476,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -16413,7 +16859,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_team_data_records_count_get**
-> InlineResponse200 teams_id_team_data_records_count_get(id, where=where)
+> InlineResponse2001 teams_id_team_data_records_count_get(id, where=where)
 
 Count Dynamic Data records
 
@@ -16452,7 +16898,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -17002,7 +17448,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_team_members_count_get**
-> InlineResponse200 teams_id_team_members_count_get(id, where=where)
+> InlineResponse2001 teams_id_team_members_count_get(id, where=where)
 
 Counts teamMembers of Team.
 
@@ -17041,7 +17487,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -17424,7 +17870,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_template_folders_count_get**
-> InlineResponse200 teams_id_template_folders_count_get(id, where=where)
+> InlineResponse2001 teams_id_template_folders_count_get(id, where=where)
 
 Counts templateFolders of Team.
 
@@ -17463,7 +17909,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -17793,7 +18239,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_templates_count_get**
-> InlineResponse200 teams_id_templates_count_get(id, where=where)
+> InlineResponse2001 teams_id_templates_count_get(id, where=where)
 
 Counts templates of Team.
 
@@ -17832,7 +18278,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -18109,7 +18555,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_templates_nk_designs_count_get**
-> InlineResponse200 teams_id_templates_nk_designs_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_templates_nk_designs_count_get(id, nk, where=where)
 
 Counts designs of Template.
 
@@ -18150,7 +18596,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -18492,7 +18938,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_templates_nk_members_count_get**
-> InlineResponse200 teams_id_templates_nk_members_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_templates_nk_members_count_get(id, nk, where=where)
 
 Counts members of Template.
 
@@ -18533,7 +18979,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -19258,7 +19704,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_templates_nk_portal_folders_count_get**
-> InlineResponse200 teams_id_templates_nk_portal_folders_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_templates_nk_portal_folders_count_get(id, nk, where=where)
 
 Counts portalFolders of Template.
 
@@ -19299,7 +19745,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -19807,7 +20253,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_templates_nk_portals_count_get**
-> InlineResponse200 teams_id_templates_nk_portals_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_templates_nk_portals_count_get(id, nk, where=where)
 
 Counts portals of Template.
 
@@ -19848,7 +20294,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -20356,7 +20802,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_templates_nk_tags_count_get**
-> InlineResponse200 teams_id_templates_nk_tags_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_templates_nk_tags_count_get(id, nk, where=where)
 
 Counts tags of Template.
 
@@ -20397,7 +20843,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -21015,7 +21461,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_templates_nk_template_members_count_get**
-> InlineResponse200 teams_id_templates_nk_template_members_count_get(id, nk, where=where)
+> InlineResponse2001 teams_id_templates_nk_template_members_count_get(id, nk, where=where)
 
 Counts templateMembers of Template.
 
@@ -21056,7 +21502,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -21616,7 +22062,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_id_workflows_count_get**
-> InlineResponse200 teams_id_workflows_count_get(id, where=where)
+> InlineResponse2001 teams_id_workflows_count_get(id, where=where)
 
 Counts workflows of Team.
 
@@ -21655,7 +22101,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -21985,7 +22431,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_name_name_exists_get**
-> InlineResponse2001 teams_name_name_exists_get(name)
+> InlineResponse2002 teams_name_name_exists_get(name)
 
 Define whether team exists or not
 
@@ -22022,7 +22468,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -22240,7 +22686,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_subdomain_subdomain_exists_get**
-> InlineResponse2001 teams_subdomain_subdomain_exists_get(subdomain)
+> InlineResponse2002 teams_subdomain_subdomain_exists_get(subdomain)
 
 Define whether team exists or not
 
@@ -22277,7 +22723,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -22291,7 +22737,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **teams_update_post**
-> InlineResponse2002 teams_update_post(where=where, data=data)
+> InlineResponse2003 teams_update_post(where=where, data=data)
 
 Update instances of the model matched by {{where}} from the data source.
 
@@ -22330,7 +22776,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

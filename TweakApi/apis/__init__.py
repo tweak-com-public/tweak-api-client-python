@@ -3,6 +3,7 @@ from __future__ import absolute_import
 # import apis into api package
 from .billing_api import BillingApi
 from .builder_asset_background_api import BuilderAssetBackgroundApi
+from .builder_asset_url_api import BuilderAssetUrlApi
 from .customer_api import CustomerApi
 from .data_source_api import DataSourceApi
 from .data_source_key_api import DataSourceKeyApi
@@ -54,4 +55,5 @@ from .template_api import TemplateApi
 from .template_member_api import TemplateMemberApi
 from .template_permission_set_api import TemplatePermissionSetApi
 from .template_tag_api import TemplateTagApi
+from .test_cache_api import TestCacheApi
 from .workflow_api import WorkflowApi
