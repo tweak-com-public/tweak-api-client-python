@@ -9,6 +9,8 @@ Method | HTTP request | Description
 [**portals_count_get**](PortalApi.md#portals_count_get) | **GET** /Portals/count | Count instances of the model matched by where from the data source.
 [**portals_find_one_get**](PortalApi.md#portals_find_one_get) | **GET** /Portals/findOne | Find first instance of the model matched by filter from the data source.
 [**portals_get**](PortalApi.md#portals_get) | **GET** /Portals | Find all instances of the model matched by filter from the data source.
+[**portals_id_builder_config_default_get**](PortalApi.md#portals_id_builder_config_default_get) | **GET** /Portals/{id}/builderConfig/default | Get default TeamBuilderConfig for this Portal
+[**portals_id_default_builder_config_get**](PortalApi.md#portals_id_default_builder_config_get) | **GET** /Portals/{id}/defaultBuilderConfig | Fetches belongsTo relation defaultBuilderConfig.
 [**portals_id_delete**](PortalApi.md#portals_id_delete) | **DELETE** /Portals/{id} | Delete a model instance by {{id}} from the data source.
 [**portals_id_design_folders_count_get**](PortalApi.md#portals_id_design_folders_count_get) | **GET** /Portals/{id}/designFolders/count | Counts designFolders of Portal.
 [**portals_id_design_folders_delete**](PortalApi.md#portals_id_design_folders_delete) | **DELETE** /Portals/{id}/designFolders | Deletes all designFolders of this model.
@@ -410,6 +412,110 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[Portal]**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_builder_config_default_get**
+> TeamBuilderConfig portals_id_builder_config_default_get(id)
+
+Get default TeamBuilderConfig for this Portal
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+
+try: 
+    # Get default TeamBuilderConfig for this Portal
+    api_response = api_instance.portals_id_builder_config_default_get(id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_builder_config_default_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **portals_id_default_builder_config_get**
+> TeamBuilderConfig portals_id_default_builder_config_get(id, refresh=refresh)
+
+Fetches belongsTo relation defaultBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.PortalApi()
+id = 'id_example' # str | Portal id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation defaultBuilderConfig.
+    api_response = api_instance.portals_id_default_builder_config_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PortalApi->portals_id_default_builder_config_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Portal id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
 
 ### Authorization
 

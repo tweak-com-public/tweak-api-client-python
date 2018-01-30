@@ -14,6 +14,13 @@ Method | HTTP request | Description
 [**team_builder_configs_id_get**](TeamBuilderConfigApi.md#team_builder_configs_id_get) | **GET** /TeamBuilderConfigs/{id} | Find a model instance by {{id}} from the data source.
 [**team_builder_configs_id_head**](TeamBuilderConfigApi.md#team_builder_configs_id_head) | **HEAD** /TeamBuilderConfigs/{id} | Check whether a model instance exists in the data source.
 [**team_builder_configs_id_patch**](TeamBuilderConfigApi.md#team_builder_configs_id_patch) | **PATCH** /TeamBuilderConfigs/{id} | Patch attributes for a model instance and persist it into the data source.
+[**team_builder_configs_id_portals_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_portals_count_get) | **GET** /TeamBuilderConfigs/{id}/portals/count | Counts portals of TeamBuilderConfig.
+[**team_builder_configs_id_portals_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_portals_delete) | **DELETE** /TeamBuilderConfigs/{id}/portals | Deletes all portals of this model.
+[**team_builder_configs_id_portals_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_portals_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/portals/{fk} | Delete a related item by id for portals.
+[**team_builder_configs_id_portals_fk_get**](TeamBuilderConfigApi.md#team_builder_configs_id_portals_fk_get) | **GET** /TeamBuilderConfigs/{id}/portals/{fk} | Find a related item by id for portals.
+[**team_builder_configs_id_portals_fk_put**](TeamBuilderConfigApi.md#team_builder_configs_id_portals_fk_put) | **PUT** /TeamBuilderConfigs/{id}/portals/{fk} | Update a related item by id for portals.
+[**team_builder_configs_id_portals_get**](TeamBuilderConfigApi.md#team_builder_configs_id_portals_get) | **GET** /TeamBuilderConfigs/{id}/portals | Queries portals of TeamBuilderConfig.
+[**team_builder_configs_id_portals_post**](TeamBuilderConfigApi.md#team_builder_configs_id_portals_post) | **POST** /TeamBuilderConfigs/{id}/portals | Creates a new instance in portals of this model.
 [**team_builder_configs_id_product_groups_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_count_get) | **GET** /TeamBuilderConfigs/{id}/productGroups/count | Counts productGroups of TeamBuilderConfig.
 [**team_builder_configs_id_product_groups_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_delete) | **DELETE** /TeamBuilderConfigs/{id}/productGroups | Deletes all productGroups of this model.
 [**team_builder_configs_id_product_groups_fk_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_product_groups_fk_delete) | **DELETE** /TeamBuilderConfigs/{id}/productGroups/{fk} | Delete a related item by id for productGroups.
@@ -622,6 +629,375 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_portals_count_get**
+> InlineResponse2001 team_builder_configs_id_portals_count_get(id, where=where)
+
+Counts portals of TeamBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+where = 'where_example' # str | Criteria to match model instances (optional)
+
+try: 
+    # Counts portals of TeamBuilderConfig.
+    api_response = api_instance.team_builder_configs_id_portals_count_get(id, where=where)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_portals_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **where** | **str**| Criteria to match model instances | [optional] 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_portals_delete**
+> team_builder_configs_id_portals_delete(id)
+
+Deletes all portals of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+
+try: 
+    # Deletes all portals of this model.
+    api_instance.team_builder_configs_id_portals_delete(id)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_portals_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_portals_fk_delete**
+> team_builder_configs_id_portals_fk_delete(id, fk)
+
+Delete a related item by id for portals.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for portals
+
+try: 
+    # Delete a related item by id for portals.
+    api_instance.team_builder_configs_id_portals_fk_delete(id, fk)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_portals_fk_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for portals | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_portals_fk_get**
+> Portal team_builder_configs_id_portals_fk_get(id, fk)
+
+Find a related item by id for portals.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for portals
+
+try: 
+    # Find a related item by id for portals.
+    api_response = api_instance.team_builder_configs_id_portals_fk_get(id, fk)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_portals_fk_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for portals | 
+
+### Return type
+
+[**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_portals_fk_put**
+> Portal team_builder_configs_id_portals_fk_put(id, fk, data=data)
+
+Update a related item by id for portals.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+fk = 'fk_example' # str | Foreign key for portals
+data = TweakApi.Portal() # Portal |  (optional)
+
+try: 
+    # Update a related item by id for portals.
+    api_response = api_instance.team_builder_configs_id_portals_fk_put(id, fk, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_portals_fk_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **fk** | **str**| Foreign key for portals | 
+ **data** | [**Portal**](Portal.md)|  | [optional] 
+
+### Return type
+
+[**Portal**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_portals_get**
+> list[Portal] team_builder_configs_id_portals_get(id, filter=filter)
+
+Queries portals of TeamBuilderConfig.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+filter = 'filter_example' # str |  (optional)
+
+try: 
+    # Queries portals of TeamBuilderConfig.
+    api_response = api_instance.team_builder_configs_id_portals_get(id, filter=filter)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_portals_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **filter** | **str**|  | [optional] 
+
+### Return type
+
+[**list[Portal]**](Portal.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_portals_post**
+> Portal team_builder_configs_id_portals_post(id, data=data)
+
+Creates a new instance in portals of this model.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+data = TweakApi.Portal() # Portal |  (optional)
+
+try: 
+    # Creates a new instance in portals of this model.
+    api_response = api_instance.team_builder_configs_id_portals_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_portals_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
+ **data** | [**Portal**](Portal.md)|  | [optional] 
+
+### Return type
+
+[**Portal**](Portal.md)
 
 ### Authorization
 
