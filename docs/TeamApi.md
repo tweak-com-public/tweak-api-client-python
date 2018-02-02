@@ -16,6 +16,7 @@ Method | HTTP request | Description
 [**teams_id_brand_put**](TeamApi.md#teams_id_brand_put) | **PUT** /Teams/{id}/brand | Update brand of this model.
 [**teams_id_builder_configs_count_get**](TeamApi.md#teams_id_builder_configs_count_get) | **GET** /Teams/{id}/builderConfigs/count | Counts builderConfigs of Team.
 [**teams_id_builder_configs_default_get**](TeamApi.md#teams_id_builder_configs_default_get) | **GET** /Teams/{id}/builderConfigs/default | Get default TeamBuilderConfig for this Team
+[**teams_id_builder_configs_default_product_size_materials_get**](TeamApi.md#teams_id_builder_configs_default_product_size_materials_get) | **GET** /Teams/{id}/builderConfigs/default/productSizeMaterials | Get default TeamBuilderConfig ProductSizeMaterials for this Team
 [**teams_id_builder_configs_delete**](TeamApi.md#teams_id_builder_configs_delete) | **DELETE** /Teams/{id}/builderConfigs | Deletes all builderConfigs of this model.
 [**teams_id_builder_configs_fk_delete**](TeamApi.md#teams_id_builder_configs_fk_delete) | **DELETE** /Teams/{id}/builderConfigs/{fk} | Delete a related item by id for builderConfigs.
 [**teams_id_builder_configs_fk_get**](TeamApi.md#teams_id_builder_configs_fk_get) | **GET** /Teams/{id}/builderConfigs/{fk} | Find a related item by id for builderConfigs.
@@ -1028,6 +1029,57 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_builder_configs_default_product_size_materials_get**
+> list[ProductSizeMaterial] teams_id_builder_configs_default_product_size_materials_get(id)
+
+Get default TeamBuilderConfig ProductSizeMaterials for this Team
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+
+try: 
+    # Get default TeamBuilderConfig ProductSizeMaterials for this Team
+    api_response = api_instance.teams_id_builder_configs_default_product_size_materials_get(id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_builder_configs_default_product_size_materials_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+
+### Return type
+
+[**list[ProductSizeMaterial]**](ProductSizeMaterial.md)
 
 ### Authorization
 

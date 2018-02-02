@@ -30,23 +30,41 @@ import unittest
 
 import TweakApi
 from TweakApi.rest import ApiException
-from TweakApi.models.template_tag import TemplateTag
+from TweakApi.apis.public_v_api import PublicVApi
 
 
-class TestTemplateTag(unittest.TestCase):
-    """ TemplateTag unit test stubs """
+class TestPublicVApi(unittest.TestCase):
+    """ PublicVApi unit test stubs """
 
     def setUp(self):
-        pass
+        self.api = TweakApi.apis.public_v_api.PublicVApi()
 
     def tearDown(self):
         pass
 
-    def testTemplateTag(self):
+    def test_v1_base_locale_country_code_get(self):
         """
-        Test TemplateTag
+        Test case for v1_base_locale_country_code_get
+
+        Get locale from Country Code
         """
-        model = TweakApi.models.template_tag.TemplateTag()
+        pass
+
+    def test_v1_base_locale_country_name_get(self):
+        """
+        Test case for v1_base_locale_country_name_get
+
+        Get locale from Country Name
+        """
+        pass
+
+    def test_v1_base_locale_get(self):
+        """
+        Test case for v1_base_locale_get
+
+        Get locale from client IP
+        """
+        pass
 
 
 if __name__ == '__main__':
