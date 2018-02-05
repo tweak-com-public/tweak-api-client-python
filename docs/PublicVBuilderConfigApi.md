@@ -60,7 +60,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **v1_builder_config_default_product_size_materials_get**
-> ProductSizeMaterial v1_builder_config_default_product_size_materials_get()
+> list[ProductSizeMaterial] v1_builder_config_default_product_size_materials_get()
 
 Get default BuilderConfig ProductSizeMaterial
 
@@ -97,7 +97,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ProductSizeMaterial**](ProductSizeMaterial.md)
+[**list[ProductSizeMaterial]**](ProductSizeMaterial.md)
 
 ### Authorization
 

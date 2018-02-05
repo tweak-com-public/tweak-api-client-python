@@ -35,6 +35,7 @@ from .product_size_api import ProductSizeApi
 from .product_size_material_api import ProductSizeMaterialApi
 from .product_tag_api import ProductTagApi
 from .product_type_api import ProductTypeApi
+from .public_v_api import PublicVApi
 from .public_v_auth_api import PublicVAuthApi
 from .public_v_builder_asset_api import PublicVBuilderAssetApi
 from .public_v_builder_config_api import PublicVBuilderConfigApi

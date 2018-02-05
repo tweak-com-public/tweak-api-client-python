@@ -146,6 +146,7 @@ Method | HTTP request | Description
 [**team_members_id_team_brand_put**](TeamMemberApi.md#team_members_id_team_brand_put) | **PUT** /TeamMembers/{id}/team/brand | Update brand of this model.
 [**team_members_id_team_builder_configs_count_get**](TeamMemberApi.md#team_members_id_team_builder_configs_count_get) | **GET** /TeamMembers/{id}/team/builderConfigs/count | Counts builderConfigs of Team.
 [**team_members_id_team_builder_configs_default_get**](TeamMemberApi.md#team_members_id_team_builder_configs_default_get) | **GET** /TeamMembers/{id}/team/builderConfigs/default | Get default Team Builder Config
+[**team_members_id_team_builder_configs_default_product_size_material_get**](TeamMemberApi.md#team_members_id_team_builder_configs_default_product_size_material_get) | **GET** /TeamMembers/{id}/team/builderConfigs/default/productSizeMaterial | Get default Team Builder Config Product Size Materials
 [**team_members_id_team_builder_configs_delete**](TeamMemberApi.md#team_members_id_team_builder_configs_delete) | **DELETE** /TeamMembers/{id}/team/builderConfigs | Deletes all builderConfigs of this model.
 [**team_members_id_team_builder_configs_fk_delete**](TeamMemberApi.md#team_members_id_team_builder_configs_fk_delete) | **DELETE** /TeamMembers/{id}/team/builderConfigs/{fk} | Delete a related item by id for builderConfigs.
 [**team_members_id_team_builder_configs_fk_get**](TeamMemberApi.md#team_members_id_team_builder_configs_fk_get) | **GET** /TeamMembers/{id}/team/builderConfigs/{fk} | Find a related item by id for builderConfigs.
@@ -7798,6 +7799,57 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_builder_configs_default_product_size_material_get**
+> list[ProductSizeMaterial] team_members_id_team_builder_configs_default_product_size_material_get(id)
+
+Get default Team Builder Config Product Size Materials
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+
+try: 
+    # Get default Team Builder Config Product Size Materials
+    api_response = api_instance.team_members_id_team_builder_configs_default_product_size_material_get(id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_builder_configs_default_product_size_material_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+
+### Return type
+
+[**list[ProductSizeMaterial]**](ProductSizeMaterial.md)
 
 ### Authorization
 
