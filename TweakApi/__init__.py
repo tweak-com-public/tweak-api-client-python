@@ -27,12 +27,20 @@ from __future__ import absolute_import
 # import models into sdk package
 from .models.axes import Axes
 from .models.billing import Billing
+from .models.billing_bank_account import BillingBankAccount
 from .models.billing_card import BillingCard
 from .models.billing_invoice import BillingInvoice
 from .models.billing_invoice_line import BillingInvoiceLine
 from .models.billing_limit import BillingLimit
 from .models.billing_limit_counter import BillingLimitCounter
 from .models.billing_plan import BillingPlan
+from .models.billing_source import BillingSource
+from .models.billing_source_ach_credit_transfer import BillingSourceAchCreditTransfer
+from .models.billing_source_owner import BillingSourceOwner
+from .models.billing_source_receiver import BillingSourceReceiver
+from .models.billing_source_redirect import BillingSourceRedirect
+from .models.billing_source_sepa_debit import BillingSourceSepaDebit
+from .models.billing_source_sofort import BillingSourceSofort
 from .models.billing_subscription import BillingSubscription
 from .models.billing_subscription_item import BillingSubscriptionItem
 from .models.bounds import Bounds

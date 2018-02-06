@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **statement_description** | **str** |  | [optional] 
 **trial_period_days** | **float** |  | [optional] 
 **type** | **str** |  | [optional] 
+**team_id** | **str** |  | [optional] 
 **limit** | [**BillingLimit**](BillingLimit.md) |  | [optional] 
 **created** | **datetime** |  | [optional] 
 

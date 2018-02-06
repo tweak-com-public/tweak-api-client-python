@@ -22,32 +22,32 @@
     limitations under the License.
 """
 
+from __future__ import absolute_import
+
+import os
 import sys
-from setuptools import setup, find_packages
+import unittest
 
-NAME = "TweakApi"
-VERSION = "1.0.7-alpha.2"
+import TweakApi
+from TweakApi.rest import ApiException
+from TweakApi.models.billing_source_receiver import BillingSourceReceiver
 
-# To install the library, run the following
-#
-# python setup.py install
-#
-# prerequisite: setuptools
-# http://pypi.python.org/pypi/setuptools
 
-REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil"]
+class TestBillingSourceReceiver(unittest.TestCase):
+    """ BillingSourceReceiver unit test stubs """
 
-setup(
-    name=NAME,
-    version=VERSION,
-    description="tweak-api",
-    author_email="",
-    url="",
-    keywords=["Swagger", "tweak-api"],
-    install_requires=REQUIRES,
-    packages=find_packages(),
-    include_package_data=True,
-    long_description="""\
-    Tweak API to integrate with all the Tweak services.  You can find out more about Tweak      at &lt;a href&#x3D;&#39;https://www.tweak.com&#39;&gt;https://www.tweak.com&lt;/a&gt;, #tweak.
-    """
-)
+    def setUp(self):
+        pass
+
+    def tearDown(self):
+        pass
+
+    def testBillingSourceReceiver(self):
+        """
+        Test BillingSourceReceiver
+        """
+        model = TweakApi.models.billing_source_receiver.BillingSourceReceiver()
+
+
+if __name__ == '__main__':
+    unittest.main()

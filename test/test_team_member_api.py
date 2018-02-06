@@ -1042,6 +1042,38 @@ class TestTeamMemberApi(unittest.TestCase):
         """
         pass
 
+    def test_team_members_id_team_billing_bank_account_delete(self):
+        """
+        Test case for team_members_id_team_billing_bank_account_delete
+
+        Delete Team Billing BankAccount
+        """
+        pass
+
+    def test_team_members_id_team_billing_bank_account_post(self):
+        """
+        Test case for team_members_id_team_billing_bank_account_post
+
+        Create Team Billing BankAccount
+        """
+        pass
+
+    def test_team_members_id_team_billing_bank_account_put(self):
+        """
+        Test case for team_members_id_team_billing_bank_account_put
+
+        Update Team Billing BankAccount
+        """
+        pass
+
+    def test_team_members_id_team_billing_bank_account_verify_post(self):
+        """
+        Test case for team_members_id_team_billing_bank_account_verify_post
+
+        Create Team Billing BankAccount
+        """
+        pass
+
     def test_team_members_id_team_billing_cached_get(self):
         """
         Test case for team_members_id_team_billing_cached_get
@@ -1103,6 +1135,30 @@ class TestTeamMemberApi(unittest.TestCase):
         Test case for team_members_id_team_billing_put
 
         Update Team Billing
+        """
+        pass
+
+    def test_team_members_id_team_billing_source_delete(self):
+        """
+        Test case for team_members_id_team_billing_source_delete
+
+        Delete Team Billing Source
+        """
+        pass
+
+    def test_team_members_id_team_billing_source_post(self):
+        """
+        Test case for team_members_id_team_billing_source_post
+
+        Create Team Billing Source
+        """
+        pass
+
+    def test_team_members_id_team_billing_source_put(self):
+        """
+        Test case for team_members_id_team_billing_source_put
+
+        Update Team Billing Source
         """
         pass
 
