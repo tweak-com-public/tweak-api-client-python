@@ -140,6 +140,8 @@ Method | HTTP request | Description
 [**team_members_id_team_billing_invoices_fk_post**](TeamMemberApi.md#team_members_id_team_billing_invoices_fk_post) | **POST** /TeamMembers/{id}/team/billing/invoices/{fk} | Pay Team Billing Invoice
 [**team_members_id_team_billing_invoices_get**](TeamMemberApi.md#team_members_id_team_billing_invoices_get) | **GET** /TeamMembers/{id}/team/billing/invoices | List Team Billing Invoices
 [**team_members_id_team_billing_invoices_upcoming_get**](TeamMemberApi.md#team_members_id_team_billing_invoices_upcoming_get) | **GET** /TeamMembers/{id}/team/billing/invoices/upcoming | List Upcoming Team Billing Invoices
+[**team_members_id_team_billing_limit_limit_increase_post**](TeamMemberApi.md#team_members_id_team_billing_limit_limit_increase_post) | **POST** /TeamMembers/{id}/team/billing/limit/{limit}/increase | Increase Team Billing Limit by Limit
+[**team_members_id_team_billing_limit_limit_increase_value_get**](TeamMemberApi.md#team_members_id_team_billing_limit_limit_increase_value_get) | **GET** /TeamMembers/{id}/team/billing/limit/{limit}/increase/{value} | Check if Team Billing Limit can be increased by Limit
 [**team_members_id_team_billing_put**](TeamMemberApi.md#team_members_id_team_billing_put) | **PUT** /TeamMembers/{id}/team/billing | Update Team Billing
 [**team_members_id_team_billing_source_delete**](TeamMemberApi.md#team_members_id_team_billing_source_delete) | **DELETE** /TeamMembers/{id}/team/billing/source | Delete Team Billing Source
 [**team_members_id_team_billing_source_post**](TeamMemberApi.md#team_members_id_team_billing_source_post) | **POST** /TeamMembers/{id}/team/billing/source | Create Team Billing Source
@@ -7495,6 +7497,116 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**BillingInvoice**](BillingInvoice.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_billing_limit_limit_increase_post**
+> object team_members_id_team_billing_limit_limit_increase_post(id, limit, data=data)
+
+Increase Team Billing Limit by Limit
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+limit = 'limit_example' # str | Limit name
+data = TweakApi.BillingLimitLog() # BillingLimitLog |  (optional)
+
+try: 
+    # Increase Team Billing Limit by Limit
+    api_response = api_instance.team_members_id_team_billing_limit_limit_increase_post(id, limit, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_limit_limit_increase_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **limit** | **str**| Limit name | 
+ **data** | [**BillingLimitLog**](BillingLimitLog.md)|  | [optional] 
+
+### Return type
+
+**object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_billing_limit_limit_increase_value_get**
+> InlineResponse2005 team_members_id_team_billing_limit_limit_increase_value_get(id, limit, value)
+
+Check if Team Billing Limit can be increased by Limit
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+limit = 'limit_example' # str | Limit name
+value = 'value_example' # str | Value
+
+try: 
+    # Check if Team Billing Limit can be increased by Limit
+    api_response = api_instance.team_members_id_team_billing_limit_limit_increase_value_get(id, limit, value)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_limit_limit_increase_value_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **limit** | **str**| Limit name | 
+ **value** | **str**| Value | 
+
+### Return type
+
+[**InlineResponse2005**](InlineResponse2005.md)
 
 ### Authorization
 
