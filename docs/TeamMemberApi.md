@@ -129,6 +129,10 @@ Method | HTTP request | Description
 [**team_members_id_target_model_target_id_invite_invitee_post**](TeamMemberApi.md#team_members_id_target_model_target_id_invite_invitee_post) | **POST** /TeamMembers/{id}/{targetModel}/{targetId}/invite/{invitee} | Invite somebody to join a team, portal or other targets
 [**team_members_id_target_model_target_id_invite_post**](TeamMemberApi.md#team_members_id_target_model_target_id_invite_post) | **POST** /TeamMembers/{id}/{targetModel}/{targetId}/invite | Invite a group of people to join a team, portal or other targets
 [**team_members_id_team_billing_available_plans_get**](TeamMemberApi.md#team_members_id_team_billing_available_plans_get) | **GET** /TeamMembers/{id}/team/billing/availablePlans | Get Available Plans
+[**team_members_id_team_billing_bank_account_delete**](TeamMemberApi.md#team_members_id_team_billing_bank_account_delete) | **DELETE** /TeamMembers/{id}/team/billing/bankAccount | Delete Team Billing BankAccount
+[**team_members_id_team_billing_bank_account_post**](TeamMemberApi.md#team_members_id_team_billing_bank_account_post) | **POST** /TeamMembers/{id}/team/billing/bankAccount | Create Team Billing BankAccount
+[**team_members_id_team_billing_bank_account_put**](TeamMemberApi.md#team_members_id_team_billing_bank_account_put) | **PUT** /TeamMembers/{id}/team/billing/bankAccount | Update Team Billing BankAccount
+[**team_members_id_team_billing_bank_account_verify_post**](TeamMemberApi.md#team_members_id_team_billing_bank_account_verify_post) | **POST** /TeamMembers/{id}/team/billing/bankAccount/verify | Create Team Billing BankAccount
 [**team_members_id_team_billing_cached_get**](TeamMemberApi.md#team_members_id_team_billing_cached_get) | **GET** /TeamMembers/{id}/team/billing/cached | Get Cached version of Team Billing
 [**team_members_id_team_billing_card_delete**](TeamMemberApi.md#team_members_id_team_billing_card_delete) | **DELETE** /TeamMembers/{id}/team/billing/card | Delete Team Billing Card
 [**team_members_id_team_billing_card_post**](TeamMemberApi.md#team_members_id_team_billing_card_post) | **POST** /TeamMembers/{id}/team/billing/card | Create Team Billing Card
@@ -136,7 +140,12 @@ Method | HTTP request | Description
 [**team_members_id_team_billing_invoices_fk_post**](TeamMemberApi.md#team_members_id_team_billing_invoices_fk_post) | **POST** /TeamMembers/{id}/team/billing/invoices/{fk} | Pay Team Billing Invoice
 [**team_members_id_team_billing_invoices_get**](TeamMemberApi.md#team_members_id_team_billing_invoices_get) | **GET** /TeamMembers/{id}/team/billing/invoices | List Team Billing Invoices
 [**team_members_id_team_billing_invoices_upcoming_get**](TeamMemberApi.md#team_members_id_team_billing_invoices_upcoming_get) | **GET** /TeamMembers/{id}/team/billing/invoices/upcoming | List Upcoming Team Billing Invoices
+[**team_members_id_team_billing_limit_limit_increase_post**](TeamMemberApi.md#team_members_id_team_billing_limit_limit_increase_post) | **POST** /TeamMembers/{id}/team/billing/limit/{limit}/increase | Increase Team Billing Limit by Limit
+[**team_members_id_team_billing_limit_limit_increase_value_get**](TeamMemberApi.md#team_members_id_team_billing_limit_limit_increase_value_get) | **GET** /TeamMembers/{id}/team/billing/limit/{limit}/increase/{value} | Check if Team Billing Limit can be increased by Limit
 [**team_members_id_team_billing_put**](TeamMemberApi.md#team_members_id_team_billing_put) | **PUT** /TeamMembers/{id}/team/billing | Update Team Billing
+[**team_members_id_team_billing_source_delete**](TeamMemberApi.md#team_members_id_team_billing_source_delete) | **DELETE** /TeamMembers/{id}/team/billing/source | Delete Team Billing Source
+[**team_members_id_team_billing_source_post**](TeamMemberApi.md#team_members_id_team_billing_source_post) | **POST** /TeamMembers/{id}/team/billing/source | Create Team Billing Source
+[**team_members_id_team_billing_source_put**](TeamMemberApi.md#team_members_id_team_billing_source_put) | **PUT** /TeamMembers/{id}/team/billing/source | Update Team Billing Source
 [**team_members_id_team_billing_subscription_plan_put**](TeamMemberApi.md#team_members_id_team_billing_subscription_plan_put) | **PUT** /TeamMembers/{id}/team/billing/subscription/plan | Update Team Billing Subscription Plan
 [**team_members_id_team_billing_tax_evidence_get**](TeamMemberApi.md#team_members_id_team_billing_tax_evidence_get) | **GET** /TeamMembers/{id}/team/billing/taxEvidence | Get Team Billing Tax Evidence
 [**team_members_id_team_billing_uncached_get**](TeamMemberApi.md#team_members_id_team_billing_uncached_get) | **GET** /TeamMembers/{id}/team/billing/uncached | Get Team Billing
@@ -146,6 +155,7 @@ Method | HTTP request | Description
 [**team_members_id_team_brand_put**](TeamMemberApi.md#team_members_id_team_brand_put) | **PUT** /TeamMembers/{id}/team/brand | Update brand of this model.
 [**team_members_id_team_builder_configs_count_get**](TeamMemberApi.md#team_members_id_team_builder_configs_count_get) | **GET** /TeamMembers/{id}/team/builderConfigs/count | Counts builderConfigs of Team.
 [**team_members_id_team_builder_configs_default_get**](TeamMemberApi.md#team_members_id_team_builder_configs_default_get) | **GET** /TeamMembers/{id}/team/builderConfigs/default | Get default Team Builder Config
+[**team_members_id_team_builder_configs_default_product_size_material_get**](TeamMemberApi.md#team_members_id_team_builder_configs_default_product_size_material_get) | **GET** /TeamMembers/{id}/team/builderConfigs/default/productSizeMaterial | Get default Team Builder Config Product Size Materials
 [**team_members_id_team_builder_configs_delete**](TeamMemberApi.md#team_members_id_team_builder_configs_delete) | **DELETE** /TeamMembers/{id}/team/builderConfigs | Deletes all builderConfigs of this model.
 [**team_members_id_team_builder_configs_fk_delete**](TeamMemberApi.md#team_members_id_team_builder_configs_fk_delete) | **DELETE** /TeamMembers/{id}/team/builderConfigs/{fk} | Delete a related item by id for builderConfigs.
 [**team_members_id_team_builder_configs_fk_get**](TeamMemberApi.md#team_members_id_team_builder_configs_fk_get) | **GET** /TeamMembers/{id}/team/builderConfigs/{fk} | Find a related item by id for builderConfigs.
@@ -6924,6 +6934,216 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **team_members_id_team_billing_bank_account_delete**
+> Billing team_members_id_team_billing_bank_account_delete(id)
+
+Delete Team Billing BankAccount
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+
+try: 
+    # Delete Team Billing BankAccount
+    api_response = api_instance.team_members_id_team_billing_bank_account_delete(id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_bank_account_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_billing_bank_account_post**
+> Billing team_members_id_team_billing_bank_account_post(id, data=data)
+
+Create Team Billing BankAccount
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+data = TweakApi.TeamMember() # TeamMember |  (optional)
+
+try: 
+    # Create Team Billing BankAccount
+    api_response = api_instance.team_members_id_team_billing_bank_account_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_bank_account_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_billing_bank_account_put**
+> Billing team_members_id_team_billing_bank_account_put(id, data=data)
+
+Update Team Billing BankAccount
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+data = TweakApi.TeamMember() # TeamMember |  (optional)
+
+try: 
+    # Update Team Billing BankAccount
+    api_response = api_instance.team_members_id_team_billing_bank_account_put(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_bank_account_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_billing_bank_account_verify_post**
+> Billing team_members_id_team_billing_bank_account_verify_post(id, data=data)
+
+Create Team Billing BankAccount
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+data = TweakApi.TeamMember() # TeamMember |  (optional)
+
+try: 
+    # Create Team Billing BankAccount
+    api_response = api_instance.team_members_id_team_billing_bank_account_verify_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_bank_account_verify_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **team_members_id_team_billing_cached_get**
 > Billing team_members_id_team_billing_cached_get(id)
 
@@ -7289,6 +7509,116 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **team_members_id_team_billing_limit_limit_increase_post**
+> object team_members_id_team_billing_limit_limit_increase_post(id, limit, data=data)
+
+Increase Team Billing Limit by Limit
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+limit = 'limit_example' # str | Limit name
+data = TweakApi.BillingLimitLog() # BillingLimitLog |  (optional)
+
+try: 
+    # Increase Team Billing Limit by Limit
+    api_response = api_instance.team_members_id_team_billing_limit_limit_increase_post(id, limit, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_limit_limit_increase_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **limit** | **str**| Limit name | 
+ **data** | [**BillingLimitLog**](BillingLimitLog.md)|  | [optional] 
+
+### Return type
+
+**object**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_billing_limit_limit_increase_value_get**
+> InlineResponse2005 team_members_id_team_billing_limit_limit_increase_value_get(id, limit, value)
+
+Check if Team Billing Limit can be increased by Limit
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+limit = 'limit_example' # str | Limit name
+value = 'value_example' # str | Value
+
+try: 
+    # Check if Team Billing Limit can be increased by Limit
+    api_response = api_instance.team_members_id_team_billing_limit_limit_increase_value_get(id, limit, value)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_limit_limit_increase_value_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **limit** | **str**| Limit name | 
+ **value** | **str**| Value | 
+
+### Return type
+
+[**InlineResponse2005**](InlineResponse2005.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **team_members_id_team_billing_put**
 > Billing team_members_id_team_billing_put(id, data=data)
 
@@ -7318,6 +7648,163 @@ try:
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TeamMemberApi->team_members_id_team_billing_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_billing_source_delete**
+> Billing team_members_id_team_billing_source_delete(id)
+
+Delete Team Billing Source
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+
+try: 
+    # Delete Team Billing Source
+    api_response = api_instance.team_members_id_team_billing_source_delete(id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_source_delete: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_billing_source_post**
+> Billing team_members_id_team_billing_source_post(id, data=data)
+
+Create Team Billing Source
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+data = TweakApi.TeamMember() # TeamMember |  (optional)
+
+try: 
+    # Create Team Billing Source
+    api_response = api_instance.team_members_id_team_billing_source_post(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_source_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+ **data** | [**TeamMember**](TeamMember.md)|  | [optional] 
+
+### Return type
+
+[**Billing**](Billing.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_billing_source_put**
+> Billing team_members_id_team_billing_source_put(id, data=data)
+
+Update Team Billing Source
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+data = TweakApi.TeamMember() # TeamMember |  (optional)
+
+try: 
+    # Update Team Billing Source
+    api_response = api_instance.team_members_id_team_billing_source_put(id, data=data)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_billing_source_put: %s\n" % e)
 ```
 
 ### Parameters
@@ -7798,6 +8285,57 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_members_id_team_builder_configs_default_product_size_material_get**
+> list[ProductSizeMaterial] team_members_id_team_builder_configs_default_product_size_material_get(id)
+
+Get default Team Builder Config Product Size Materials
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamMemberApi()
+id = 'id_example' # str | TeamMember id
+
+try: 
+    # Get default Team Builder Config Product Size Materials
+    api_response = api_instance.team_members_id_team_builder_configs_default_product_size_material_get(id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamMemberApi->team_members_id_team_builder_configs_default_product_size_material_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamMember id | 
+
+### Return type
+
+[**list[ProductSizeMaterial]**](ProductSizeMaterial.md)
 
 ### Authorization
 
