@@ -12,6 +12,7 @@ Method | HTTP request | Description
 [**team_builder_configs_id_delete**](TeamBuilderConfigApi.md#team_builder_configs_id_delete) | **DELETE** /TeamBuilderConfigs/{id} | Delete a model instance by {{id}} from the data source.
 [**team_builder_configs_id_exists_get**](TeamBuilderConfigApi.md#team_builder_configs_id_exists_get) | **GET** /TeamBuilderConfigs/{id}/exists | Check whether a model instance exists in the data source.
 [**team_builder_configs_id_get**](TeamBuilderConfigApi.md#team_builder_configs_id_get) | **GET** /TeamBuilderConfigs/{id} | Find a model instance by {{id}} from the data source.
+[**team_builder_configs_id_global_get**](TeamBuilderConfigApi.md#team_builder_configs_id_global_get) | **GET** /TeamBuilderConfigs/{id}/global | Reset Team keys
 [**team_builder_configs_id_head**](TeamBuilderConfigApi.md#team_builder_configs_id_head) | **HEAD** /TeamBuilderConfigs/{id} | Check whether a model instance exists in the data source.
 [**team_builder_configs_id_patch**](TeamBuilderConfigApi.md#team_builder_configs_id_patch) | **PATCH** /TeamBuilderConfigs/{id} | Patch attributes for a model instance and persist it into the data source.
 [**team_builder_configs_id_portals_count_get**](TeamBuilderConfigApi.md#team_builder_configs_id_portals_count_get) | **GET** /TeamBuilderConfigs/{id}/portals/count | Counts portals of TeamBuilderConfig.
@@ -521,6 +522,57 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| Model id | 
  **filter** | **str**| Filter defining fields and include - must be a JSON-encoded string ({\&quot;something\&quot;:\&quot;value\&quot;}) | [optional] 
+
+### Return type
+
+[**TeamBuilderConfig**](TeamBuilderConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **team_builder_configs_id_global_get**
+> TeamBuilderConfig team_builder_configs_id_global_get(id)
+
+Reset Team keys
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamBuilderConfigApi()
+id = 'id_example' # str | TeamBuilderConfig id
+
+try: 
+    # Reset Team keys
+    api_response = api_instance.team_builder_configs_id_global_get(id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamBuilderConfigApi->team_builder_configs_id_global_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| TeamBuilderConfig id | 
 
 ### Return type
 
