@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**address** | **str** |  | [optional] 
+**address** | [**BillingAddress**](BillingAddress.md) |  | [optional] 
 **email** | **str** |  | [optional] 
 **name** | **str** |  | [optional] 
 **phone** | **str** |  | [optional] 
-**verified_address** | **str** |  | [optional] 
+**verified_address** | [**BillingAddress**](BillingAddress.md) |  | [optional] 
 **verified_email** | **str** |  | [optional] 
 **verified_name** | **str** |  | [optional] 
 **verified_phone** | **str** |  | [optional] 

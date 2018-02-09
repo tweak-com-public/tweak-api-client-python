@@ -30,11 +30,11 @@ import unittest
 
 import TweakApi
 from TweakApi.rest import ApiException
-from TweakApi.models.customer_permission_set import CustomerPermissionSet
+from TweakApi.models.billing_address import BillingAddress
 
 
-class TestCustomerPermissionSet(unittest.TestCase):
-    """ CustomerPermissionSet unit test stubs """
+class TestBillingAddress(unittest.TestCase):
+    """ BillingAddress unit test stubs """
 
     def setUp(self):
         pass
@@ -42,11 +42,11 @@ class TestCustomerPermissionSet(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testCustomerPermissionSet(self):
+    def testBillingAddress(self):
         """
-        Test CustomerPermissionSet
+        Test BillingAddress
         """
-        model = TweakApi.models.customer_permission_set.CustomerPermissionSet()
+        model = TweakApi.models.billing_address.BillingAddress()
 
 
 if __name__ == '__main__':

@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **routing_number** | **str** |  | [optional] 
 **status** | **str** |  | [optional] 
 **token** | **str** |  | [optional] 
+**address** | [**BillingAddress**](BillingAddress.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
