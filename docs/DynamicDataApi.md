@@ -9,6 +9,13 @@ Method | HTTP request | Description
 [**dynamic_data_count_get**](DynamicDataApi.md#dynamic_data_count_get) | **GET** /DynamicData/count | Count instances of the model matched by where from the data source.
 [**dynamic_data_find_one_get**](DynamicDataApi.md#dynamic_data_find_one_get) | **GET** /DynamicData/findOne | Find first instance of the model matched by filter from the data source.
 [**dynamic_data_get**](DynamicDataApi.md#dynamic_data_get) | **GET** /DynamicData | Find all instances of the model matched by filter from the data source.
+[**dynamic_data_id_data_source_mongo_get**](DynamicDataApi.md#dynamic_data_id_data_source_mongo_get) | **GET** /DynamicData/{id}/dataSourceMongo | Fetches belongsTo relation dataSourceMongo.
+[**dynamic_data_id_data_source_ms_sql_get**](DynamicDataApi.md#dynamic_data_id_data_source_ms_sql_get) | **GET** /DynamicData/{id}/dataSourceMsSql | Fetches belongsTo relation dataSourceMsSql.
+[**dynamic_data_id_data_source_my_sql_get**](DynamicDataApi.md#dynamic_data_id_data_source_my_sql_get) | **GET** /DynamicData/{id}/dataSourceMySql | Fetches belongsTo relation dataSourceMySql.
+[**dynamic_data_id_data_source_oracle_get**](DynamicDataApi.md#dynamic_data_id_data_source_oracle_get) | **GET** /DynamicData/{id}/dataSourceOracle | Fetches belongsTo relation dataSourceOracle.
+[**dynamic_data_id_data_source_postgre_sql_get**](DynamicDataApi.md#dynamic_data_id_data_source_postgre_sql_get) | **GET** /DynamicData/{id}/dataSourcePostgreSql | Fetches belongsTo relation dataSourcePostgreSql.
+[**dynamic_data_id_data_source_rest_get**](DynamicDataApi.md#dynamic_data_id_data_source_rest_get) | **GET** /DynamicData/{id}/dataSourceRest | Fetches belongsTo relation dataSourceRest.
+[**dynamic_data_id_data_source_soap_get**](DynamicDataApi.md#dynamic_data_id_data_source_soap_get) | **GET** /DynamicData/{id}/dataSourceSoap | Fetches belongsTo relation dataSourceSoap.
 [**dynamic_data_id_delete**](DynamicDataApi.md#dynamic_data_id_delete) | **DELETE** /DynamicData/{id} | Delete a model instance by {{id}} from the data source.
 [**dynamic_data_id_designs_count_get**](DynamicDataApi.md#dynamic_data_id_designs_count_get) | **GET** /DynamicData/{id}/designs/count | Counts designs of DynamicData.
 [**dynamic_data_id_designs_delete**](DynamicDataApi.md#dynamic_data_id_designs_delete) | **DELETE** /DynamicData/{id}/designs | Deletes all designs of this model.
@@ -18,6 +25,7 @@ Method | HTTP request | Description
 [**dynamic_data_id_designs_get**](DynamicDataApi.md#dynamic_data_id_designs_get) | **GET** /DynamicData/{id}/designs | Queries designs of DynamicData.
 [**dynamic_data_id_designs_post**](DynamicDataApi.md#dynamic_data_id_designs_post) | **POST** /DynamicData/{id}/designs | Creates a new instance in designs of this model.
 [**dynamic_data_id_exists_get**](DynamicDataApi.md#dynamic_data_id_exists_get) | **GET** /DynamicData/{id}/exists | Check whether a model instance exists in the data source.
+[**dynamic_data_id_fetch_raw_get**](DynamicDataApi.md#dynamic_data_id_fetch_raw_get) | **GET** /DynamicData/{id}/fetch/raw | Fetch raw datas from external servers.
 [**dynamic_data_id_get**](DynamicDataApi.md#dynamic_data_id_get) | **GET** /DynamicData/{id} | Find a model instance by {{id}} from the data source.
 [**dynamic_data_id_head**](DynamicDataApi.md#dynamic_data_id_head) | **HEAD** /DynamicData/{id} | Check whether a model instance exists in the data source.
 [**dynamic_data_id_patch**](DynamicDataApi.md#dynamic_data_id_patch) | **PATCH** /DynamicData/{id} | Patch attributes for a model instance and persist it into the data source.
@@ -285,6 +293,377 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[DynamicData]**](DynamicData.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **dynamic_data_id_data_source_mongo_get**
+> DataSourceMongo dynamic_data_id_data_source_mongo_get(id, refresh=refresh)
+
+Fetches belongsTo relation dataSourceMongo.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DynamicDataApi()
+id = 'id_example' # str | DynamicData id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceMongo.
+    api_response = api_instance.dynamic_data_id_data_source_mongo_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DynamicDataApi->dynamic_data_id_data_source_mongo_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| DynamicData id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceMongo**](DataSourceMongo.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **dynamic_data_id_data_source_ms_sql_get**
+> DataSourceMsSql dynamic_data_id_data_source_ms_sql_get(id, refresh=refresh)
+
+Fetches belongsTo relation dataSourceMsSql.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DynamicDataApi()
+id = 'id_example' # str | DynamicData id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceMsSql.
+    api_response = api_instance.dynamic_data_id_data_source_ms_sql_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DynamicDataApi->dynamic_data_id_data_source_ms_sql_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| DynamicData id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceMsSql**](DataSourceMsSql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **dynamic_data_id_data_source_my_sql_get**
+> DataSourceMySql dynamic_data_id_data_source_my_sql_get(id, refresh=refresh)
+
+Fetches belongsTo relation dataSourceMySql.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DynamicDataApi()
+id = 'id_example' # str | DynamicData id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceMySql.
+    api_response = api_instance.dynamic_data_id_data_source_my_sql_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DynamicDataApi->dynamic_data_id_data_source_my_sql_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| DynamicData id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceMySql**](DataSourceMySql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **dynamic_data_id_data_source_oracle_get**
+> DataSourceOracle dynamic_data_id_data_source_oracle_get(id, refresh=refresh)
+
+Fetches belongsTo relation dataSourceOracle.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DynamicDataApi()
+id = 'id_example' # str | DynamicData id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceOracle.
+    api_response = api_instance.dynamic_data_id_data_source_oracle_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DynamicDataApi->dynamic_data_id_data_source_oracle_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| DynamicData id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceOracle**](DataSourceOracle.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **dynamic_data_id_data_source_postgre_sql_get**
+> DataSourcePostgreSql dynamic_data_id_data_source_postgre_sql_get(id, refresh=refresh)
+
+Fetches belongsTo relation dataSourcePostgreSql.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DynamicDataApi()
+id = 'id_example' # str | DynamicData id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourcePostgreSql.
+    api_response = api_instance.dynamic_data_id_data_source_postgre_sql_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DynamicDataApi->dynamic_data_id_data_source_postgre_sql_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| DynamicData id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourcePostgreSql**](DataSourcePostgreSql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **dynamic_data_id_data_source_rest_get**
+> DataSourceRest dynamic_data_id_data_source_rest_get(id, refresh=refresh)
+
+Fetches belongsTo relation dataSourceRest.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DynamicDataApi()
+id = 'id_example' # str | DynamicData id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceRest.
+    api_response = api_instance.dynamic_data_id_data_source_rest_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DynamicDataApi->dynamic_data_id_data_source_rest_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| DynamicData id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceRest**](DataSourceRest.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **dynamic_data_id_data_source_soap_get**
+> DataSourceSoap dynamic_data_id_data_source_soap_get(id, refresh=refresh)
+
+Fetches belongsTo relation dataSourceSoap.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DynamicDataApi()
+id = 'id_example' # str | DynamicData id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceSoap.
+    api_response = api_instance.dynamic_data_id_data_source_soap_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DynamicDataApi->dynamic_data_id_data_source_soap_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| DynamicData id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceSoap**](DataSourceSoap.md)
 
 ### Authorization
 
@@ -756,6 +1135,59 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2002**](InlineResponse2002.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **dynamic_data_id_fetch_raw_get**
+> XAny dynamic_data_id_fetch_raw_get(id, params=params)
+
+Fetch raw datas from external servers.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.DynamicDataApi()
+id = 'id_example' # str | DynamicData id
+params = 'params_example' # str | Request parameters (optional)
+
+try: 
+    # Fetch raw datas from external servers.
+    api_response = api_instance.dynamic_data_id_fetch_raw_get(id, params=params)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DynamicDataApi->dynamic_data_id_fetch_raw_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| DynamicData id | 
+ **params** | **str**| Request parameters | [optional] 
+
+### Return type
+
+[**XAny**](XAny.md)
 
 ### Authorization
 

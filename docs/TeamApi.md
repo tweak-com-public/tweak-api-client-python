@@ -80,13 +80,6 @@ Method | HTTP request | Description
 [**teams_id_builder_configs_nk_product_types_rel_fk_put**](TeamApi.md#teams_id_builder_configs_nk_product_types_rel_fk_put) | **PUT** /Teams/{id}/builderConfigs/{nk}/productTypes/rel/{fk} | Add a related item by id for productTypes.
 [**teams_id_builder_configs_nk_team_get**](TeamApi.md#teams_id_builder_configs_nk_team_get) | **GET** /Teams/{id}/builderConfigs/{nk}/team | Fetches belongsTo relation team.
 [**teams_id_builder_configs_post**](TeamApi.md#teams_id_builder_configs_post) | **POST** /Teams/{id}/builderConfigs | Creates a new instance in builderConfigs of this model.
-[**teams_id_data_sources_count_get**](TeamApi.md#teams_id_data_sources_count_get) | **GET** /Teams/{id}/dataSources/count | Counts dataSources of Team.
-[**teams_id_data_sources_delete**](TeamApi.md#teams_id_data_sources_delete) | **DELETE** /Teams/{id}/dataSources | Deletes all dataSources of this model.
-[**teams_id_data_sources_fk_delete**](TeamApi.md#teams_id_data_sources_fk_delete) | **DELETE** /Teams/{id}/dataSources/{fk} | Delete a related item by id for dataSources.
-[**teams_id_data_sources_fk_get**](TeamApi.md#teams_id_data_sources_fk_get) | **GET** /Teams/{id}/dataSources/{fk} | Find a related item by id for dataSources.
-[**teams_id_data_sources_fk_put**](TeamApi.md#teams_id_data_sources_fk_put) | **PUT** /Teams/{id}/dataSources/{fk} | Update a related item by id for dataSources.
-[**teams_id_data_sources_get**](TeamApi.md#teams_id_data_sources_get) | **GET** /Teams/{id}/dataSources | Queries dataSources of Team.
-[**teams_id_data_sources_post**](TeamApi.md#teams_id_data_sources_post) | **POST** /Teams/{id}/dataSources | Creates a new instance in dataSources of this model.
 [**teams_id_delete**](TeamApi.md#teams_id_delete) | **DELETE** /Teams/{id} | Delete a model instance by {{id}} from the data source.
 [**teams_id_dynamic_datas_count_get**](TeamApi.md#teams_id_dynamic_datas_count_get) | **GET** /Teams/{id}/dynamicDatas/count | Counts dynamicDatas of Team.
 [**teams_id_dynamic_datas_delete**](TeamApi.md#teams_id_dynamic_datas_delete) | **DELETE** /Teams/{id}/dynamicDatas | Deletes all dynamicDatas of this model.
@@ -94,6 +87,13 @@ Method | HTTP request | Description
 [**teams_id_dynamic_datas_fk_get**](TeamApi.md#teams_id_dynamic_datas_fk_get) | **GET** /Teams/{id}/dynamicDatas/{fk} | Find a related item by id for dynamicDatas.
 [**teams_id_dynamic_datas_fk_put**](TeamApi.md#teams_id_dynamic_datas_fk_put) | **PUT** /Teams/{id}/dynamicDatas/{fk} | Update a related item by id for dynamicDatas.
 [**teams_id_dynamic_datas_get**](TeamApi.md#teams_id_dynamic_datas_get) | **GET** /Teams/{id}/dynamicDatas | Queries dynamicDatas of Team.
+[**teams_id_dynamic_datas_nk_data_source_mongo_get**](TeamApi.md#teams_id_dynamic_datas_nk_data_source_mongo_get) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourceMongo | Fetches belongsTo relation dataSourceMongo.
+[**teams_id_dynamic_datas_nk_data_source_ms_sql_get**](TeamApi.md#teams_id_dynamic_datas_nk_data_source_ms_sql_get) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourceMsSql | Fetches belongsTo relation dataSourceMsSql.
+[**teams_id_dynamic_datas_nk_data_source_my_sql_get**](TeamApi.md#teams_id_dynamic_datas_nk_data_source_my_sql_get) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourceMySql | Fetches belongsTo relation dataSourceMySql.
+[**teams_id_dynamic_datas_nk_data_source_oracle_get**](TeamApi.md#teams_id_dynamic_datas_nk_data_source_oracle_get) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourceOracle | Fetches belongsTo relation dataSourceOracle.
+[**teams_id_dynamic_datas_nk_data_source_postgre_sql_get**](TeamApi.md#teams_id_dynamic_datas_nk_data_source_postgre_sql_get) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourcePostgreSql | Fetches belongsTo relation dataSourcePostgreSql.
+[**teams_id_dynamic_datas_nk_data_source_rest_get**](TeamApi.md#teams_id_dynamic_datas_nk_data_source_rest_get) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourceRest | Fetches belongsTo relation dataSourceRest.
+[**teams_id_dynamic_datas_nk_data_source_soap_get**](TeamApi.md#teams_id_dynamic_datas_nk_data_source_soap_get) | **GET** /Teams/{id}/dynamicDatas/{nk}/dataSourceSoap | Fetches belongsTo relation dataSourceSoap.
 [**teams_id_dynamic_datas_nk_designs_count_get**](TeamApi.md#teams_id_dynamic_datas_nk_designs_count_get) | **GET** /Teams/{id}/dynamicDatas/{nk}/designs/count | Counts designs of DynamicData.
 [**teams_id_dynamic_datas_nk_designs_delete**](TeamApi.md#teams_id_dynamic_datas_nk_designs_delete) | **DELETE** /Teams/{id}/dynamicDatas/{nk}/designs | Deletes all designs of this model.
 [**teams_id_dynamic_datas_nk_designs_fk_delete**](TeamApi.md#teams_id_dynamic_datas_nk_designs_fk_delete) | **DELETE** /Teams/{id}/dynamicDatas/{nk}/designs/{fk} | Delete a related item by id for designs.
@@ -301,6 +301,13 @@ Method | HTTP request | Description
 [**teams_id_product_size_materials_post**](TeamApi.md#teams_id_product_size_materials_post) | **POST** /Teams/{id}/productSizeMaterials | Creates a new instance in productSizeMaterials of this model.
 [**teams_id_put**](TeamApi.md#teams_id_put) | **PUT** /Teams/{id} | Replace attributes for a model instance and persist it into the data source.
 [**teams_id_replace_post**](TeamApi.md#teams_id_replace_post) | **POST** /Teams/{id}/replace | Replace attributes for a model instance and persist it into the data source.
+[**teams_id_team_data_data_source_mongo_get**](TeamApi.md#teams_id_team_data_data_source_mongo_get) | **GET** /Teams/{id}/teamData/dataSourceMongo | Fetches belongsTo relation dataSourceMongo.
+[**teams_id_team_data_data_source_ms_sql_get**](TeamApi.md#teams_id_team_data_data_source_ms_sql_get) | **GET** /Teams/{id}/teamData/dataSourceMsSql | Fetches belongsTo relation dataSourceMsSql.
+[**teams_id_team_data_data_source_my_sql_get**](TeamApi.md#teams_id_team_data_data_source_my_sql_get) | **GET** /Teams/{id}/teamData/dataSourceMySql | Fetches belongsTo relation dataSourceMySql.
+[**teams_id_team_data_data_source_oracle_get**](TeamApi.md#teams_id_team_data_data_source_oracle_get) | **GET** /Teams/{id}/teamData/dataSourceOracle | Fetches belongsTo relation dataSourceOracle.
+[**teams_id_team_data_data_source_postgre_sql_get**](TeamApi.md#teams_id_team_data_data_source_postgre_sql_get) | **GET** /Teams/{id}/teamData/dataSourcePostgreSql | Fetches belongsTo relation dataSourcePostgreSql.
+[**teams_id_team_data_data_source_rest_get**](TeamApi.md#teams_id_team_data_data_source_rest_get) | **GET** /Teams/{id}/teamData/dataSourceRest | Fetches belongsTo relation dataSourceRest.
+[**teams_id_team_data_data_source_soap_get**](TeamApi.md#teams_id_team_data_data_source_soap_get) | **GET** /Teams/{id}/teamData/dataSourceSoap | Fetches belongsTo relation dataSourceSoap.
 [**teams_id_team_data_designs_count_get**](TeamApi.md#teams_id_team_data_designs_count_get) | **GET** /Teams/{id}/teamData/designs/count | Counts designs of DynamicData.
 [**teams_id_team_data_designs_delete**](TeamApi.md#teams_id_team_data_designs_delete) | **DELETE** /Teams/{id}/teamData/designs | Deletes all designs of this model.
 [**teams_id_team_data_designs_fk_delete**](TeamApi.md#teams_id_team_data_designs_fk_delete) | **DELETE** /Teams/{id}/teamData/designs/{fk} | Delete a related item by id for designs.
@@ -4535,375 +4542,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **teams_id_data_sources_count_get**
-> InlineResponse2001 teams_id_data_sources_count_get(id, where=where)
-
-Counts dataSources of Team.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.TeamApi()
-id = 'id_example' # str | Team id
-where = 'where_example' # str | Criteria to match model instances (optional)
-
-try: 
-    # Counts dataSources of Team.
-    api_response = api_instance.teams_id_data_sources_count_get(id, where=where)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling TeamApi->teams_id_data_sources_count_get: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Team id | 
- **where** | **str**| Criteria to match model instances | [optional] 
-
-### Return type
-
-[**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **teams_id_data_sources_delete**
-> teams_id_data_sources_delete(id)
-
-Deletes all dataSources of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.TeamApi()
-id = 'id_example' # str | Team id
-
-try: 
-    # Deletes all dataSources of this model.
-    api_instance.teams_id_data_sources_delete(id)
-except ApiException as e:
-    print("Exception when calling TeamApi->teams_id_data_sources_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Team id | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **teams_id_data_sources_fk_delete**
-> teams_id_data_sources_fk_delete(id, fk)
-
-Delete a related item by id for dataSources.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.TeamApi()
-id = 'id_example' # str | Team id
-fk = 'fk_example' # str | Foreign key for dataSources
-
-try: 
-    # Delete a related item by id for dataSources.
-    api_instance.teams_id_data_sources_fk_delete(id, fk)
-except ApiException as e:
-    print("Exception when calling TeamApi->teams_id_data_sources_fk_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Team id | 
- **fk** | **str**| Foreign key for dataSources | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **teams_id_data_sources_fk_get**
-> DataSource teams_id_data_sources_fk_get(id, fk)
-
-Find a related item by id for dataSources.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.TeamApi()
-id = 'id_example' # str | Team id
-fk = 'fk_example' # str | Foreign key for dataSources
-
-try: 
-    # Find a related item by id for dataSources.
-    api_response = api_instance.teams_id_data_sources_fk_get(id, fk)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling TeamApi->teams_id_data_sources_fk_get: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Team id | 
- **fk** | **str**| Foreign key for dataSources | 
-
-### Return type
-
-[**DataSource**](DataSource.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **teams_id_data_sources_fk_put**
-> DataSource teams_id_data_sources_fk_put(id, fk, data=data)
-
-Update a related item by id for dataSources.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.TeamApi()
-id = 'id_example' # str | Team id
-fk = 'fk_example' # str | Foreign key for dataSources
-data = TweakApi.DataSource() # DataSource |  (optional)
-
-try: 
-    # Update a related item by id for dataSources.
-    api_response = api_instance.teams_id_data_sources_fk_put(id, fk, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling TeamApi->teams_id_data_sources_fk_put: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Team id | 
- **fk** | **str**| Foreign key for dataSources | 
- **data** | [**DataSource**](DataSource.md)|  | [optional] 
-
-### Return type
-
-[**DataSource**](DataSource.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **teams_id_data_sources_get**
-> list[DataSource] teams_id_data_sources_get(id, filter=filter)
-
-Queries dataSources of Team.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.TeamApi()
-id = 'id_example' # str | Team id
-filter = 'filter_example' # str |  (optional)
-
-try: 
-    # Queries dataSources of Team.
-    api_response = api_instance.teams_id_data_sources_get(id, filter=filter)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling TeamApi->teams_id_data_sources_get: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Team id | 
- **filter** | **str**|  | [optional] 
-
-### Return type
-
-[**list[DataSource]**](DataSource.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **teams_id_data_sources_post**
-> DataSource teams_id_data_sources_post(id, data=data)
-
-Creates a new instance in dataSources of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.TeamApi()
-id = 'id_example' # str | Team id
-data = TweakApi.DataSource() # DataSource |  (optional)
-
-try: 
-    # Creates a new instance in dataSources of this model.
-    api_response = api_instance.teams_id_data_sources_post(id, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling TeamApi->teams_id_data_sources_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Team id | 
- **data** | [**DataSource**](DataSource.md)|  | [optional] 
-
-### Return type
-
-[**DataSource**](DataSource.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **teams_id_delete**
 > object teams_id_delete(id)
 
@@ -5259,6 +4897,391 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[DynamicData]**](DynamicData.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_data_source_mongo_get**
+> DataSourceMongo teams_id_dynamic_datas_nk_data_source_mongo_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation dataSourceMongo.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceMongo.
+    api_response = api_instance.teams_id_dynamic_datas_nk_data_source_mongo_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_data_source_mongo_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceMongo**](DataSourceMongo.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_data_source_ms_sql_get**
+> DataSourceMsSql teams_id_dynamic_datas_nk_data_source_ms_sql_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation dataSourceMsSql.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceMsSql.
+    api_response = api_instance.teams_id_dynamic_datas_nk_data_source_ms_sql_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_data_source_ms_sql_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceMsSql**](DataSourceMsSql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_data_source_my_sql_get**
+> DataSourceMySql teams_id_dynamic_datas_nk_data_source_my_sql_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation dataSourceMySql.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceMySql.
+    api_response = api_instance.teams_id_dynamic_datas_nk_data_source_my_sql_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_data_source_my_sql_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceMySql**](DataSourceMySql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_data_source_oracle_get**
+> DataSourceOracle teams_id_dynamic_datas_nk_data_source_oracle_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation dataSourceOracle.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceOracle.
+    api_response = api_instance.teams_id_dynamic_datas_nk_data_source_oracle_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_data_source_oracle_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceOracle**](DataSourceOracle.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_data_source_postgre_sql_get**
+> DataSourcePostgreSql teams_id_dynamic_datas_nk_data_source_postgre_sql_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation dataSourcePostgreSql.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourcePostgreSql.
+    api_response = api_instance.teams_id_dynamic_datas_nk_data_source_postgre_sql_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_data_source_postgre_sql_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourcePostgreSql**](DataSourcePostgreSql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_data_source_rest_get**
+> DataSourceRest teams_id_dynamic_datas_nk_data_source_rest_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation dataSourceRest.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceRest.
+    api_response = api_instance.teams_id_dynamic_datas_nk_data_source_rest_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_data_source_rest_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceRest**](DataSourceRest.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_dynamic_datas_nk_data_source_soap_get**
+> DataSourceSoap teams_id_dynamic_datas_nk_data_source_soap_get(id, nk, refresh=refresh)
+
+Fetches belongsTo relation dataSourceSoap.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+nk = 'nk_example' # str | Foreign key for dynamicDatas.
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceSoap.
+    api_response = api_instance.teams_id_dynamic_datas_nk_data_source_soap_get(id, nk, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_dynamic_datas_nk_data_source_soap_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **nk** | **str**| Foreign key for dynamicDatas. | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceSoap**](DataSourceSoap.md)
 
 ### Authorization
 
@@ -16476,6 +16499,377 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Team**](Team.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_team_data_data_source_mongo_get**
+> DataSourceMongo teams_id_team_data_data_source_mongo_get(id, refresh=refresh)
+
+Fetches belongsTo relation dataSourceMongo.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceMongo.
+    api_response = api_instance.teams_id_team_data_data_source_mongo_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_team_data_data_source_mongo_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceMongo**](DataSourceMongo.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_team_data_data_source_ms_sql_get**
+> DataSourceMsSql teams_id_team_data_data_source_ms_sql_get(id, refresh=refresh)
+
+Fetches belongsTo relation dataSourceMsSql.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceMsSql.
+    api_response = api_instance.teams_id_team_data_data_source_ms_sql_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_team_data_data_source_ms_sql_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceMsSql**](DataSourceMsSql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_team_data_data_source_my_sql_get**
+> DataSourceMySql teams_id_team_data_data_source_my_sql_get(id, refresh=refresh)
+
+Fetches belongsTo relation dataSourceMySql.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceMySql.
+    api_response = api_instance.teams_id_team_data_data_source_my_sql_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_team_data_data_source_my_sql_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceMySql**](DataSourceMySql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_team_data_data_source_oracle_get**
+> DataSourceOracle teams_id_team_data_data_source_oracle_get(id, refresh=refresh)
+
+Fetches belongsTo relation dataSourceOracle.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceOracle.
+    api_response = api_instance.teams_id_team_data_data_source_oracle_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_team_data_data_source_oracle_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceOracle**](DataSourceOracle.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_team_data_data_source_postgre_sql_get**
+> DataSourcePostgreSql teams_id_team_data_data_source_postgre_sql_get(id, refresh=refresh)
+
+Fetches belongsTo relation dataSourcePostgreSql.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourcePostgreSql.
+    api_response = api_instance.teams_id_team_data_data_source_postgre_sql_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_team_data_data_source_postgre_sql_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourcePostgreSql**](DataSourcePostgreSql.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_team_data_data_source_rest_get**
+> DataSourceRest teams_id_team_data_data_source_rest_get(id, refresh=refresh)
+
+Fetches belongsTo relation dataSourceRest.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceRest.
+    api_response = api_instance.teams_id_team_data_data_source_rest_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_team_data_data_source_rest_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceRest**](DataSourceRest.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
+ - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **teams_id_team_data_data_source_soap_get**
+> DataSourceSoap teams_id_team_data_data_source_soap_get(id, refresh=refresh)
+
+Fetches belongsTo relation dataSourceSoap.
+
+### Example 
+```python
+from __future__ import print_statement
+import time
+import TweakApi
+from TweakApi.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: access_token
+TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = TweakApi.TeamApi()
+id = 'id_example' # str | Team id
+refresh = true # bool |  (optional)
+
+try: 
+    # Fetches belongsTo relation dataSourceSoap.
+    api_response = api_instance.teams_id_team_data_data_source_soap_get(id, refresh=refresh)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TeamApi->teams_id_team_data_data_source_soap_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| Team id | 
+ **refresh** | **bool**|  | [optional] 
+
+### Return type
+
+[**DataSourceSoap**](DataSourceSoap.md)
 
 ### Authorization
 

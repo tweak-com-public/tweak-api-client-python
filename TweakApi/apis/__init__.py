@@ -5,10 +5,13 @@ from .billing_api import BillingApi
 from .builder_asset_background_api import BuilderAssetBackgroundApi
 from .builder_asset_url_api import BuilderAssetUrlApi
 from .customer_api import CustomerApi
-from .data_source_api import DataSourceApi
-from .data_source_key_api import DataSourceKeyApi
-from .data_source_record_api import DataSourceRecordApi
-from .data_source_record_value_api import DataSourceRecordValueApi
+from .data_source_mongo_api import DataSourceMongoApi
+from .data_source_ms_sql_api import DataSourceMsSqlApi
+from .data_source_my_sql_api import DataSourceMySqlApi
+from .data_source_oracle_api import DataSourceOracleApi
+from .data_source_postgre_sql_api import DataSourcePostgreSqlApi
+from .data_source_rest_api import DataSourceRestApi
+from .data_source_soap_api import DataSourceSoapApi
 from .design_api import DesignApi
 from .design_comment_api import DesignCommentApi
 from .design_export_api import DesignExportApi
