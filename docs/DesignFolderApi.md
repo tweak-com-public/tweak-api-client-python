@@ -10,7 +10,6 @@ Method | HTTP request | Description
 [**design_folders_find_one_get**](DesignFolderApi.md#design_folders_find_one_get) | **GET** /DesignFolders/findOne | Find first instance of the model matched by filter from the data source.
 [**design_folders_get**](DesignFolderApi.md#design_folders_get) | **GET** /DesignFolders | Find all instances of the model matched by filter from the data source.
 [**design_folders_id_children_count_get**](DesignFolderApi.md#design_folders_id_children_count_get) | **GET** /DesignFolders/{id}/children/count | Counts children of DesignFolder.
-[**design_folders_id_children_delete**](DesignFolderApi.md#design_folders_id_children_delete) | **DELETE** /DesignFolders/{id}/children | Deletes all children of this model.
 [**design_folders_id_children_fk_delete**](DesignFolderApi.md#design_folders_id_children_fk_delete) | **DELETE** /DesignFolders/{id}/children/{fk} | Delete a related item by id for children.
 [**design_folders_id_children_fk_get**](DesignFolderApi.md#design_folders_id_children_fk_get) | **GET** /DesignFolders/{id}/children/{fk} | Find a related item by id for children.
 [**design_folders_id_children_fk_put**](DesignFolderApi.md#design_folders_id_children_fk_put) | **PUT** /DesignFolders/{id}/children/{fk} | Update a related item by id for children.
@@ -18,7 +17,6 @@ Method | HTTP request | Description
 [**design_folders_id_children_post**](DesignFolderApi.md#design_folders_id_children_post) | **POST** /DesignFolders/{id}/children | Creates a new instance in children of this model.
 [**design_folders_id_delete**](DesignFolderApi.md#design_folders_id_delete) | **DELETE** /DesignFolders/{id} | Delete a model instance by {{id}} from the data source.
 [**design_folders_id_designs_count_get**](DesignFolderApi.md#design_folders_id_designs_count_get) | **GET** /DesignFolders/{id}/designs/count | Counts designs of DesignFolder.
-[**design_folders_id_designs_delete**](DesignFolderApi.md#design_folders_id_designs_delete) | **DELETE** /DesignFolders/{id}/designs | Deletes all designs of this model.
 [**design_folders_id_designs_fk_delete**](DesignFolderApi.md#design_folders_id_designs_fk_delete) | **DELETE** /DesignFolders/{id}/designs/{fk} | Delete a related item by id for designs.
 [**design_folders_id_designs_fk_get**](DesignFolderApi.md#design_folders_id_designs_fk_get) | **GET** /DesignFolders/{id}/designs/{fk} | Find a related item by id for designs.
 [**design_folders_id_designs_fk_put**](DesignFolderApi.md#design_folders_id_designs_fk_put) | **PUT** /DesignFolders/{id}/designs/{fk} | Update a related item by id for designs.
@@ -33,12 +31,7 @@ Method | HTTP request | Description
 [**design_folders_id_portal_get**](DesignFolderApi.md#design_folders_id_portal_get) | **GET** /DesignFolders/{id}/portal | Fetches belongsTo relation portal.
 [**design_folders_id_put**](DesignFolderApi.md#design_folders_id_put) | **PUT** /DesignFolders/{id} | Replace attributes for a model instance and persist it into the data source.
 [**design_folders_id_replace_post**](DesignFolderApi.md#design_folders_id_replace_post) | **POST** /DesignFolders/{id}/replace | Replace attributes for a model instance and persist it into the data source.
-[**design_folders_patch**](DesignFolderApi.md#design_folders_patch) | **PATCH** /DesignFolders | Patch an existing model instance or insert a new one into the data source.
 [**design_folders_post**](DesignFolderApi.md#design_folders_post) | **POST** /DesignFolders | Create a new instance of the model and persist it into the data source.
-[**design_folders_put**](DesignFolderApi.md#design_folders_put) | **PUT** /DesignFolders | Replace an existing model instance or insert a new one into the data source.
-[**design_folders_replace_or_create_post**](DesignFolderApi.md#design_folders_replace_or_create_post) | **POST** /DesignFolders/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
-[**design_folders_update_post**](DesignFolderApi.md#design_folders_update_post) | **POST** /DesignFolders/update | Update instances of the model matched by {{where}} from the data source.
-[**design_folders_upsert_with_where_post**](DesignFolderApi.md#design_folders_upsert_with_where_post) | **POST** /DesignFolders/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
 
 # **design_folders_change_stream_get**
@@ -337,56 +330,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **design_folders_id_children_delete**
-> design_folders_id_children_delete(id)
-
-Deletes all children of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.DesignFolderApi()
-id = 'id_example' # str | DesignFolder id
-
-try: 
-    # Deletes all children of this model.
-    api_instance.design_folders_id_children_delete(id)
-except ApiException as e:
-    print("Exception when calling DesignFolderApi->design_folders_id_children_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| DesignFolder id | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -757,56 +700,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **design_folders_id_designs_delete**
-> design_folders_id_designs_delete(id)
-
-Deletes all designs of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.DesignFolderApi()
-id = 'id_example' # str | DesignFolder id
-
-try: 
-    # Deletes all designs of this model.
-    api_instance.design_folders_id_designs_delete(id)
-except ApiException as e:
-    print("Exception when calling DesignFolderApi->design_folders_id_designs_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| DesignFolder id | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -1558,57 +1451,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **design_folders_patch**
-> DesignFolder design_folders_patch(data=data)
-
-Patch an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.DesignFolderApi()
-data = TweakApi.DesignFolder() # DesignFolder | Model instance data (optional)
-
-try: 
-    # Patch an existing model instance or insert a new one into the data source.
-    api_response = api_instance.design_folders_patch(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling DesignFolderApi->design_folders_patch: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**DesignFolder**](DesignFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**DesignFolder**](DesignFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **design_folders_post**
 > DesignFolder design_folders_post(data=data)
 
@@ -1644,214 +1486,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **data** | [**DesignFolder**](DesignFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**DesignFolder**](DesignFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **design_folders_put**
-> DesignFolder design_folders_put(data=data)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.DesignFolderApi()
-data = TweakApi.DesignFolder() # DesignFolder | Model instance data (optional)
-
-try: 
-    # Replace an existing model instance or insert a new one into the data source.
-    api_response = api_instance.design_folders_put(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling DesignFolderApi->design_folders_put: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**DesignFolder**](DesignFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**DesignFolder**](DesignFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **design_folders_replace_or_create_post**
-> DesignFolder design_folders_replace_or_create_post(data=data)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.DesignFolderApi()
-data = TweakApi.DesignFolder() # DesignFolder | Model instance data (optional)
-
-try: 
-    # Replace an existing model instance or insert a new one into the data source.
-    api_response = api_instance.design_folders_replace_or_create_post(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling DesignFolderApi->design_folders_replace_or_create_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**DesignFolder**](DesignFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**DesignFolder**](DesignFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **design_folders_update_post**
-> InlineResponse2003 design_folders_update_post(where=where, data=data)
-
-Update instances of the model matched by {{where}} from the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.DesignFolderApi()
-where = 'where_example' # str | Criteria to match model instances (optional)
-data = TweakApi.DesignFolder() # DesignFolder | An object of model property name/value pairs (optional)
-
-try: 
-    # Update instances of the model matched by {{where}} from the data source.
-    api_response = api_instance.design_folders_update_post(where=where, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling DesignFolderApi->design_folders_update_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **str**| Criteria to match model instances | [optional] 
- **data** | [**DesignFolder**](DesignFolder.md)| An object of model property name/value pairs | [optional] 
-
-### Return type
-
-[**InlineResponse2003**](InlineResponse2003.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **design_folders_upsert_with_where_post**
-> DesignFolder design_folders_upsert_with_where_post(where=where, data=data)
-
-Update an existing model instance or insert a new one into the data source based on the where criteria.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.DesignFolderApi()
-where = 'where_example' # str | Criteria to match model instances (optional)
-data = TweakApi.DesignFolder() # DesignFolder | An object of model property name/value pairs (optional)
-
-try: 
-    # Update an existing model instance or insert a new one into the data source based on the where criteria.
-    api_response = api_instance.design_folders_upsert_with_where_post(where=where, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling DesignFolderApi->design_folders_upsert_with_where_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **str**| Criteria to match model instances | [optional] 
- **data** | [**DesignFolder**](DesignFolder.md)| An object of model property name/value pairs | [optional] 
 
 ### Return type
 

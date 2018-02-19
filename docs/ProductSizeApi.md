@@ -14,7 +14,6 @@ Method | HTTP request | Description
 [**product_sizes_id_get**](ProductSizeApi.md#product_sizes_id_get) | **GET** /ProductSizes/{id} | Find a model instance by {{id}} from the data source.
 [**product_sizes_id_head**](ProductSizeApi.md#product_sizes_id_head) | **HEAD** /ProductSizes/{id} | Check whether a model instance exists in the data source.
 [**product_sizes_id_materials_count_get**](ProductSizeApi.md#product_sizes_id_materials_count_get) | **GET** /ProductSizes/{id}/materials/count | Counts materials of ProductSize.
-[**product_sizes_id_materials_delete**](ProductSizeApi.md#product_sizes_id_materials_delete) | **DELETE** /ProductSizes/{id}/materials | Deletes all materials of this model.
 [**product_sizes_id_materials_fk_delete**](ProductSizeApi.md#product_sizes_id_materials_fk_delete) | **DELETE** /ProductSizes/{id}/materials/{fk} | Delete a related item by id for materials.
 [**product_sizes_id_materials_fk_get**](ProductSizeApi.md#product_sizes_id_materials_fk_get) | **GET** /ProductSizes/{id}/materials/{fk} | Find a related item by id for materials.
 [**product_sizes_id_materials_fk_put**](ProductSizeApi.md#product_sizes_id_materials_fk_put) | **PUT** /ProductSizes/{id}/materials/{fk} | Update a related item by id for materials.
@@ -35,19 +34,13 @@ Method | HTTP request | Description
 [**product_sizes_id_put**](ProductSizeApi.md#product_sizes_id_put) | **PUT** /ProductSizes/{id} | Replace attributes for a model instance and persist it into the data source.
 [**product_sizes_id_replace_post**](ProductSizeApi.md#product_sizes_id_replace_post) | **POST** /ProductSizes/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**product_sizes_id_size_materials_count_get**](ProductSizeApi.md#product_sizes_id_size_materials_count_get) | **GET** /ProductSizes/{id}/sizeMaterials/count | Counts sizeMaterials of ProductSize.
-[**product_sizes_id_size_materials_delete**](ProductSizeApi.md#product_sizes_id_size_materials_delete) | **DELETE** /ProductSizes/{id}/sizeMaterials | Deletes all sizeMaterials of this model.
 [**product_sizes_id_size_materials_fk_delete**](ProductSizeApi.md#product_sizes_id_size_materials_fk_delete) | **DELETE** /ProductSizes/{id}/sizeMaterials/{fk} | Delete a related item by id for sizeMaterials.
 [**product_sizes_id_size_materials_fk_get**](ProductSizeApi.md#product_sizes_id_size_materials_fk_get) | **GET** /ProductSizes/{id}/sizeMaterials/{fk} | Find a related item by id for sizeMaterials.
 [**product_sizes_id_size_materials_fk_put**](ProductSizeApi.md#product_sizes_id_size_materials_fk_put) | **PUT** /ProductSizes/{id}/sizeMaterials/{fk} | Update a related item by id for sizeMaterials.
 [**product_sizes_id_size_materials_get**](ProductSizeApi.md#product_sizes_id_size_materials_get) | **GET** /ProductSizes/{id}/sizeMaterials | Queries sizeMaterials of ProductSize.
 [**product_sizes_id_size_materials_post**](ProductSizeApi.md#product_sizes_id_size_materials_post) | **POST** /ProductSizes/{id}/sizeMaterials | Creates a new instance in sizeMaterials of this model.
 [**product_sizes_id_type_get**](ProductSizeApi.md#product_sizes_id_type_get) | **GET** /ProductSizes/{id}/type | Fetches belongsTo relation type.
-[**product_sizes_patch**](ProductSizeApi.md#product_sizes_patch) | **PATCH** /ProductSizes | Patch an existing model instance or insert a new one into the data source.
 [**product_sizes_post**](ProductSizeApi.md#product_sizes_post) | **POST** /ProductSizes | Create a new instance of the model and persist it into the data source.
-[**product_sizes_put**](ProductSizeApi.md#product_sizes_put) | **PUT** /ProductSizes | Replace an existing model instance or insert a new one into the data source.
-[**product_sizes_replace_or_create_post**](ProductSizeApi.md#product_sizes_replace_or_create_post) | **POST** /ProductSizes/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
-[**product_sizes_update_post**](ProductSizeApi.md#product_sizes_update_post) | **POST** /ProductSizes/update | Update instances of the model matched by {{where}} from the data source.
-[**product_sizes_upsert_with_where_post**](ProductSizeApi.md#product_sizes_upsert_with_where_post) | **POST** /ProductSizes/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
 
 # **product_sizes_change_stream_get**
@@ -552,56 +545,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **product_sizes_id_materials_delete**
-> product_sizes_id_materials_delete(id)
-
-Deletes all materials of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.ProductSizeApi()
-id = 'id_example' # str | ProductSize id
-
-try: 
-    # Deletes all materials of this model.
-    api_instance.product_sizes_id_materials_delete(id)
-except ApiException as e:
-    print("Exception when calling ProductSizeApi->product_sizes_id_materials_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| ProductSize id | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -1674,56 +1617,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **product_sizes_id_size_materials_delete**
-> product_sizes_id_size_materials_delete(id)
-
-Deletes all sizeMaterials of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.ProductSizeApi()
-id = 'id_example' # str | ProductSize id
-
-try: 
-    # Deletes all sizeMaterials of this model.
-    api_instance.product_sizes_id_size_materials_delete(id)
-except ApiException as e:
-    print("Exception when calling ProductSizeApi->product_sizes_id_size_materials_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| ProductSize id | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **product_sizes_id_size_materials_fk_delete**
 > product_sizes_id_size_materials_fk_delete(id, fk)
 
@@ -2043,57 +1936,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **product_sizes_patch**
-> ProductSize product_sizes_patch(data=data)
-
-Patch an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.ProductSizeApi()
-data = TweakApi.ProductSize() # ProductSize | Model instance data (optional)
-
-try: 
-    # Patch an existing model instance or insert a new one into the data source.
-    api_response = api_instance.product_sizes_patch(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling ProductSizeApi->product_sizes_patch: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**ProductSize**](ProductSize.md)| Model instance data | [optional] 
-
-### Return type
-
-[**ProductSize**](ProductSize.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **product_sizes_post**
 > ProductSize product_sizes_post(data=data)
 
@@ -2129,214 +1971,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **data** | [**ProductSize**](ProductSize.md)| Model instance data | [optional] 
-
-### Return type
-
-[**ProductSize**](ProductSize.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **product_sizes_put**
-> ProductSize product_sizes_put(data=data)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.ProductSizeApi()
-data = TweakApi.ProductSize() # ProductSize | Model instance data (optional)
-
-try: 
-    # Replace an existing model instance or insert a new one into the data source.
-    api_response = api_instance.product_sizes_put(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling ProductSizeApi->product_sizes_put: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**ProductSize**](ProductSize.md)| Model instance data | [optional] 
-
-### Return type
-
-[**ProductSize**](ProductSize.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **product_sizes_replace_or_create_post**
-> ProductSize product_sizes_replace_or_create_post(data=data)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.ProductSizeApi()
-data = TweakApi.ProductSize() # ProductSize | Model instance data (optional)
-
-try: 
-    # Replace an existing model instance or insert a new one into the data source.
-    api_response = api_instance.product_sizes_replace_or_create_post(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling ProductSizeApi->product_sizes_replace_or_create_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**ProductSize**](ProductSize.md)| Model instance data | [optional] 
-
-### Return type
-
-[**ProductSize**](ProductSize.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **product_sizes_update_post**
-> InlineResponse2003 product_sizes_update_post(where=where, data=data)
-
-Update instances of the model matched by {{where}} from the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.ProductSizeApi()
-where = 'where_example' # str | Criteria to match model instances (optional)
-data = TweakApi.ProductSize() # ProductSize | An object of model property name/value pairs (optional)
-
-try: 
-    # Update instances of the model matched by {{where}} from the data source.
-    api_response = api_instance.product_sizes_update_post(where=where, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling ProductSizeApi->product_sizes_update_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **str**| Criteria to match model instances | [optional] 
- **data** | [**ProductSize**](ProductSize.md)| An object of model property name/value pairs | [optional] 
-
-### Return type
-
-[**InlineResponse2003**](InlineResponse2003.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **product_sizes_upsert_with_where_post**
-> ProductSize product_sizes_upsert_with_where_post(where=where, data=data)
-
-Update an existing model instance or insert a new one into the data source based on the where criteria.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.ProductSizeApi()
-where = 'where_example' # str | Criteria to match model instances (optional)
-data = TweakApi.ProductSize() # ProductSize | An object of model property name/value pairs (optional)
-
-try: 
-    # Update an existing model instance or insert a new one into the data source based on the where criteria.
-    api_response = api_instance.product_sizes_upsert_with_where_post(where=where, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling ProductSizeApi->product_sizes_upsert_with_where_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **str**| Criteria to match model instances | [optional] 
- **data** | [**ProductSize**](ProductSize.md)| An object of model property name/value pairs | [optional] 
 
 ### Return type
 

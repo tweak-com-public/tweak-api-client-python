@@ -10,7 +10,6 @@ Method | HTTP request | Description
 [**image_folders_find_one_get**](ImageFolderApi.md#image_folders_find_one_get) | **GET** /ImageFolders/findOne | Find first instance of the model matched by filter from the data source.
 [**image_folders_get**](ImageFolderApi.md#image_folders_get) | **GET** /ImageFolders | Find all instances of the model matched by filter from the data source.
 [**image_folders_id_children_count_get**](ImageFolderApi.md#image_folders_id_children_count_get) | **GET** /ImageFolders/{id}/children/count | Counts children of ImageFolder.
-[**image_folders_id_children_delete**](ImageFolderApi.md#image_folders_id_children_delete) | **DELETE** /ImageFolders/{id}/children | Deletes all children of this model.
 [**image_folders_id_children_fk_delete**](ImageFolderApi.md#image_folders_id_children_fk_delete) | **DELETE** /ImageFolders/{id}/children/{fk} | Delete a related item by id for children.
 [**image_folders_id_children_fk_get**](ImageFolderApi.md#image_folders_id_children_fk_get) | **GET** /ImageFolders/{id}/children/{fk} | Find a related item by id for children.
 [**image_folders_id_children_fk_put**](ImageFolderApi.md#image_folders_id_children_fk_put) | **PUT** /ImageFolders/{id}/children/{fk} | Update a related item by id for children.
@@ -28,7 +27,6 @@ Method | HTTP request | Description
 [**image_folders_id_get**](ImageFolderApi.md#image_folders_id_get) | **GET** /ImageFolders/{id} | Find a model instance by {{id}} from the data source.
 [**image_folders_id_head**](ImageFolderApi.md#image_folders_id_head) | **HEAD** /ImageFolders/{id} | Check whether a model instance exists in the data source.
 [**image_folders_id_images_count_get**](ImageFolderApi.md#image_folders_id_images_count_get) | **GET** /ImageFolders/{id}/images/count | Counts images of ImageFolder.
-[**image_folders_id_images_delete**](ImageFolderApi.md#image_folders_id_images_delete) | **DELETE** /ImageFolders/{id}/images | Deletes all images of this model.
 [**image_folders_id_images_fk_delete**](ImageFolderApi.md#image_folders_id_images_fk_delete) | **DELETE** /ImageFolders/{id}/images/{fk} | Delete a related item by id for images.
 [**image_folders_id_images_fk_get**](ImageFolderApi.md#image_folders_id_images_fk_get) | **GET** /ImageFolders/{id}/images/{fk} | Find a related item by id for images.
 [**image_folders_id_images_fk_put**](ImageFolderApi.md#image_folders_id_images_fk_put) | **PUT** /ImageFolders/{id}/images/{fk} | Update a related item by id for images.
@@ -62,12 +60,7 @@ Method | HTTP request | Description
 [**image_folders_id_put**](ImageFolderApi.md#image_folders_id_put) | **PUT** /ImageFolders/{id} | Replace attributes for a model instance and persist it into the data source.
 [**image_folders_id_replace_post**](ImageFolderApi.md#image_folders_id_replace_post) | **POST** /ImageFolders/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**image_folders_id_team_get**](ImageFolderApi.md#image_folders_id_team_get) | **GET** /ImageFolders/{id}/team | Fetches belongsTo relation team.
-[**image_folders_patch**](ImageFolderApi.md#image_folders_patch) | **PATCH** /ImageFolders | Patch an existing model instance or insert a new one into the data source.
 [**image_folders_post**](ImageFolderApi.md#image_folders_post) | **POST** /ImageFolders | Create a new instance of the model and persist it into the data source.
-[**image_folders_put**](ImageFolderApi.md#image_folders_put) | **PUT** /ImageFolders | Replace an existing model instance or insert a new one into the data source.
-[**image_folders_replace_or_create_post**](ImageFolderApi.md#image_folders_replace_or_create_post) | **POST** /ImageFolders/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
-[**image_folders_update_post**](ImageFolderApi.md#image_folders_update_post) | **POST** /ImageFolders/update | Update instances of the model matched by {{where}} from the data source.
-[**image_folders_upsert_with_where_post**](ImageFolderApi.md#image_folders_upsert_with_where_post) | **POST** /ImageFolders/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
 
 # **image_folders_change_stream_get**
@@ -366,56 +359,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **image_folders_id_children_delete**
-> image_folders_id_children_delete(id)
-
-Deletes all children of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.ImageFolderApi()
-id = 'id_example' # str | ImageFolder id
-
-try: 
-    # Deletes all children of this model.
-    api_instance.image_folders_id_children_delete(id)
-except ApiException as e:
-    print("Exception when calling ImageFolderApi->image_folders_id_children_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| ImageFolder id | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -1310,56 +1253,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **image_folders_id_images_delete**
-> image_folders_id_images_delete(id)
-
-Deletes all images of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.ImageFolderApi()
-id = 'id_example' # str | ImageFolder id
-
-try: 
-    # Deletes all images of this model.
-    api_instance.image_folders_id_images_delete(id)
-except ApiException as e:
-    print("Exception when calling ImageFolderApi->image_folders_id_images_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| ImageFolder id | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -3128,57 +3021,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **image_folders_patch**
-> ImageFolder image_folders_patch(data=data)
-
-Patch an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.ImageFolderApi()
-data = TweakApi.ImageFolder() # ImageFolder | Model instance data (optional)
-
-try: 
-    # Patch an existing model instance or insert a new one into the data source.
-    api_response = api_instance.image_folders_patch(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling ImageFolderApi->image_folders_patch: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**ImageFolder**](ImageFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**ImageFolder**](ImageFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **image_folders_post**
 > ImageFolder image_folders_post(data=data)
 
@@ -3214,214 +3056,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **data** | [**ImageFolder**](ImageFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**ImageFolder**](ImageFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **image_folders_put**
-> ImageFolder image_folders_put(data=data)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.ImageFolderApi()
-data = TweakApi.ImageFolder() # ImageFolder | Model instance data (optional)
-
-try: 
-    # Replace an existing model instance or insert a new one into the data source.
-    api_response = api_instance.image_folders_put(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling ImageFolderApi->image_folders_put: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**ImageFolder**](ImageFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**ImageFolder**](ImageFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **image_folders_replace_or_create_post**
-> ImageFolder image_folders_replace_or_create_post(data=data)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.ImageFolderApi()
-data = TweakApi.ImageFolder() # ImageFolder | Model instance data (optional)
-
-try: 
-    # Replace an existing model instance or insert a new one into the data source.
-    api_response = api_instance.image_folders_replace_or_create_post(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling ImageFolderApi->image_folders_replace_or_create_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**ImageFolder**](ImageFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**ImageFolder**](ImageFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **image_folders_update_post**
-> InlineResponse2003 image_folders_update_post(where=where, data=data)
-
-Update instances of the model matched by {{where}} from the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.ImageFolderApi()
-where = 'where_example' # str | Criteria to match model instances (optional)
-data = TweakApi.ImageFolder() # ImageFolder | An object of model property name/value pairs (optional)
-
-try: 
-    # Update instances of the model matched by {{where}} from the data source.
-    api_response = api_instance.image_folders_update_post(where=where, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling ImageFolderApi->image_folders_update_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **str**| Criteria to match model instances | [optional] 
- **data** | [**ImageFolder**](ImageFolder.md)| An object of model property name/value pairs | [optional] 
-
-### Return type
-
-[**InlineResponse2003**](InlineResponse2003.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **image_folders_upsert_with_where_post**
-> ImageFolder image_folders_upsert_with_where_post(where=where, data=data)
-
-Update an existing model instance or insert a new one into the data source based on the where criteria.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.ImageFolderApi()
-where = 'where_example' # str | Criteria to match model instances (optional)
-data = TweakApi.ImageFolder() # ImageFolder | An object of model property name/value pairs (optional)
-
-try: 
-    # Update an existing model instance or insert a new one into the data source based on the where criteria.
-    api_response = api_instance.image_folders_upsert_with_where_post(where=where, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling ImageFolderApi->image_folders_upsert_with_where_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **str**| Criteria to match model instances | [optional] 
- **data** | [**ImageFolder**](ImageFolder.md)| An object of model property name/value pairs | [optional] 
 
 ### Return type
 
