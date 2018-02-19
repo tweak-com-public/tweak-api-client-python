@@ -57,15 +57,13 @@ Method | HTTP request | Description
 [**customers_id_teams_nk_builder_configs_fk_put**](CustomerApi.md#customers_id_teams_nk_builder_configs_fk_put) | **PUT** /Customers/{id}/teams/{nk}/builderConfigs/{fk} | Update a related item by id for builderConfigs.
 [**customers_id_teams_nk_builder_configs_get**](CustomerApi.md#customers_id_teams_nk_builder_configs_get) | **GET** /Customers/{id}/teams/{nk}/builderConfigs | Queries builderConfigs of Team.
 [**customers_id_teams_nk_builder_configs_post**](CustomerApi.md#customers_id_teams_nk_builder_configs_post) | **POST** /Customers/{id}/teams/{nk}/builderConfigs | Creates a new instance in builderConfigs of this model.
-[**customers_id_teams_nk_data_sources_count_get**](CustomerApi.md#customers_id_teams_nk_data_sources_count_get) | **GET** /Customers/{id}/teams/{nk}/dataSources/count | Counts dataSources of Team.
-[**customers_id_teams_nk_data_sources_delete**](CustomerApi.md#customers_id_teams_nk_data_sources_delete) | **DELETE** /Customers/{id}/teams/{nk}/dataSources | Deletes all dataSources of this model.
-[**customers_id_teams_nk_data_sources_fk_delete**](CustomerApi.md#customers_id_teams_nk_data_sources_fk_delete) | **DELETE** /Customers/{id}/teams/{nk}/dataSources/{fk} | Delete a related item by id for dataSources.
-[**customers_id_teams_nk_data_sources_fk_get**](CustomerApi.md#customers_id_teams_nk_data_sources_fk_get) | **GET** /Customers/{id}/teams/{nk}/dataSources/{fk} | Find a related item by id for dataSources.
-[**customers_id_teams_nk_data_sources_fk_put**](CustomerApi.md#customers_id_teams_nk_data_sources_fk_put) | **PUT** /Customers/{id}/teams/{nk}/dataSources/{fk} | Update a related item by id for dataSources.
-[**customers_id_teams_nk_data_sources_get**](CustomerApi.md#customers_id_teams_nk_data_sources_get) | **GET** /Customers/{id}/teams/{nk}/dataSources | Queries dataSources of Team.
-[**customers_id_teams_nk_data_sources_post**](CustomerApi.md#customers_id_teams_nk_data_sources_post) | **POST** /Customers/{id}/teams/{nk}/dataSources | Creates a new instance in dataSources of this model.
+[**customers_id_teams_nk_data_source_soaps_count_get**](CustomerApi.md#customers_id_teams_nk_data_source_soaps_count_get) | **GET** /Customers/{id}/teams/{nk}/dataSourceSoaps/count | Counts dataSourceSoaps of Team.
+[**customers_id_teams_nk_data_source_soaps_fk_delete**](CustomerApi.md#customers_id_teams_nk_data_source_soaps_fk_delete) | **DELETE** /Customers/{id}/teams/{nk}/dataSourceSoaps/{fk} | Delete a related item by id for dataSourceSoaps.
+[**customers_id_teams_nk_data_source_soaps_fk_get**](CustomerApi.md#customers_id_teams_nk_data_source_soaps_fk_get) | **GET** /Customers/{id}/teams/{nk}/dataSourceSoaps/{fk} | Find a related item by id for dataSourceSoaps.
+[**customers_id_teams_nk_data_source_soaps_fk_put**](CustomerApi.md#customers_id_teams_nk_data_source_soaps_fk_put) | **PUT** /Customers/{id}/teams/{nk}/dataSourceSoaps/{fk} | Update a related item by id for dataSourceSoaps.
+[**customers_id_teams_nk_data_source_soaps_get**](CustomerApi.md#customers_id_teams_nk_data_source_soaps_get) | **GET** /Customers/{id}/teams/{nk}/dataSourceSoaps | Queries dataSourceSoaps of Team.
+[**customers_id_teams_nk_data_source_soaps_post**](CustomerApi.md#customers_id_teams_nk_data_source_soaps_post) | **POST** /Customers/{id}/teams/{nk}/dataSourceSoaps | Creates a new instance in dataSourceSoaps of this model.
 [**customers_id_teams_nk_dynamic_datas_count_get**](CustomerApi.md#customers_id_teams_nk_dynamic_datas_count_get) | **GET** /Customers/{id}/teams/{nk}/dynamicDatas/count | Counts dynamicDatas of Team.
-[**customers_id_teams_nk_dynamic_datas_delete**](CustomerApi.md#customers_id_teams_nk_dynamic_datas_delete) | **DELETE** /Customers/{id}/teams/{nk}/dynamicDatas | Deletes all dynamicDatas of this model.
 [**customers_id_teams_nk_dynamic_datas_fk_delete**](CustomerApi.md#customers_id_teams_nk_dynamic_datas_fk_delete) | **DELETE** /Customers/{id}/teams/{nk}/dynamicDatas/{fk} | Delete a related item by id for dynamicDatas.
 [**customers_id_teams_nk_dynamic_datas_fk_get**](CustomerApi.md#customers_id_teams_nk_dynamic_datas_fk_get) | **GET** /Customers/{id}/teams/{nk}/dynamicDatas/{fk} | Find a related item by id for dynamicDatas.
 [**customers_id_teams_nk_dynamic_datas_fk_put**](CustomerApi.md#customers_id_teams_nk_dynamic_datas_fk_put) | **PUT** /Customers/{id}/teams/{nk}/dynamicDatas/{fk} | Update a related item by id for dynamicDatas.
@@ -169,16 +167,11 @@ Method | HTTP request | Description
 [**customers_logout_post**](CustomerApi.md#customers_logout_post) | **POST** /Customers/logout | Logout a user with access token.
 [**customers_me_token_get**](CustomerApi.md#customers_me_token_get) | **GET** /Customers/me/token | Get token info
 [**customers_me_token_refresh_get**](CustomerApi.md#customers_me_token_refresh_get) | **GET** /Customers/me/token/refresh | Refresh current access token
-[**customers_patch**](CustomerApi.md#customers_patch) | **PATCH** /Customers | Patch an existing model instance or insert a new one into the data source.
 [**customers_post**](CustomerApi.md#customers_post) | **POST** /Customers | Create a new instance of the model and persist it into the data source.
-[**customers_put**](CustomerApi.md#customers_put) | **PUT** /Customers | Replace an existing model instance or insert a new one into the data source.
 [**customers_register_post**](CustomerApi.md#customers_register_post) | **POST** /Customers/register | Create customer and assign it to a team
-[**customers_replace_or_create_post**](CustomerApi.md#customers_replace_or_create_post) | **POST** /Customers/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
 [**customers_reset_password_post**](CustomerApi.md#customers_reset_password_post) | **POST** /Customers/reset-password | Reset user&#39;s password via a password-reset token.
 [**customers_reset_password_token_get**](CustomerApi.md#customers_reset_password_token_get) | **GET** /Customers/reset-password/token | Get token info for reset password token
 [**customers_reset_post**](CustomerApi.md#customers_reset_post) | **POST** /Customers/reset | Reset password for a user with email.
-[**customers_update_post**](CustomerApi.md#customers_update_post) | **POST** /Customers/update | Update instances of the model matched by {{where}} from the data source.
-[**customers_upsert_with_where_post**](CustomerApi.md#customers_upsert_with_where_post) | **POST** /Customers/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
 
 # **customers_change_password_post**
@@ -963,7 +956,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **customers_id_active_get**
-> InlineResponse2004 customers_id_active_get(id)
+> InlineResponse2003 customers_id_active_get(id)
 
 Define whether customer is active or not
 
@@ -1000,7 +993,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2004**](InlineResponse2004.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
@@ -2980,10 +2973,10 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **customers_id_teams_nk_data_sources_count_get**
-> InlineResponse2001 customers_id_teams_nk_data_sources_count_get(id, nk, where=where)
+# **customers_id_teams_nk_data_source_soaps_count_get**
+> InlineResponse2001 customers_id_teams_nk_data_source_soaps_count_get(id, nk, where=where)
 
-Counts dataSources of Team.
+Counts dataSourceSoaps of Team.
 
 ### Example 
 ```python
@@ -3005,11 +2998,11 @@ nk = 'nk_example' # str | Foreign key for teams.
 where = 'where_example' # str | Criteria to match model instances (optional)
 
 try: 
-    # Counts dataSources of Team.
-    api_response = api_instance.customers_id_teams_nk_data_sources_count_get(id, nk, where=where)
+    # Counts dataSourceSoaps of Team.
+    api_response = api_instance.customers_id_teams_nk_data_source_soaps_count_get(id, nk, where=where)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_teams_nk_data_sources_count_get: %s\n" % e)
+    print("Exception when calling CustomerApi->customers_id_teams_nk_data_source_soaps_count_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -3035,10 +3028,10 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **customers_id_teams_nk_data_sources_delete**
-> customers_id_teams_nk_data_sources_delete(id, nk)
+# **customers_id_teams_nk_data_source_soaps_fk_delete**
+> customers_id_teams_nk_data_source_soaps_fk_delete(id, nk, fk)
 
-Deletes all dataSources of this model.
+Delete a related item by id for dataSourceSoaps.
 
 ### Example 
 ```python
@@ -3057,12 +3050,13 @@ TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
 api_instance = TweakApi.CustomerApi()
 id = 'id_example' # str | Customer id
 nk = 'nk_example' # str | Foreign key for teams.
+fk = 'fk_example' # str | Foreign key for dataSourceSoaps
 
 try: 
-    # Deletes all dataSources of this model.
-    api_instance.customers_id_teams_nk_data_sources_delete(id, nk)
+    # Delete a related item by id for dataSourceSoaps.
+    api_instance.customers_id_teams_nk_data_source_soaps_fk_delete(id, nk, fk)
 except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_teams_nk_data_sources_delete: %s\n" % e)
+    print("Exception when calling CustomerApi->customers_id_teams_nk_data_source_soaps_fk_delete: %s\n" % e)
 ```
 
 ### Parameters
@@ -3071,6 +3065,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| Customer id | 
  **nk** | **str**| Foreign key for teams. | 
+ **fk** | **str**| Foreign key for dataSourceSoaps | 
 
 ### Return type
 
@@ -3087,64 +3082,10 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **customers_id_teams_nk_data_sources_fk_delete**
-> customers_id_teams_nk_data_sources_fk_delete(id, nk, fk)
+# **customers_id_teams_nk_data_source_soaps_fk_get**
+> DataSourceSoap customers_id_teams_nk_data_source_soaps_fk_get(id, nk, fk)
 
-Delete a related item by id for dataSources.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-id = 'id_example' # str | Customer id
-nk = 'nk_example' # str | Foreign key for teams.
-fk = 'fk_example' # str | Foreign key for dataSources
-
-try: 
-    # Delete a related item by id for dataSources.
-    api_instance.customers_id_teams_nk_data_sources_fk_delete(id, nk, fk)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_teams_nk_data_sources_fk_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Customer id | 
- **nk** | **str**| Foreign key for teams. | 
- **fk** | **str**| Foreign key for dataSources | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_id_teams_nk_data_sources_fk_get**
-> DataSource customers_id_teams_nk_data_sources_fk_get(id, nk, fk)
-
-Find a related item by id for dataSources.
+Find a related item by id for dataSourceSoaps.
 
 ### Example 
 ```python
@@ -3163,14 +3104,14 @@ TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
 api_instance = TweakApi.CustomerApi()
 id = 'id_example' # str | Customer id
 nk = 'nk_example' # str | Foreign key for teams.
-fk = 'fk_example' # str | Foreign key for dataSources
+fk = 'fk_example' # str | Foreign key for dataSourceSoaps
 
 try: 
-    # Find a related item by id for dataSources.
-    api_response = api_instance.customers_id_teams_nk_data_sources_fk_get(id, nk, fk)
+    # Find a related item by id for dataSourceSoaps.
+    api_response = api_instance.customers_id_teams_nk_data_source_soaps_fk_get(id, nk, fk)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_teams_nk_data_sources_fk_get: %s\n" % e)
+    print("Exception when calling CustomerApi->customers_id_teams_nk_data_source_soaps_fk_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -3179,11 +3120,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| Customer id | 
  **nk** | **str**| Foreign key for teams. | 
- **fk** | **str**| Foreign key for dataSources | 
+ **fk** | **str**| Foreign key for dataSourceSoaps | 
 
 ### Return type
 
-[**DataSource**](DataSource.md)
+[**DataSourceSoap**](DataSourceSoap.md)
 
 ### Authorization
 
@@ -3196,10 +3137,10 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **customers_id_teams_nk_data_sources_fk_put**
-> DataSource customers_id_teams_nk_data_sources_fk_put(id, nk, fk, data=data)
+# **customers_id_teams_nk_data_source_soaps_fk_put**
+> DataSourceSoap customers_id_teams_nk_data_source_soaps_fk_put(id, nk, fk, data=data)
 
-Update a related item by id for dataSources.
+Update a related item by id for dataSourceSoaps.
 
 ### Example 
 ```python
@@ -3218,15 +3159,15 @@ TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
 api_instance = TweakApi.CustomerApi()
 id = 'id_example' # str | Customer id
 nk = 'nk_example' # str | Foreign key for teams.
-fk = 'fk_example' # str | Foreign key for dataSources
-data = TweakApi.DataSource() # DataSource |  (optional)
+fk = 'fk_example' # str | Foreign key for dataSourceSoaps
+data = TweakApi.DataSourceSoap() # DataSourceSoap |  (optional)
 
 try: 
-    # Update a related item by id for dataSources.
-    api_response = api_instance.customers_id_teams_nk_data_sources_fk_put(id, nk, fk, data=data)
+    # Update a related item by id for dataSourceSoaps.
+    api_response = api_instance.customers_id_teams_nk_data_source_soaps_fk_put(id, nk, fk, data=data)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_teams_nk_data_sources_fk_put: %s\n" % e)
+    print("Exception when calling CustomerApi->customers_id_teams_nk_data_source_soaps_fk_put: %s\n" % e)
 ```
 
 ### Parameters
@@ -3235,12 +3176,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| Customer id | 
  **nk** | **str**| Foreign key for teams. | 
- **fk** | **str**| Foreign key for dataSources | 
- **data** | [**DataSource**](DataSource.md)|  | [optional] 
+ **fk** | **str**| Foreign key for dataSourceSoaps | 
+ **data** | [**DataSourceSoap**](DataSourceSoap.md)|  | [optional] 
 
 ### Return type
 
-[**DataSource**](DataSource.md)
+[**DataSourceSoap**](DataSourceSoap.md)
 
 ### Authorization
 
@@ -3253,10 +3194,10 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **customers_id_teams_nk_data_sources_get**
-> list[DataSource] customers_id_teams_nk_data_sources_get(id, nk, filter=filter)
+# **customers_id_teams_nk_data_source_soaps_get**
+> list[DataSourceSoap] customers_id_teams_nk_data_source_soaps_get(id, nk, filter=filter)
 
-Queries dataSources of Team.
+Queries dataSourceSoaps of Team.
 
 ### Example 
 ```python
@@ -3278,11 +3219,11 @@ nk = 'nk_example' # str | Foreign key for teams.
 filter = 'filter_example' # str |  (optional)
 
 try: 
-    # Queries dataSources of Team.
-    api_response = api_instance.customers_id_teams_nk_data_sources_get(id, nk, filter=filter)
+    # Queries dataSourceSoaps of Team.
+    api_response = api_instance.customers_id_teams_nk_data_source_soaps_get(id, nk, filter=filter)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_teams_nk_data_sources_get: %s\n" % e)
+    print("Exception when calling CustomerApi->customers_id_teams_nk_data_source_soaps_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -3295,7 +3236,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[DataSource]**](DataSource.md)
+[**list[DataSourceSoap]**](DataSourceSoap.md)
 
 ### Authorization
 
@@ -3308,10 +3249,10 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **customers_id_teams_nk_data_sources_post**
-> DataSource customers_id_teams_nk_data_sources_post(id, nk, data=data)
+# **customers_id_teams_nk_data_source_soaps_post**
+> DataSourceSoap customers_id_teams_nk_data_source_soaps_post(id, nk, data=data)
 
-Creates a new instance in dataSources of this model.
+Creates a new instance in dataSourceSoaps of this model.
 
 ### Example 
 ```python
@@ -3330,14 +3271,14 @@ TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
 api_instance = TweakApi.CustomerApi()
 id = 'id_example' # str | Customer id
 nk = 'nk_example' # str | Foreign key for teams.
-data = TweakApi.DataSource() # DataSource |  (optional)
+data = TweakApi.DataSourceSoap() # DataSourceSoap |  (optional)
 
 try: 
-    # Creates a new instance in dataSources of this model.
-    api_response = api_instance.customers_id_teams_nk_data_sources_post(id, nk, data=data)
+    # Creates a new instance in dataSourceSoaps of this model.
+    api_response = api_instance.customers_id_teams_nk_data_source_soaps_post(id, nk, data=data)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_teams_nk_data_sources_post: %s\n" % e)
+    print("Exception when calling CustomerApi->customers_id_teams_nk_data_source_soaps_post: %s\n" % e)
 ```
 
 ### Parameters
@@ -3346,11 +3287,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| Customer id | 
  **nk** | **str**| Foreign key for teams. | 
- **data** | [**DataSource**](DataSource.md)|  | [optional] 
+ **data** | [**DataSourceSoap**](DataSourceSoap.md)|  | [optional] 
 
 ### Return type
 
-[**DataSource**](DataSource.md)
+[**DataSourceSoap**](DataSourceSoap.md)
 
 ### Authorization
 
@@ -3406,58 +3347,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_id_teams_nk_dynamic_datas_delete**
-> customers_id_teams_nk_dynamic_datas_delete(id, nk)
-
-Deletes all dynamicDatas of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-id = 'id_example' # str | Customer id
-nk = 'nk_example' # str | Foreign key for teams.
-
-try: 
-    # Deletes all dynamicDatas of this model.
-    api_instance.customers_id_teams_nk_dynamic_datas_delete(id, nk)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_id_teams_nk_dynamic_datas_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Customer id | 
- **nk** | **str**| Foreign key for teams. | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -9071,57 +8960,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **customers_patch**
-> Customer customers_patch(data=data)
-
-Patch an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-data = TweakApi.Customer() # Customer | Model instance data (optional)
-
-try: 
-    # Patch an existing model instance or insert a new one into the data source.
-    api_response = api_instance.customers_patch(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_patch: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**Customer**](Customer.md)| Model instance data | [optional] 
-
-### Return type
-
-[**Customer**](Customer.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **customers_post**
 > Customer customers_post(data=data)
 
@@ -9150,57 +8988,6 @@ try:
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling CustomerApi->customers_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**Customer**](Customer.md)| Model instance data | [optional] 
-
-### Return type
-
-[**Customer**](Customer.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_put**
-> Customer customers_put(data=data)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-data = TweakApi.Customer() # Customer | Model instance data (optional)
-
-try: 
-    # Replace an existing model instance or insert a new one into the data source.
-    api_response = api_instance.customers_put(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_put: %s\n" % e)
 ```
 
 ### Parameters
@@ -9263,57 +9050,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**TeamMember**](TeamMember.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_replace_or_create_post**
-> Customer customers_replace_or_create_post(data=data)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-data = TweakApi.Customer() # Customer | Model instance data (optional)
-
-try: 
-    # Replace an existing model instance or insert a new one into the data source.
-    api_response = api_instance.customers_replace_or_create_post(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_replace_or_create_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**Customer**](Customer.md)| Model instance data | [optional] 
-
-### Return type
-
-[**Customer**](Customer.md)
 
 ### Authorization
 
@@ -9465,112 +9201,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_update_post**
-> InlineResponse2003 customers_update_post(where=where, data=data)
-
-Update instances of the model matched by {{where}} from the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-where = 'where_example' # str | Criteria to match model instances (optional)
-data = TweakApi.Customer() # Customer | An object of model property name/value pairs (optional)
-
-try: 
-    # Update instances of the model matched by {{where}} from the data source.
-    api_response = api_instance.customers_update_post(where=where, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_update_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **str**| Criteria to match model instances | [optional] 
- **data** | [**Customer**](Customer.md)| An object of model property name/value pairs | [optional] 
-
-### Return type
-
-[**InlineResponse2003**](InlineResponse2003.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **customers_upsert_with_where_post**
-> Customer customers_upsert_with_where_post(where=where, data=data)
-
-Update an existing model instance or insert a new one into the data source based on the where criteria.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.CustomerApi()
-where = 'where_example' # str | Criteria to match model instances (optional)
-data = TweakApi.Customer() # Customer | An object of model property name/value pairs (optional)
-
-try: 
-    # Update an existing model instance or insert a new one into the data source based on the where criteria.
-    api_response = api_instance.customers_upsert_with_where_post(where=where, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CustomerApi->customers_upsert_with_where_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **str**| Criteria to match model instances | [optional] 
- **data** | [**Customer**](Customer.md)| An object of model property name/value pairs | [optional] 
-
-### Return type
-
-[**Customer**](Customer.md)
 
 ### Authorization
 

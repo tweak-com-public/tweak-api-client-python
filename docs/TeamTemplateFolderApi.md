@@ -10,7 +10,6 @@ Method | HTTP request | Description
 [**team_template_folders_find_one_get**](TeamTemplateFolderApi.md#team_template_folders_find_one_get) | **GET** /TeamTemplateFolders/findOne | Find first instance of the model matched by filter from the data source.
 [**team_template_folders_get**](TeamTemplateFolderApi.md#team_template_folders_get) | **GET** /TeamTemplateFolders | Find all instances of the model matched by filter from the data source.
 [**team_template_folders_id_children_count_get**](TeamTemplateFolderApi.md#team_template_folders_id_children_count_get) | **GET** /TeamTemplateFolders/{id}/children/count | Counts children of TeamTemplateFolder.
-[**team_template_folders_id_children_delete**](TeamTemplateFolderApi.md#team_template_folders_id_children_delete) | **DELETE** /TeamTemplateFolders/{id}/children | Deletes all children of this model.
 [**team_template_folders_id_children_fk_delete**](TeamTemplateFolderApi.md#team_template_folders_id_children_fk_delete) | **DELETE** /TeamTemplateFolders/{id}/children/{fk} | Delete a related item by id for children.
 [**team_template_folders_id_children_fk_get**](TeamTemplateFolderApi.md#team_template_folders_id_children_fk_get) | **GET** /TeamTemplateFolders/{id}/children/{fk} | Find a related item by id for children.
 [**team_template_folders_id_children_fk_put**](TeamTemplateFolderApi.md#team_template_folders_id_children_fk_put) | **PUT** /TeamTemplateFolders/{id}/children/{fk} | Update a related item by id for children.
@@ -26,18 +25,12 @@ Method | HTTP request | Description
 [**team_template_folders_id_replace_post**](TeamTemplateFolderApi.md#team_template_folders_id_replace_post) | **POST** /TeamTemplateFolders/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**team_template_folders_id_team_get**](TeamTemplateFolderApi.md#team_template_folders_id_team_get) | **GET** /TeamTemplateFolders/{id}/team | Fetches belongsTo relation team.
 [**team_template_folders_id_templates_count_get**](TeamTemplateFolderApi.md#team_template_folders_id_templates_count_get) | **GET** /TeamTemplateFolders/{id}/templates/count | Counts templates of TeamTemplateFolder.
-[**team_template_folders_id_templates_delete**](TeamTemplateFolderApi.md#team_template_folders_id_templates_delete) | **DELETE** /TeamTemplateFolders/{id}/templates | Deletes all templates of this model.
 [**team_template_folders_id_templates_fk_delete**](TeamTemplateFolderApi.md#team_template_folders_id_templates_fk_delete) | **DELETE** /TeamTemplateFolders/{id}/templates/{fk} | Delete a related item by id for templates.
 [**team_template_folders_id_templates_fk_get**](TeamTemplateFolderApi.md#team_template_folders_id_templates_fk_get) | **GET** /TeamTemplateFolders/{id}/templates/{fk} | Find a related item by id for templates.
 [**team_template_folders_id_templates_fk_put**](TeamTemplateFolderApi.md#team_template_folders_id_templates_fk_put) | **PUT** /TeamTemplateFolders/{id}/templates/{fk} | Update a related item by id for templates.
 [**team_template_folders_id_templates_get**](TeamTemplateFolderApi.md#team_template_folders_id_templates_get) | **GET** /TeamTemplateFolders/{id}/templates | Queries templates of TeamTemplateFolder.
 [**team_template_folders_id_templates_post**](TeamTemplateFolderApi.md#team_template_folders_id_templates_post) | **POST** /TeamTemplateFolders/{id}/templates | Creates a new instance in templates of this model.
-[**team_template_folders_patch**](TeamTemplateFolderApi.md#team_template_folders_patch) | **PATCH** /TeamTemplateFolders | Patch an existing model instance or insert a new one into the data source.
 [**team_template_folders_post**](TeamTemplateFolderApi.md#team_template_folders_post) | **POST** /TeamTemplateFolders | Create a new instance of the model and persist it into the data source.
-[**team_template_folders_put**](TeamTemplateFolderApi.md#team_template_folders_put) | **PUT** /TeamTemplateFolders | Replace an existing model instance or insert a new one into the data source.
-[**team_template_folders_replace_or_create_post**](TeamTemplateFolderApi.md#team_template_folders_replace_or_create_post) | **POST** /TeamTemplateFolders/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
-[**team_template_folders_update_post**](TeamTemplateFolderApi.md#team_template_folders_update_post) | **POST** /TeamTemplateFolders/update | Update instances of the model matched by {{where}} from the data source.
-[**team_template_folders_upsert_with_where_post**](TeamTemplateFolderApi.md#team_template_folders_upsert_with_where_post) | **POST** /TeamTemplateFolders/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
 
 # **team_template_folders_change_stream_get**
@@ -336,56 +329,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **team_template_folders_id_children_delete**
-> team_template_folders_id_children_delete(id)
-
-Deletes all children of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.TeamTemplateFolderApi()
-id = 'id_example' # str | TeamTemplateFolder id
-
-try: 
-    # Deletes all children of this model.
-    api_instance.team_template_folders_id_children_delete(id)
-except ApiException as e:
-    print("Exception when calling TeamTemplateFolderApi->team_template_folders_id_children_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| TeamTemplateFolder id | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -1188,56 +1131,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **team_template_folders_id_templates_delete**
-> team_template_folders_id_templates_delete(id)
-
-Deletes all templates of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.TeamTemplateFolderApi()
-id = 'id_example' # str | TeamTemplateFolder id
-
-try: 
-    # Deletes all templates of this model.
-    api_instance.team_template_folders_id_templates_delete(id)
-except ApiException as e:
-    print("Exception when calling TeamTemplateFolderApi->team_template_folders_id_templates_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| TeamTemplateFolder id | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **team_template_folders_id_templates_fk_delete**
 > team_template_folders_id_templates_fk_delete(id, fk)
 
@@ -1504,57 +1397,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **team_template_folders_patch**
-> TeamTemplateFolder team_template_folders_patch(data=data)
-
-Patch an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.TeamTemplateFolderApi()
-data = TweakApi.TeamTemplateFolder() # TeamTemplateFolder | Model instance data (optional)
-
-try: 
-    # Patch an existing model instance or insert a new one into the data source.
-    api_response = api_instance.team_template_folders_patch(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling TeamTemplateFolderApi->team_template_folders_patch: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**TeamTemplateFolder**](TeamTemplateFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**TeamTemplateFolder**](TeamTemplateFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **team_template_folders_post**
 > TeamTemplateFolder team_template_folders_post(data=data)
 
@@ -1590,214 +1432,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **data** | [**TeamTemplateFolder**](TeamTemplateFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**TeamTemplateFolder**](TeamTemplateFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **team_template_folders_put**
-> TeamTemplateFolder team_template_folders_put(data=data)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.TeamTemplateFolderApi()
-data = TweakApi.TeamTemplateFolder() # TeamTemplateFolder | Model instance data (optional)
-
-try: 
-    # Replace an existing model instance or insert a new one into the data source.
-    api_response = api_instance.team_template_folders_put(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling TeamTemplateFolderApi->team_template_folders_put: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**TeamTemplateFolder**](TeamTemplateFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**TeamTemplateFolder**](TeamTemplateFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **team_template_folders_replace_or_create_post**
-> TeamTemplateFolder team_template_folders_replace_or_create_post(data=data)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.TeamTemplateFolderApi()
-data = TweakApi.TeamTemplateFolder() # TeamTemplateFolder | Model instance data (optional)
-
-try: 
-    # Replace an existing model instance or insert a new one into the data source.
-    api_response = api_instance.team_template_folders_replace_or_create_post(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling TeamTemplateFolderApi->team_template_folders_replace_or_create_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**TeamTemplateFolder**](TeamTemplateFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**TeamTemplateFolder**](TeamTemplateFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **team_template_folders_update_post**
-> InlineResponse2003 team_template_folders_update_post(where=where, data=data)
-
-Update instances of the model matched by {{where}} from the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.TeamTemplateFolderApi()
-where = 'where_example' # str | Criteria to match model instances (optional)
-data = TweakApi.TeamTemplateFolder() # TeamTemplateFolder | An object of model property name/value pairs (optional)
-
-try: 
-    # Update instances of the model matched by {{where}} from the data source.
-    api_response = api_instance.team_template_folders_update_post(where=where, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling TeamTemplateFolderApi->team_template_folders_update_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **str**| Criteria to match model instances | [optional] 
- **data** | [**TeamTemplateFolder**](TeamTemplateFolder.md)| An object of model property name/value pairs | [optional] 
-
-### Return type
-
-[**InlineResponse2003**](InlineResponse2003.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **team_template_folders_upsert_with_where_post**
-> TeamTemplateFolder team_template_folders_upsert_with_where_post(where=where, data=data)
-
-Update an existing model instance or insert a new one into the data source based on the where criteria.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.TeamTemplateFolderApi()
-where = 'where_example' # str | Criteria to match model instances (optional)
-data = TweakApi.TeamTemplateFolder() # TeamTemplateFolder | An object of model property name/value pairs (optional)
-
-try: 
-    # Update an existing model instance or insert a new one into the data source based on the where criteria.
-    api_response = api_instance.team_template_folders_upsert_with_where_post(where=where, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling TeamTemplateFolderApi->team_template_folders_upsert_with_where_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **str**| Criteria to match model instances | [optional] 
- **data** | [**TeamTemplateFolder**](TeamTemplateFolder.md)| An object of model property name/value pairs | [optional] 
 
 ### Return type
 

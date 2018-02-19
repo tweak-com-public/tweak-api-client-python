@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** |  | 
+**is_legacy_partner** | **bool** |  | [optional] [default to False]
 **logo** | [**CloudinaryImage**](CloudinaryImage.md) |  | [optional] 
 **subdomain** | **str** |  | [optional] 
 **country** | **str** |  | [optional] [default to 'Ireland']
@@ -20,8 +21,8 @@ Name | Type | Description | Notes
 **team_data_id** | **str** |  | [optional] 
 **members** | [**list[Customer]**](Customer.md) |  | [optional] 
 **builder_configs** | [**list[TeamBuilderConfig]**](TeamBuilderConfig.md) |  | [optional] 
-**data_sources** | [**list[DataSource]**](DataSource.md) |  | [optional] 
 **dynamic_datas** | [**list[DynamicData]**](DynamicData.md) |  | [optional] 
+**data_source_soaps** | [**list[DataSourceSoap]**](DataSourceSoap.md) |  | [optional] 
 **team_members** | [**list[TeamMember]**](TeamMember.md) |  | [optional] 
 **portals** | [**list[Portal]**](Portal.md) |  | [optional] 
 **templates** | [**list[Template]**](Template.md) |  | [optional] 
