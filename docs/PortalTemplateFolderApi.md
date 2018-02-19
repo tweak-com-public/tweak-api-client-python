@@ -10,7 +10,6 @@ Method | HTTP request | Description
 [**portal_template_folders_find_one_get**](PortalTemplateFolderApi.md#portal_template_folders_find_one_get) | **GET** /PortalTemplateFolders/findOne | Find first instance of the model matched by filter from the data source.
 [**portal_template_folders_get**](PortalTemplateFolderApi.md#portal_template_folders_get) | **GET** /PortalTemplateFolders | Find all instances of the model matched by filter from the data source.
 [**portal_template_folders_id_children_count_get**](PortalTemplateFolderApi.md#portal_template_folders_id_children_count_get) | **GET** /PortalTemplateFolders/{id}/children/count | Counts children of PortalTemplateFolder.
-[**portal_template_folders_id_children_delete**](PortalTemplateFolderApi.md#portal_template_folders_id_children_delete) | **DELETE** /PortalTemplateFolders/{id}/children | Deletes all children of this model.
 [**portal_template_folders_id_children_fk_delete**](PortalTemplateFolderApi.md#portal_template_folders_id_children_fk_delete) | **DELETE** /PortalTemplateFolders/{id}/children/{fk} | Delete a related item by id for children.
 [**portal_template_folders_id_children_fk_get**](PortalTemplateFolderApi.md#portal_template_folders_id_children_fk_get) | **GET** /PortalTemplateFolders/{id}/children/{fk} | Find a related item by id for children.
 [**portal_template_folders_id_children_fk_put**](PortalTemplateFolderApi.md#portal_template_folders_id_children_fk_put) | **PUT** /PortalTemplateFolders/{id}/children/{fk} | Update a related item by id for children.
@@ -26,7 +25,6 @@ Method | HTTP request | Description
 [**portal_template_folders_id_put**](PortalTemplateFolderApi.md#portal_template_folders_id_put) | **PUT** /PortalTemplateFolders/{id} | Replace attributes for a model instance and persist it into the data source.
 [**portal_template_folders_id_replace_post**](PortalTemplateFolderApi.md#portal_template_folders_id_replace_post) | **POST** /PortalTemplateFolders/{id}/replace | Replace attributes for a model instance and persist it into the data source.
 [**portal_template_folders_id_templates_count_get**](PortalTemplateFolderApi.md#portal_template_folders_id_templates_count_get) | **GET** /PortalTemplateFolders/{id}/templates/count | Counts templates of PortalTemplateFolder.
-[**portal_template_folders_id_templates_delete**](PortalTemplateFolderApi.md#portal_template_folders_id_templates_delete) | **DELETE** /PortalTemplateFolders/{id}/templates | Deletes all templates of this model.
 [**portal_template_folders_id_templates_fk_delete**](PortalTemplateFolderApi.md#portal_template_folders_id_templates_fk_delete) | **DELETE** /PortalTemplateFolders/{id}/templates/{fk} | Delete a related item by id for templates.
 [**portal_template_folders_id_templates_fk_get**](PortalTemplateFolderApi.md#portal_template_folders_id_templates_fk_get) | **GET** /PortalTemplateFolders/{id}/templates/{fk} | Find a related item by id for templates.
 [**portal_template_folders_id_templates_fk_put**](PortalTemplateFolderApi.md#portal_template_folders_id_templates_fk_put) | **PUT** /PortalTemplateFolders/{id}/templates/{fk} | Update a related item by id for templates.
@@ -35,12 +33,7 @@ Method | HTTP request | Description
 [**portal_template_folders_id_templates_rel_fk_delete**](PortalTemplateFolderApi.md#portal_template_folders_id_templates_rel_fk_delete) | **DELETE** /PortalTemplateFolders/{id}/templates/rel/{fk} | Remove the templates relation to an item by id.
 [**portal_template_folders_id_templates_rel_fk_head**](PortalTemplateFolderApi.md#portal_template_folders_id_templates_rel_fk_head) | **HEAD** /PortalTemplateFolders/{id}/templates/rel/{fk} | Check the existence of templates relation to an item by id.
 [**portal_template_folders_id_templates_rel_fk_put**](PortalTemplateFolderApi.md#portal_template_folders_id_templates_rel_fk_put) | **PUT** /PortalTemplateFolders/{id}/templates/rel/{fk} | Add a related item by id for templates.
-[**portal_template_folders_patch**](PortalTemplateFolderApi.md#portal_template_folders_patch) | **PATCH** /PortalTemplateFolders | Patch an existing model instance or insert a new one into the data source.
 [**portal_template_folders_post**](PortalTemplateFolderApi.md#portal_template_folders_post) | **POST** /PortalTemplateFolders | Create a new instance of the model and persist it into the data source.
-[**portal_template_folders_put**](PortalTemplateFolderApi.md#portal_template_folders_put) | **PUT** /PortalTemplateFolders | Replace an existing model instance or insert a new one into the data source.
-[**portal_template_folders_replace_or_create_post**](PortalTemplateFolderApi.md#portal_template_folders_replace_or_create_post) | **POST** /PortalTemplateFolders/replaceOrCreate | Replace an existing model instance or insert a new one into the data source.
-[**portal_template_folders_update_post**](PortalTemplateFolderApi.md#portal_template_folders_update_post) | **POST** /PortalTemplateFolders/update | Update instances of the model matched by {{where}} from the data source.
-[**portal_template_folders_upsert_with_where_post**](PortalTemplateFolderApi.md#portal_template_folders_upsert_with_where_post) | **POST** /PortalTemplateFolders/upsertWithWhere | Update an existing model instance or insert a new one into the data source based on the where criteria.
 
 
 # **portal_template_folders_change_stream_get**
@@ -339,56 +332,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **portal_template_folders_id_children_delete**
-> portal_template_folders_id_children_delete(id)
-
-Deletes all children of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.PortalTemplateFolderApi()
-id = 'id_example' # str | PortalTemplateFolder id
-
-try: 
-    # Deletes all children of this model.
-    api_instance.portal_template_folders_id_children_delete(id)
-except ApiException as e:
-    print("Exception when calling PortalTemplateFolderApi->portal_template_folders_id_children_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| PortalTemplateFolder id | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 
@@ -1191,56 +1134,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **portal_template_folders_id_templates_delete**
-> portal_template_folders_id_templates_delete(id)
-
-Deletes all templates of this model.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.PortalTemplateFolderApi()
-id = 'id_example' # str | PortalTemplateFolder id
-
-try: 
-    # Deletes all templates of this model.
-    api_instance.portal_template_folders_id_templates_delete(id)
-except ApiException as e:
-    print("Exception when calling PortalTemplateFolderApi->portal_template_folders_id_templates_delete: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| PortalTemplateFolder id | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **portal_template_folders_id_templates_fk_delete**
 > portal_template_folders_id_templates_fk_delete(id, fk)
 
@@ -1667,57 +1560,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **portal_template_folders_patch**
-> PortalTemplateFolder portal_template_folders_patch(data=data)
-
-Patch an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.PortalTemplateFolderApi()
-data = TweakApi.PortalTemplateFolder() # PortalTemplateFolder | Model instance data (optional)
-
-try: 
-    # Patch an existing model instance or insert a new one into the data source.
-    api_response = api_instance.portal_template_folders_patch(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PortalTemplateFolderApi->portal_template_folders_patch: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**PortalTemplateFolder**](PortalTemplateFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**PortalTemplateFolder**](PortalTemplateFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **portal_template_folders_post**
 > PortalTemplateFolder portal_template_folders_post(data=data)
 
@@ -1753,214 +1595,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **data** | [**PortalTemplateFolder**](PortalTemplateFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**PortalTemplateFolder**](PortalTemplateFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **portal_template_folders_put**
-> PortalTemplateFolder portal_template_folders_put(data=data)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.PortalTemplateFolderApi()
-data = TweakApi.PortalTemplateFolder() # PortalTemplateFolder | Model instance data (optional)
-
-try: 
-    # Replace an existing model instance or insert a new one into the data source.
-    api_response = api_instance.portal_template_folders_put(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PortalTemplateFolderApi->portal_template_folders_put: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**PortalTemplateFolder**](PortalTemplateFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**PortalTemplateFolder**](PortalTemplateFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **portal_template_folders_replace_or_create_post**
-> PortalTemplateFolder portal_template_folders_replace_or_create_post(data=data)
-
-Replace an existing model instance or insert a new one into the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.PortalTemplateFolderApi()
-data = TweakApi.PortalTemplateFolder() # PortalTemplateFolder | Model instance data (optional)
-
-try: 
-    # Replace an existing model instance or insert a new one into the data source.
-    api_response = api_instance.portal_template_folders_replace_or_create_post(data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PortalTemplateFolderApi->portal_template_folders_replace_or_create_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**PortalTemplateFolder**](PortalTemplateFolder.md)| Model instance data | [optional] 
-
-### Return type
-
-[**PortalTemplateFolder**](PortalTemplateFolder.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **portal_template_folders_update_post**
-> InlineResponse2003 portal_template_folders_update_post(where=where, data=data)
-
-Update instances of the model matched by {{where}} from the data source.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.PortalTemplateFolderApi()
-where = 'where_example' # str | Criteria to match model instances (optional)
-data = TweakApi.PortalTemplateFolder() # PortalTemplateFolder | An object of model property name/value pairs (optional)
-
-try: 
-    # Update instances of the model matched by {{where}} from the data source.
-    api_response = api_instance.portal_template_folders_update_post(where=where, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PortalTemplateFolderApi->portal_template_folders_update_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **str**| Criteria to match model instances | [optional] 
- **data** | [**PortalTemplateFolder**](PortalTemplateFolder.md)| An object of model property name/value pairs | [optional] 
-
-### Return type
-
-[**InlineResponse2003**](InlineResponse2003.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded, application/xml, text/xml
- - **Accept**: application/json, application/xml, text/xml, application/javascript, text/javascript
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **portal_template_folders_upsert_with_where_post**
-> PortalTemplateFolder portal_template_folders_upsert_with_where_post(where=where, data=data)
-
-Update an existing model instance or insert a new one into the data source based on the where criteria.
-
-### Example 
-```python
-from __future__ import print_statement
-import time
-import TweakApi
-from TweakApi.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: access_token
-TweakApi.configuration.api_key['access_token'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# TweakApi.configuration.api_key_prefix['access_token'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = TweakApi.PortalTemplateFolderApi()
-where = 'where_example' # str | Criteria to match model instances (optional)
-data = TweakApi.PortalTemplateFolder() # PortalTemplateFolder | An object of model property name/value pairs (optional)
-
-try: 
-    # Update an existing model instance or insert a new one into the data source based on the where criteria.
-    api_response = api_instance.portal_template_folders_upsert_with_where_post(where=where, data=data)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PortalTemplateFolderApi->portal_template_folders_upsert_with_where_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **where** | **str**| Criteria to match model instances | [optional] 
- **data** | [**PortalTemplateFolder**](PortalTemplateFolder.md)| An object of model property name/value pairs | [optional] 
 
 ### Return type
 
